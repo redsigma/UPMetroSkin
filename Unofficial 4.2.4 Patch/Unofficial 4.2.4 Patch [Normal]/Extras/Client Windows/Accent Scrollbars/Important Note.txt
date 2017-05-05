@@ -1,0 +1,1 @@
+Accent Coloured Scrollbars do not appear on windows showing a webpage, such as the Steam Store and Steam Community pages.

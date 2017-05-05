@@ -1,0 +1,133 @@
+"caption.styles"
+{
+	styles
+	{
+		//Default Style
+		FrameMinimizeButton
+		{
+			inset="9 19 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/minimize"
+		}
+		FrameMinimizeButton:hover
+		{
+			bgcolor=White05
+		}
+		FrameMinimizeButton:active
+		{
+			bgcolor=White10
+		}
+
+		FrameMaximizeButton
+		{
+			inset="9 14 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/maximize"
+		}
+		FrameMaximizeButton:hover
+		{
+			bgcolor=White05
+		}
+		FrameMaximizeButton:active
+		{
+			bgcolor=White10
+		}
+
+		FrameRestoreButton
+		{
+			inset="9 14 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/restore"
+		}
+		FrameRestoreButton:hover
+		{
+			bgcolor=White05
+		}
+		FrameRestoreButton:active
+		{
+			bgcolor=White10
+		}
+
+		FrameCloseButton
+		{
+			inset="9 14 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/close"
+		}
+		FrameCloseButton:hover
+		{
+			bgcolor=White05
+		}
+		FrameCloseButton:active
+		{
+			bgcolor=White10
+		}
+		FrameCloseButton:disabled
+		{
+			inset="9 14 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/close_d"
+		}
+
+		//Semi Style
+		"ToolWindow FrameMinimizeButton"
+		{
+			inset="4 7 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/sm/chat_min_sm"
+		}
+		"ToolWindow FrameMinimizeButton:hover"
+		{
+			bgcolor=White05
+		}
+		"ToolWindow FrameMinimizeButton:active"
+		{
+			bgcolor=White10
+		}
+
+		"ToolWindow FrameMaximizeButton"
+		{
+			inset="4 10 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/sm/chat_max_sm"
+		}
+		"ToolWindow FrameMaximizeButton:hover"
+		{
+			bgcolor=White05
+		}
+		"ToolWindow FrameMaximizeButton:active"
+		{
+			bgcolor=White10
+		}
+
+		"ToolWindow FrameRestoreButton"
+		{
+			inset="4 10 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/sm/chat_res_sm"
+		}
+		"ToolWindow FrameRestoreButton:hover"
+		{
+			bgcolor=White05
+		}
+		"ToolWindow FrameRestoreButton:active"
+		{
+			bgcolor=White10
+		}
+
+		"ToolWindow FrameCloseButton"
+		{
+			inset="4 10 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/sm/chat_close_sm"
+		}
+		"ToolWindow FrameCloseButton:hover"
+		{
+			bgcolor=White05
+		}
+		"ToolWindow FrameCloseButton:active"
+		{
+			bgcolor=White10
+		}
+	}
+}
