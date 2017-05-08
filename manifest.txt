@@ -4,9 +4,7 @@
 "Repositioned Filter Button";"repositioned_filter";"";"Client Windows"
 "Repositioned Launch Button";"repositioned_launchbtn";"";"Client Windows"
 "Repositioned Overflow";"repositioned_overflow";"";"Client Windows"
-"Repositioned Overflow + Repositioned Launch
-Button";"repositioned_overflow_n_repositioned_launchbtn";"repositioned_overflow,repositioned_launchbtn";"Client Windows"
-
+"Repositioned Overflow + Repositioned Launch Button";"repositioned_overflow_n_repositioned_launchbtn";"repositioned_overflow,repositioned_launchbtn";"Client Windows"
 "Circle Avatar Border";"circle_avatar_border";"";"Friends and Chat"
 "Circle Avatar Border for White-Blue Themes";"circle_avatar_border_f_white-blue";"";"Friends and Chat"
 "Removed Friends Search Bar";"removed_friends_search_bar";"";"Friends and Chat"
