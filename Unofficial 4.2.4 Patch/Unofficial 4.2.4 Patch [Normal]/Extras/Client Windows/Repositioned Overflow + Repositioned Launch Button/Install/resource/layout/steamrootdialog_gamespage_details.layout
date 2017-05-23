@@ -32,6 +32,7 @@
 		guideslink { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
 		supportlink { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
 		recommendlink { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
+		editconfiglink { controlname="URLLabel" labeltext="#steam_editcontroller" style="rightcolumnlink" }	
 
 		// Right column tags
 		tagslabel { controlname="Label" labeltext="#Steam_Tags" style="rightcolumnheadertext" }
@@ -203,7 +204,7 @@
 		region	{ name="links_center"	y=160 region=headertext width=160 height=139 align=top-center overflow=allow-vertical }
 		region	{ name="links_right"	y=160 region=headertext width=215 height=139 align=right overflow=allow-vertical }
 		place { control=sendguestpasslink,storelink,forumlink,recommendlink,edittagslink region=links_left x=9 dir=down align=left spacing=6 }
-		place { control=newslink,gamehublink,ogglink,manuallink region=links_center dir=down align=left spacing=6 }
+		place { control=newslink,gamehublink,ogglink,manuallink,editconfiglink region=links_center dir=down align=left spacing=6 }
 		place { control=cdkeylink,guidelink,guideslink,supportlink region=links_right dir=down align=left spacing=6 }
 
 		//Panels

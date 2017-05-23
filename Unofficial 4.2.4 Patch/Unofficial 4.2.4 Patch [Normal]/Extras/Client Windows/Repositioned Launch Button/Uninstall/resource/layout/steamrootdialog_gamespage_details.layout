@@ -32,6 +32,7 @@
 		guideslink { controlname="URLLabel" labeltext="#Steam_Guides" style="rightcolumnlink" }
 		supportlink { controlname="URLLabel" labeltext="#Steam_Support" style="rightcolumnlink" }
 		recommendlink { controlname="URLLabel" labeltext="#Steam_Game_RecommendGame" style="rightcolumnlink" }
+		editconfiglink { controlname="URLLabel" labeltext="#steam_editcontroller" style="rightcolumnlink" }	
 
 		// Right column tags
 		tagslabel { controlname="Label" labeltext="#Steam_Tags" style="rightcolumnheadertext" }
@@ -234,7 +235,7 @@
 
 		//Sidebar
 		region	{ name="rightcolumn" region=details y=144 align=right height=max width=162 margin-right=8 overflow=allow-vertical }
-		place { control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,edittagslink,*taglink region=rightcolumn dir=down height=32 width=max }
+		place { control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,editconfiglink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,edittagslink,*taglink region=rightcolumn dir=down height=32 width=max }
 
 		//Background Images
 		place 	{ control=headerimagea align=left margin-top=38 margin-left=262 height=550 width=1024 }
