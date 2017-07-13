@@ -472,9 +472,9 @@
 		place { control="friends_list" height=39 align=right end-right=UIStatusPanel }
 
 		//Controls
-		place { control="SupportAlert,account_balance,InboxButton,ParentalLockButton" region=top align=right end-right=FriendPanel spacing=1 margin-right=1 height=39 }
-		place { control="UIStatusPanel" region=top align=right margin-right=198 width=27 height=40 }
-		place { control="fullscreen,startvr,exitvr" region=top align=right end-right=frame_minimize margin-right=1 height=39 }
+		place { control="SupportAlert,startvr,exitvr,account_balance,InboxButton,ParentalLockButton" region=top align=right end-right=FriendPanel spacing=1 margin-right=1 height=39 }
+		place { control="UIStatusPanel" region=top align=right margin-right=159 width=27 height=40 }
+		place { control="fullscreen" region=top align=right end-right=frame_minimize margin-right=1 height=39 }
 		place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
 
 		//Controls - OS X
