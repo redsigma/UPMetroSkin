@@ -1,0 +1,85 @@
+"resource/layout/overlaytaskbar.layout"
+{
+	controls
+	{
+		TaskbarPanel
+		{
+			controlname="EditablePanel"
+		}
+		SettingsButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Settings"
+			style=taskbar
+		}
+		WebBrowserButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_WebBrowser"
+			style=taskbar
+		}
+		SteamLogo	
+		{ 
+			controlname="ImagePanel" zpos=1 image="resource/steam_logo_big"
+			scaleimage=1
+		}
+		view_friends
+		{
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			command="OpenFriendsDialog"
+			
+			style="view_friends"
+			textAlignment=east
+		}
+		online_friends
+		{
+			ControlName=Label
+			labelText="#Steam_OnlineFriends"
+			style="online_friends"
+			textAlignment=east
+		}	
+	}
+
+	styles
+	{
+		taskbar
+		{
+			textcolor=OverlaySideButtons
+			font-family=basefont
+			font-style=regular
+		}
+		taskbar:hover
+		{
+			textcolor=OverlaySideButtons_h
+			font-family=basefont
+			font-style=regular
+		}
+
+		//Hidden
+		online_friends
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		view_friends // there is a posibility to make this a working friends button(the circle one)
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		ImagePanel
+		{
+			inset-right=-99
+		}
+	}
+
+	layout
+	{
+		//Links
+		place { control="WebBrowserButton,MusicPlayerButton,SettingsButton" y=48 align=right dir=right spacing=30 margin-right=95 }
+		place { control="FriendPanel" y=43 width=44 height=44 margin-right=30 align=right dir=right }
+
+		//Hidden
+		place { control="SteamLogo,view_friends,online_friends" width=1 align=right }
+	}
+}

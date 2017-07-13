@@ -1,0 +1,83 @@
+"resource/layout/settingssubmusic.layout"
+{
+	controls
+	{
+			LibraryHeader { controlname="Label" labelText="#Music_Settings_Library_Header" style="HeaderText" }
+			LibraryList { controlname=ListPanel tabposition=1 style="LibraryListStyle" }
+
+			AddLibraryButton { controlname="Button" labeltext="#Music_Settings_Library_Add" style="ActionButtonStyle" command="AddEntryToLibraryAction" }
+			RemoveLibraryButton { controlname="Button" labeltext="#Music_Settings_Library_Remove" style="ActionButtonStyle" command="RemoveSelectedEntryFromLibraryAction" }
+
+			LibraryDivider { ControlName="divider" }
+
+			DatabaseHeader { controlname="Label" labelText="#Music_Settings_Database_Header" style="HeaderText" }
+			DatabaseCrawlAtStartup { ControlName="CheckButton" labelText="#Music_Settings_Database_CrawlAtStartup" }
+			DatabaseInfoLabel  { controlname="Label" labelText="#Music_Settings_Database_XAlbumsWithYTracks" style="DescriptionLabel" }
+			ResetDatabaseButton { controlname="Button" labeltext="#Music_Settings_Database_ResetDatabase" style="ActionButtonStyle"	command="ResetDatabaseAction" }
+			DatabaseDivider { ControlName="divider" }
+
+			VolumeHeader { ControlName="Label" labelText="#Music_Settings_Volume_Header" style="HeaderText" }
+			VolumeSlider { ControlName="Slider" style="VolumeSliderStyle" }
+			VolumeDivider { ControlName="divider" }
+
+			PauseMusicHeader { ControlName="Label" labelText="#Music_Settings_PauseMusic_Header" style="HeaderText" }
+			PauseMusicWhenStartingApplicationCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenStartingApplication" }
+			PauseMusicWhenVoiceChatCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenVoiceChat" }
+
+			NotificationHeader { ControlName="Label" labelText="#Music_Settings_Notification_Header" style="HeaderText" }
+			NotificationPlaylistNowPlayingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_NotificationPlaylistNowPlaying" }
+
+			LoggingHeader { ControlName="Label" labelText="#Music_Settings_Logging_Header" style="HeaderText" }
+			LoggingCrawlingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_LoggingCrawling" }
+	}
+	styles
+	{
+		LibraryListStyle
+		{
+			bgcolor=Header_Dark
+			padding-left=8
+		}
+		HeaderText
+		{
+			textcolor=white
+			font-family=semilight
+			font-weight=300
+		}
+		DescriptionLabel
+		{
+			textcolor=white75
+		}
+	}
+	layout
+	{
+		//Music Library
+		place { control=LibraryHeader }
+		place { control=LibraryList start=LibraryHeader y=8 height=80 dir=down width=max }
+		place { control=AddLibraryButton start=LibraryList dir=down y=8 height=28 width=84 }
+		place { control=RemoveLibraryButton start=LibraryList dir=down x=92 y=8 height=28 width=84 }
+		place { control=DatabaseInfoLabel start=RemoveLibraryButton align=right height=28 margin-right=8 }
+		place { control=LibraryDivider start=AddLibraryButton dir=down y=8 width=max }
+
+		//Database | 1st row
+		place { control=DatabaseHeader start=LibraryDivider dir=down y=8 }
+		place { control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders start=DatabaseHeader dir=down height=24 end-right=PauseMusicWhenVoiceChatCheckbox }
+		place { control=StartCrawlingButton start=DatabaseCrawlSteamInstallFolders dir=down y=8 height=28 }
+		place { control=ResetDatabaseButton start=StartCrawlingButton x=8 height=28 }
+		place { control=DatabaseDivider start=StartCrawlingButton dir=down y=8 width=max }
+		//Pause Music
+		place { control=PauseMusicHeader x=271 y=170 }
+		place { control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox start=PauseMusicHeader dir=down height=24 }
+
+		//Notification | 2nd row
+		place { control=NotificationHeader start=DatabaseDivider dir=down y=8 }
+		place { control=NotificationPlaylistNowPlayingCheckbox start=NotificationHeader dir=down }
+		place { control=VolumeDivider start=NotificationPlaylistNowPlayingCheckbox dir=down y=8 width=max }
+		//Logging
+		place { control=LoggingHeader x=271 y=300 }
+		place { control=LoggingCrawlingCheckbox start=LoggingHeader dir=down }
+
+		//Volume | 3rd row
+		place { control=VolumeHeader start=VolumeDivider dir=down y=8 }
+		place { control=VolumeSlider start=VolumeHeader height=24 width=180 dir=down }
+	}
+}

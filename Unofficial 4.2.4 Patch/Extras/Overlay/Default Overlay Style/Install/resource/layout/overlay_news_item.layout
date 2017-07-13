@@ -1,0 +1,37 @@
+"resource/layout/overlay_news_item.layout"
+{
+	controls
+	{
+		newsitem_title { controlname="URLLabel" style="title_label" }
+		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
+	}
+	colors
+	{
+	}
+	styles
+	{
+		title_label
+		{
+			textcolor="White"
+			font-style="normal"
+			font-family=basefont
+		}
+		title_label:hover
+		{
+			textcolor="White"
+			font-style="underline"
+		}
+
+		date_and_author
+		{
+			textcolor="White50"
+			font-size=14
+		}
+	}
+
+	layout
+	{
+		region { name=body width=max }
+		place { region=body controls=newsitem_title,newsitem_dateandauthor dir=down spacing=2 }
+	}
+}

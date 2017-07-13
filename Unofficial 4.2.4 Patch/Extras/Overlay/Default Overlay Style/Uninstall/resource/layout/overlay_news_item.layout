@@ -1,0 +1,33 @@
+"resource/layout/overlay_news_item.layout"
+{
+	controls
+	{
+		newsitem_title { controlname="URLLabel" style="title_label" }
+		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
+	}
+	colors
+	{
+	}
+	styles
+	{
+		title_label
+		{
+			textcolor="White35"
+			font-family=basefont
+			font-style="normal"
+		}
+		title_label:hover
+		{
+			textcolor="White"
+		}
+		//Hidden
+		date_and_author
+		{
+			textcolor="none"
+		}
+	}
+	layout
+	{
+		place { controls=newsitem_title,newsitem_dateandauthor dir=down }
+	}
+}

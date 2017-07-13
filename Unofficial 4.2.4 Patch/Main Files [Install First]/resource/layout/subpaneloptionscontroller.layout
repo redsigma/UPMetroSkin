@@ -1,0 +1,34 @@
+"resource/layout/subpaneloptionscontroller.layout"
+{
+	controls
+	{
+		TitleLabel { controlname=label labeltext="#Steam_SettingsControllerTitle" style=highlight }
+		DescriptionLabel	{ ControlName=Label labeltext="#Steam_SettingsControllerDescription" wrap=1  }
+		Divider1	{ ControlName=Divider }
+		DescriptionBindingLabel	{ ControlName=Label labeltext="#Steam_SettingsControllerBindingDescription" wrap=1  }
+	
+		GeneralSettingsButton { ControlName=Button labelText="#Steam_SettingsControllerGeneralSettings" 	command=EditGeneralSettings }
+		BigPictureConfigButton { ControlName=Button labelText="#Steam_SettingsControllerBigPictureConfig" 	command=EditBPConfig }		
+		DesktopConfigButton { ControlName=Button labelText="#Steam_SettingsControllerDesktopConfig" 	command=EditDesktopConfig }
+		GuideConfigButton { ControlName=Button labelText="#Steam_SettingsControllerGuideConfig" 	command=EditGuideConfig }				
+	}
+	colors
+	{
+	}
+	styles
+	{
+		checkbox
+		{
+			padding-top=0
+			padding-bottom=0
+		}
+	}
+	layout
+	{
+		place { controls=TitleLabel,DescriptionLabel dir=down width=max spacing=6 }
+		place { start=DescriptionLabel controls=GeneralSettingsButton height=28 width=240 dir=down margin-top=15 }
+
+		place { start=GeneralSettingsButton controls=Divider1,DescriptionBindingLabel dir=down margin-top=15 width=max spacing=6 }
+		place { start=DescriptionBindingLabel controls=BigPictureConfigButton,DesktopConfigButton,GuideConfigButton height=28 width=240 dir=down margin-top=15 spacing=6 }
+	}
+}

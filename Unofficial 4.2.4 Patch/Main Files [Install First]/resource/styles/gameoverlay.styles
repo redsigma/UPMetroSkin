@@ -1,0 +1,87 @@
+gameoverlay.styles
+{
+	include "resource/styles/steam.styles"
+
+	colors
+	{
+		//TextEntry="ClientBG"
+		//mostly_black "0 0 0 240"
+		mostly_black "0 0 0 0"
+		semi_black "0 0 0 128"
+		semi_gray "32 32 32 220"
+		Notifications.PanelPosition     "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
+	}
+
+	styles
+	{
+		Notification
+		{
+			font-family=basefont
+			font-size=16
+			font-size=14 [$OSX||$LINUX]
+			font-weight=400
+			bgcolor="transparent_notification"
+			render_bg {}
+			render {}
+		}
+
+		Focus
+		{
+			textcolor=White35
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
+			bgcolor="none"
+		}
+		Highlight
+		{
+			textcolor=White35
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
+			bgcolor="none"
+		}
+
+		detailsbox
+		{
+			bgcolor="OverlayPanels"
+		}
+		detailsboxtitle
+		{
+			textcolor="White"
+			font-family=semibold
+			font-style=uppercase
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
+			font-weight=400
+		}
+
+		//Remove Minimize/Maximize Buttons
+		"ToolWindow FrameMinimizeButton"
+		{
+			bgcolor="none"
+			render_bg{}
+			image=""
+		}
+		"ToolWindow FrameMaximizeButton"
+		{
+			bgcolor="none"
+			render_bg{}
+			image=""
+		}
+		"ToolWindow FrameRestoreButton"
+		{
+			bgcolor="none"
+			render_bg{}
+			image=""
+		}
+
+		//Switching to the Default Caption buttons since we have space now
+		"ToolWindow FrameCloseButton"
+		{
+			inset="9 14 0 0"
+			render_bg{}
+			image="graphics/metro/icons/caption/close"
+			minimum-width=40
+			minimum-height=38
+		}
+	}
+}

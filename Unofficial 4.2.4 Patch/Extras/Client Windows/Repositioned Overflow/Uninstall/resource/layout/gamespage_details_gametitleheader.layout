@@ -1,0 +1,34 @@
+"resource/layout/gamespage_details_gametitleheader.layout"
+{
+	controls
+	{
+		gametitlelabel { controlname="Label" style="headertextlarge" labeltext="" }
+		iconimage { controlname="ImagePanel" style="gameicon" }
+	}
+
+	colors
+	{
+		GameDetailsTitleHeader.HorizontalSpacing=8
+	}
+
+	styles
+	{
+		CDetailsGameTitleHeaderPanel
+		{
+			bgcolor="none"
+		}
+		headertextlarge
+		{
+			textcolor=White
+			font-family=light
+			font-weight=100
+			bgcolor="none"
+			padding-bottom=3
+		}
+	}
+
+	layout
+	{
+		place { control=iconimage,gametitlelabel align=left-center spacing=10 }
+	}
+}

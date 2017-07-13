@@ -1,0 +1,692 @@
+debian.styles
+{
+	colors [$OSX||$LINUX]
+	{
+		basefont="Open Sans"
+		semibold="Open Sans Semibold"
+		semilight="Open Sans Light"
+		light="Open Sans Light"
+	}
+	styles
+	{
+		//overlay_friendsdetails.layout
+		"COverlay_Details_Friends Button" [$OSX||$LINUX]
+		{
+			font-size=16
+		}
+		//controls.styles
+		Button [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		RadioButton [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		CheckButton [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		ComboBox [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		PageTab [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		TextEntry [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		EmoticonMenuItemStyle [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+///////////////////////////////////////////		
+
+		//FriendsDialog.res
+		"CFriendsDialog PageTab" [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		//steam.styles
+		//Header Text like those from the Settings
+		//overlay_achievementsdetails.layout overrides
+		highlight [$OSX||$LINUX]
+		{
+			font-size=22
+		}
+		
+		///////////////////////////////////////////
+		//======Groups Title dropmenu arrow======//
+		CFriendsListSectionAffordance [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		///////////////////////////////////////////////
+		//======FriendsPanel Friend/Groups Title======//
+		CFriendsListSectionHeader [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+
+
+		"CDialogSettings FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+		"CGamePropertiesDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		"CGameLaunchParametersDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+
+		"CContentManagmentDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"CSetNicknameDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"CFriendAliasesDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"CEditFriendsGroupsDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"CChooseBetaDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"CEditTagsDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		"COverlayBroadcastChatDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		"CAddShortcutDialog FrameTitle" [$OSX||$LINUX]
+		{
+			font-size=20 
+		}
+		//overlay_achievement_item.layout override 
+		Label [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		/////////////////////////////////////////////
+		//==List elements similar to the interior==//
+		ListPanel [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		/////////////////////////////////////////////////////////////////////////////////////////
+		//==Interior of List elements (fonts doesn't change on all of them.Look at ListPanel)==//
+		ListPanelInterior [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		
+		/////////////////////////////////////////
+		//======List View Mode Games Name======//
+		"GameColumn_BigText" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		///////////////////////////////////////////////
+		//======List View Mode List Header Text======//
+		ListPanelColumnheader [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		
+		//////////////////////////////////////////////////
+		//===Library Categories(Recent,Software...etc)==//
+		ListPanelSectionHeader [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		
+		/////////////////////////////////////////////////////////
+		//======Dropmenu buttons(inbox,filter button.....)=====//
+		MenuItem [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		///////////////////////////////////////////////////////
+		//===Main Buttons Hover Menus (top client buttons)===//
+		SuperNavMenuItem [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		Notification [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		Panel [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		RichText [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		////////////////////////
+		//======URL Links=====//
+		"RichText url" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		"CFriendPanel RichText URL" [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		
+		"RichText bold" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		"RichText emphasis" [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		////////////////////////////////
+		//======Friendspanel List=====//
+		SectionedListPanel [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		/////////////////////////////////
+		//======Mouse-hover panels=====//
+		tooltip_headline [$OSX||$LINUX]
+		{
+			font-size=15 
+		}
+		
+		/////////////////////////////////////////////////////
+		//======Select Directory Dialog's folders text=====//
+		TreeNodeText [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		
+		URLLabel [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		URLLabelSimple [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		
+		WrapPanel [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		
+		////////////////////////////////////////////////////////
+		//======Steam Developer Console debug texts(-dev)=====//
+		console_text_error [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		console_text [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		//////////////////////////////////
+		//======Other Person's Text=====//
+		friends_chat_text [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		////////////////////////
+		//======Your Text=====//
+		friends_chat_text_self [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		////////////////////////////////
+		//======Chat History Text=====//
+		friends_chat_history [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		//////////////////////////////////////
+		//======Voice Call/Trade/Invite=====//
+		friends_chat_event [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		///////////////////////////////////////////////
+		//====== Status Changes/Connection/Game=====//
+		friends_chat_bright_event [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		////////////////////////////////////
+		//======Links in chat=====//
+		friends_chat_url [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		////////////////////////////////////////////////
+		//======Everybody's Name while in-game=====//
+		friends_chat_name_ingame [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		friends_chat_self [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		////////////////////////////////////////////
+		//======Everybody's Name while online=====//
+		friends_chat_name [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		friends_chat_accountid [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		//////////////////////////////////////////////
+		//=="Never tell your password to...." Text==//
+		friends_chat_securitylink [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+///////////////////////////////////////////////////////////////
+
+		//phonereminderbar.layout   //
+		//////////////////////////////
+		//======Phone reminder======//
+		soft [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		
+		bright [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+////////////////////////////////////////
+
+		//friendnotificationoptionsdialog.res
+		"CFriendNotificationOptionsDialog Label" [$OSX||$LINUX]
+		{
+			font-size=13
+		}
+
+		//backupstartpage.res
+		//Backup/Restore Start Page
+		"CBackupStartPage Label" [$OSX||$LINUX]
+	    {
+			font-size=28
+	    }
+		//UseOfflineMode.res
+		"CUseOfflineModeDialog Label" [$OSX||$LINUX]
+		{
+			font-size=26 
+		}
+		//friendaliasesdialog.res
+		
+		//SettingsSubFriends.res
+		"CSettingsSubFriends Label" [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		//overlay_broadcastchat.layout
+		"COverlayBroadcastChatDialog label" [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+
+		"CSettingsSubFriends URLLabel" [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+////////////////////////////////////////
+
+		//friendpanel.layout
+		CFriendPanel [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		namestyle [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		nameInstanceStyle [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		statusStyle [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		controlPanelLinkStyle [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		controlPanelLinkStyle:hover [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		inviteLinkStyle [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+//////////////////////////////////////////
+
+		//gamespage_details_news_item.layout
+		title_label [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		
+		//settingssubmusic.layout
+		HeaderText [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+		DescriptionLabel [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+////////////////////////////////////////		
+		
+		//downloadsummarypanel.layout
+		throttleLabel [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		throttleValue [$OSX||$LINUX]
+		{
+			font-size=13 
+		}
+		bigtextNonUpper [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		bigtextlabel [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		bigtextHeader [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+		bigTextNumbers [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+////////////////////////////////////////		
+		
+		//uinavigatorpanel.layout
+		LibraryShow [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		NavLabel [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+		NavLabel2 [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		CUINavButton [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		CUINavButton2 [$OSX||$LINUX]
+		{
+			font-size=12 
+		}
+////////////////////////////////////////
+		
+		//musiclibrarypanel.layout
+		"CMusicPage_Details_Content NavLabel2" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		//gamespage_details_gametitleheader.layout
+		headertextlarge [$OSX||$LINUX]
+		{
+			font-size=32 
+		}
+
+		//steamrootdialog.layout
+		AccountBalanceStyle [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		inbox_button [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		inbox_button_active [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+//////////////////////////////////////////
+		//steamrootdialog_gamespage_details.layout
+		rightcolumnheadertext [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		rightcolumnheadertext-red [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		rightcolumnheadertext-green [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		rightcolumnheadertext-blue [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		rightcolumnlink [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+		rightcolumntag [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+////////////////////////////////////////		
+		
+		//gamespage_details_achevements_most_recent.layout
+		mostrecent_name [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		mostrecent_label [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+		mostrecent_unlockedsofar [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+////////////////////////////////////////		
+		
+		//gamespage_details_dlc.layout
+		"CGamesPage_Details_DLC bodycontent" [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		//gamespage_details_turnnotifications_item.layout
+		titlestyle [$OSX||$LINUX]
+		{ 
+			font-size=16 
+		}
+		messagestyle [$OSX||$LINUX]
+		{ 
+			font-size=12 
+		}
+////////////////////////////////////////
+
+		//gamespage_grid_loadfailed.layout
+		GamesGridPlaceholder [$OSX||$LINUX]
+		{
+			font-size=18 
+		}
+
+		//htmlfindbar.layout
+		FindEntry [$OSX||$LINUX]
+		{
+			font-size=14 
+		}
+
+		//appdownloadpanel.layout
+		label2 [$OSX||$LINUX]
+		{
+			font-size		"12" 
+		}
+		//Game Title
+		ModuleHeading [$OSX||$LINUX]
+		{
+			font-size		"14"
+		}
+		//Bottom Status
+		ModuleHeading2 [$OSX||$LINUX]
+		{
+			font-size		"14"
+		}
+//////////////////////////////////////////
+
+		//overlaytaskbar.layout
+		taskbar [$OSX||$LINUX]
+		{
+			font-size=20
+		}
+		taskbar:hover [$OSX||$LINUX]
+		{
+			font-size=20
+		}
+////////////////////////////////////////
+		//overlaydesktop_lores.layout overrides
+		//overlaydesktop.layout
+		sidemenu [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+		sidemenu:hover [$OSX||$LINUX]
+		{
+			font-size=22 
+		}
+		// The Clock
+		topbar [$OSX||$LINUX]
+		{
+			font-size=36 
+		}
+		// AM, PM
+		clocksuffix [$OSX||$LINUX]
+		{
+			font-size=20
+		}
+		// Session, Weeks,Total
+		timeStrings [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+////////////////////////////////////////
+
+		//overlay_guide_item.layout
+		name [$OSX||$LINUX]
+		{
+			font-size=16 
+		}
+
+		//settingssubstreaming_pin.layout
+		Description [$OSX||$LINUX]
+		{
+			font-size=16
+		}
+
+		//settingsdialog.layout
+		SettingsList [$OSX||$LINUX]
+		{
+			font-size=16
+		}
+
+		//screenshotmanager.layout
+		NoSelectionTitle [$OSX||$LINUX]
+		{
+			font-size=30
+		}
+		NoSelectionInstructions [$OSX||$LINUX]
+		{
+			font-size=14
+		}
+		gameselector [$OSX||$LINUX]
+		{
+			font-size=16
+		}
+//////////////////////////////////
+
+		//parentallockdialog.layout
+		//parentalunlockdialog.layout
+		Hey [$OSX||$LINUX]
+		{
+			font-size=22
+		}
+
+		//ChatRoomDlgFriend.res
+		"CChatRoomDlg label" [$OSX||$LINUX]
+		{
+			font-size=12
+		}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////				ASPECT OVERRIDES				////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//friendpanel.layout
+		namestyle [$OSX||$LINUX]
+		{
+			font-family=basefont
+			padding-bottom=2
+		}
+		nameInstanceStyle [$OSX||$LINUX]
+		{
+			font-family=basefont
+		}
+		statusStyle [$OSX||$LINUX]
+		{
+			padding-bottom=2
+		}
+////////////////////////////////////////////////////////
+		//steam.styles
+		ListPanelSectionHeader [$OSX||$LINUX]
+		{
+			font-family=semibold
+		}
+	}
+}
