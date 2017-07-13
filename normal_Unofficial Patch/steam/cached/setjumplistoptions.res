@@ -7,7 +7,6 @@
 			textcolor=white
 			font-family=semibold
 			font-style=uppercase
-			font-size=14
 			bgcolor="none"
 		}
 	}

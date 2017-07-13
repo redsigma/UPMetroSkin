@@ -6,14 +6,6 @@
 		TextEntry { controlname=TextEntry tabposition=1 maxchars=32 unicode=1 }
 		AddTagButton { controlname=Button style="button" tabposition=2 default=1 }
 	}
-	styles
-	{
-		Label
-		{
-			font-size=16 
-			font-size=12 [$OSX||$LINUX]
-		}
-	}
 	layout
 	{
 		place { control="TagChecks" x=8 y=50 width=max height=150 margin-top=8 margin-right=8 }

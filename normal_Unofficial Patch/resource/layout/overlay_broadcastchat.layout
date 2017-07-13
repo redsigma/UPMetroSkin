@@ -44,7 +44,6 @@
 	{
 		label
 		{
-			font-size=14
 			textcolor=White45
 			font-style=uppercase
 		}
@@ -96,7 +95,6 @@
 			inset-left=-5
 			inset-top=-5
 			textcolor=White45
-			font-size=24
 			bgcolor="none"
 			render_bg{}
 		}

@@ -592,5 +592,20 @@
 			minimum-width = 380
 			minimum-height = 420
 		}
+
+		CMusicLibraryPanel
+		{
+			bgcolor=ClientBG
+			render_bg
+			{
+				//0="fill( x0, y0, x1, y0+40, FrameBorder )"
+				//1="fill( x0, y0, x1, y0+39, Header_Dark )"
+				//2="fill( x0+7, y0+39, x0+255, y0+40, Black25 )"
+				//3="fill( x0+270, y0+39, x1-7, y0+40, Black25 )"
+				//4="fill( x0, y0+40, x0+262, y1, White08 )"
+			}
+			minimum-width = 400
+			minimum-height = 400
+		}
 	}
 }

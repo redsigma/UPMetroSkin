@@ -34,7 +34,6 @@
 			textcolor=OverlayClock
 			font-family=light
 			font-style=regular
-			font-size=48
 		}
 		//Close Button
 		OverlayURLLabel

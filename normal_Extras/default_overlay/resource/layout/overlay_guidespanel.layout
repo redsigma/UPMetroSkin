@@ -18,7 +18,6 @@
 		{
 			inset=2
 			font-family=basefont
-			font-size=13
 			font-weight=400
 		}
 		PreviewImage
@@ -32,10 +31,10 @@
 
 	layout
 	{
-		region { name=title margin=8 width=max height=100 }
+		region { name=title margin=16 width=max height=100 }
 		region { name=bottom y=165  margin-top=10 margin-bottom=10 margin-left=10 margin-right=10 width=max height=124 }
 		place { control="TitleText,NumGuidesText" region=title spacing=4 }
-		place { control=*guideitem y=40 width=max height=40 margin-left=8 margin-right=8 dir=down spacing=12 }
+		place { control=*guideitem y=40 width=max height=40 margin-left=16 margin-right=16 dir=down spacing=12 }
 
 		place { control="ViewGuides" region="bottom" align=bottom margin-bottom=4 }
 	}

@@ -12,9 +12,8 @@
 	{
 		CFriendPanel
 		{
-			inset="0 0 0 0"
+			inset="-20 0 0 0"
 			font-family=basefont
-			font-size=14
 			font-weight=400
 			textcolor="White45"
 		}
@@ -24,25 +23,23 @@
 		}
 		nameInstanceStyle
 		{
-			font-family=basefont
 			textcolor=White
-			font-size=14
+			font-family=basefont
 		}
 		menuButtonStyle
 		{
 			minimum-width=14
-			padding-top=3
+			padding-top=4
 			padding-bottom=4
 		}
 		inviteLinkStyle
 		{
-			font-size=14
-			textcolor=White
+			textcolor=White75
             font-style=regular
 		}
 		inviteLinkStyle:hover
 		{
-			textcolor=White
+			font-style=underline
 		}
 	}
 

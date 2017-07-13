@@ -54,30 +54,6 @@ resource/layout/overlaydashboard_lores.layout
 			bgcolor="OverlayBackground"
 		}
 
-		clocksuffix
-		{
-			textcolor=White
-			font-family=light
-			font-style=uppercase
-			font-size=64
-		}
-		timeStrings
-		{
-			textcolor=White
-			font-family=basefont
-			font-style=regular
-			font-size=24
-		}
-		URLLabel
-		{
-			textcolor="none"
-			bgcolor="none"
-		}
-		URLLabel:hover
-		{
-			bgcolor=OverlayHover05
-		}
-
 		//Hidden
 		hotkey
 		{
@@ -101,6 +77,16 @@ resource/layout/overlaydashboard_lores.layout
 			textcolor="none"
 			bgcolor="none"
 		}
+		//Close Button
+		URLLabel
+		{
+			textcolor="none"
+			bgcolor="none"
+		}
+		URLLabel:hover
+		{
+			bgcolor=OverlayHover05
+		}
 	}
 	layout
 	{
@@ -110,7 +96,7 @@ resource/layout/overlaydashboard_lores.layout
 		//Battery Indicator
 		region { name="powermeter" align=bottom width=max height=110 margin-bottom=45 }
 		place { control="PowerMeterDim" region=powermeter align=center width=200 }
-		place { control=CloseButton x=12 y=27 width=258 height=58 }
+		place { control=CloseButton x=20 y=27 width=210 height=60 }
 
 		//Hidden
 		place { control="BottomFadePanel,HotkeyExplain,gamename,TopFadePanel" width=1 align=right }

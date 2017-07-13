@@ -2,15 +2,10 @@
 {
 	colors
   {
-		basefont="Helvetica Neue" [$OSX]
-		semibold="Helvetica Neue" [$OSX]
-		semilight="Helvetica Neue" [$OSX]
-		light="Helvetica Neue" [$OSX]
-
 		none="0 0 0 0"
 		Focus_T="0 114 198 30.6" 
 		white03="0 0 0 7.65"
-		white05="0 0 0 12.75"
+		white05="0 0 0 23.75"
 		white08="0 0 0 20.4"
 		white10="0 0 0 25.5"
 		white12="0 0 0 51.6"
@@ -56,6 +51,7 @@
 		OverlaySideButtons_c="0 0 0 144.75"
 		OverlayHover05="255 255 255 12.75"
 		transparent_notification="250 250 250 229.5"
+		chatframe=White50
 		Separators="0 0 0 191.25"
 		TextEntry="207 207 207 255"
 		ScrollBar="86 86 86 255"
@@ -64,7 +60,7 @@
 		Grey2="48 48 48 255"
 		Grey3="75 75 75 255"
 		Header_Dark="255 255 255 255"
-		ClientBG="230 230 230 255"
+		ClientBG="229 229 229 255"
 		ClientBGTransparent="229 229 229 191.25"
 		Red="255 0 0 255"
 		W10close_Red_h="232 18 35 255"

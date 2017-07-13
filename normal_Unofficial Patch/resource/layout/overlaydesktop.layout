@@ -36,43 +36,42 @@
 			textcolor=OverlaySideButtons
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
 		sidemenu:hover
 		{
 			textcolor=OverlaySideButtons_h
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
+		// The Clock
 		topbar
 		{
 			textcolor=OverlayClock
 			font-family=light
 			font-style=regular
-			font-size=64
 		}
+		// AM, PM
 		clocksuffix
 		{
 			textcolor=OverlayClock
 			font-family=light
 			font-style=uppercase
-			font-size=64
 		}
+		// Session, Weeks,Total
 		timeStrings
 		{
 			textcolor=OverlayClock
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
 	}
 	layout
 	{
 		//Workshop
-		place { control="WorkshopButton" margin-left=60 x=30 y=8 height=115 }
+		place { control="WorkshopButton" margin-left=60 x=30 y=48 }
 
-		place { control="clock,clocksuffix" align=top-center y=20 }
+		place { control="clock" align=top-center y=20 }
+		place { control="clocksuffix" start=clock x=-10 }
 		place { control="SessionText,TwoWeeksText,ForeverText" align=top-center start=clock dir=down }
 
 		//Panel Height

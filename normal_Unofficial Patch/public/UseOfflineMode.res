@@ -160,7 +160,6 @@
 		{
 			textcolor=white
 			font-family=light
-			font-size=36
 			font-weight=300
 		}
 		"URLLabel"

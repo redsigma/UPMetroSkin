@@ -20,8 +20,9 @@
 		}
 		Label
 		{
-			font-size=18
 			textcolor=White35
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
 		}
 		name
 		{

@@ -21,7 +21,6 @@
 		infolabel
 		{
 			textcolor="White45"
-			font-size=16
 		}
 
 		viewallbutton

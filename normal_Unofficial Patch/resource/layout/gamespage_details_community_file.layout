@@ -32,7 +32,6 @@
 		communityfile_name
 		{
 			textcolor="White"
-			font-size=16
 		}
 		communityfile_image_border
 		{

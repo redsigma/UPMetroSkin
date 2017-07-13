@@ -40,10 +40,10 @@
 
 	layout
 	{
-		place { control="BroadcastDisabledLabel" margin-left=20 margin-right=20 margin-top=32 width=max }
-		place { start="BroadcastDisabledLabel" control="BroadcastDisabledSupportURL" dir=down margin-top=10 margin-right=20 width=max }
+		place { control="BroadcastDisabledLabel" margin-top=32 width=max }
+		place { start="BroadcastDisabledLabel" control="BroadcastDisabledSupportURL" dir=down margin-top=10 width=max }
 		
-		place { control="BroadcastStatusHeader" margin-left=20 margin-right=20 margin-top=20 }
+		place { control="BroadcastStatusHeader" margin-top=20 }
 		place { start="BroadcastStatusHeader" control="BroadcastStatus" dir=right margin-left=4 }
 		
 		place { start="BroadcastStatusHeader" margin-top=4 control="BroadcastHelpHeader" dir=down }
@@ -69,6 +69,6 @@
 		place { start="ShowChatCombo" control="IncludeDesktop,RecordSystemAudio,RecordMic,ShowDebugInfo,ShowReminder" dir=down margin-top=10 }	
 		place { start="RecordMic" control="ConfigMic" dir=right height=28  }	
 		
-		place { control="RequiresRestartLabel" margin-left=20 margin-right=20 width=max margin-top=500 }
+		place { control="RequiresRestartLabel" width=max margin-top=500 }
 	}
 }

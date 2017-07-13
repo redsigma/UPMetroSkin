@@ -34,9 +34,14 @@
 //======"We've come up empty...." text======//
 		EmptyDatabaseText
 		{
-			textcolor="White75"
-			font-size="24"
+			textcolor="White"
 			render_bg {}
+		}
+///////////////////////////////////////
+//======"... in settings." text======//
+		"CMusicPage_Details_Content RichText URL"
+		{
+			textcolor=White
 		}
 
 //////////////////////////////////////////////////
@@ -119,7 +124,7 @@
 		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1 dir=down }
 
 		//Empty List Text 
-		place	{ control=EmptyDatabaseText x=254 margin-left=8 width=max height=max }
+		place	{ control=EmptyDatabaseText y=1 width=max height=max margin-left=8 }
 		place	{ control=CrawlingText x=254 margin-left=8 width=max height=max }
 
 		//Header

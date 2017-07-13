@@ -41,13 +41,11 @@
 		{
 			textcolor=white
 			font-family=semilight
-			font-size=28
 			font-weight=300
 		}
 		DescriptionLabel
 		{
 			textcolor=white75
-			font-size=18
 		}
 	}
 	layout

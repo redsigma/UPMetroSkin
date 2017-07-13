@@ -3,10 +3,6 @@
 	//This controls the Streaming Notification When the Game Streaming Starts
 	styles
 	{
-		Label
-		{
-			font-size=17
-		}
 	}
 	layout
 	{

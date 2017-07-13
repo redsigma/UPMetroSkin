@@ -48,14 +48,12 @@
 			textcolor=OverlaySideButtons
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
 		taskbar:hover
 		{
 			textcolor=OverlaySideButtons_h
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
 
 		//Hidden

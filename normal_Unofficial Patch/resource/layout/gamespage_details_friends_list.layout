@@ -25,7 +25,6 @@
 		infolabel
 		{
 			textcolor="White"
-			font-size=16
 		}
 		ImagePanel
 		{

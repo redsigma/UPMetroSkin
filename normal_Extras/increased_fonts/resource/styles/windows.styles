@@ -1,0 +1,695 @@
+windows.styles
+{
+	styles
+	{
+		//overlay_friendsdetails.layout
+		"COverlay_Details_Friends Button" [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+		//controls.styles
+		Button [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		RadioButton [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		CheckButton [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		ComboBox [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		PageTab [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=15
+		}
+		TextEntry [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=19
+		}
+		EmoticonMenuItemStyle [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+/////////////////////////////////////////////////
+
+		//steam.styles
+		"CGamesListPanel" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		//Header Text like those from the Settings
+		highlight [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+
+		///////////////////////////////////////////
+		//======Groups Title dropmenu arrow======//
+		CFriendsListSectionAffordance [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		////////////////////////////////////////////////
+		//======FriendsPanel Friend/Groups Title======//
+		CFriendsListSectionHeader [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=16
+		}
+
+		"CDialogSettings FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CGamePropertiesDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		"CGameLaunchParametersDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+
+		"CContentManagmentDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CSetNicknameDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CFriendAliasesDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CEditFriendsGroupsDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CChooseBetaDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"CEditTagsDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		"COverlayBroadcastChatDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		"CAddShortcutDialog FrameTitle" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		//overlay_achievement_item.layout overrides
+		Label [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+
+		/////////////////////////////////////////////
+		//==List elements similar to the interior==//
+		ListPanel [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+		/////////////////////////////////////////////////////////////////////////////////////////
+		//==Interior of List elements (fonts doesn't change on all of them.Look at ListPanel)==//
+		ListPanelInterior [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		/////////////////////////////////////////
+		//======List View Mode Games Name======//
+		"GameColumn_BigText" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		///////////////////////////////////////////////
+		//======List View Mode List Header Text======//
+		ListPanelColumnheader [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+
+		//////////////////////////////////////////////////
+		//===Library Categories(Recent,Software...etc)==//
+		ListPanelSectionHeader [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		/////////////////////////////////////////////////////////
+		//======Dropmenu buttons(inbox,filter button.....)=====//
+		MenuItem [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+
+		///////////////////////////////////////////////////////
+		//===Main Buttons Hover Menus (top client buttons)===//
+		SuperNavMenuItem [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+
+		Notification [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		Panel [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		RichText [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////
+		//======URL Links=====//
+		"RichText url" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		"CFriendPanel RichText URL" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		"RichText bold" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		"RichText emphasis" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////////////
+		//======Friendspanel List=====//
+		SectionedListPanel [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		/////////////////////////////////
+		//======Mouse-hover panels=====//
+		tooltip_headline [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+
+		/////////////////////////////////////////////////////
+		//======Select Directory Dialog's folders text=====//
+		TreeNodeText [$WIN32||$WINDOWS]
+		{
+			font-size=13
+		}
+
+		URLLabel [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		URLLabelSimple [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+
+		WrapPanel [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+
+		////////////////////////////////////////////////////////
+		//======Steam Developer Console debug texts(-dev)=====//
+		console_text_error [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		console_text [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		//////////////////////////////////
+		//======Other Person's Text=====//
+		friends_chat_text [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////
+		//======Your Text=====//
+		friends_chat_text_self [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////////////
+		//======Chat History Text=====//
+		friends_chat_history [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		//////////////////////////////////////
+		//======Voice Call/Trade/Invite=====//
+		friends_chat_event [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		///////////////////////////////////////////////
+		//====== Status Changes/Connection/Game=====//
+		friends_chat_bright_event [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		////////////////////////////////////
+		//======Links in chat=====//
+		friends_chat_url [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////////////////////////////
+		//======Everybody's Name while in-game=====//
+		friends_chat_name_ingame [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		friends_chat_self [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		////////////////////////////////////////////
+		//======Everybody's Name while online=====//
+		friends_chat_name [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		friends_chat_accountid [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		//////////////////////////////////////////////
+		//=="Never tell your password to...." Text==//
+		friends_chat_securitylink [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+///////////////////////////////////////////////////////////////
+
+		//phonereminderbar.layout   //
+		//////////////////////////////
+		//======Phone reminder======//
+		soft [$WIN32||$WINDOWS]
+		{
+			font-size=15
+		}
+		bright [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+////////////////////////////////////////
+
+		//friendnotificationoptionsdialog.res
+		"CFriendNotificationOptionsDialog Label" [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+
+		//backupstartpage.res
+		//Backup/Restore Start Page	// linux check if it works
+		"CBackupStartPage Label" [$WIN32||$WINDOWS]
+	    {
+			font-size=32
+	    }
+		//UseOfflineMode.res
+		"CUseOfflineModeDialog Label" [$WIN32||$WINDOWS]
+		{
+			font-size=36
+		}
+
+		//SettingsSubFriends.res
+		"CSettingsSubFriends Label" [$WIN32||$WINDOWS]
+		{
+			font-size=20
+		}
+		"CSettingsSubFriends URLLabel" [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+////////////////////////////////////////
+
+		//overlay_broadcastchat.layout
+		"COverlayBroadcastChatDialog label" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+		//friendpanel.layout
+		CFriendPanel [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		namestyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		nameInstanceStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		statusStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		controlPanelLinkStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		controlPanelLinkStyle:hover [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		inviteLinkStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+//////////////////////////////////////////
+
+		//overlay_news_item.layout overrides
+		//gamespage_details_news_item.layout
+		title_label [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+		
+		//settingssubmusic.layout
+		HeaderText [$WIN32||$WINDOWS]
+		{
+			font-size=28
+		}
+		DescriptionLabel [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+////////////////////////////////////////
+
+		//downloadsummarypanel.layout
+		throttleLabel [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=16
+		}
+		throttleValue [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+		bigtextNonUpper [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=16
+		}
+		bigtextlabel [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=16
+		}
+		bigtextHeader [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+		bigTextNumbers [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+////////////////////////////////////////		
+		
+		//uinavigatorpanel.layout
+		LibraryShow [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+		NavLabel [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+		NavLabel2 [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+		CUINavButton [$WIN32||$WINDOWS]	//highdpi
+		{
+			font-size=36
+		}
+		CUINavButton2 [$WIN32||$WINDOWS]
+		{
+			font-size=14
+		}
+////////////////////////////////////////
+		
+		//musiclibrarypanel.layout
+		"CMusicPage_Details_Content NavLabel2" [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		//gamespage_details_gametitleheader.layout
+		headertextlarge [$WIN32||$WINDOWS]
+		{
+			font-size=42
+		}
+
+		//steamrootdialog.layout
+		AccountBalanceStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+
+		inbox_button [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+		inbox_button_active [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+//////////////////////////////////////////
+
+		//steamrootdialog_gamespage_details.layout
+		rightcolumnheadertext [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		rightcolumnheadertext-red [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		rightcolumnheadertext-green [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		rightcolumnheadertext-blue [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+		rightcolumnlink [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+		rightcolumntag [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=18
+		}
+////////////////////////////////////////
+
+		//gamespage_details_achevements_most_recent.layout
+		mostrecent_name [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+		mostrecent_label [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+		mostrecent_unlockedsofar [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+////////////////////////////////////////
+		//gamespage_details_dlc.layout
+		"CGamesPage_Details_DLC bodycontent" [$WIN32||$WINDOWS]
+		{
+			font-size=15
+		}
+
+		//gamespage_details_turnnotifications_item.layout
+		titlestyle [$WIN32||$WINDOWS]
+		{ 
+			font-size=18
+		}
+		messagestyle [$WIN32||$WINDOWS]
+		{ 
+			font-size=14
+		}
+////////////////////////////////////////
+
+		//gamespage_grid_loadfailed.layout
+		GamesGridPlaceholder [$WIN32||$WINDOWS]
+		{
+			font-size=20
+		}
+
+		//htmlfindbar.layout
+		FindEntry [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+
+		//appdownloadpanel.layout
+		label2 [$WIN32||$WINDOWS]
+		{
+			font-size		"14"
+		}
+		//Game Title
+		ModuleHeading [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size		"18"
+		}
+		//Bottom Status
+		ModuleHeading2 [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size		"18"
+		}
+/////////////////////////////////
+
+		//overlaytaskbar.layout
+		taskbar [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+		taskbar:hover [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+////////////////////////////////////////
+		//overlaydesktop_lores.layout overrides
+		//overlaydesktop.layout
+		sidemenu [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+		sidemenu:hover [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+		// The Clock
+		topbar [$WIN32||$WINDOWS]
+		{
+			font-size=64
+		}
+		// AM, PM
+		clocksuffix [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+		// Session, Weeks,Total
+		timeStrings [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+////////////////////////////////////////
+
+		//overlay_guide_item.layout
+		name [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+
+		//settingssubstreaming_pin.layout
+		Description [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+
+		//settingsdialog.layout
+		SettingsList [$WIN32||$WINDOWS]
+		{
+			font-size=18
+		}
+
+		//screenshotmanager.layout
+		NoSelectionTitle [$WIN32||$WINDOWS]
+		{
+			font-size=32
+		}
+		NoSelectionInstructions [$WIN32||$WINDOWS]
+		{
+			font-size=16
+		}
+		gameselector [$WIN32||$WINDOWS]
+		{
+			font-size=20
+		}
+//////////////////////////////////
+
+		//parentallockdialog.layout
+		Hey [$WIN32||$WINDOWS]
+		{
+			font-size=24
+		}
+
+		//ChatRoomDlgFriend.res
+		"CChatRoomDlg label" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-size=20
+		}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////				Aspect Overrides				////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//steamrootdialog.layout
+		CSteamRootDialog [$WIN32||$WINDOWS] //highdpi
+		{
+			minimum-width=1200
+		}
+		//steam.styles
+		"CGamesListPanel" [$WIN32||$WINDOWS] //highdpi
+		{
+			font-family=semibold
+		}
+		inbox_button_active [$WIN32||$WINDOWS] //highdpi
+		{
+			font-family=semibold
+		}
+/////////////////////////////////////////////////////////
+
+		//friendpanel.layout
+		namestyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-family=semibold
+		}
+		nameInstanceStyle [$WIN32||$WINDOWS] //highdpi
+		{
+			font-family=semibold
+		}
+		statusStyle [$WIN32||$WINDOWS]
+		{
+			padding-bottom=0
+		}
+////////////////////////////////////////////////////////
+		//steam.styles
+		ListPanelSectionHeader [$WIN32||$WINDOWS] //highdpi
+		{
+			font-family=basefont
+		}
+	}
+}

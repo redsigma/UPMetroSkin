@@ -71,7 +71,6 @@
 		{
 			textcolor=White45
 			font-style=uppercase
-			font-size=14
 		}
 
 		controlbutton

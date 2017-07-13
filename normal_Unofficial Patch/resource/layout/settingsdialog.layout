@@ -24,29 +24,12 @@
 		{
 			font-family=basefont
 			inset-top=80
-			font-size=18
 			padding-left=16
 			bgcolor="none"
 		}
 		ListPanel
 		{
 			selectedbgcolor=White24
-		}
-
-		ListPanelSectionHeader
-		{
-			font-size=24
-			font-family=semilight
-			textcolor="none"
-			bgcolor="none"
-			render
-			{
-				0="fill(x0,y0,x1,y1,Header_Dark)"
-			}
-			render_bg{}
-			padding-bottom=0
-			padding-top=0
-			inset=0
 		}
 	}
 	layout

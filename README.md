@@ -1,2 +1,2 @@
-<!--- Unofficial Patch [Version 8.0] ---> 
+<!--- Unofficial Patch [Version 9.0] ---> 
 # MetroSkin Installer

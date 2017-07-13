@@ -2,11 +2,6 @@
 {
 	colors
 	{
-		basefont="Helvetica Neue" [$OSX]
-		semibold="Helvetica Neue" [$OSX]
-		semilight="Helvetica Neue" [$OSX]
-		light="Helvetica Neue" [$OSX]
-
 		none="0 0 0 0"
 		Focus_T="0 114 198 30.6" 
 		white03="255 255 255 7.65"
@@ -56,6 +51,7 @@
 		OverlaySideButtons_c="255 255 255 144.75"
 		OverlayHover05="255 255 255 12.75"
 		transparent_notification="5 5 5 229.5"
+		chatframe=White50
 		TextEntry="0 14 45 255"
 		ScrollBar="86 86 86 255"
 		ScrollBarH="110 110 110 255"

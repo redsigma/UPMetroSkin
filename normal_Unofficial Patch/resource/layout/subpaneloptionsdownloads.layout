@@ -35,21 +35,9 @@
 
 	styles
 	{
-		highlight
-		{
-			font-size=28
-			font-family=semilight
-			font-weight=300
-			textcolor=white
-		}
 		Combobox
 		{
 			minimum-height=24
-		}
-		padded
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
 		}
 	}
 

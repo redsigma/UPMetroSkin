@@ -11,26 +11,6 @@
 		{
 			padding-left=4
 		}
-		"CAddShortcutDialog FrameTitle"
-		{
-			textcolor="White"
-			font-family="semilight"
-			font-weight=300
-			font-size=28
-			render_bg
-			{
-				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
-			}
-			padding-bottom=36
-			padding-left=11
-			padding-right=90
-			minimum-height=76
-		}
-		Label
-		{
-			textcolor=white
-		}
 	}
 
 	layout

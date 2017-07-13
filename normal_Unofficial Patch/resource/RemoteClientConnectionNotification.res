@@ -3,10 +3,6 @@
 	//This controls the Remote Streaming Notification
 	styles
 	{
-		Label
-		{
-			font-size=18
-		}
 	}
 	layout
 	{

@@ -13,10 +13,21 @@
 			render_bg
 			{
 				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
-				2="fill( x0, y0, x1, y0+40, Header_Dark)"
+				2="fill( x0, y0+1, x1, y0+39, Header_Dark)"
 			}
 		}
-
+		ToolWindow:framefocus
+		{
+			render_bg
+			{
+				1="fill( x0, y0+1, x1, y0+39, Header_Dark)"
+				2="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				3="fill( x0, y0+1, x1, y0+2, chatframe )"		// Top
+				4="fill( x0, y1-2, x1, y1-1, chatframe )"		// Bottom
+				5="fill( x0+1, y0+1, x0+2, y1-1, chatframe )"	// Left
+				6="fill( x1-2, y0+1, x1-1, y1-1, chatframe )"	// Right
+			}
+		}
 		CChatTabPanel
 		{
 			render_bg
@@ -66,8 +77,7 @@
 	layout
 	{
 		//Original
-		place { control="frame_minimize,frame_maximize,frame_close" align=right width=28 height=28 y=1 margin-right=1 }
-		place { control="frame_captiongrip" height=40 width=max }
-		place { control="ToolWindowSheet" x=0 y=17 height=max width=max margin-top=-5 }
+		place { control="frame_minimize,frame_maximize,frame_close" align=right width=28 height=28 y=1 margin-top=1  margin-right=2 }
+		place { control="ToolWindowSheet" x=0 y=12 height=max width=max margin=2 }
 	}
 }

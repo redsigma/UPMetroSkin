@@ -4,13 +4,14 @@
 	{
 		text=""
 		text = [$OSX]	"#SteamRootAccount"
-		SkinVersion			{	text="Metro For Steam - 4.2.4 (Unofficial Patch - 8)"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907/" }
+		SkinVersion			{	text="Metro For Steam - 4.2.4 (Unofficial Patch - 9)"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907/" }
 		Website			{	text="Official Website"		shellcmd="steam://openurl/http://metroforsteam.com/" }
 		Group			{	text="Steam Community Group"		shellcmd="steam://openurl/http://steamcommunity.com/groups/metroforsteam" }
 		Donate			{	text="Donate via Patreon or PayPal!"		shellcmd="steam://openurl/http://metroforsteam.com/#donate" }
 		Divider {}
 		CheckForUpdates	{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
+		NewForYou		{	text="#SteamUI_GameProperties_UpdateNews"		shellcmd="steam://open/newforyou" }
 		Divider {}
 		ChangeUser		{	text="#steam_menu_changeuser"				command="ChangeUser" }
 		MyAccount		{	text="#steam_menu_account_details" shellcmd="steam://url/StoreAccount/" }		

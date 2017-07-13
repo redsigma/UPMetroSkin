@@ -14,7 +14,6 @@
 		{
 			textcolor="White35"
 			font-family=basefont
-			font-size="16"
 			font-style="normal"
 		}
 		title_label:hover

@@ -28,10 +28,6 @@
 			font-size=15
 			render_bg {}
 		}
-		"RichText url"
-		{
-			font-size=15
-		}
 	}
 
 	layout

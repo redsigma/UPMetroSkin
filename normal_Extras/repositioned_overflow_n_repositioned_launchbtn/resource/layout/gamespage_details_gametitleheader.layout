@@ -23,8 +23,6 @@
 			inset-bottom=4
 			textcolor=White
 			font-family=light
-			font-size=42
-			font-size=38 [$OSX||$LINUX]
 			font-weight=100
 			bgcolor="none"
 		}

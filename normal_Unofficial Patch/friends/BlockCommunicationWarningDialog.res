@@ -111,15 +111,13 @@
 		"textAlignment"		"north-west"
 		"wrap"		"1"
 	}
-	
 	layout
 	{
-		place { control="Label3" margin=16 y=40 width=max }
-
+		region { name=top align=center width=max height=max margin-top=44 margin-bottom=44 margin-left=16 margin-right=16 }
+		place { control="Label3" y=8 region=top width=max }
 		//Bottom
 		region { name=bottom align=bottom height=44 margin=8 }
-		region { name=remember align=bottom height=84 margin=8 }
-		place { control="DontShowAgain" region=remember x=8 }
+		place { control="DontShowAgain" region=bottom align=left x=8 }
 		place {	control="ContinueButton,CancelButton" region=bottom align=right spacing=8 height=28 }
 	}
 }

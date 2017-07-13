@@ -53,11 +53,6 @@
 
 	styles
 	{
-		Label
-		{
-			font-size=16 
-			font-size=12 [$OSX||$LINUX]
-		}
 		//Hidden
 		Button
 		{

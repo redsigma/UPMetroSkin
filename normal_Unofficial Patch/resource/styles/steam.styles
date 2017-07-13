@@ -1,13 +1,15 @@
 steam.styles
 {
 	include "custom.styles"
+
+	include "resource/styles/windows.styles" [$WIN32||$WINDOWS]
+	include "resource/styles/debian.styles" [$OSX||$LINUX]
+
 	include "controls.styles"
 	include "UI.styles"
-	include "reset.styles"
-	include "settings.styles"
 	include "caption.styles"
 	include "colors.styles"
-
+	include "settings.styles"
 	colors
 	{
 		ScrollBar.Wide "16"
@@ -21,132 +23,15 @@ steam.styles
 		}
 		Slider:focus
 		{
-			textcolor="White50"  
+			textcolor="White50"
 		}
 
-		ScrollBarButton.up
-		{
-			inset-left=0
-			bgcolor="none"
-			render_bg{}
-			image=graphics/up_arrow
-			padding-left=-1
-			padding-bottom=2
-		}
-		ScrollBarButton.up:hover
-		{
-			render_bg{}
-			image=graphics/up_arrow_h
-		}
-
-		ScrollBarButton.down
-		{
-			inset-left=0
-			bgcolor="none"
-			render_bg{}
-			image=graphics/down_arrow
-			padding-left=-1
-			padding-top=3
-		}
-		ScrollBarButton.down:hover
-		{
-			render_bg{}
-			image=graphics/down_arrow_h
-		}
-
-		ScrollBarButton.left
-		{
-			bgcolor="none"
-			render_bg{}
-			image=graphics/left_arrow
-		}
-		ScrollBarButton.left:hover
-		{
-			render_bg{}
-			image=graphics/left_arrow_h
-		}
-
-		ScrollBarButton.right
-		{
-			bgcolor="none"
-			render_bg{}
-			image=graphics/right_arrow
-		}
-		ScrollBarButton.right:hover
-		{
-			render_bg{}
-			image=graphics/right_arrow_h
-		}
-
-		ScrollBarHandle  //vertical scrollbar thumb
-		{
-			bgcolor="none"
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White05 )"
-			}
-		}
-		"ScrollBarHandle:hover"
-		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
-			}
-		}
-		"ScrollBarHandle:selected"
-		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1-1, y1, White10 )"
-			}
-		}
-
-		"SliderHoriz"  //horizontal scrollbar thumb
-		{
-			render_bg 
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White05 )"
-			}
-		}
-		"SliderHoriz:hover"
-		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
-			}
-		}
-		"SliderHoriz:selected"
-		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
-			}
-		}
-
-		ScrollBarSlider // gutter
-		{
-			bgcolor="none"
-			render_bg{}
-			render{}
-		}
-		ScrollBarSliderHoriz // gutter
-		{
-			bgcolor="none"
-			render_bg{}
-			render{}
-		}
-
+////////////////////////////////////////////////////////////////////////////////////////////////
+//======This controls some header texts from Settings(Family, In-Game, Downloads)=============//
 		highlight
 		{
 			textcolor=white
 			font-family=semilight
-			font-size=28
 			font-weight=300
 		}
 		CSystemInfoDialog
@@ -300,23 +185,22 @@ steam.styles
 
 ///////////////////////////////////////////
 //======Groups Title dropmenu arrow======//
+//this is kinda useless cuz of the downarrow above but steam kept it too so why not)
 		CFriendsListSectionAffordance
 		{
 			inset="0 0 0 0"
 			textcolor="White50"
-			font-size=16
 			font-weight=400
 		}
 
 ///////////////////////////////////////////////
-//======Friends Panel Tags/Groups Title======//
+//======FriendsPanel Friend/Groups Title======//
 		CFriendsListSectionHeader
 		{
 			inset=0
 			textcolor="White"
 			font-family=semibold
 			font-style="uppercase"
-			font-size=14
 			render_bg {}
 		}
 
@@ -326,6 +210,7 @@ steam.styles
 			textcolor="White50"
 			font-family=basefont
 			font-size=14
+
 			font-weight=400
 		}
 		CFriendPanel:hover
@@ -334,103 +219,6 @@ steam.styles
 			{
 				1="fill( x0-3, y0, x1-1, y1, white05 )"  // top
 			}
-		}
-
-		RadioButton
-		{
-			textcolor="White50"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			bgcolor="none"
-			render_bg {}
-			image="graphics/radio_d"
-		}
-		RadioButton:hover
-		{
-			render_bg {}
-			image="graphics/radio_h"
-		}
-		RadioButton:selected
-		{
-			render_bg {}
-			image="graphics/radio_s"
-		}
-
-		RadioButtonList
-		{
-			inset="-2 0 0 0"
-			bgcolor="ClientBG"
-			render_bg
-			{
-				// lines around
-				1="fill( x0, y0, x1, y0+1, White10 )"  // top
-				2="fill( x0, y1-1, x1, y1, White10 )"  // bottom
-				3="fill( x0-1, y0, x0, y1, White10 )"  // left
-				4="fill( x1, y0, x1+1, y1, White10 )"  // right
-			}
-		}
-
-		CheckButton
-		{
-			textcolor="White50"
-			font-family=basefont
-			font-size=16
-			font-weight=400
-			image=graphics/check_d
-		}
-		CheckButton:hover
-		{
-			image=graphics/check_h
-		}
-		CheckButton:selected
-		{
-			image=graphics/check_s
-		}
-		CheckButton:selected:hover
-		{
-			image=graphics/check_sh
-		}
-		CheckButton:disabled
-		{
-			textcolor="White24"
-			bgcolor="none"
-			image=graphics/check_d
-		}
-		CheckButton:selected:disabled
-		{
-			textcolor="White24"
-			bgcolor="none"
-			image=graphics/check_s
-		}
-
-		CheckButtonList
-		{
-			inset="0 1 1 1"
-			textcolor="White"
-			bgcolor="none"
-			render_bg
-			{
-				// lines around
-				1="fill( x0, y0, x1, y0+1, White10 )"  // top
-				2="fill( x0, y1-1, x1, y1, White10 )"  // bottom
-				3="fill( x0, y0+1, x0+1, y1-1, White10 )"  // left
-				4="fill( x1-1, y0+1, x1, y1-1, White10 )"  // right
-			}
-		}
-
-		CheckButtonList:scrollbar
-		{
-			inset="1 1 1 1"
-			textcolor="White"
-			bgcolor="none"
-			render_bg {}
-			render {}
-		}
-
-		"CheckbuttonList CheckButton"
-		{
-			textcolor=White
 		}
 
 		"ComboBox MenuItem"
@@ -447,55 +235,6 @@ steam.styles
 			}
 		}
 
-		ComboBox
-		{
-			inset="3 -1"
-			textcolor="White"
-			selectedtextcolor="White"
-			font-family=basefont
-			font-size=16
-			bgcolor="none"
-			render_bg
-			{
-				1="fill(x0,y0,x1,y0+1,white12)"  // top
-				2="fill(x0,y1-1,x1,y1,white12)"  // bottom
-				3="fill(x0,y0+1,x0+1,y1-1,white12)"  // left
-				4="fill(x1-1,y0+1,x1,y1-1,white12)"  // right
-			}
-		}
-		ComboBox:hover
-		{
-			render_bg
-			{
-				1="fill(x0,y0,x1,y0+1,white24)"  // top
-				2="fill(x0,y1-1,x1,y1,white24)"  // bottom
-				3="fill(x0,y0+1,x0+1,y1-1,white24)"  // left
-				4="fill(x1-1,y0+1,x1,y1-1,white24)"  // right
-			}
-		}
-		ComboBox:disabled
-		{
-			textcolor="White50"
-			render_bg
-			{
-				1="fill(x0,y0,x1,y0+1,white12)"  // top
-				2="fill(x0,y1-1,x1,y1,white12)"  // bottom
-				3="fill(x0,y0+1,x0+1,y1-1,white12)"  // left
-				4="fill(x1-1,y0+1,x1,y1-1,white12)"  // right
-			}
-		}
-
-		ComboBoxButton
-		{
-			bgcolor="none"
-			image="graphics/icon_down_default"
-			padding-left=2
-		}
-		ComboBoxButton:hover
-		{
-			image="graphics/icon_down_hover"
-		}
-
 		Divider
 		{
 			bgcolor="none"
@@ -504,7 +243,6 @@ steam.styles
 				1="fill( x0, y1-1, x1+1, y1, White10 )"
 			}
 		}
-
 		FrameBRGripPanel
 		{
 			image=graphics/resizer //kinda empty
@@ -529,8 +267,6 @@ steam.styles
 			textcolor="White"
 			font-family="semilight"
 			font-weight=300
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
 			render_bg{}
 			padding-left=10
 			minimum-height=105
@@ -539,12 +275,25 @@ steam.styles
 		{
 			textcolor=White
 			font-family=basefont
-			font-size=16
-			font-size=12 [$OSX||$LINUX]
 			render_bg{}
 			padding-left=16
 			padding-right=100
 			minimum-height=1150
+		}
+		"CGameLaunchParametersDialog FrameTitle"
+		{
+			textcolor="White"
+			font-family="semilight"
+			font-weight=300
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Header_Dark)"
+				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+			}
+			padding-bottom=28
+			padding-left=8
+			padding-right=80
+			minimum-height=76
 		}
 		"CUninstallGamesDialog FrameTitle"
 		{
@@ -563,13 +312,41 @@ steam.styles
 			textcolor="none"
 			minimum-height=54
 		}
+		"CContentManagmentDialog FrameTitle"
+		{
+			textcolor="White"
+			padding-left=10
+			font-family="semilight"
+			font-weight=300
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Header_Dark)"
+				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+			}
+			padding-bottom=33
+			minimum-height=76
+		}
+		"CSetNicknameDialog FrameTitle"
+		{
+			textcolor="White"
+			padding-left=8
+			padding-right=80
+			font-family="semilight"
+			font-weight=300
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Header_Dark)"
+				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+			}
+			padding-bottom=43
+			minimum-height=91
+		}
+
 		"CFriendAliasesDialog FrameTitle"
 		{
 			textcolor="White"
 			font-family="semilight"
 			font-weight=300
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
@@ -584,8 +361,6 @@ steam.styles
 		{
 			textcolor="White"
 			font-family="semilight"
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
 			font-weight=300
 			render_bg
 			{
@@ -601,8 +376,6 @@ steam.styles
 			padding-left=10
 			font-family="semilight"
 			font-weight=300
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
@@ -614,9 +387,6 @@ steam.styles
 		{
 			textcolor="White"
 			font-family="semilight"
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
-			font-weight=300
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
@@ -629,8 +399,6 @@ steam.styles
 		{
 			textcolor=White
 			font-family=basefont
-			font-size=16
-			font-size=12 [$OSX||$LINUX]
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
@@ -639,48 +407,22 @@ steam.styles
 			padding-left=2
 			minimum-height=26
 		}
-//////////////////////////////
-//======OS X Overrides======//
-		"CSubPanelOptionsFamily Label"
+		"CAddShortcutDialog FrameTitle"
 		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
+			textcolor="White"
+			font-family="semilight"
+			font-weight=300
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, Header_Dark)"
+				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+			}
+			padding-bottom=36
+			padding-left=11
+			padding-right=90
+			minimum-height=76
 		}
-		"CSettingsSubInGame Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSettingsSubStreaming Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSubPanelOptionsInterface Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSubPanelOptionsDownloads Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSettingsSubVoice Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSettingsSubBroadcast Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
-		"CSettingsSubBrowser Label"
-		{
-			font-size=16
-			font-size=14 [$OSX||$LINUX]
-		}
+
 		GraphPanel
 		{
 			textcolor=Focus
@@ -714,19 +456,18 @@ steam.styles
 			textcolor="White50"
 			selectedtextcolor="White50"
 			font-family=basefont
-			font-size=16
-			font-size=12 [$OSX||$LINUX]
 			font-weight=400
 			bgcolor="none"
 		}
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+//======This is controls the list elements similar to the interior one but more usefull======//
 		ListPanel
 		{
 			textcolor="White50"
 			selectedtextcolor="White"
 			shadowtextcolor="White50"	// the color of disabled line items
 			font-family=basefont
-			font-size=16
 			font-weight=400
 			padding-left=8
 			selectedbgcolor="Focus"
@@ -822,20 +563,22 @@ steam.styles
 			textcolor="Focus"
 		}
 
+/////////////////////////////////////////
+//======List View Mode Games Name======//
 		"GameColumn_BigText"
 		{
 			textcolor="white"
 			font-family=basefont
-			font-size=16
 			font-weight=400
 		}
 
+///////////////////////////////////////////////
+//======List View Mode List Header Text======//
 		ListPanelColumnheader
 		{
 			textcolor="White"
 			font-family=semibold
 			font-style="Uppercase"
-			font-size=14
 			bgcolor="White10"
 			render_bg{}
 		}
@@ -890,12 +633,11 @@ steam.styles
 			}
 		}
 
-/////////////////////////////////////////////////////////
-//======This controls the interior of List elements=====//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//======This controls the interior of List elements (though the fonts doesn't change on all of them.Better look at ListPanel)=====//
 		ListPanelInterior
 		{
 			textcolor="White"
-			font-size=16
 			bgcolor="none"
 		}
 
@@ -903,10 +645,8 @@ steam.styles
 //======Library Categories(Recent,Software...etc)=====//
 		ListPanelSectionHeader
 		{
-			textcolor="Focus"
-			font-family=semibold
+			textcolor=White
 			font-style=uppercase
-			font-size="18"
 			font-weight=400
 			bgcolor="none"
 			render_bg
@@ -955,6 +695,8 @@ steam.styles
 			bgcolor="none"
 		}
 
+//////////////////////////////////////////////////////////////////////////////////////
+//======This controls the dropmenu buttons appearance(inbox,filter button.....)=====//
 		Menu
 		{
 			inset="0 8 0 8"
@@ -971,11 +713,12 @@ steam.styles
 			corner_rounding=0
 		}
 
+////////////////////////////////////////////////////////////////////////////
+//======This controls the dropmenu buttons (inbox,filter button.....)=====//
 		MenuItem
 		{
 			textcolor="White"
 			font-family=basefont
-			font-size=16
 		}
 		MenuItem:hover
 		{
@@ -1003,6 +746,8 @@ steam.styles
 			bgcolor="none"
 		}
 
+/////////////////////////////////////////////////////////////////////////////////
+//======This controls the hovermenu buttons appearance(top client buttons)=====//
 		SuperNavMenu
 		{
 			inset="0 8 0 8"
@@ -1017,11 +762,12 @@ steam.styles
 			render {}
 		}
 
+///////////////////////////////////////////////////////////////////////
+//======This controls the hovermenu buttons (top client buttons)=====//
 		SuperNavMenuItem
 		{
 			textcolor=white
 			font-style="regular"
-			font-size=16
 			bgcolor="none"
 			padding=0
 		}
@@ -1076,7 +822,6 @@ steam.styles
 		Notification
 		{
 			font-family=basefont
-			font-size=16
 			font-weight=400
 			bgcolor="ClientBG"
 			render_bg {}
@@ -1094,41 +839,6 @@ steam.styles
 			render_bg {}
 		}
 
-		PageTab
-		{
-			textcolor="White50"
-			font-family=semibold
-			font-size=13
-			bgcolor="none"
-			render_bg {}
-		}
-		PageTab:hover
-		{
-			textcolor="White75"
-			bgcolor="none"
-			render_bg
-			{
-				1="fill(x0+1,y0,x1-1,y1-1,white05)"
-			}
-		}
-		PageTab:selected
-		{
-			textcolor="White"
-			bgcolor="none"
-			render_bg
-			{
-				1="fill(x0+1,y0,x1-1,y1-1,white05)"
-				2="fill(x0+1, y1-1, x1-1, y1, focus)"
-			}
-			render{}
-		}
-
-		"PageDragFrame PageTab"
-		{
-			font-style=""
-			font-size=14
-		}
-	
 	    "ToolWindow PageTab"
 		{
 			minimum-width=80
@@ -1176,7 +886,6 @@ steam.styles
 		{
 			textcolor="white"
 			font-family=basefont
-			font-size=16
 			font-weight=400
 			bgcolor="none"
 		}
@@ -1205,50 +914,51 @@ steam.styles
 			textcolor="White"
 			selectedtextcolor="White"
 			font-family=basefont
-			font-size=16
 			font-weight=400
 			selectedbgcolor="Focus"
 			render_bg {}
 		}
-
 		RichTextInterior
 		{
 			bgcolor="none"
 		}
 
+/////////////////////////////////////////////////////////////////////////////////////////////////
+//======This controls the urls from rich text areas (News Panel, Some text from Music....)=====//
 		"RichText url"
 		{
 			textcolor="White50"
 			selectedtextcolor="White50"
 			font-style=underline
-			font-size=16
+			selectedbgcolor="Focus"
 		}
-
 		"RichText url:hover"
 		{
 			textcolor="White75"
 		}
-
 		"CFriendPanel RichText URL"
 		{
 			textcolor="white"
 			font-style=underline
-			font-size=14
 		}
 
 		// style of bold White in a rich White control
 		"RichText bold"
 		{
+			textcolor="White"
 			font-family=semibold
-			font-size=16
+			selectedbgcolor="Focus"
 		}
-
 		"RichText emphasis"
 		{
+			textcolor="White"
+			selectedtextcolor="White75"
 			font-style=italic
-			font-size=16
+			selectedbgcolor="Focus"
 		}
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//======This affects the friendspanel from what it seems, not sure what the font does though=====//
 		SectionedListPanel
 		{
 			inset="0 0 0 0"
@@ -1256,13 +966,11 @@ steam.styles
 			textcolor="white"
 			selectedtextcolor="White"
 			font-family=basefont
-			font-size=16
 			font-weight=400
 			selectedbgcolor="Focus"
 			bgcolor="none"
 			render_bg {}
 		}
-
 		"CFriendsDialog CFriendPanel"
 		{
 			inset-left=0
@@ -1291,6 +999,8 @@ steam.styles
 			font-style=uppercase
 		}
 
+////////////////////////////////////////////////////////////////////////////
+//======Downloads Button Styles (kept them cuz default steam did too)=====//
 		StatusLabel
 		{
 			textcolor="White50"
@@ -1321,6 +1031,8 @@ steam.styles
 			bgcolor="none"
 		}
 
+////////////////////////////////////////////////
+//======This controls the hovering window=====//
 		"TooltipWindow"
 		{
 			bgcolor=ClientBG
@@ -1334,11 +1046,12 @@ steam.styles
 				4="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
 			}
 		}
+////////////////////////////////////////////////////////
+//======This controls the hovering window's texts=====//
 		tooltip_headline
 		{
 			textcolor="White"
 			font-family=basefont
-			font-size=18
 			padding-left=8
 			padding-right=8
 			padding-top=2
@@ -1371,7 +1084,7 @@ steam.styles
 		{
 			bgcolor="none"
 		}
-		
+
 /////////////////////////////////////////////////////
 //======Select Directory Dialog's folders text=====//
 		TreeNodeText
@@ -1379,13 +1092,11 @@ steam.styles
 			textcolor="white"
 			selectedtextcolor="White"
 			font-family=basefont
-			font-size=13
 			selectedbgcolor="Focus"
 			bgcolor="none"
 			render_bg {}
 			render {}
 		}
-
 		TreeView
 		{
 			render_bg{}
@@ -1397,8 +1108,6 @@ steam.styles
 			selectedtextcolor="white"
 			font-family=basefont
 			font-style=underline
-			font-size=16
-			font-size=12 [$OSX||$LINUX]
 			font-weight=400
 			bgcolor="none"
 		}
@@ -1414,7 +1123,6 @@ steam.styles
 			selectedtextcolor="white"
 			font-family=basefont
 			font-style=regular
-			font-size=14
 			font-weight=400
 			bgcolor="none"
 		}
@@ -1429,24 +1137,20 @@ steam.styles
 			inset-left=0
 			image="steam/cached/fav_remove"
 		}
-
 		CGamesListFavoritesToggle
 		{
 			inset-left=3
 			image="steam/cached/fav_addTo"
 			minimum-width=27
 		}
-
 		CGamesListFavoritesToggle:hover
 		{
 			image="steam/cached/fav_addTo_ovr"
 		}
-
 		CGamesListFavoritesToggle:selected
 		{
 			image="steam/cached/fav_remove"
 		}
-
 		CGamesListFavoritesToggle:selected:hover
 		{
 			image="steam/cached/fav_remove_ovr"
@@ -1458,7 +1162,6 @@ steam.styles
 			textcolor="white"
 			selectedtextcolor="White"
 			font-family=basefont
-			font-size=14
 			font-weight=400
 			selectedbgcolor="Focus"
 			bgcolor="none"
@@ -1760,7 +1463,6 @@ steam.styles
 		{
 			textcolor="Red"
 			selectedtextcolor="White"
-			font-size=16
 			selectedbgcolor="Focus"
 		}
 		console_text
@@ -1768,43 +1470,48 @@ steam.styles
 			textcolor="white75"
 			selectedtextcolor="White"
 			font-family="basefont"
-			font-size=16
 			selectedbgcolor="Focus"
 		}
 		
 ////////////////////////////////////////
 //======Chat Window Related texts=====//
+
+//////////////////////////////////
+//======Other Person's Text=====//
 		friends_chat_text
 		{
 			textcolor="white75"
 			selectedtextcolor="white"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
+////////////////////////
+//======Your Text=====//
 		friends_chat_text_self
 		{
 			textcolor="White50"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
+////////////////////////////////
+//======Chat History Text=====//
 		friends_chat_history
 		{
 			textcolor="White50"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
 
 ////////////////////////////////////
 //======Friend Status Changes=====//
+
+//////////////////////////////////////////////
+//======Voice Call/Trade/Invite... Text=====//
 		friends_chat_event
 		{
 			textcolor="White50"
 			selectedtextcolor="White"
 			font-family=semibold
 			font-style=uppercase
-			font-size=16
 			selectedbgcolor="Focus"
 		}
 
@@ -1816,53 +1523,57 @@ steam.styles
 			selectedtextcolor="White"
 			font-family=semibold
 			font-style=uppercase
-			font-size=16
 			selectedbgcolor="Focus"
 		}
 
+////////////////////////////////////
+//======Pasting links in chat=====//
 		friends_chat_url
 		{
 			textcolor="White75"
 			selectedtextcolor="White"
 			font-style=underline
-			font-size=16
-			selectedbgColor="focus"
+			selectedbgColor="Focus"
 		}
+/////////////////////////////////////////////
+//======Everybody's Name while in-game=====//
 		friends_chat_name_ingame
 		{
 			textcolor="Friends.InGameColor"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
 		friends_chat_self
 		{
 			textcolor="Friends.OnlineColor"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
+////////////////////////////////////////////
+//======Everybody's Name while online=====//
 		friends_chat_name
 		{
 			textcolor="Friends.OnlineColor"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
+
+////////////////////////////////////////////////////////////////////////
+//======This controls the : after everybody's name (for real :| )=====//
 		friends_chat_accountid
 		{
 			textcolor="white"
 			selectedtextcolor="White"
-			font-size=16
-			selectedbgcolor="focus"
+			selectedbgcolor="Focus"
 		}
+/////////////////////////////////////////////////////
+//======"Never tell your password to...." Text=====//
 		friends_chat_securitylink
 		{
 			textcolor="White75"
 			selectedtextcolor="White"
 			font-family=semibold
 			font-style=uppercase
-			font-size=16
 			selectedbgcolor="Focus"
 		}
 

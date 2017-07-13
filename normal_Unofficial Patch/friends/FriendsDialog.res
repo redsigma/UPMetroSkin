@@ -164,7 +164,6 @@
 		{
 			inset-left=2
 			font-family=semibold
-			font-size=14
 			textcolor="White45"
 			font-style="Uppercase"
 			font-weight=400

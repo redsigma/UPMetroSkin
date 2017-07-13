@@ -37,6 +37,7 @@ resource/layout/overlaydesktop_lores.layout
 			font-family=semibold
 			font-style=regular
 			font-size=18
+			font-size=16 [$OSX||$LINUX]
 			bgcolor=ClientBG
 			render_bg
 			{
@@ -52,27 +53,30 @@ resource/layout/overlaydesktop_lores.layout
 			textcolor=Focus
 			font-style=underline
 			font-size=18
+			font-size=16 [$OSX||$LINUX]
 		}
+		// The Clock
 		topbar
 		{
 			textcolor=OverlayClock
 			font-family=light
 			font-style=regular
 			font-size=64
+			font-size=52 [$OSX||$LINUX]
 		}
+		// AM, PM
 		clocksuffix
 		{
 			textcolor=OverlayClock
 			font-family=light
 			font-style=uppercase
-			font-size=64
 		}
+		// Session, Weeks, Total
 		timeStrings
 		{
 			textcolor=OverlayClock
 			font-family=basefont
 			font-style=regular
-			font-size=24
 		}
 	}
 	layout
@@ -84,10 +88,14 @@ resource/layout/overlaydesktop_lores.layout
 		place { control=GameGroupsButton,ForumsButton,WebSiteButton region=overlay x=6 y=200 height=30 spacing=8 align=left dir=down }
 		place { control=GuideButton,GuidesButton,GameHubButton,LegacyCDKeyButton,RecommendButton,ChatRoomButton x=130 y=200 region=overlay height=30 spacing=8 align=left dir=down }
 
-		place { control="clock,clocksuffix" align=left x=6 y=20 margin-left=16 }
-		place { control="SessionText" align=left start=clock dir=down }
-		place { control="TwoWeeksText,ForeverText" x=6 y=108 spacing=8 align=left margin-left=16 }
+		place { control="clock" align=left x=16 y=20 margin-left=16 }
+		place { control="clocksuffix" start=clock x=-10 y=6 }
+		place { control="SessionText" align=left x=-10 start=clock dir=down }
 
 		place { control=BroadcastDetailPanel region=broadcast height=106 } //align left it's a must because the chat spawns at the end-right of it
+
+		//Hidden
+		place { control="TwoWeeksText" margin-left=-999 }
+		place { control="ForeverText" margin-left=-999 }
 	}
 }

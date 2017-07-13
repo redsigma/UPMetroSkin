@@ -125,8 +125,6 @@
 			textcolor=white
 			font-family=basefont
 			font-style=uppercase
-			font-size=14
-			font-size=10 [$OSX||$LINUX]
 			bgcolor=black35
 			padding=14
 		}
@@ -155,16 +153,12 @@
 		{
 			textcolor=white
 			font-family=basefont
-			font-size=14
-			font-size=10 [$OSX||$LINUX]
 		}
 		bigtextlabel
 		{
 			textcolor=white
 			font-family=basefont
 			font-style=uppercase
-			font-size=14
-			font-size=10 [$OSX||$LINUX]
 			bgcolor=black35
 			padding=14
 		}
@@ -172,13 +166,11 @@
 		{
 			textcolor=white
 			font-family=semilight
-			font-size=24
 		}
 		bigTextNumbers
 		{
 			textcolor=white
 			font-family=semilight
-			font-size=24
 		}
 
 		PauseButton

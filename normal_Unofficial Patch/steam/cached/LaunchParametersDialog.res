@@ -5,25 +5,6 @@
 		Label
 		{
 			textcolor=White
-			font-size=16 
-			font-size=12 [$OSX||$LINUX]
-		}
-		"CGameLaunchParametersDialog FrameTitle"
-		{
-			textcolor="White"
-			padding-left=8
-			padding-right=80
-			font-family="semilight"
-			font-weight=300
-			font-size=28
-			font-size=24 [$OSX||$LINUX]
-			render_bg
-			{
-				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
-			}
-			padding-bottom=28
-			minimum-height=76
 		}
 	}
 	layout

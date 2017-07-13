@@ -19,6 +19,7 @@ gameoverlay.styles
 		{
 			font-family=basefont
 			font-size=16
+			font-size=14 [$OSX||$LINUX]
 			font-weight=400
 			bgcolor="5 5 5 229.5"
 			render_bg {}
@@ -29,12 +30,14 @@ gameoverlay.styles
 		{
 			textcolor=White35
 			font-size=18
+			font-size=16 [$OSX||$LINUX]
 			bgcolor="none"
 		}
 		Highlight
 		{
 			textcolor=White35
 			font-size=18
+			font-size=16 [$OSX||$LINUX]
 			bgcolor="none"
 		}
 
@@ -47,7 +50,8 @@ gameoverlay.styles
 			textcolor="White"
 			font-family=semibold
 			font-style=uppercase
-			font-size="18"
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
 			font-weight=400
 		}
 

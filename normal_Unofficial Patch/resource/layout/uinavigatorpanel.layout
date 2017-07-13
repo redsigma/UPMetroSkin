@@ -251,7 +251,6 @@
 			textcolor="White45"
 			font-family=basefont
 			font-style=uppercase
-			font-size=14
 			font-weight=400
 			padding-left=0
 		}
@@ -261,7 +260,6 @@
 			textcolor=White75
 			font-style=uppercase
 			font-family=basefont
-			font-size=14
 			font-weight=400
 		}
 
@@ -270,7 +268,6 @@
 			textcolor=white45
 			font-family=basefont
 			font-style=regular
-			font-size=18
 		}
 		NavLabel2:hover
 		{
@@ -373,7 +370,6 @@
 			textcolor="White50"
 			font-family=semibold
 			font-style="uppercase"
-			font-size=16
 			font-weight=400
 			bgcolor="none"
 			padding-left=8
@@ -413,7 +409,6 @@
 			textcolor="White45"
 			font-family=basefont
 			font-style="regular"
-			font-size=14
 			bgcolor="none"
 			padding="8"
 		}

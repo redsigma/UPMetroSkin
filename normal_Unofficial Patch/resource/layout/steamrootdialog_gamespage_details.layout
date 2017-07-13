@@ -130,7 +130,6 @@
 			textcolor="White"
 			font-family=semibold
 			font-style="uppercase"
-			font-size="18"
 			font-weight=400
 			padding-left=8
 		}
@@ -139,7 +138,6 @@
 			textcolor="White"
 			font-family=semibold
 			font-style="uppercase"
-			font-size="18"
 			font-weight=400
 			padding-left=8
 		}
@@ -148,7 +146,6 @@
 			textcolor="White"
 			font-family=semibold
 			font-style="uppercase"
-			font-size="18"
 			font-weight=400
 			padding-left=8
 		}
@@ -157,7 +154,6 @@
 			textcolor="White"
 			font-family=semibold
 			font-style="uppercase"
-			font-size="18"
 			font-weight=400
 			padding-left=8
 		}
@@ -166,7 +162,6 @@
 		{
 			textcolor=White50
 			font-style=regular
-			font-size=16
 			padding-left=8
 			bgcolor="none"
 		}
@@ -187,7 +182,6 @@
 			textcolor="White50"
 			font-family=semibold
 			font-style=regular
-			font-size=16
 			padding-left=8
 			padding-top=0
 			padding-bottom=0

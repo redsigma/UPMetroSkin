@@ -218,7 +218,6 @@
 			textcolor=white75
 			font-family=basefont
 			font-style=regular
-			font-size=16
 			padding-left=8
 			padding-right=8
 		}
@@ -234,7 +233,6 @@
 			textcolor=white
 			font-family=basefont
 			font-style="none"
-			font-size=16
 			render_bg
 			{
 				0="image(x0+8,y0+12,x1,y1,graphics/metro/icons/navbar/notifications)"

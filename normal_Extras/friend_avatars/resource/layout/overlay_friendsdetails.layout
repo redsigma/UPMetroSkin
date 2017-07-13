@@ -45,7 +45,6 @@
 			textcolor="White"
 			font-family=semibold
 			font-style=uppercase
-			font-size="18"
 			font-weight=400
 			bgcolor="none"
 			render
@@ -69,14 +68,11 @@
 			render_bg{}
 		}
 	}
-
 	layout
 	{
 		region { name=friendspanels margin-top=75 }
-
 		//Left
 		place { controls=TitleText x=16 y=16 width=36 height=36 }
-
 		//Right
 		place { control="AllFriendsButton,ViewPlayersButton" x=68 y=11 }
 		place { control="TextThisManyFriends" x=68 y=37 }

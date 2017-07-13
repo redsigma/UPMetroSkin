@@ -50,13 +50,13 @@
 		region { name=bottom align=bottom height=36 margin-top=5 }
 
 		//Progress Bar
-		place { control="upload_info" x=20 y=40 width=max margin-right=20 }
+		place { control="upload_info" x=20 y=44 width=max margin-right=20 }
 		place { start=upload_info control="upload_progress" y=10 dir=down width=max height=2 margin-right=20 }
 
 		//Content
-		place { control="upload_question" x=20 y=40 }
-		place { control="upload_size,upload_size_info" x=20 y=60 spacing=10 }
-		place { control="storage_remaining,storage_remaining_info" x=20 y=80 spacing=10 }
+		place { control="upload_question" x=20 y=44 }
+		place { control="upload_size,upload_size_info" x=20 y=64 spacing=10 }
+		place { control="storage_remaining,storage_remaining_info" x=20 y=84 spacing=10 }
 
 		//Upload Failed
 		place { control="error_info" x=20 y=100 width=max margin-right=20 }

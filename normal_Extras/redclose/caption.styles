@@ -57,6 +57,7 @@
 		FrameCloseButton:hover
 		{
 			bgcolor=W10close_Red_h
+			image="graphics/metro/icons/caption/close_h"
 		}
 		FrameCloseButton:active
 		{
@@ -126,6 +127,7 @@
 		"ToolWindow FrameCloseButton:hover"
 		{
 			bgcolor=W10close_Red_h
+			image="graphics/metro/icons/caption/sm/chat_close_sm_h"
 		}
 		"ToolWindow FrameCloseButton:active"
 		{

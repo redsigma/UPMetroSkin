@@ -45,8 +45,7 @@
 		bodycontent
 		{
 			textcolor="White"
-			selectedtextcolor="White"	
-			font-size=15
+			selectedtextcolor="White"
 			render_bg {}
 		}
 

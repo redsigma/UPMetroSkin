@@ -157,7 +157,6 @@
 			inset="4 1 0 0"
 			//inset-right=10
 			font-family=basefont
-			font-size=14
 			font-weight=400
 			textcolor="White45"
 		}
@@ -167,47 +166,39 @@
 		}
 		namestyle
 		{
-			font-family=basefont
-			font-size=16
 		}
 		nameInstanceStyle
 		{
-			font-family=basefont
 			textcolor=White75
-			font-size=16
 		}
 		menuButtonStyle
 		{
 			minimum-width=14
-			padding-top=3
+			padding-top=4
 			padding-bottom=4
-			padding-right=5
-			padding-left=6
+			padding-right=4
+			padding-left=4
 		}
 		statusStyle
 		{
 			font-family=basefont
-			font-size=16
 		}
 		controlPanelLinkStyle
 		{
 			font-family=basefont
-			font-size=14
 		}
 		controlPanelLinkStyle:hover
 		{
 			font-family=basefont
-			font-size=14
 		}
 		inviteLinkStyle
 		{
-			font-size=14
-			textcolor=White
+			textcolor=White75
             font-style=regular
 		}
 		inviteLinkStyle:hover
 		{
-			textcolor=White
+			font-style=underline
 		}
 	}
 	layout
@@ -216,9 +207,9 @@
 		place {	region=fit_image control="AvatarOverlayImage" x=1 y=2 width=46 height=46 }
 		place {	control="AvatarImage"	x=1 y=1 width=46 height=46 }
 		place {	control="Clanstatusimage" margin-left=-5 height=46 }
-		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=3 spacing=-4 dir=down }
+		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=3 spacing=-7 dir=down }
 
-		place { start=NameLabel control="FriendsNameInstanceLabel,MenuButton" }
+		place { start=NameLabel control="MenuButton,FriendsNameInstanceLabel" }
 		place { start=StatusLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }
 
 		// these controls are shown for friendship requests

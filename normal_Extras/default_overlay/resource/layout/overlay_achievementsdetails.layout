@@ -21,7 +21,6 @@
 		{
 			inset=2
 			font-family=basefont
-			font-size=13
 			font-weight=400
 		}
 		highlight
@@ -29,8 +28,9 @@
 			textcolor="White75"
 			bgcolor="none"
 			font-family=semibold
-			font-size=16 
 			font-style=uppercase
+			font-size=16
+			font-size=14 [$OSX||$LINUX]
 		}
 		progressbackground
 		{
@@ -52,7 +52,7 @@
 
 		place { control="TitleText" region=title spacing=12 dir=down }
 
-		place { control="ProgressTextEarned" y=50 margin-left=16 }
+		place { region=box control=ProgressTextEarned x=6 y=40 height=24 }
 		place { region=box control=progressbackground y=40 width=max height=24 }
 		place { region=box control=progressbarimage y=40 height=24 }
 

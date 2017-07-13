@@ -9,7 +9,6 @@
 			font-family="semilight"
 			font-weight=300
 			font-style=regular
-			font-size=20
 		}
 		URLLabel
 		{
@@ -18,19 +17,15 @@
 			font-family="semilight"
 			font-weight=300
 			font-style=regular
-			font-size=28
-		}
-		ImagePanel
-		{
-			inset-top=-1
 		}
 	}
 	layout
 	{
 		//Avatar
+		region { name=crop y=31 width=46 height=46 }
 		place { control="URLLabel1" margin-right=8 }
-		place { control="ImageAvatar" y=37 margin-left=6 width=32 height=32 }
-		place { control="ImageAvatarOverlay" y=30 margin-left=-1 width=32 height=32 }
+		place { control="ImageAvatar" x=7 y=37 width=32 height=32 }
+		place { region=crop control="ImageAvatarOverlay" width=32 height=32 margin-top=-1 }
 
 		//Name Entry
 		place { control="NameEntry" height=34 width=260 x=34 y=36 margin-left=14 }

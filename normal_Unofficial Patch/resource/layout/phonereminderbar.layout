@@ -50,16 +50,15 @@
 		
 		soft
 		{
-			font-size=15
 			textcolor="209 242 133 255"
+			font-family=basefont
 			minimum-width=500
 		}
 
 		bright
 		{
-			
-			font-size=18
 			textcolor="255 255 255 255"
+			font-family=basefont
 		}
 
 		ButtonStyle

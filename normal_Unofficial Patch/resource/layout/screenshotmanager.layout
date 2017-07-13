@@ -126,7 +126,6 @@
 			minimum-width=190
 			minimum-height=39
 			font-family=semibold
-			font-size=20
 			render_bg {}
 		}
 		gameselector:hover
@@ -168,13 +167,11 @@
 		{
 			textcolor=white
 			font-family=light
-			font-size=32
 			font-weight=300
 		}
 		NoSelectionInstructions
 		{
 			font-family=basefont
-			font-size=16
 		}
 	}
 
@@ -210,7 +207,7 @@
 		place { control="multi_img_delete,multi_img_upload" region=details y=260 align="top-center" spacing=8 }
 
 		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
-		place { control="instr_no_selection_title,instr_no_selection" region="details" y=0 width=max margin-left=15 margin-right=15 dir=down spacing=16 }
+		place { control="instr_no_selection_title,instr_no_selection" region="details" y=0 width=max margin-left=15 margin-right=15 dir=down spacing=6 }
 
 		//Hidden
 		place { control=selectorlabel width=1 align=right }

@@ -16,8 +16,8 @@
 
 	layout
 	{
-		place {	control="Warning" x=20 y=60 }
-		place { control="WarningText" start="Warning" width=max margin-right=16 margin-left=16 }
+		place {	control="Warning" x=20 y=66 }
+		place { control="WarningText" start="Warning" y=-6 width=max margin-right=16 margin-left=16 }
 		place { control="DeleteFromCloudBox" x=20 align=bottom margin-bottom=40 }
 
 		//Bottom
