@@ -648,7 +648,7 @@ steam.styles
 			textcolor=White
 			font-style=uppercase
 			font-weight=400
-			bgcolor="none"
+			bgcolor="ClientBG"
 			render_bg
 			{
 				//0="fill(x0,y1-1,x1,y1,White12)"
@@ -660,7 +660,7 @@ steam.styles
 //======Library Recent Section dropdowns=====//
 		ListPanelSectionCollapser
 		{
-			bgcolor="none"
+			bgcolor="ClientBG"
 			render_bg{}
 			image="graphics/right_arrow"
 			padding-left=4
