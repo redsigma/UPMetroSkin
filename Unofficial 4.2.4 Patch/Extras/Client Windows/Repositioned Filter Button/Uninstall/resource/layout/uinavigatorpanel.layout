@@ -454,7 +454,7 @@
 			inset-left=5
 			bgcolor="Friends.InGameColor"
 			render_bg {}
-			image="graphics/check_sp"
+			image="graphics/lock_check"
 		}
 		URLStatusImage
 		{
