@@ -10,6 +10,7 @@
 "Removed Message Preview";"removed_message_preview";"";"Friends and Chat"
 "Removed In-Game tag";"removed_ingame_tag";"";"Friends and Chat"
 "Send Button in Chat";"send_button_chat";"";"Friends and Chat"
+"Chat Window Focus";"chat_focus";"";"Friends and Chat"
 "Big Picture Button";"big_picture_button";"";"Navigation Bar"
 "Green Notification Box";"greenbox";"";"Navigation Bar"
 "Green Notification Icon";"greenicon";"";"Navigation Bar"
