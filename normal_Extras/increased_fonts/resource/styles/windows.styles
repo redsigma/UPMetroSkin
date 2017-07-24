@@ -314,7 +314,7 @@ windows.styles
 		//======Phone reminder======//
 		soft [$WIN32||$WINDOWS]
 		{
-			font-size=15
+			font-size=16
 		}
 		bright [$WIN32||$WINDOWS]
 		{

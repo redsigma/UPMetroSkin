@@ -199,6 +199,33 @@
 			}
 		}
 
+		support_alert_ack
+		{
+			textcolor="none"
+			bgcolor="none"
+			render_bg
+			{
+				0="image(x0+6,y0+8,x1,y1,graphics/warning)"
+			}
+			padding-left=-131
+		}
+		support_alert_ack:hover
+		{
+			render_bg
+			{
+				0="image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1="fill(x0,y0,x1,y1,white05)"
+			}
+		}
+		support_alert_ack:active
+		{
+			render_bg
+			{
+				0="image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1="fill(x0,y0,x1,y1,white10)"
+			}
+		}
+
 		inboxmenuitem
 		{
 			textcolor=white45
