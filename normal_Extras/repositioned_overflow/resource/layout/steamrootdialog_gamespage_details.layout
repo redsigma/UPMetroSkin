@@ -219,7 +219,8 @@
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
 
 		//Hidden
-		place { control="*taglink,linkslabel,tagslabel" width=1 align=right }
-		place { control="achievementslink,dlclink,gamesubheaderright" width=1 align=right }
+		place { control="*taglink,tagslabel" width=1 align=right }
+		place { control=gamesubheaderright width=1 align=right }
+		place { control=achievementslink,linkslabel,dlclink width=1 align=right margin-right=-999 }
 	}
 }
