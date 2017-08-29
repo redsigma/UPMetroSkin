@@ -62,6 +62,8 @@
 		Header_Dark="0 160 240 255"
 		ClientBG="230 230 230 255"
 		ClientBGTransparent="0 0 0 40"
+		CategoryBG=ClientBG
+		CategoryText=White
 		Red="255 0 0 255"
 		W10close_Red_h="232 18 35 255"
 		W10close_Red_p="241 112 121 255"

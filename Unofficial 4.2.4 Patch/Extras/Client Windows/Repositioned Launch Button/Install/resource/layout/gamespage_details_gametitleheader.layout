@@ -30,6 +30,6 @@
 
 	layout
 	{
-		place { control=iconimage,gametitlelabel height=42 align=top-center spacing=6 margin-top=4 }
+		place { control=iconimage,gametitlelabel height=42 align=top-center spacing=6 }
 	}
 }
