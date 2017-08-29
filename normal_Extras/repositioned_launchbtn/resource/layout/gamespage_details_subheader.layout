@@ -18,7 +18,7 @@
 		CDetailsGameSubHeaderPanel
 		{
 			bgcolor="none"
-			minimum-height=68
+			minimum-height=72
 		}
 
 		ClientListButton
@@ -112,8 +112,8 @@
 	{
 		// Y offset here should match the vertical padding value above in the colors section
 		region { name="header" y=0 x=0 width=max height=120 }
-		place { control=launchbutton align=top-center spacing=8 region=header height=36 dir=right }
+		place { control=launchbutton align=top-center region=header height=36 dir=right }
 		place { start=launchbutton control=clientlist x=-1 }
-		place { start=launchbutton control=subheaderlabels align=top-center region=header height=max dir=down }
+		place { start=launchbutton control=subheaderlabels y=4 align=top-center region=header height=max dir=down }
 	}
 }
