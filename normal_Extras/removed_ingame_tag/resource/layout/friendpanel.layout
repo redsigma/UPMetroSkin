@@ -187,7 +187,7 @@
 		{
 			font-family=basefont
 			padding-top=8
-			padding-bottom=25
+			padding-bottom=15
 		}
 		controlPanelLinkStyle
 		{
@@ -236,32 +236,27 @@
 		{
 			inset-top=0
 			inset-bottom=0
-			padding-top=0
-			padding-bottom=0
 		}
 		friends_online
 		{
 			inset-top=0
 			inset-bottom=0
-			padding-top=0
-			padding-bottom=0
 		}
 		friends_ignored
 		{
 			inset-top=0
 			inset-bottom=0
-			padding-top=0
-			padding-bottom=0
 		}
 
 	}
 	layout
 	{
 		region{ name=fit_image width=46 height=45 }
+		region{ name=zone y=1 x=50 height=43 }
 		place {	region=fit_image control="AvatarOverlayImage" x=1 y=2 width=46 height=46 }
 		place {	control="AvatarImage"	x=1 y=1 width=46 height=46 }
 		place {	control="Clanstatusimage" margin-left=-5 height=46 }
-		place { control="NameLabel,GameLabel,StatusLabel" x=50 y=4 spacing=-10 dir=down }
+		place { region=zone control="NameLabel,GameLabel,StatusLabel" y=4 spacing=-9 dir=down }
 
 		place { start=NameLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,MenuButton,FriendsNameInstanceLabel" }
 		place { start=StatusLabel control="BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }

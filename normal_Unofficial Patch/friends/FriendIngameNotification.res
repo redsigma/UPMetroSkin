@@ -150,8 +150,8 @@
 	layout
 	{
 		place { control="ImageAvatar" x=13 y=13 }
-		place { control="LabelSender" x=63 y=19 margin-right=10 spacing=4 }
-		place { control="LabelGame" x=63 y=36 margin-right=10 }
+		place { control="LabelSender" x=63 y=15 margin-right=10 spacing=4 }
+		place { control="LabelGame" x=63 y=32 margin-right=10 }
 		place { control="LabelHotkey" y=76 width=250 }
 		//Hidden
 		place { control="LabelInfo" width=1 align=right }

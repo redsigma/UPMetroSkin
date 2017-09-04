@@ -200,6 +200,18 @@
 		{
 			font-style=underline
 		}
+		friends_offline
+		{
+			padding-bottom=8
+		}
+		friends_online
+		{
+			padding-bottom=8
+		}
+		friends_ignored
+		{
+			padding-bottom=8
+		}
 	}
 	layout
 	{
@@ -207,7 +219,7 @@
 		place {	region=fit_image control="AvatarOverlayImage" x=1 y=2 width=46 height=46 }
 		place {	control="AvatarImage"	x=1 y=1 width=46 height=46 }
 		place {	control="Clanstatusimage" margin-left=-5 height=46 }
-		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=3 spacing=-7 dir=down }
+		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=4 spacing=-5 dir=down }
 
 		place { start=NameLabel control="MenuButton,FriendsNameInstanceLabel" }
 		place { start=StatusLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }
