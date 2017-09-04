@@ -387,6 +387,21 @@ debian.styles
 		{
 			font-size=14 
 		}
+		friends_offline [$OSX||$LINUX]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
+		friends_online [$OSX||$LINUX]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
+		friends_ignored [$OSX||$LINUX]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
 		controlPanelLinkStyle [$OSX||$LINUX]
 		{
 			font-size=14

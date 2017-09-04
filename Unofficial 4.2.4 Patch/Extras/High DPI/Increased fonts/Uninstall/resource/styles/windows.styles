@@ -374,6 +374,21 @@ windows.styles
 		{
 			font-size=16
 		}
+		friends_offline [$WIN32||$WINDOWS]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
+		friends_online [$WIN32||$WINDOWS]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
+		friends_ignored [$WIN32||$WINDOWS]
+		{
+			padding-top=0
+			padding-bottom=2
+		}
 		controlPanelLinkStyle [$WIN32||$WINDOWS]
 		{
 			font-size=14

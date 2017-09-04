@@ -25,6 +25,7 @@
 		{
 			textcolor=White
 			font-family=basefont
+			padding-top=-1
 		}
 		menuButtonStyle
 		{
@@ -45,7 +46,8 @@
 
 	layout
 	{
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=3 y=1 spacing=2 }
-		place { start=MenuButton control="CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=4 spacing=4 margin-right=8 }
+		region{ name=zone width=max margin-right=8 }
+		place { region=zone control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=3 y=1 spacing=2 }
+		place { region=zone start=MenuButton control="CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=4 spacing=4 }
 	}
 }
