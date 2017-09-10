@@ -165,7 +165,7 @@
 	{
 		region { name="selectorbar" x=1 y=1 width=max height=39 margin-left=16 margin-top=6 margin-bottom=6 margin-right=80 }
 		region { name="details" align=right margin-right=8 margin-top=44 margin-bottom=8 margin-left=358 height=max }
-		region { name="list" margin-left=16 margin-right=340 margin-top=44 margin-bottom=50 width=max }
+		region { name="list" margin-left=16 margin-right=16 margin-top=44 margin-bottom=50 width=max }
 
 		place { control=game_selector region=selectorbar width=max margin-right=200 }
 		place {	control="grid" region="list" dir=down x=0 y=0 width=340 height=max }

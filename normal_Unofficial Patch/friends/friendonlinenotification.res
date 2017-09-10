@@ -125,7 +125,7 @@
 	layout
 	{
 		place { control="ImageAvatar" x=13 y=13 }
-		place { control="LabelSender,LabelInfo" x=67 dir=down margin=11 margin-left=0 margin-bottom=0 }
+		place { control="LabelSender,LabelInfo" x=63 y=4 dir=down margin=11 margin-left=0 margin-bottom=0 }
 		place { control="LabelHotkey" y=76 width=250 }
 	}
 }
