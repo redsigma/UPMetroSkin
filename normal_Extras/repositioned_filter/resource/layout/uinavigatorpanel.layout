@@ -514,7 +514,7 @@
 	layout [$WINDOWS]
 	{
 		//Header
-		region { name=top align=top y=40 x=0 margin-right=0 }
+		region { name=top align=top y=39 x=0 margin-right=0 }
 		region { name="nav" y=0 height=46 }
 		place { control="back,forward" region=nav x=39 y=1 height=38 width=40 margin-left=0 spacing=0 }
 		place { control="label_store,label_library" region=nav start=forward x=1 y=0 spacing=1 height=46 }
@@ -568,7 +568,7 @@
 	layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this moves top elements left to hide the blank space
 	{
 		//Header
-		region { name=top align=top y=40 x=0 margin-right=0 }
+		region { name=top align=top y=39 x=0 margin-right=0 }
 		region { name="nav" y=0 height=46 }
 		place { control="back,forward" region=nav x=40 y=1 height=38 width=40 margin-left=0 spacing=0 }
 		place { control="label_store,label_library" region=nav start=forward x=1 y=0 spacing=1 height=46 }

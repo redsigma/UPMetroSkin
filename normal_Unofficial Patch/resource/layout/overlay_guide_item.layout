@@ -39,7 +39,7 @@
 		place { control="Background" width=max height=max }
 		place { control=IconBackground align=right y=16 width=36 height=36 }
 		place { control=icon align=right y=16 width=36 height=36 }
-		region { name=container margin-left=16 margin-right=48 }
-		place { control=name region=container align=right x=16 y=24 }
+		region { name=container margin-left=16 }
+		place { control=name region=container x=16 y=24 end-right=IconBackground }
 	}
 }

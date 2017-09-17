@@ -10,7 +10,7 @@
 	{
 		region { name=crop height=max margin-right=86 }
 		region { name=full height=max width=max }
-		place { region=crop control=*tab height=24 }
-		place { region=full control=TabMenuButton height=24 }
+		place { region=crop control=*tab height=23 }
+		place { region=full control=TabMenuButton height=23 }
 	}
 }
