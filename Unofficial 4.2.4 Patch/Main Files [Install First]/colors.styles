@@ -1,8 +1,15 @@
 "settings.styles" 
 {
+	include "custom.styles"
 	colors
 	{
+////////////////////////
+//======No Color======//
 		none="0 0 0 0"
+		Red="255 0 0 255"
+
+///////////////////////////
+//======Base Colors======//
 		Focus_T="0 114 198 30.6" 
 		white03="255 255 255 7.65"
 		white08="255 255 255 20.4"
@@ -33,38 +40,118 @@
 		black75="0 0 0 191.25"
 		Black="0 0 0 255"
 
+
+/////////////////////////
+//======Scrollbar======//
 		Scroll_blu="88 168 242 165"
 		Scroll_blu_s="103 193 245 175"
+		ScrollBar="86 86 86 255"
+		ScrollBarH="110 110 110 255"
+
+
+/////////////////////////////
+//======Friends Panel======//
 		Friends_InGame="130 186 0 255"
 		Friends_Online="93 178 255 255"
+		Friends_Offline=White45
+		Friends_Golden="255 255 99 255"
+
+
+////////////////////////////////////
+//======Steam Windows Border======//
 		FrameBorder="15 15 15 255"
-		DetailsBackground=Black45
+
+
+////////////////////////////////////////
+//======Steam Detail View Panels======//
 		DetailPanels=black45
+		DetailPanel_launchbutton=DetailPanels
+
+
+/////////////////////////////////
+//======Library Game List======//
 		GameList="38 38 38 255"
+
+		game_installed=white
+		game_installed_hover=white
+		game_installed_selected=white
+
+		game_shortcut=game_installed
+		game_shortcut_hover=game_installed_hover
+		game_shortcut_selected=game_installed_selected
+
+		game_mod=game_installed
+		game_mod_hover=game_installed_hover
+		game_mod_selected=game_installed_selected
+
+		game_uninstalled=White50
+		game_uninstalled_hover=White75
+		game_uninstalled_selected=White
+
+		game_run=Focus
+		game_run_hover=Focus
+		game_run_selected=white
+
+
+//////////////////////////////////////////////
+//======Divider / List Panel Separator======//
 		Dividers="255 255 255 30.6"
 		Separators=FrameBorder
+
+
+////////////////////////////////
+//======Overlay Elements======//
 		OverlayBackground="0 0 0 127.5"
 		OverlayPanels="0 0 0 127.5"
 		OverlayClock="255 255 255 255"
+
+
+///////////////////////////////////////
+//======Compact Overlay Buttons======//
 		OverlaySideButtons="255 255 255 255"
 		OverlaySideButtons_h="255 255 255 144.75"
 		OverlaySideButtons_c="255 255 255 144.75"
 		OverlayHover05="255 255 255 12.75"
+
+
+/////////////////////////////////////////////
+//======Overlay In-game Notifications======//
 		transparent_notification="5 5 5 229.5"
+
+
+//////////////////////////////////
+//======Chat Window border======//
 		chatframe=White50
+
+
+///////////////////////////////////
+//======Text Input Elements======//
 		TextEntry="39 39 39 255"
-		ScrollBar="86 86 86 255"
-		ScrollBarH="110 110 110 255"
+
+//////////////////////////////
+//======Top Main Color======//
+		Header_Dark="20 20 20 255"
+
+
+/////////////////////////////////
+//======Base Client Color======//
+		ClientBG="26 26 26 255"
+		ClientBGTransparent="43 43 43 191.25"
+
+
+/////////////////////////////////////////////////
+//======Recent/Installed/Tools Categories======//
+		CategoryBG=ClientBG
+		CategoryText=White
+
+
+/////////////////////
+//======Other======//
+		W10close_Red_h="232 18 35 255"
+		W10close_Red_p="241 112 121 255"
 		Grey1="40 40 40 255"
 		Grey2="48 48 48 255"
 		Grey3="75 75 75 255"
-		Header_Dark="20 20 20 255"
-		ClientBG="26 26 26 255"
-		ClientBGTransparent="43 43 43 191.25"
-		CategoryBG=ClientBG
-		CategoryText=White
-		Red="255 0 0 255"
-		W10close_Red_h="232 18 35 255"
-		W10close_Red_p="241 112 121 255"
+		DetailsBackground=White45
 	}
 }

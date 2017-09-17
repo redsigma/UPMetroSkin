@@ -118,7 +118,7 @@
 	{
 		CDownloadSummaryPanel
 		{
-			bgcolor=ClientBG
+			bgcolor=none
 		}
 		throttleLabel
 		{

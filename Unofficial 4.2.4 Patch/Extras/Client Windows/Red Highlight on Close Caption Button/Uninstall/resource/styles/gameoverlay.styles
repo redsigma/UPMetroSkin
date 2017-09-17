@@ -10,18 +10,22 @@ gameoverlay.styles
 		semi_black "0 0 0 128"
 		semi_gray "32 32 32 220"
 		Notifications.PanelPosition     "BottomRight"  // osx has toast in the upper right, but in-overlay should not.
-		White35="255 255 255 89.25"
 	}
 
 	styles
 	{
+		"COverlaySettingsDialog FrameTitle"
+		{
+			render_bg{}
+		}
+
 		Notification
 		{
 			font-family=basefont
 			font-size=16
 			font-size=14 [$OSX||$LINUX]
 			font-weight=400
-			bgcolor="5 5 5 229.5"
+			bgcolor="transparent_notification"
 			render_bg {}
 			render {}
 		}
@@ -83,6 +87,15 @@ gameoverlay.styles
 			image="graphics/metro/icons/caption/close"
 			minimum-width=40
 			minimum-height=38
+		}
+
+		"COverlay_Details_Friends CAvatarOverlayImage"
+		{
+			inset-right=-999
+		}
+		"EditablePanel CAvatarOverlayImage"
+		{
+			inset-right=-999
 		}
 	}
 }

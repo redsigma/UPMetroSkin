@@ -485,82 +485,82 @@ steam.styles
 
 		"GameItem_Uninstalled"
 		{
-			textcolor="White50"
-			selectedtextcolor="White"
+			textcolor=game_uninstalled
+			selectedtextcolor=game_uninstalled_selected
 		}
 		"GameItem_Uninstalled:hover"
 		{
-			textcolor="White75"
+			textcolor=game_uninstalled_hover
 		}
 
 		"GameItem_Installed"
 		{
-			textcolor="white"
-			selectedtextcolor="white"
+			textcolor=game_installed
+			selectedtextcolor=game_installed_selected
 		}
 		"GameItem_Installed:hover"
 		{
-			textcolor="white"
+			textcolor=game_installed_hover
 		}
 
 		"GameItem_Running"
 		{
-			textcolor="Focus"
-			selectedtextcolor="white"
+			textcolor=game_run
+			selectedtextcolor=game_run_selected
 		}
 		"GameItem_Running:hover"
 		{
-			textcolor="Focus"
+			textcolor=game_run_hover
 		}
 
 		"GameItem_Shortcut"
 		{
-			textcolor="white"
-			selectedtextcolor="white"
+			textcolor=game_shortcut
+			selectedtextcolor=game_shortcut_selected
 		}
 		"GameItem_Shortcut:hover"
 		{
-			textcolor="white"
+			textcolor=game_shortcut_hover
 		}
 
 		"GameItem_Mod"
 		{
-			textcolor="white"
-			selectedtextcolor="white"
+			textcolor=game_mod
+			selectedtextcolor=game_mod_selected
 		}
 		"GameItem_Mod:hover"
 		{
-			textcolor="white"
+			textcolor=game_mod_hover
 		}
 
 		"GameItem_Updating"
 		{
-			textcolor="Focus"
-			selectedtextcolor="White"
+			textcolor=game_run
+			selectedtextcolor=game_run_selected
 		}
 		"GameItem_Updating:hover"
 		{
-			textcolor="Focus"
+			textcolor=game_run_hover
 		}
 
 		"GameItem_Decrypting"
 		{
-			textcolor="Focus"
-			selectedtextcolor="White"
+			textcolor=game_run
+			selectedtextcolor=game_run_selected
 		}
 		"GameItem_Decrypting:hover"
 		{
-			textcolor="Focus"
+			textcolor=game_run_hover
 		}
 
 		"GameItem_Syncing"
 		{
-			textcolor="Focus"
-			selectedtextcolor="White"
+			textcolor=game_run
+			selectedtextcolor=game_run_selected
 		}
 		"GameItem_Syncing:hover"
 		{
-			textcolor="Focus"
+			textcolor=game_run_hover
 		}
 
 /////////////////////////////////////////
@@ -655,7 +655,10 @@ steam.styles
 			}
 			minimum-height=30
 		}
-
+		"CDialogSettings ListPanelSectionHeader"
+		{
+			bgcolor="none"
+		}
 ///////////////////////////////////////////////
 //======Library Recent Section dropdowns=====//
 		ListPanelSectionCollapser
@@ -1363,31 +1366,31 @@ steam.styles
 		}
 		friendsdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		achievementsdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		dlcdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		clouddetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		communityfilesdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		newsdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 		screenshotsdetails
 		{
-			bgcolor=black45
+			bgcolor=DetailPanels
 		}
 
 		gamedetails-headerlabel

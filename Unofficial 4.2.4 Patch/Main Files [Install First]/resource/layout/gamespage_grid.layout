@@ -75,7 +75,7 @@
 
 	layout
 	{
-		place {	control=grid x=1 y=2 width=max height=max }
-		place { control=emptylisttext x=0 y=0 margin-left=8 margin-top=2 width=max height=max }
+		place {	control=grid x=1 y=1 width=max height=max }
+		place { control=emptylisttext x=0 y=0 margin-left=8 margin-top=1 width=max height=max }
 	}
 }

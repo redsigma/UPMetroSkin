@@ -77,8 +77,8 @@
 			// Friends List colors
 			Friends.InGameColor       "Friends_InGame"
 			Friends.OnlineColor       "Friends_Online"
-			Friends.OfflineColor      "White45"
-			Friends.GoldenColor       "255 255 99 255"
+			Friends.OfflineColor      "Friends_Offline"
+			Friends.GoldenColor       "Friends_Golden"
 			Friends.PanelDefault      "White75"
 			Friends.PanelOver       "White"
 			Friends.PanelSelected     "ClientBG"
