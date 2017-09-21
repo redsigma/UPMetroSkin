@@ -121,7 +121,7 @@
 
 	layout
 	{
-		region	{ name="details" x=262 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1 dir=down }
+		region	{ name="details" x=262 width=max height=max overflow=scroll-vertical margin-left=32 margin-top=1 margin-bottom=1 margin-right=-1 dir=down }
 		region	{ name="list" x=1 width=262 height=max margin-bottom=0 }
 
 		//Empty List Text 
