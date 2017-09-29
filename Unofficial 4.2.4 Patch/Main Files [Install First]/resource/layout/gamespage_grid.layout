@@ -24,7 +24,7 @@
 		// value defining the extra vertical distance to leave below
 		// the picture for drop shadow room, in px. This value should
 		// match the margin values in the layout statements in the gamespage_grid_*.layout files.
-		GridView.DropShadowLeading "10"  //KEEP THIS THE SAME AS THE DEFAULT STEAM OR IT WILL CONFLICT
+		GridView.DropShadowLeading "10"  //KEEP THIS THE SAME AS THE DEFAULT STEAM OR ZOOM WON'T BE SAVED
 	}
 
 	styles
