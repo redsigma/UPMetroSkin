@@ -399,17 +399,17 @@ debian.styles
 		}
 		friends_offline [$OSX||$LINUX] //highdpi
 		{
-			padding-top=-1
+			padding-top=-2
 			padding-bottom=-1
 		}
 		friends_online [$OSX||$LINUX] //highdpi
 		{
-			padding-top=-1
+			padding-top=-2
 			padding-bottom=-1
 		}
 		friends_ignored [$OSX||$LINUX] //highdpi
 		{
-			padding-top=-1
+			padding-top=-2
 			padding-bottom=-1
 		}
 		controlPanelLinkStyle [$OSX||$LINUX] //highdpi

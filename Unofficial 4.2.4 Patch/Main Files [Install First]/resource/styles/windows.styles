@@ -377,17 +377,17 @@ windows.styles
 		friends_offline [$WIN32||$WINDOWS]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		friends_online [$WIN32||$WINDOWS]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		friends_ignored [$WIN32||$WINDOWS]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		controlPanelLinkStyle [$WIN32||$WINDOWS]
 		{

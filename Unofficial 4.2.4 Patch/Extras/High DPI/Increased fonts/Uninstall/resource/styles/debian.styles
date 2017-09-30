@@ -390,17 +390,17 @@ debian.styles
 		friends_offline [$OSX||$LINUX]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		friends_online [$OSX||$LINUX]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		friends_ignored [$OSX||$LINUX]
 		{
 			padding-top=0
-			padding-bottom=2
+			padding-bottom=1
 		}
 		controlPanelLinkStyle [$OSX||$LINUX]
 		{
