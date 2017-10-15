@@ -334,11 +334,6 @@ windows.styles
 	    {
 			font-size=32
 	    }
-		//UseOfflineMode.res
-		"CUseOfflineModeDialog Label" [$WIN32||$WINDOWS]
-		{
-			font-size=36
-		}
 
 		//SettingsSubFriends.res
 		"CSettingsSubFriends Label" [$WIN32||$WINDOWS]
