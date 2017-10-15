@@ -162,6 +162,14 @@
 			font-family=light
 			font-weight=300
 		}
+		"Label" [$WIN32||$WINDOWS]
+		{
+			font-size=36
+		}
+		"Label" [$OSX||$LINUX]
+		{
+			font-size=26
+		}
 		"URLLabel"
 		{
 			font-style=underline
