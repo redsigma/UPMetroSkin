@@ -670,6 +670,7 @@ windows.styles
 		CSteamRootDialog [$WIN32||$WINDOWS] //highdpi
 		{
 			minimum-width=1200
+			minimum-height=600
 		}
 		//steam.styles
 		"CGamesListPanel" [$WIN32||$WINDOWS] //highdpi
