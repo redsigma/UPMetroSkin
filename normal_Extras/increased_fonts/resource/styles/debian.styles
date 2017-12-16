@@ -693,6 +693,7 @@ debian.styles
 		CSteamRootDialog [$OSX||$LINUX] //highdpi
 		{
 			minimum-width=1200
+			minimum-height=600
 		}
 		//steam.styles
 		"CGamesListPanel" [$OSX||$LINUX] //highdpi
