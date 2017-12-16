@@ -50,34 +50,36 @@
 	}
 	layout
 	{
+		region { name=box margin-left=16 margin-right=16 }
+
 		//Music Library
-		place { control=LibraryHeader }
-		place { control=LibraryList start=LibraryHeader y=8 height=80 dir=down width=max }
-		place { control=AddLibraryButton start=LibraryList dir=down y=8 height=28 width=84 }
-		place { control=RemoveLibraryButton start=LibraryList dir=down x=92 y=8 height=28 width=84 }
-		place { control=DatabaseInfoLabel start=RemoveLibraryButton align=right height=28 margin-right=8 }
-		place { control=LibraryDivider start=AddLibraryButton dir=down y=8 width=max }
+		place { region=box control=LibraryHeader }
+		place { region=box control=LibraryList start=LibraryHeader y=8 height=80 dir=down width=max }
+		place { region=box control=AddLibraryButton start=LibraryList dir=down y=8 height=28 width=84 }
+		place { region=box control=RemoveLibraryButton start=LibraryList dir=down x=92 y=8 height=28 width=84 }
+		place { region=box control=DatabaseInfoLabel start=RemoveLibraryButton align=right height=28 }
+		place { region=box control=LibraryDivider start=AddLibraryButton dir=down y=8 width=max }
 
 		//Database | 1st row
-		place { control=DatabaseHeader start=LibraryDivider dir=down y=8 }
-		place { control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders start=DatabaseHeader dir=down height=24 end-right=PauseMusicWhenVoiceChatCheckbox }
-		place { control=StartCrawlingButton start=DatabaseCrawlSteamInstallFolders dir=down y=8 height=28 }
-		place { control=ResetDatabaseButton start=StartCrawlingButton x=8 height=28 }
-		place { control=DatabaseDivider start=StartCrawlingButton dir=down y=8 width=max }
+		place { region=box control=DatabaseHeader start=LibraryDivider dir=down y=8 }
+		place { region=box control=DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders start=DatabaseHeader dir=down height=24 end-right=PauseMusicWhenVoiceChatCheckbox }
+		place { region=box control=StartCrawlingButton start=DatabaseCrawlSteamInstallFolders dir=down y=8 height=28 }
+		place { region=box control=ResetDatabaseButton start=StartCrawlingButton x=8 height=28 }
+		place { region=box control=DatabaseDivider start=StartCrawlingButton dir=down y=8 width=max }
 		//Pause Music
-		place { control=PauseMusicHeader x=271 y=170 }
-		place { control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox start=PauseMusicHeader dir=down height=24 }
+		place { region=box control=PauseMusicHeader x=271 y=170 }
+		place { region=box control=PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox start=PauseMusicHeader dir=down height=24 }
 
 		//Notification | 2nd row
-		place { control=NotificationHeader start=DatabaseDivider dir=down y=8 }
-		place { control=NotificationPlaylistNowPlayingCheckbox start=NotificationHeader dir=down }
-		place { control=VolumeDivider start=NotificationPlaylistNowPlayingCheckbox dir=down y=8 width=max }
+		place { region=box control=NotificationHeader start=DatabaseDivider dir=down y=8 }
+		place { region=box control=NotificationPlaylistNowPlayingCheckbox start=NotificationHeader dir=down }
+		place { region=box control=VolumeDivider start=NotificationPlaylistNowPlayingCheckbox dir=down y=8 width=max }
 		//Logging
-		place { control=LoggingHeader x=271 y=300 }
-		place { control=LoggingCrawlingCheckbox start=LoggingHeader dir=down }
+		place { region=box control=LoggingHeader x=271 y=300 }
+		place { region=box control=LoggingCrawlingCheckbox start=LoggingHeader dir=down }
 
 		//Volume | 3rd row
-		place { control=VolumeHeader start=VolumeDivider dir=down y=8 }
-		place { control=VolumeSlider start=VolumeHeader height=24 width=180 dir=down }
+		place { region=box control=VolumeHeader start=VolumeDivider dir=down y=8 }
+		place { region=box control=VolumeSlider start=VolumeHeader height=24 width=180 dir=down }
 	}
 }

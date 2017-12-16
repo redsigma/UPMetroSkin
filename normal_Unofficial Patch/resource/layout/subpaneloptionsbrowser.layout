@@ -26,11 +26,13 @@
 	}
 	layout
 	{
-		place { controls=DescriptionLabel y=8 width=max }
-		place { start=DescriptionLabel controls=OverlayHomePageLabel dir=down margin-top=20 width=200 }
-		place { start=OverlayHomePageLabel controls=OverlayHomePage dir=down margin-top=5 width=240 }
+		region { name=box margin-left=16 margin-right=16 }
 
-		place { start=OverlayHomePage controls=ClientBrowserAuthHomePage,Divider1 dir=down width=max spacing=6 margin-top=15 }
-		place { start=Divider1 controls=ClearWebCacheButton,ClearAllCookiesButton height=24 width=240 region=bottom dir=down margin-top=15 spacing=6 }
+		place { region=box controls=DescriptionLabel y=6 width=max }
+		place { start=DescriptionLabel controls=OverlayHomePageLabel y=20 dir=down width=200 }
+		place { start=OverlayHomePageLabel controls=OverlayHomePage y=5  dir=down width=240 }
+
+		place { start=OverlayHomePage controls=ClientBrowserAuthHomePage,Divider1  y=15 dir=down width=max }
+		place { start=Divider1 controls=ClearWebCacheButton,ClearAllCookiesButton y=15 spacing=6 height=24 width=240 region=bottom dir=down }
 	}
 }

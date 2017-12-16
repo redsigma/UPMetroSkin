@@ -64,18 +64,20 @@
 	}
 	layout
 	{
+		region { name=box margin-left=16 margin-right=16 }
+
 		//Family Options
-		place { controls="FamilyOptionsTitle,FamilyOptionsText" width=max spacing=6 dir=down }
-		place { controls="ManageOptionsLabel" y=74 height=28 }
-		place { controls="Divider1" start=ManageOptionsLabel y=6 width=max height=1 dir=down }
+		place { region=box controls="FamilyOptionsTitle,FamilyOptionsText" width=max spacing=6 dir=down }
+		place { region=box controls="ManageOptionsLabel" y=74 height=28 }
+		place { region=box controls="Divider1" start=ManageOptionsLabel y=6 width=max dir=down }
 
 		//Family Sharing
-		place { controls="FamilySharingTitle,FamilySharingInfoText" start=Divider1 y=6 width=max spacing=6 dir=down }
-		place { controls="AuthorizedDeviceCheck,ManageSharingLabel" start=FamilySharingInfoText height=28 dir=down }
+		place { region=box controls="FamilySharingTitle,FamilySharingInfoText" start=Divider1 y=6 width=max spacing=6 dir=down }
+		place { region=box controls="AuthorizedDeviceCheck,ManageSharingLabel" start=FamilySharingInfoText height=28 dir=down }
 
 		//Borrowers List
-		place { controls="BorrowersLabel" start=ManageSharingLabel y=6 width=max dir=down }
-		place { controls="BorrowersList" start=BorrowersLabel y=6 width=max height=max dir=down margin-bottom=34 }
-		place { controls="ShowNotificationsCheck" y=562 height=28 }
+		place { region=box start=ManageSharingLabel controls="BorrowersLabel" y=6 width=max dir=down }
+		place { region=box start=BorrowersLabel controls="BorrowersList"  y=6 width=max height=max dir=down margin-bottom=34 }
+		place { region=box start=BorrowersList controls="ShowNotificationsCheck" y=2 dir=down height=28 }
 	}
 }
