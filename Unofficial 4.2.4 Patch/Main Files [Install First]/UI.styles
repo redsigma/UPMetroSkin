@@ -126,7 +126,7 @@
 				6="fill(x0+178,y1-44,x1-8,y1-43,White12)"	// Bottom-Right
 			}
 			minimum-width="744"
-			minimum-height="680"
+			minimum-height="580"
 		}
 		CMusicPlayerPanel
 		{
