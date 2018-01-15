@@ -346,11 +346,6 @@ debian.styles
 	    {
 			font-size=28
 	    }
-		//UseOfflineMode.res
-		"CUseOfflineModeDialog Label" [$OSX||$LINUX]
-		{
-			font-size=26 
-		}
 		//friendaliasesdialog.res
 		
 		//SettingsSubFriends.res
