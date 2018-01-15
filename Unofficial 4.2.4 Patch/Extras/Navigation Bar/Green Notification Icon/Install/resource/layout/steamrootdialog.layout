@@ -497,7 +497,6 @@
 		//Controls - OS X
 		place [$OSX] { control="account_balance" region=top align=right end-right=InboxButton margin-right=1 height=39 }
 		place [$OSX] { control="InboxButton" region=top align=right end-right=FriendPanel margin-right=1 height=39 }
-		place [$OSX] { control="UIStatusPanel" region=top align=right end-right=frame_minimize margin-right=1 width=23 height=39 }
 		place [$OSX] { control="MenuBar" region=top height=0 width=26 align=right end-right=frame_minimize margin-right=1 }
 
 		// Hidden
