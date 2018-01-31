@@ -159,7 +159,7 @@
 		{
 			bgcolor="none"
 			image="graphics/metro/icons/navbar/friends"
-			padding-right=8
+			padding-right=10
 		}
 		view_friends:hover
 		{
@@ -312,9 +312,9 @@
 				1="fill(x0,y1,x1,y1+1,focus)"
 			}
 			render {}
-			padding-left=13
+			padding-left=15
 			padding-right=0
-			padding-top=-5	//numbers are centered
+			padding-top=-4	//numbers are centered
 		}
 		inbox_button_active:hover
 		{
@@ -358,7 +358,8 @@
 				0="fill(x0,y1,x1,y1+1,Red)"
 			}
 			image="graphics/metro/icons/navbar/parent_unlocked"
-			padding-right=4
+			padding-left=6
+			padding-right=10
 		}
 		parental_lock_button:hover
 		{
@@ -494,14 +495,14 @@
 
 		//Avatar
 		region { name="friends" y=37 height=3 }
-		place { control="FriendPanel" region=friends height=40 width=29 align=right margin-right=187 }
-		place { control="view_friends" x=0 margin-right=-60 y=0 region=top align=right end-right=FriendPanel dir=right margin-right=6 height=39 width=29 }
+		place { control="FriendPanel" region=friends height=40 width=33 align=right margin-right=198 }
+		place { control="view_friends" x=0 margin-right=-60 y=0 region=top align=right end-right=FriendPanel dir=right margin-right=6 height=39 width=33 }
 		place { control="friends_list" height=39 align=right end-right=UIStatusPanel }
 
 		//Controls
 		place { control="SupportAlert,startvr,exitvr,account_balance,InboxButton,ParentalLockButton" region=top align=right end-right=FriendPanel spacing=1 margin-right=1 height=39 }
-		place { control="UIStatusPanel" region=top align=right margin-right=159 width=27 height=40 }
-		place { control="fullscreen" region=top align=right end-right=frame_minimize margin-right=1 height=39 }
+		place { control="UIStatusPanel" start=view_friends margin-left=1 margin-right=1 width=39 height=40 }
+		place { control="fullscreen" start=UIStatusPanel end-right=frame_minimize margin-left=1 margin-right=1 height=39 }
 		place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
 
 		//Controls - OS X

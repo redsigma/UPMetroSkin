@@ -118,5 +118,6 @@
 	layout
 	{
 		place { control="GameImage" x=21 y=22 height=34 width=34 }
+		place { control="LabelSteam,LabelInfo,LabelGame" x=69 y=15 dir=down }
 	}
 }
