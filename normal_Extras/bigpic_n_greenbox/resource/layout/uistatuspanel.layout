@@ -56,7 +56,7 @@
 		place { control="StatusPaused" y=28 height=6 align=top-center margin-left=12 margin-right=13 }
 		place { region=action control="StatusComplete" height=2 align=top-center margin-left=12 margin-right=13 margin-top=-3 }
 
-		place { control="StatusDownloading" height=39 align=top-center }
+		place { control="StatusDownloading" height=39 }
 		place { control=StatusProgressbar height=1 width=max align=bottom }
 	}
 }

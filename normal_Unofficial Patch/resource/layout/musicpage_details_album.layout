@@ -116,17 +116,16 @@
 	layout
 	{
 		region { name=songs width=max height=max overflow=allow-vertical margin-right=16 }
+		region { name=buttons x=216 y=8 width=max height=max overflow=scroll-vertical margin-right=16 }
 
 		//Album Art
 		place { region=songs dir=down y=8 control=CoverImage width=200 height=200 }
 
 		//Album and Artist
-		place { region=songs control=AlbumTitleLabel x=216 y=8 height=40 dir=down margin-left=56 }
-		place { region=songs start=AlbumTitleLabel control=ArtistLabel height=26 dir=down }
-		place { region=songs start=ArtistLabel control=TracksInfoLabel height=26 dir=down }
+		 place { region=buttons x=56 control=AlbumTitleLabel,ArtistLabel,TracksInfoLabel dir=down }
 
 		//Play Button
-		place { region=songs dir=down x=216 control=PlayTracksButton,PlayAlbumButton width=40 height=40 y=8 margin-top=16 }
+		place { dir=down x=216 y=16 control=PlayTracksButton,PlayAlbumButton width=40 height=40 }
 
 		//Other Buttons
 		place {	region=songs dir=down start=TracksInfoLabel control="AddTracksToQueueButton,AddTracksToPlaylistButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumButton,ShowAlbumInSystemButton" x=0 y=8 margin-left=0 height=28 width=160 spacing=1 }
