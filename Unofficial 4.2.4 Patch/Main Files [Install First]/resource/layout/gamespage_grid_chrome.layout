@@ -112,9 +112,9 @@
 
 	layout
 	{
-		region { name=center height=max width=96 align=top-center  }
-		place { control=chromeborder height=56 width=max align=left-center }
-		place { region=center control="launch,details" height=40 width=40 align=left-center spacing=16 }
+		region { name="actions" align=bottom width=max height=56 x=0 y=210 margin-bottom=0}
+		place{ control=chromeborder region=actions x=0 y=0 width=max height=max }
+		place{ control="launch,details" region=actions height=40 width=40 align=top-center spacing=16 margin=8 }
 		//Hidden
 		place { control=divider width=1 align=right }
 	}
