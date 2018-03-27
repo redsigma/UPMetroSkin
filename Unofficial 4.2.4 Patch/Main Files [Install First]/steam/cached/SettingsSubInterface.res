@@ -20,10 +20,10 @@
 		place { region=box control="Label4,LanguageCombo,TranslationLabel" y=17 margin-top=16 height=24 dir=down }
 		place { region=box start=TranslationLabel control="Label2,FavoriteWindowCombo" y=8 height=24 dir=down }
 		place { region=box start=FavoriteWindowCombo control="Label3,SkinCombo" y=8 height=24 dir=down }
-		place { region=box start=SkinCombo control="AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck,NotifyAvailableGamesCheck" y=8 spacing=4 width=max dir=down }
+		place { region=box start=SkinCombo control="AutoLaunchCheck,DPIScalingCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck,NotifyAvailableGamesCheck" y=8 spacing=4 width=max dir=down }
 		place { region=box start=NotifyAvailableGamesCheck control="SetJumpListOptionsButton" dir=down }
 		//Hidden
 		place { control=Label1 width=10 height=10 align=right }
-		place { control="Divider1,Divider2" width=1 align=right }
+		place { control="Divider1,Divider2,Divider3" width=1 align=right }
 	}
 }
