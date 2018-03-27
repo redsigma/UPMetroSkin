@@ -12,10 +12,9 @@
 	{
 		StatusLabel
 		{
+			inset-left=8
 			bgcolor="none"
 			image="graphics/metro/icons/navbar/downloads"
-			padding-left=8
-			padding-right=16
 		}
 		StatusLabel:hover
 		{
@@ -54,7 +53,7 @@
 		place { control="StatusPaused" y=28 height=5 align=top-center margin-left=7 margin-right=7 }
 		place { region=action control="StatusComplete" height=1 align=top-center margin-left=7 margin-right=7 margin-top=-3 }
 
-		place { control="StatusDownloading" height=39 }
+		place { control="StatusDownloading" height=39 width=27 }
 		place { control=StatusProgressbar height=1 width=max align=bottom }
 	}
 }
