@@ -1,5 +1,6 @@
 "resource/BroadcastPublicState.res"
 {
+		
 	"BroadcastPublicStateNotification"
 	{
 		"ControlName"		"BroadcastPublicStateNotification"
@@ -16,10 +17,11 @@
 		"paintbackground"		"1"
 		"style" "Notification"
 	}
-	"BroacdastImageStart"
+	
+	"BroadcastImageBlue"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"BroacdastImageStart"
+		"fieldName"		"BroadcastImageBlue"
 		"xpos"		"1"
 		"ypos"		"1"
 		"zpos" 		"1"
@@ -35,10 +37,11 @@
 		"scaleImage"		"0"
 		"image"  "graphics/stream_notification"
 	}
-	"BroadcastImageEnd"
+	
+	"BroadcastImageRed"
 	{
 		"ControlName"		"ImagePanel"
-		"fieldName"		"BroadcastImageEnd"
+		"fieldName"		"BroadcastImageRed"
 		"xpos"		"1"
 		"ypos"		"1"
 		"zpos" 		"1"
@@ -54,11 +57,12 @@
 		"scaleImage"		"0"
 		"image"  "graphics/stream_disconnect_notification"
 	}
-	"LabelStreaming"
+
+	"LabelTitle"
 	{
 		"ControlName"		"Label"
-		"fieldName"			"LabelStreaming"
-		"style"			"NotifyRemoteClientTitle"
+		"fieldName"			"LabelTitle"
+		"style"				"NotifyRemoteClientTitle"
 		"xpos"				"64"
 		"ypos"				"10"
 		"zpos" 				"2"
@@ -70,10 +74,11 @@
 		"enabled"			"1"
 		"tabPosition"		"0"
 		"paintbackground"	"1"
-		"labelText"			"Broadcast"
+		"labelText"			"#Broadcast_Notification_Title"
 		"textAlignment"		"north-west"
 		"wrap"				"1"
 	}	
+
 	"LabelInfo"
 	{
 		"ControlName"		"Label"
@@ -93,9 +98,10 @@
 		"labelText"			"Test"
 		"textAlignment"		"north-west"
 		"wrap"				"1"
-	}
+	}	
+
 	layout
 	{
-		place { control=LabelStreaming,LabelInfo x=70 y=4 dir=down margin=2 }
+		place { control=LabelTitle,LabelInfo x=70 y=4 dir=down margin=2 }
 	}
 }
