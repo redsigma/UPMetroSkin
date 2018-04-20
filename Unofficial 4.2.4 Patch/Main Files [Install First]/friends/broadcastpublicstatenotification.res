@@ -102,7 +102,6 @@
 
 	layout
 	{
-		place { control=LabelTitle x=75 y=4 dir=down margin=2 }
-		place { control=LabelInfo x=75 y=28 dir=down margin=2 }
+		place { control=LabelTitle,LabelInfo x=70 y=4 dir=down margin=2 }
 	}
 }
