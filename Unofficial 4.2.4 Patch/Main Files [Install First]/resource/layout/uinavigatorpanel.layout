@@ -519,7 +519,7 @@
 		place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
 		//Filters
-		place { control="library_zoom" region=top start=label_community_new align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
+		place { control="library_zoom" start=label_community_new align=right y=10 height=26 width=100 margin-right=100 }		
 		place { start=library_search control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=39 spacing=1 margin-right=1 }
 		place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
@@ -570,7 +570,7 @@
 		place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
 		//Filters
-		place { control="library_zoom" region=top start=label_community_new align=right end-right="library_filters_list" y=10 height=26 width=100 margin-right=8 }
+		place { control="library_zoom" start=label_community_new align=right y=10 height=26 width=100 margin-right=100 }
 		place { start=library_search control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=39 spacing=1 margin-right=1 }
 		place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
