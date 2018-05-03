@@ -7,7 +7,7 @@
 		"xpos"		"5"
 		"ypos"		"29"
 		"wide"		"360"
-		"tall"		"220"
+		"tall"		"300"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -72,6 +72,11 @@
 		"textAlignment"		"north-west"
 		"wrap"		"0"
 		"URLText"		"https://support.steampowered.com/kb_article.php?ref=5151-RUAS-1543#noemail"
+	}
+	
+	layout
+	{
+		place { control=HasBeenValidated width=320 height=72 x=24 y=12 }
 	}
 }
  
