@@ -7,7 +7,7 @@
 		"xpos"		"5"
 		"ypos"		"29"
 		"wide"		"360"
-		"tall"		"300"
+		"tall"		"220"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
