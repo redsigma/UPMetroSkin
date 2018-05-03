@@ -57,5 +57,10 @@
 		"URLText"		"https://support.steampowered.com/kb_article.php?ref=5151-RUAS-1543"
 	}
 	
+	layout
+	{
+		place { control=HasBeenValidated x=24 y=12 }
+		place { control=URLLabel1 x=24 y=100 }
+	}
 }
  
