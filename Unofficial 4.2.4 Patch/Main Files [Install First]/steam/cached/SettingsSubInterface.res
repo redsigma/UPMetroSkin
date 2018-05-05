@@ -23,7 +23,6 @@
 		place { region=box start=SkinCombo control="AutoLaunchCheck,DPIScalingCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck,NotifyAvailableGamesCheck" y=8 spacing=4 width=max dir=down }
 		place { region=box start=NotifyAvailableGamesCheck control="SetJumpListOptionsButton" dir=down }
 		//Hidden
-		place { control=Label1 width=10 height=10 align=right }
-		place { control="Divider1,Divider2,Divider3" width=1 align=right }
+		place { control="Label1,Divider1,Divider2,Divider3" dir=down margin-left=-999 }
 	}
 }
