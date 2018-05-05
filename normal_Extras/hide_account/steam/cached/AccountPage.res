@@ -13,13 +13,11 @@
 		region { name=box margin-left=16 margin-right=16 }
 
 		//Avatar
-		place { region=box control="SecurityIcon" dir=right y=12 spacing=6 }
+		place { region=box control="SecurityIcon" y=12 spacing=6 }
 
 		///Information
-		place { region=box control="LogOutLabel,AccountInfo" x=68 y=7 spacing=6 }
-		place { region=box control="ContactEmailLabel,EmailInfo" x=68 y=24 spacing=6 }
-		place { region=box control="SecurityStatusLabel,SecurityStatusState" x=68 y=41 spacing=6 }
-		place { region=box control="Label2,VacInfoLink" x=68 y=58 spacing=6 }
+		place { region=box control="SecurityStatusLabel,SecurityStatusState" x=68 y=24 spacing=6 }
+		place { region=box control="Label2,VacInfoLink" x=68 y=41 spacing=6 }
 
 		place { region=box control="NoPersonalInfoCheck" y=86 spacing=8 dir=down }
 
@@ -34,6 +32,6 @@
 		place { region=box start=ChangeBetaButton control="CurrentBetaLabel" x=6 y=3 height=24 }
 
 		//Hidden
-		place { control="ReportBugLink,Label1,AccountLink" dir=down margin-left=-999 }
+		place { control="LogOutLabel,AccountInfo,ContactEmailLabel,EmailInfo,ReportBugLink,Label1,AccountLink" dir=down margin-left=-999 }
 	}
 }

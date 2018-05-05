@@ -1,5 +1,6 @@
 "Accent Scrollbars";"accent_scrollbars";"";"Client Windows"
 "Blue Scrollbars";"blue_scrollbars";"";"Client Windows"
+"Hide Account Details";"hide_account";"";"Client Windows"
 "Red Highlight on Close Caption Button";"redclose";"";"Client Windows"
 "Repositioned Filter Button";"repositioned_filter";"";"Client Windows"
 "Repositioned Launch Button";"repositioned_launchbtn";"";"Client Windows"
