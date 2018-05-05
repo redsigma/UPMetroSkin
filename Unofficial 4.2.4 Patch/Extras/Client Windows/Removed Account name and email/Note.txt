@@ -1,0 +1,1 @@
+This will remove the Account Name and Contact Email under Settings > Account. It can be useful for streamers looking to hide their account information.
