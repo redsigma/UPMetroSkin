@@ -449,27 +449,6 @@
 			image="graphics/icon_collapse_over"
 		}
 
-		LabelEVCert
-		{
-			inset-left=5
-			bgcolor="Friends.InGameColor"
-			render_bg {}
-			image="graphics/lock_check"
-		}
-		URLStatusImage
-		{
-			bgcolor=White
-			render_bg {}
-			image="graphics/html_lock_disabled" // this reads html_lock.tga <-DON'T CHANGE 
-		}
-		URLBarSecure
-		{
-			textcolor="Friends.InGameColor"
-		}
-		URLBarBrokenSecure
-		{
-			textcolor="html.insecureurl"
-		}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //======Hidden Elements(width=0/height=0 still causes spikes and i doubt it will conflict with the linux font-size=0 problems=============//
 		NavLabelZoom
@@ -507,48 +486,48 @@
 		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=120 y=0 spacing=1 height=46 }
 
 		//URLBar
-		place { control="URLBar" region=top align=left height=38 width=max end-right=PageLoadThrobber }
-		place { control="URLStatusImage,EVCert,PageLoadThrobber,home,refresh,stop" start=URLBar y=7 width=24 height=24 align=right margin-right=7 }
+		place { control="stop,refresh,label_community_new" height=40 dir=down } // hacky solution for the url checkbox on/off
+		place { control="EVCert,URLBar" region=top y=1 align=left width=max height=39 margin-right=80 }
+		place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
 		//Community Sub-Links
 		place { control="label_community_friends,label_community_profile,label_community_groups,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=top align=right x=0 y="0" spacing=0 height=39 }
 
 		//Search
-		place { control="label_search_icon" height=38 width=38 start=label_community_new dir=down }
-		place { control="library_search" region=top start=label_search_icon height=38 width=186 }
+		place { control="label_search_icon" region=top height=38 width=38 dir=down }
+		place { control="library_search" start=label_search_icon height=38 width=186 }
 		place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
 		//Filters
-		place { control="library_zoom" start=label_community_new align=right y=10 height=26 width=100 margin-right=100 }
+		place { control="library_zoom" region=top align=right y=10 height=26 width=100 margin-right=100 }
 		place { start=library_search control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=39 spacing=1 margin-right=1 }
 		place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
 
  	  	//Reminder banners | so far this method works better than expected
-		place { control=emailreminderbar,phonereminderbar,subnavgroup_library start=URLBar dir=down margin-top=0 margin-right=0 width=max height=40 }
-		place { control=label_community_new region=top start=subnavgroup_library y=-40 width=max dir=down height=1 }
+		place { control=emailreminderbar,phonereminderbar,subnavgroup_library start=label_community_new dir=down margin-top=0 margin-right=0 width=max height=40 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_List 		width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_Details 	width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_Grid 		width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
-		place { control=WebPanel 			width=max height=max margin-left=0 margin-bottom=7 start=subnavgroup_library dir=down }
+		place { control=DownloadsPage 		width=max height=max margin-top=-40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_List 		width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_Details 	width=max height=max margin-top=-40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_Grid 		width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-bottom=7 start=subnavgroup_library dir=down }
 
-		place { control=MusicPage_Details	width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
-		place { control=ScreenshotsPage 	width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
+		place { control=MusicPage_Details 	width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
+		place { control=ScreenshotsPage 	width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
 
 		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 
-		place { control=MediaPage 			width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=ToolsPage 			width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
+		place { control=MediaPage 			width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=ToolsPage 			width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 
 		place { control=BroadcastPage			width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
 		//Hidden
-		place { start="label_me" control="label_library_zoom,label_zoom_separator,label_library_view" width=1 }
+		place { control="label_library_zoom,label_zoom_separator,label_library_view,URLStatusImage" dir=down margin-left=-999 }
 	}
 	layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this moves top elements left to hide the blank space
 	{
@@ -558,47 +537,47 @@
 		place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=121 y=0 spacing=1 height=46 }
 
 		//URLBar
-		place { control="URLBar" region=top align=left height=38 width=max end-right=PageLoadThrobber }
-		place { control="URLStatusImage,EVCert,PageLoadThrobber,home,refresh,stop" start=URLBar y=7 width=24 height=24 align=right margin-right=7 }
+		place { control="stop,refresh,label_community_new" height=40 dir=down }
+		place { control="EVCert,URLBar" region=top y=1 align=left width=max height=39 margin-right=80 }
+		place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
 		//Community Sub-Links
 		place { control="label_community_friends,label_community_profile,label_community_groups,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace" region=top align=right x=0 y="0" spacing=0 height=39 }
 
 		//Search
-		place { control="label_search_icon" height=38 width=38 start=label_community_new dir=down }
-		place { control="library_search" region=top start=label_search_icon height=38 width=186 }
+		place { control="label_search_icon" region=top height=38 width=38 dir=down }
+		place { control="library_search" start=label_search_icon height=38 width=186 }
 		place { control="library_filters" region=top margin-left=224 height=38 width=38 start=DownloadsPage }
 
-		//Filters		
-		place { control="library_zoom" start=label_community_new align=right y=10 height=26 width=100 margin-right=100 }
+		//Filters
+		place { control="library_zoom" region=top align=right y=10 height=26 width=100 margin-right=100 }
 		place { start=library_search control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=39 spacing=1 margin-right=1 }
 		place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
 
  	  	//Reminder banners | so far this method works better than expected
-		place { control=emailreminderbar,phonereminderbar,subnavgroup_library start=URLBar dir=down margin-top=0 margin-right=0 width=max height=40 }
-		place { control=label_community_new region=top start=subnavgroup_library y=-40 width=max dir=down height=1 }
+		place { control=emailreminderbar,phonereminderbar,subnavgroup_library start=label_community_new dir=down margin-top=0 margin-right=0 width=max height=40 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_List 		width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_Details 	width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=GamesPage_Grid 		width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
-		place { control=WebPanel 			width=max height=max margin-left=0 margin-bottom=7 start=subnavgroup_library dir=down }
+		place { control=DownloadsPage 		width=max height=max margin-top=-40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_List 		width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_Details 	width=max height=max margin-top=-40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=GamesPage_Grid 		width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-bottom=7 start=subnavgroup_library dir=down }
 
-		place { control=MusicPage_Details 	width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
-		place { control=ScreenshotsPage 	width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=0 start=label_community_new dir=down }
+		place { control=MusicPage_Details 	width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
+		place { control=ScreenshotsPage 	width=max height=max margin-top=1 margin-left=0 margin-right=0 margin-bottom=0 start=subnavgroup_library dir=down }
 
 		place { control=ConsolePage 		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 
-		place { control=MediaPage 			width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
-		place { control=ToolsPage 			width=max height=max margin-top=38 margin-left=0 margin-right=0 margin-bottom=1 start=label_community_new dir=down }
+		place { control=MediaPage 			width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+		place { control=ToolsPage 			width=max height=max margin-top=-2 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 
 		place { control=BroadcastPage			width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
 		//Hidden
-		place { start="label_me" control="label_library_zoom,label_zoom_separator,label_library_view" width=1 }
+		place { control="label_library_zoom,label_zoom_separator,label_library_view,URLStatusImage" dir=down margin-left=-999 }
 	}
 }
