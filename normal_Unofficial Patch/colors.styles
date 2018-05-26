@@ -124,17 +124,17 @@
 		chatframe=White50
 
 
-///////////////////////////////////
-//======Text Input Elements======//
+//////////////////////////
+//======Search Bar======//
 		TextEntry="39 39 39 255"
 
-//////////////////////////////
-//======Top Main Color======//
+//////////////////////////////////
+//======Top Bar Background======//
 		Header_Dark="20 20 20 255"
 
 
-/////////////////////////////////
-//======Base Client Color======//
+/////////////////////////////////////
+//======Base Background Color======//
 		ClientBG="26 26 26 255"
 		ClientBGTransparent="43 43 43 191.25"
 
@@ -143,6 +143,12 @@
 //======Recent/Installed/Tools Categories======//
 		CategoryBG=ClientBG
 		CategoryText=White
+
+
+///////////////////////////////////////
+//======URL Secure / Not Secure======//
+		SecureURL = "130 186 0 255"
+		NotSecureURL = "170 20 20 255"
 
 
 /////////////////////

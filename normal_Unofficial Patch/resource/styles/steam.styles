@@ -16,6 +16,29 @@ steam.styles
 	}
 	styles
 	{
+		URLBarSecure
+		{
+			textcolor="SecureURL"
+		}
+		URLBarBrokenSecure
+		{
+			textcolor=NotSecureURL
+			font-weight=600
+		}
+		URLStatusImage
+		{
+			render_bg {}
+			image="graphics/html_lock_disabled" // this reads html_lock.tga <-DON'T CHANGE 
+		}
+
+		LabelEVCert
+		{
+			bgcolor=SecureURL
+			textcolor=White
+			padding-left=4
+			padding-right=4
+		}
+
 		Slider
 		{
 			inset="0 -1 0 0"
@@ -1316,47 +1339,47 @@ steam.styles
 
 		HomeButton
 		{
-			bgcolor=TextEntry
-			image=graphics/metro/urlbar/home
+			inset-left=8
+			bgcolor="none"
+			image=graphics/metro/urlbar/home_p
 		}
 		HomeButton:hover
 		{
-			image=graphics/metro/urlbar/home_h
+			bgcolor=white05
 		}
 		HomeButton:active
 		{
-			bgcolor=focus
-			image=graphics/metro/urlbar/home_p
+			bgcolor=white10
 		}
 
 		ReloadButton
 		{
-			inset-left=1
+			inset-left=8
 			bgcolor="none"
-			image=graphics/metro/urlbar/reload
+			image=graphics/metro/urlbar/reload_p
 		}
 		ReloadButton:hover
 		{
-			image=graphics/metro/urlbar/reload_h
+			bgcolor=white05
 		}
 		ReloadButton:active
 		{
-			image=graphics/metro/urlbar/reload_p
+			bgcolor=white10
 		}
 
 		StopButton
 		{
-			inset-left=1
+			inset-left=8
 			bgcolor="none"
-			image=graphics/metro/urlbar/stop
+			image=graphics/metro/urlbar/stop_p
 		}
 		StopButton:hover
 		{
-			image=graphics/metro/urlbar/stop_h
+			bgcolor=white05
 		}
 		StopButton:active
 		{
-			image=graphics/metro/urlbar/stop_p
+			bgcolor=white10
 		}
 
 ///////////////////////////////////////////////////////////////////////////////
