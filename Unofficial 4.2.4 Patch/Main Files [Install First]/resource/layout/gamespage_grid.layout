@@ -42,7 +42,6 @@
 			textcolor="White"
 			render_bg {}
 		}
-
 		// GameItem_whatever suffix is computed on the fly. (not case sensitive.) possible values:
 		// shortcut
 		// mod
@@ -52,25 +51,6 @@
 		// updating
 		// uninstalled
 		// notinstalled (yes there are two)
-		GameItem_installed
-		{
-			alpha		255
-		}
-		GameItem_unInstalled
-		{
-			//alpha		127.5
-		}
-		GameItem_Updating
-		{
-			alpha		255
-			render
-			{
-				1="fill( x0, y0, x1, y0+3, Focus )"		// Top
-				2="fill( x0, y1-3, x1, y1, Focus )"		// Bottom
-				3="fill( x0, y0, x0+3, y1, Focus )"		// Left
-				4="fill( x1-2, y0, x1+1, y1, Focus )"	// Right
-			}
-		}
 	}
 
 	layout

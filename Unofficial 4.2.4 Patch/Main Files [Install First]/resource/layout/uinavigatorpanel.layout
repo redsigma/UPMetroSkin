@@ -347,10 +347,6 @@
 		WebPanelStyle
 		{
 			bgcolor=ClientBG
-			render
-			{
-				0="fill(x0,y0,x1,y0+1,FrameBorder)"
-			}
 		}
 
 		CWebPanel
@@ -367,7 +363,7 @@
 
 		CUINavButton
 		{
-			textcolor="White50"
+			textcolor=mainButton
 			font-family=semibold
 			font-style="uppercase"
 			font-weight=400
@@ -378,7 +374,7 @@
 		}
 		CUINavButton:hover
 		{
-			textcolor="White75"
+			textcolor=mainButton_h
 			render_bg
 			{
 				1="fill(x0,y0,x1,y1-6,white05)"
@@ -386,7 +382,7 @@
 		}
 		CUINavButton:selected
 		{
-			textcolor="White"
+			textcolor=mainButton_c
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1-1,white05)"
@@ -396,7 +392,7 @@
 		}
 		CUINavButton:disabled
 		{
-			textcolor="white24"
+			textcolor=mainButton_d
 			render_bg
 			{
 				1="fill(x0,y1-7,x1,y1,white45)"
@@ -487,7 +483,7 @@
 
 		//URLBar
 		place { control="stop,refresh,label_community_new" height=40 dir=down } // hacky solution for the url checkbox on/off
-		place { control="EVCert,URLBar" region=top y=1 align=left width=max height=39 margin-right=80 }
+		place { control="EVCert,URLBar" region=top y=0 align=left width=max height=39 margin-right=80 }
 		place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
 		//Community Sub-Links
@@ -538,7 +534,7 @@
 
 		//URLBar
 		place { control="stop,refresh,label_community_new" height=40 dir=down }
-		place { control="EVCert,URLBar" region=top y=1 align=left width=max height=39 margin-right=80 }
+		place { control="EVCert,URLBar" region=top y=0 align=left width=max height=39 margin-right=80 }
 		place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
 		//Community Sub-Links

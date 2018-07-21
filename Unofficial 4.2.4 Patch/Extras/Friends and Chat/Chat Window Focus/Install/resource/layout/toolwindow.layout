@@ -13,7 +13,7 @@
 			render_bg
 			{
 				1="fill( x0, y0+1, x1, y0+39, Header_Dark)"
-				2="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				2="fill( x0, y0+39, x1, y0+40, frameBorder)"
 				3="fill( x0, y0+1, x1, y0+2, chatframe )"		// Top
 				4="fill( x0, y1-2, x1, y1-1, chatframe )"		// Bottom
 				5="fill( x0+1, y0+1, x0+2, y1-1, chatframe )"	// Left
@@ -24,7 +24,7 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 				2="fill( x0, y0+1, x1, y0+39, Header_Dark)"
 			}
 		}

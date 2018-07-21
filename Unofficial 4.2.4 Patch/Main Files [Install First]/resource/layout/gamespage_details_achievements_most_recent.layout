@@ -40,21 +40,26 @@
 		}
 		mostrecent_name
 		{
-			textcolor=White
+			textcolor=titleAchievementPanel
+			bgcolor=bgTitleAchievementPanel
+			padding-left=2
+			padding-bottom=2
 		}
 
 		mostrecent_label
 		{
-			textcolor=White35
-			bgcolor="none"
+			textcolor=recentAchievementPanel
 			font-family=basefont
 			font-weight=400
 			font-style=regular
+			bgcolor=bgRecentAchievementPanel
+			padding-left=2
+			padding-bottom=2
 		}
 
 		mostrecent_unlockedsofar
 		{
-			textcolor="White75"
+			textcolor=progressAchievementPanel
 			bgcolor="none"
 			font-family=semibold
 			font-style=uppercase
@@ -71,7 +76,7 @@
 
 		progressbarimage
 		{
-			bgcolor="Focus"
+			bgcolor=bgProgressAchievementPanel
 			render 
 			{
 				//5="fill( x0, y0, x1, y1, Focus )"  // top

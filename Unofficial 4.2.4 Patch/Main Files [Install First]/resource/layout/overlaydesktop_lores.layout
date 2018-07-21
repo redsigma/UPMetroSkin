@@ -41,10 +41,10 @@ resource/layout/overlaydesktop_lores.layout
 			bgcolor=ClientBG
 			render_bg
 			{
-				0="fill( x0, y0, x1, y0+1, FrameBorder )"		// Top
-				1="fill( x0, y1-1, x1, y1, FrameBorder )"		// Bottom
-				2="fill( x0, y0+1, x0+1, y1-1, FrameBorder )"	// Left
-				3="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
+				0="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
+				1="fill( x0, y1-1, x1, y1, frameBorder )"		// Bottom
+				2="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	// Left
+				3="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
 			}
 			padding=5
 		}

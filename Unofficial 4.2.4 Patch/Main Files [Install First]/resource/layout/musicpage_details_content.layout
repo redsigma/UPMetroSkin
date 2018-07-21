@@ -26,7 +26,7 @@
 
 		AlbumOrArtistListStyle
 		{
-			bgcolor="GameList"
+			bgcolor=bgMusicList
 			render_bg {}
 		}
 
@@ -42,6 +42,7 @@
 		"CMusicPage_Details_Content RichText URL"
 		{
 			textcolor=White
+			font-size=24
 		}
 
 //////////////////////////////////////////////////
@@ -49,7 +50,7 @@
 		CrawlingText
 		{
 			textcolor="White75"
-			font-size="24"
+			font-size=24
 			render_bg {}
 		}
 

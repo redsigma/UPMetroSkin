@@ -17,7 +17,7 @@
 	{
 		CDetailsGameSubHeaderPanel
 		{
-			bgcolor=DetailPanel_launchbutton
+			bgcolor=bgLaunchPanel
 			minimum-height=68
 		}
 

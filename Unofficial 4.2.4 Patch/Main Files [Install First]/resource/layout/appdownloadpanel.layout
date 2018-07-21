@@ -80,18 +80,20 @@
 		//Game Title
 		ModuleHeading
 		{
+			textcolor=appName
 			font-family		"basefont"
 			font-style=uppercase
-			bgcolor="none"
+			bgcolor=bgAppName
 			padding-left=5
 			padding-right=5
 		}
 		//Bottom Status
 		ModuleHeading2
 		{
+			textcolor=statusDownload
 			font-family		"basefont"
 			font-style=uppercase
-			bgcolor="none"
+			bgcolor=bgStatusDownload
 			padding-left=10
 			padding-right=10
 		}
@@ -216,7 +218,7 @@
 		place { start=timeremaininglabel control="timeremainingfield" x=4 height=26 }
 
 		//Status
-		place { control="updatetypelabel" y=93 align=right height=30 }
+		place { control="updatetypelabel" y=93 align=right height=20 }
 
 		//Buttons
 		place { control="namelabel,topofqueuebutton,removefromqueuebutton" y=5 height=20 dir=right spacing=1 align=right margin-right=6 }

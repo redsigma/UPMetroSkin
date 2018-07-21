@@ -12,7 +12,7 @@
 		{
 			render_bg
 			{
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 				2="fill( x0, y0+1, x1, y0+39, Header_Dark)"
 			}
 		}

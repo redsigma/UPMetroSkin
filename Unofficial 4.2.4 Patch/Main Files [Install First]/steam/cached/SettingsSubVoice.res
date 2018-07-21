@@ -21,7 +21,13 @@
 		place { region=box control="ChangeDeviceButton,ReinitAudio" width=156 margin-top=85 spacing=6 y=8 dir=right }
 
 		//When Active
-		place { region=box control="WhenActiveLabel,TransmitMethodRadioButton1,TransmitMethodRadioButton2,PushToTalkKeyLabel,PushToTalkKeyEntry,MicrophoneLabel,MicrophoneVolume,SpeakerLabel,SpeakerVolume,MicMeter" y=161 dir=down spacing=6 }
+		place { region=box control="WhenActiveLabel,TransmitMethodRadioButton1,TransmitMethodRadioButton2,TransmitMethodRadioButton3,PushToTalkKeyLabel,PushToTalkKeyEntry" y=161 dir=down spacing=1 }
+		
+		place { region=box start=PushToTalkKeyEntry control="MicrophoneLabel,SpeakerLabel" y=6 dir=down spacing=6 }
+		place { region=box start=MicrophoneLabel control=MicrophoneVolume x=16 }
+		place { region=box start=MicrophoneVolume control=SpeakerVolume dir=down }
+		
+		place { region=box start=SpeakerLabel control="MicMeter" y=6 dir=down }
 		place { region=box start=MicMeter control="MicMeter2" margin-left=-160 }
 
 		place { region=box start=MicMeter control=TestMicrophone x=6 }

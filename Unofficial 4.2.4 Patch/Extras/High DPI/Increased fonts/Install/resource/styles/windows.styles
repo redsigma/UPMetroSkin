@@ -406,7 +406,7 @@ windows.styles
 		}
 		
 		//settingssubmusic.layout
-		HeaderText [$WIN32||$WINDOWS]
+		"CSettingsSubMusic HeaderText" [$WIN32||$WINDOWS]
 		{
 			font-size=28
 		}

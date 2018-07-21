@@ -8,7 +8,7 @@
 			render_bg
 			{
 				0="image(x0+38,y0+44,x1,y1, graphics/cloudsync)"
-				1="fill( x0, y1-44, x1, y1-43, FrameBorder )"
+				1="fill( x0, y1-44, x1, y1-43, frameBorder )"
 				2="fill( x0, y1-43, x1, y1, Header_Dark )"
 			}
 		}
