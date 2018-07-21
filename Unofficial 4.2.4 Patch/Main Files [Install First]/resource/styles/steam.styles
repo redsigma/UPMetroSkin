@@ -2,8 +2,8 @@ steam.styles
 {
 	include "custom.styles"
 
-	include "resource/styles/windows.styles" [$WIN32||$WINDOWS]
-	include "resource/styles/debian.styles" [$OSX||$LINUX]
+	include "resource/styles/windows.styles" [$WIN32||$WINDOWS||$OSX]
+	include "resource/styles/linux.styles" [$LINUX]
 
 	include "controls.styles"
 	include "UI.styles"
@@ -298,9 +298,10 @@ steam.styles
 		"CProductMarketingDialog FrameTitle"
 		{
 			textcolor="White"
+			padding-bottom=32
 			padding-bottom=16
 		}
-		"CDialogSettings FrameTitle"
+		"CDialogSettings FrameTitle" [!$OSX]
 		{
 			textcolor="White"
 			font-family="semilight"

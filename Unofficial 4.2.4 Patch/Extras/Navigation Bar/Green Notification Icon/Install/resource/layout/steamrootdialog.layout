@@ -473,7 +473,7 @@
 		region { name=bottom height=6 align=bottom }
 
 		//Caption Buttons
-		place { control="frame_minimize,frame_maximize,frame_close" y=1 align=right width=40 height=38 }
+		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" y=1 align=right width=40 height=38 }
 
 		//Frame Grips
 		place { control=tlGrip height=11 width=11 }
@@ -493,11 +493,6 @@
 		place { control="SupportAlert,startvr,exitvr,account_balance,InboxButton,ParentalLockButton" region=top align=right end-right=FriendPanel spacing=1 margin-right=1 height=39 }
 		place { control="UIStatusPanel" region=top align=right end-right=frame_minimize margin-right=1 width=27 height=40 }
 		place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
-
-		//Controls - OS X
-		place [$OSX] { control="account_balance" region=top align=right end-right=InboxButton margin-right=1 height=39 }
-		place [$OSX] { control="InboxButton" region=top align=right end-right=FriendPanel margin-right=1 height=39 }
-		place [$OSX] { control="MenuBar" region=top height=0 width=26 align=right end-right=frame_minimize margin-right=1 }
 
 		// Hidden
 		place { control="fullscreen,account_URL,add_game,account_balance_seperator,online_friends" width=1 align=right }

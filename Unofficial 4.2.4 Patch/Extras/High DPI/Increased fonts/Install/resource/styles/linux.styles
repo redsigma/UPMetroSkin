@@ -1,6 +1,6 @@
 debian.styles
 {
-	colors [$OSX||$LINUX]
+	colors [$LINUX]
 	{
 		basefont="Open Sans"
 		semibold="Open Sans Semibold"
@@ -10,130 +10,140 @@ debian.styles
 	styles
 	{
 		//overlay_friendsdetails.layout
-		"COverlay_Details_Friends Button" [$OSX||$LINUX]
+		"COverlay_Details_Friends Button" [$LINUX]
 		{
 			font-size=16
 		}
 		//controls.styles
-		Button [$OSX||$LINUX]
+		Button [$LINUX]
 		{
 			font-size=14 
 		}
-		RadioButton [$OSX||$LINUX]
+		RadioButton [$LINUX]
 		{
-			font-size=14 
+			font-size=15
 		}
-		CheckButton [$OSX||$LINUX]
+		CheckButton [$LINUX]
 		{
-			font-size=14 
+			font-size=15
 		}
-		ComboBox [$OSX||$LINUX]
+		ComboBox [$LINUX]
 		{
 			font-size=14 
 		}
 
-		PageTab [$OSX||$LINUX]
+		PageTab [$LINUX] //highdpi
 		{
-			font-size=12 
+			font-size=14
 		}
-		TextEntry [$OSX||$LINUX]
+		TextEntry [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
-		EmoticonMenuItemStyle [$OSX||$LINUX]
+		EmoticonMenuItemStyle [$LINUX]
 		{
 			font-size=22 
 		}
 ///////////////////////////////////////////		
 
+		//steam.styles
+		"CGamesListPanel" [$LINUX] //highdpi
+		{
+			font-size=16
+		}
+
 		//FriendsDialog.res
-		"CFriendsDialog PageTab" [$OSX||$LINUX]
+		"CFriendsDialog PageTab" [$LINUX]
 		{
 			font-size=14
 		}
 		//steam.styles
 		//Header Text like those from the Settings
 		//overlay_achievementsdetails.layout overrides
-		highlight [$OSX||$LINUX]
+		highlight [$LINUX]
 		{
 			font-size=22
 		}
 		
 		///////////////////////////////////////////
 		//======Groups Title dropmenu arrow======//
-		CFriendsListSectionAffordance [$OSX||$LINUX]
+		CFriendsListSectionAffordance [$LINUX]
 		{
 			font-size=14 
 		}
 		
 		///////////////////////////////////////////////
 		//======FriendsPanel Friend/Groups Title======//
-		CFriendsListSectionHeader [$OSX||$LINUX]
+		CFriendsListSectionHeader [$LINUX] //highdpi
 		{
-			font-size=12 
+			font-size=14
 		}
 
-
-		"CDialogSettings FrameTitle" [$OSX||$LINUX]
+		"CDialogSettings FrameTitle" [$LINUX]
 		{
 			font-size=22 
 		}
-		"CGamePropertiesDialog FrameTitle" [$OSX||$LINUX]
+		"CGamePropertiesDialog FrameTitle" [$LINUX]
 		{
 			font-size=14 
 		}
-		"CGameLaunchParametersDialog FrameTitle" [$OSX||$LINUX]
+		"CGameLaunchParametersDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
 
-		"CContentManagmentDialog FrameTitle" [$OSX||$LINUX]
+		"CContentManagmentDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"CSetNicknameDialog FrameTitle" [$OSX||$LINUX]
+		"CSetNicknameDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"CFriendAliasesDialog FrameTitle" [$OSX||$LINUX]
+		"CFriendAliasesDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"CEditFriendsGroupsDialog FrameTitle" [$OSX||$LINUX]
+		"CEditFriendsGroupsDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"CChooseBetaDialog FrameTitle" [$OSX||$LINUX]
+		"CChooseBetaDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"CEditTagsDialog FrameTitle" [$OSX||$LINUX]
+		"CEditTagsDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
-		"COverlayBroadcastChatDialog FrameTitle" [$OSX||$LINUX]
+		"COverlayBroadcastChatDialog FrameTitle" [$LINUX]
 		{
 			font-size=14 
 		}
-		"CAddShortcutDialog FrameTitle" [$OSX||$LINUX]
+		"CAddShortcutDialog FrameTitle" [$LINUX]
 		{
 			font-size=20 
 		}
 		//overlay_achievement_item.layout override 
-		Label [$OSX||$LINUX]
+		Label [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16
 		}
-		
+		//edittagspage.layout
+		"CEditTagsPage Label" [$LINUX] //highdpi
+		{
+			font-size=14
+		}
+
 		/////////////////////////////////////////////
 		//==List elements similar to the interior==//
-		ListPanel [$OSX||$LINUX]
+		ListPanel [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16
 		}
 		/////////////////////////////////////////////////////////////////////////////////////////
 		//==Interior of List elements (fonts doesn't change on all of them.Look at ListPanel)==//
-		ListPanelInterior [$OSX||$LINUX]
+		ListPanelInterior [$LINUX]
 		{
 			font-size=14 
 		}
@@ -141,522 +151,522 @@ debian.styles
 		
 		/////////////////////////////////////////
 		//======List View Mode Games Name======//
-		"GameColumn_BigText" [$OSX||$LINUX]
+		"GameColumn_BigText" [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16
 		}
 
 		///////////////////////////////////////////////
 		//======List View Mode List Header Text======//
-		ListPanelColumnheader [$OSX||$LINUX]
+		ListPanelColumnheader [$LINUX]
 		{
 			font-size=12 
 		}
 		
 		//////////////////////////////////////////////////
 		//===Library Categories(Recent,Software...etc)==//
-		ListPanelSectionHeader [$OSX||$LINUX]
+		ListPanelSectionHeader [$LINUX] //highdpi
 		{
-			font-size=16 
+			font-size=18
 		}
 		
 		/////////////////////////////////////////////////////////
 		//======Dropmenu buttons(inbox,filter button.....)=====//
-		MenuItem [$OSX||$LINUX]
+		MenuItem [$LINUX]
 		{
-			font-size=14 
+			font-size=14
 		}
 		
 		///////////////////////////////////////////////////////
 		//===Main Buttons Hover Menus (top client buttons)===//
-		SuperNavMenuItem [$OSX||$LINUX]
+		SuperNavMenuItem [$LINUX] //highdpi
+		{
+			font-size=15
+		}
+
+		Notification [$LINUX]
+		{
+			font-size=14 
+		}
+		Panel [$LINUX]
 		{
 			font-size=14 
 		}
 
-		Notification [$OSX||$LINUX]
+		RichText [$LINUX] //highdpi
 		{
-			font-size=14 
-		}
-		Panel [$OSX||$LINUX]
-		{
-			font-size=14 
-		}
-
-		RichText [$OSX||$LINUX]
-		{
-			font-size=14 
+			font-size=16
 		}
 		////////////////////////
 		//======URL Links=====//
-		"RichText url" [$OSX||$LINUX]
+		"RichText url" [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16 
 		}
-		"CFriendPanel RichText URL" [$OSX||$LINUX]
+		"CFriendPanel RichText URL" [$LINUX] //highdpi
 		{
-			font-size=12 
+			font-size=16 
 		}
 		
-		"RichText bold" [$OSX||$LINUX]
+		"RichText bold" [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16 
 		}
-		"RichText emphasis" [$OSX||$LINUX]
+		"RichText emphasis" [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
 		////////////////////////////////
 		//======Friendspanel List=====//
-		SectionedListPanel [$OSX||$LINUX]
+		SectionedListPanel [$LINUX]
 		{
 			font-size=14 
 		}
 		
 		/////////////////////////////////
 		//======Mouse-hover panels=====//
-		tooltip_headline [$OSX||$LINUX]
+		tooltip_headline [$LINUX]
 		{
 			font-size=15 
 		}
 		
 		/////////////////////////////////////////////////////
 		//======Select Directory Dialog's folders text=====//
-		TreeNodeText [$OSX||$LINUX]
+		TreeNodeText [$LINUX]
 		{
 			font-size=12 
 		}
 		
-		URLLabel [$OSX||$LINUX]
+		URLLabel [$LINUX]
 		{
 			font-size=14 
 		}
-		URLLabelSimple [$OSX||$LINUX]
+		URLLabelSimple [$LINUX]
 		{
 			font-size=12 
 		}
 		
-		WrapPanel [$OSX||$LINUX]
+		WrapPanel [$LINUX]
 		{
 			font-size=12 
 		}
 		
 		////////////////////////////////////////////////////////
 		//======Steam Developer Console debug texts(-dev)=====//
-		console_text_error [$OSX||$LINUX]
+		console_text_error [$LINUX]
 		{
 			font-size=14 
 		}
-		console_text [$OSX||$LINUX]
+		console_text [$LINUX]
 		{
 			font-size=14 
 		}
 		
 		//////////////////////////////////
 		//======Other Person's Text=====//
-		friends_chat_text [$OSX||$LINUX]
+		friends_chat_text [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=18
 		}
 		////////////////////////
 		//======Your Text=====//
-		friends_chat_text_self [$OSX||$LINUX]
+		friends_chat_text_self [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 		////////////////////////////////
 		//======Chat History Text=====//
-		friends_chat_history [$OSX||$LINUX]
+		friends_chat_history [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 		//////////////////////////////////////
 		//======Voice Call/Trade/Invite=====//
-		friends_chat_event [$OSX||$LINUX]
+		friends_chat_event [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 
-		///////////////////////////////////////////////
+		//////////////////////////////////////////////
 		//====== Status Changes/Connection/Game=====//
-		friends_chat_bright_event [$OSX||$LINUX]
+		friends_chat_bright_event [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 
-		////////////////////////////////////
+		////////////////////////////
 		//======Links in chat=====//
-		friends_chat_url [$OSX||$LINUX]
+		friends_chat_url [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
-		////////////////////////////////////////////////
+		/////////////////////////////////////////////
 		//======Everybody's Name while in-game=====//
-		friends_chat_name_ingame [$OSX||$LINUX]
+		friends_chat_name_ingame [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
-		friends_chat_self [$OSX||$LINUX]
+		friends_chat_self [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 		////////////////////////////////////////////
 		//======Everybody's Name while online=====//
-		friends_chat_name [$OSX||$LINUX]
+		friends_chat_name [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 
-		friends_chat_accountid [$OSX||$LINUX]
+		friends_chat_accountid [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 
 		//////////////////////////////////////////////
 		//=="Never tell your password to...." Text==//
-		friends_chat_securitylink [$OSX||$LINUX]
+		friends_chat_securitylink [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=18
 		}
 ///////////////////////////////////////////////////////////////
 
 		//phonereminderbar.layout   //
 		//////////////////////////////
 		//======Phone reminder======//
-		soft [$OSX||$LINUX]
+		soft [$LINUX]
 		{
-			font-size=14 
+			font-size=14
 		}
 		
-		bright [$OSX||$LINUX]
+		bright [$LINUX]
 		{
 			font-size=16 
 		}
 ////////////////////////////////////////
 
 		//friendnotificationoptionsdialog.res
-		"CFriendNotificationOptionsDialog Label" [$OSX||$LINUX]
+		"CFriendNotificationOptionsDialog Label" [$LINUX]
 		{
 			font-size=13
 		}
 
 		//backupstartpage.res
 		//Backup/Restore Start Page
-		"CBackupStartPage Label" [$OSX||$LINUX]
+		"CBackupStartPage Label" [$LINUX]
 	    {
 			font-size=28
 	    }
 		//friendaliasesdialog.res
 		
 		//SettingsSubFriends.res
-		"CSettingsSubFriends Label" [$OSX||$LINUX]
+		"CSettingsSubFriends Label" [$LINUX]
 		{
 			font-size=16 
 		}
 		//overlay_broadcastchat.layout
-		"COverlayBroadcastChatDialog label" [$OSX||$LINUX]
+		"COverlayBroadcastChatDialog label" [$LINUX] //highdpi
 		{
-			font-size=12 
+			font-size=16
 		}
 
-		"CSettingsSubFriends URLLabel" [$OSX||$LINUX]
+		"CSettingsSubFriends URLLabel" [$LINUX]
 		{
 			font-size=22 
 		}
 ////////////////////////////////////////
 
 		//friendpanel.layout
-		CFriendPanel [$OSX||$LINUX]
+		CFriendPanel [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		namestyle [$OSX||$LINUX]
+		namestyle [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16 
 		}
-		nameInstanceStyle [$OSX||$LINUX]
+		nameInstanceStyle [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16 
 		}
-		statusStyle [$OSX||$LINUX]
+		statusStyle [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=16 
 		}
-		friends_offline [$OSX||$LINUX]
+		friends_offline [$LINUX] //highdpi
 		{
-			padding-top=0
-			padding-bottom=1
+			padding-top=-2
+			padding-bottom=-1
 		}
-		friends_online [$OSX||$LINUX]
+		friends_online [$LINUX] //highdpi
 		{
-			padding-top=0
-			padding-bottom=1
+			padding-top=-2
+			padding-bottom=-1
 		}
-		friends_ignored [$OSX||$LINUX]
+		friends_ignored [$LINUX] //highdpi
 		{
-			padding-top=0
-			padding-bottom=1
+			padding-top=-2
+			padding-bottom=-1
 		}
-		controlPanelLinkStyle [$OSX||$LINUX]
+		controlPanelLinkStyle [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		controlPanelLinkStyle:hover [$OSX||$LINUX]
+		controlPanelLinkStyle:hover [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		inviteLinkStyle [$OSX||$LINUX]
+		inviteLinkStyle [$LINUX]
 		{
-			font-size=14
+			font-size=16
 		}
 //////////////////////////////////////////
 
 		//gamespage_details_news_item.layout
-		title_label [$OSX||$LINUX]
+		title_label [$LINUX]
 		{
 			font-size=16 
 		}
 		
 		//settingssubmusic.layout
-		HeaderText [$OSX||$LINUX]
+		HeaderText [$LINUX]
 		{
 			font-size=22 
 		}
-		DescriptionLabel [$OSX||$LINUX]
+		DescriptionLabel [$LINUX]
 		{
 			font-size=16 
 		}
 ////////////////////////////////////////		
 		
 		//downloadsummarypanel.layout
-		throttleLabel [$OSX||$LINUX]
+		throttleLabel [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		throttleValue [$OSX||$LINUX]
+		throttleValue [$LINUX]
 		{
 			font-size=13 
 		}
-		bigtextNonUpper [$OSX||$LINUX]
+		bigtextNonUpper [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		bigtextlabel [$OSX||$LINUX]
+		bigtextlabel [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		bigtextHeader [$OSX||$LINUX]
+		bigtextHeader [$LINUX]
 		{
 			font-size=22 
 		}
-		bigTextNumbers [$OSX||$LINUX]
+		bigTextNumbers [$LINUX]
 		{
 			font-size=22 
 		}
 ////////////////////////////////////////		
 		
 		//uinavigatorpanel.layout
-		LibraryShow [$OSX||$LINUX]
+		LibraryShow [$LINUX]
 		{
 			font-size=12 
 		}
-		NavLabel [$OSX||$LINUX]
+		NavLabel [$LINUX]
 		{
 			font-size=12 
 		}
-		NavLabel2 [$OSX||$LINUX]
+		NavLabel2 [$LINUX]
 		{
 			font-size=16 
 		}
-		CUINavButton [$OSX||$LINUX]
+		CUINavButton [$LINUX] //highdpi
 		{
-			font-size=14 
+			font-size=26
 		}
-		CUINavButton2 [$OSX||$LINUX]
+		CUINavButton2 [$LINUX]
 		{
 			font-size=12 
 		}
 ////////////////////////////////////////
 		
 		//musiclibrarypanel.layout
-		"CMusicPage_Details_Content NavLabel2" [$OSX||$LINUX]
+		"CMusicPage_Details_Content NavLabel2" [$LINUX]
 		{
 			font-size=14 
 		}
 
 		//gamespage_details_gametitleheader.layout
-		headertextlarge [$OSX||$LINUX]
+		headertextlarge [$LINUX]
 		{
 			font-size=32 
 		}
 
 		//steamrootdialog.layout
-		AccountBalanceStyle [$OSX||$LINUX]
+		AccountBalanceStyle [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		inbox_button [$OSX||$LINUX]
+		inbox_button [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
-		inbox_button_active [$OSX||$LINUX]
+		inbox_button_active [$LINUX] //highdpi
 		{
-			font-size=14
+			font-size=16
 		}
 //////////////////////////////////////////
 		//steamrootdialog_gamespage_details.layout
-		rightcolumnheadertext [$OSX||$LINUX]
+		rightcolumnheadertext [$LINUX] //highdpi
+		{
+			font-size=18 
+		}
+		rightcolumnheadertext-red [$LINUX] //highdpi
+		{
+			font-size=18 
+		}
+		rightcolumnheadertext-green [$LINUX] //highdpi
+		{
+			font-size=18 
+		}
+		rightcolumnheadertext-blue [$LINUX] //highdpi
+		{
+			font-size=18 
+		}
+		rightcolumnlink [$LINUX] //highdpi
 		{
 			font-size=16 
 		}
-		rightcolumnheadertext-red [$OSX||$LINUX]
+		rightcolumntag [$LINUX] //highdpi
 		{
 			font-size=16 
-		}
-		rightcolumnheadertext-green [$OSX||$LINUX]
-		{
-			font-size=16 
-		}
-		rightcolumnheadertext-blue [$OSX||$LINUX]
-		{
-			font-size=16 
-		}
-		rightcolumnlink [$OSX||$LINUX]
-		{
-			font-size=14 
-		}
-		rightcolumntag [$OSX||$LINUX]
-		{
-			font-size=14 
 		}
 ////////////////////////////////////////		
 		
 		//gamespage_details_achevements_most_recent.layout
-		mostrecent_name [$OSX||$LINUX]
+		mostrecent_name [$LINUX]
 		{
 			font-size=16 
 		}
-		mostrecent_label [$OSX||$LINUX]
+		mostrecent_label [$LINUX]
 		{
 			font-size=16 
 		}
-		mostrecent_unlockedsofar [$OSX||$LINUX]
+		mostrecent_unlockedsofar [$LINUX]
 		{
 			font-size=14 
 		}
 ////////////////////////////////////////		
 		
 		//gamespage_details_dlc.layout
-		"CGamesPage_Details_DLC bodycontent" [$OSX||$LINUX]
+		"CGamesPage_Details_DLC bodycontent" [$LINUX]
 		{
 			font-size=14 
 		}
 
 		//gamespage_details_turnnotifications_item.layout
-		titlestyle [$OSX||$LINUX]
+		titlestyle [$LINUX]
 		{ 
 			font-size=16 
 		}
-		messagestyle [$OSX||$LINUX]
+		messagestyle [$LINUX]
 		{ 
 			font-size=12 
 		}
 ////////////////////////////////////////
 
 		//gamespage_grid_loadfailed.layout
-		GamesGridPlaceholder [$OSX||$LINUX]
+		GamesGridPlaceholder [$LINUX]
 		{
 			font-size=18 
 		}
 
 		//htmlfindbar.layout
-		FindEntry [$OSX||$LINUX]
+		FindEntry [$LINUX]
 		{
 			font-size=14 
 		}
 
 		//appdownloadpanel.layout
-		label2 [$OSX||$LINUX]
+		label2 [$LINUX]
 		{
 			font-size		"12" 
 		}
 		//Game Title
-		ModuleHeading [$OSX||$LINUX]
+		ModuleHeading [$LINUX] //highdpi
 		{
-			font-size		"14"
+			font-size		"16"
 		}
 		//Bottom Status
-		ModuleHeading2 [$OSX||$LINUX]
+		ModuleHeading2 [$LINUX] //highdpi
 		{
-			font-size		"14"
+			font-size		"16"
 		}
 //////////////////////////////////////////
 
 		//overlaytaskbar.layout
-		taskbar [$OSX||$LINUX]
+		taskbar [$LINUX]
 		{
 			font-size=20
 		}
-		taskbar:hover [$OSX||$LINUX]
+		taskbar:hover [$LINUX]
 		{
 			font-size=20
 		}
 ////////////////////////////////////////
 		//overlaydesktop_lores.layout overrides
 		//overlaydesktop.layout
-		sidemenu [$OSX||$LINUX]
+		sidemenu [$LINUX]
 		{
 			font-size=22 
 		}
-		sidemenu:hover [$OSX||$LINUX]
+		sidemenu:hover [$LINUX]
 		{
 			font-size=22 
 		}
 		// The Clock
-		topbar [$OSX||$LINUX]
+		topbar [$LINUX]
 		{
 			font-size=36 
 		}
 		// AM, PM
-		clocksuffix [$OSX||$LINUX]
+		clocksuffix [$LINUX]
 		{
 			font-size=20
 		}
 		// Session, Weeks,Total
-		timeStrings [$OSX||$LINUX]
+		timeStrings [$LINUX]
 		{
 			font-size=16 
 		}
 ////////////////////////////////////////
 
 		//overlay_guide_item.layout
-		name [$OSX||$LINUX]
+		name [$LINUX]
 		{
 			font-size=16 
 		}
 
 		//settingssubstreaming_pin.layout
-		Description [$OSX||$LINUX]
+		Description [$LINUX]
 		{
 			font-size=16
 		}
 
 		//settingsdialog.layout
-		SettingsList [$OSX||$LINUX]
+		SettingsList [$LINUX]
 		{
 			font-size=16
 		}
 
 		//screenshotmanager.layout
-		NoSelectionTitle [$OSX||$LINUX]
+		NoSelectionTitle [$LINUX]
 		{
 			font-size=30
 		}
-		NoSelectionInstructions [$OSX||$LINUX]
+		NoSelectionInstructions [$LINUX]
 		{
 			font-size=14
 		}
-		gameselector [$OSX||$LINUX]
+		gameselector [$LINUX]
 		{
 			font-size=16
 		}
@@ -664,39 +674,56 @@ debian.styles
 
 		//parentallockdialog.layout
 		//parentalunlockdialog.layout
-		Hey [$OSX||$LINUX]
+		Hey [$LINUX]
 		{
 			font-size=22
 		}
 
 		//ChatRoomDlgFriend.res
-		"CChatRoomDlg label" [$OSX||$LINUX]
+		"CChatRoomDlg label" [$LINUX] //highdpi
 		{
-			font-size=12
+			font-size=16
 		}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////				ASPECT OVERRIDES				////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		//steamrootdialog.layout
+		CSteamRootDialog [$LINUX] //highdpi
+		{
+			minimum-width=1200
+			minimum-height=600
+		}
+		//steam.styles
+		"CGamesListPanel" [$LINUX] //highdpi
+		{
+			font-family=semibold
+		}
+		inbox_button_active [$LINUX] //highdpi
+		{
+			font-family=semibold
+		}
+/////////////////////////////////////////////////////////
+
 		//friendpanel.layout
-		namestyle [$OSX||$LINUX]
+		namestyle [$LINUX] //highdpi
 		{
-			font-family=basefont
-			padding-bottom=2
+			font-family=semibold
 		}
-		nameInstanceStyle [$OSX||$LINUX]
+		nameInstanceStyle [$LINUX] //highdpi
 		{
-			font-family=basefont
+			font-family=semibold
 		}
-		statusStyle [$OSX||$LINUX]
+		statusStyle [$LINUX] //highdpi
 		{
-			padding-bottom=2
+			padding-bottom=0
 		}
 ////////////////////////////////////////////////////////
 		//steam.styles
-		ListPanelSectionHeader [$OSX||$LINUX]
+		ListPanelSectionHeader [$LINUX] //highdpi
 		{
-			font-family=semibold
+			font-family=basefont
 		}
 	}
 }
