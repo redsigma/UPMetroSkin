@@ -21,10 +21,12 @@
 		headertextlarge
 		{
 			inset-bottom=4
-			textcolor=White
+			textcolor=titleGame
 			font-family=light
 			font-weight=100
-			bgcolor="none"
+			bgcolor=bgTitleGame
+			padding-left=2
+			padding-right=4
 		}
 	}
 

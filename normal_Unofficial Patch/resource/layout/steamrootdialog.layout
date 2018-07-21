@@ -133,7 +133,7 @@
 //			{
 //				0="fill(x0,y0,x1,y1,ClientBG)"
 //				1="fill(x0,y0,x1,y0+39,Header_Dark)"
-//				2="fill(x0,y0+39,x1,y0+40,FrameBorder)"
+//				2="fill(x0,y0+39,x1,y0+40,frameBorder)"
 //				3="image(x1-821,y1-375,x1,y1,none)"
 //				//4="fill(x0,y0,x1,y1,FocusTint)"
 //			}

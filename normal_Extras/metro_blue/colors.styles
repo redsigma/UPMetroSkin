@@ -3,6 +3,11 @@
 	include "custom.styles"
 	colors
 	{
+// _a = active (clicked, hover, focused)
+// _h = hover
+// _c = clicked
+// _d = disabled
+
 ////////////////////////
 //======No Color======//
 		none="0 0 0 0"
@@ -12,42 +17,61 @@
 //======Base Colors======//
 		Focus_T="0 114 198 30.6" 
 		white03="0 0 0 7.65"
-		white05="0 0 0 23.75"
 		white08="0 0 0 20.4"
+		white05="0 0 0 12.75"
 		white10="0 0 0 25.5"
-		white12="0 0 0 51.6"
-		//white15="0 0 0 38.25"
-		white20="0 0 0 71"
+		white12="0 0 0 30.6"
+		white15="0 0 0 38.25"
+		white20="0 0 0 51"
 		white24="0 0 0 61.2"
 		white25="0 0 0 63.75"
-		White35="0 0 0 89.25"
-		white45="0 0 0 144.75"
-		white50="0 0 0 177.5"	
+		white35="0 0 0 89.25"
+		white45="0 0 0 114.75"
+		white50="0 0 0 127.5"	
 		white75="0 0 0 191.25"
 		white="0 0 0 255"
-		
+
 		black03="255 255 255 7.65"
-		black05="0 0 0 12.75"
 		black08="255 255 255 20.4"
+		black05="255 255 255 12.75"
 		black10="255 255 255 25.5"
-		black12="255 255 255 51.6"
-		//black15="255 255 255 38.25"
-		black20="255 255 255 71"
+		black12="255 255 255 30.6"
+		black15="255 255 255 38.25"
+		black20="255 255 255 51"
 		black24="255 255 255 61.2"
-		black25="255 255 255 63.75"
 		black35="255 255 255 106"
-		black45="255 255 255 144.75"
-		black50="255 255 255 177.5"	
+		black25="255 255 255 63.75"
+		black45="255 255 255 114.75"
 		black75="255 255 255 191.25"
-		Black="255 255 255 255"
+		black="255 255 255 255"
+
+
+/////////////////////
+//======Other======//
+		W10close_Red_h="232 18 35 255"
+		W10close_Red_p="241 112 121 255"
+		Grey1="40 40 40 255"
+		Grey2="48 48 48 255"
+		Grey3="75 75 75 255"
+
+/////////////////////////////////////
+//======Base Background Color======//
+		ClientBG="230 230 230 255"
+		ClientBGTransparent="0 0 0 40"
 
 
 /////////////////////////
 //======Scrollbar======//
-		Scroll_blu="88 168 242 165"
-		Scroll_blu_s="103 193 245 175"
-		ScrollBar="86 86 86 255"
-		ScrollBarH="110 110 110 255"
+		scroll=white05
+		scroll_a=white10
+
+
+////////////////////
+//======Text======//
+		text=white50
+		text_a=white50
+		url=text
+		url_a=white75
 
 
 /////////////////////////////
@@ -57,21 +81,68 @@
 		Friends_Offline=White45
 		Friends_Golden="255 255 99 255"
 
+///////////////////////////////////////
+//======Nickname/Balance Button======//
+		ingameNick=white
+		onlineNick=white
+		offlineNick=white
+
+		bgIngameNick=Friends_InGame
+		bgOnlineNick=Friends_Online
+		bgOfflineNick=none
+
+		bgIngameNearAvatar=none
+		bgOnlineNearAvatar=none
+		bgOfflineNearAvatar=none
+
+		textCash=white
+		bgTextCash=none
+		dropmenuUserCash=Friends_Online
+
 
 ////////////////////////////////////
 //======Steam Windows Border======//
-		FrameBorder="40 120 160 255"
+		frameBorder="40 120 160 255"
+		frameBorder_a=frameBorder
 
 
-////////////////////////////////////////
-//======Steam Detail View Panels======//
-		DetailPanels=black45
-		DetailPanel_launchbutton=DetailPanels
+//////////////////////////////////
+//======Top Bar Background======//
+		Header_Dark="0 160 240 255"
+
+///////////////////////////////
+//======Top Bar Buttons======//
+		mainButton=white50
+		mainButton_h=white75
+		mainButton_c=white
+		mainButton_d=white24
 
 
-/////////////////////////////////
-//======Library Game List======//
-		GameList="229 229 229 255"
+////////////////////////////////
+//======Drop Menus===========//
+		bgMenu=ClientBG
+
+		itemMenu=white
+		itemMenu_a=white
+
+		bgItemMenu=none
+		bgItemMenu_a=white05
+
+
+//////////////////////////////////
+//======Tooltip Panel===========//
+		titleToolTip=White
+		bgToolTip=ClientBG
+
+		textToolTip=White50
+		bgTitleToolTip=none
+		bgTextToolTip=none
+
+
+///////////////////////////////////////
+//======Library Game/Music List======//
+		bgGameList="229 229 229 255"
+		bgMusicList=bgGameList
 
 		game_installed=white
 		game_installed_hover=white
@@ -85,19 +156,117 @@
 		game_mod_hover=game_installed_hover
 		game_mod_selected=game_installed_selected
 
-		game_uninstalled=White50
-		game_uninstalled_hover=White75
-		game_uninstalled_selected=White
+		game_uninstalled=white50
+		game_uninstalled_hover=white75
+		game_uninstalled_selected=white
 
 		game_run=Focus
 		game_run_hover=Focus
 		game_run_selected=white
 
 
+////////////////////////////////////////
+//======Steam Detail View Panels======//
+		bgPanel=black45
+		bgLaunchPanel=bgPanel
+
+		titleGame=White
+		bgTitleGame=none
+
+		//Launch
+		lastplayedLaunchPanel="0 160 240 255"
+		timeLaunchPanel=White75
+
+		//Friends
+		titleFriendsPanel="0 160 240 255"
+		bgTitleFriendsPanel=none
+
+		//Achievements
+		titleAchievementPanel=white
+		bgTitleAchievementPanel=none
+
+		recentAchievementPanel=white35
+		bgRecentAchievementPanel=none
+
+		progressAchievementPanel=White75
+		bgProgressAchievementPanel=Focus
+
+		//Workshop
+		itemWorkshopPanel=White
+		bgItemWorkshopPanel="0 160 240 180"
+
+		//DLC
+		textDLCPanel=White
+		highlightDLCPanel=White
+		installedDLCPanel=White
+		uninstalledDLCPanel=White45
+
+		//News
+		titleNewsPanel="0 160 240 255"
+		bgTitleNewsPanel=none
+
+		textAuthorNewsPanel=text
+		bgAuthorNewsPanel=none
+
+		textNewsPanel=White75
+		urlTextNewsPanel=textNewsPanel
+		urlTextNewsPanel_a=White
+		boldTextNewsPanel=Focus
+
+		overlay_bgTitleNewsPanel=none
+		overlay_titleNewsPanel=White35
+		overlay_titleNewsPanel_a=White
+		overlay_authorNewsPanel=White50
+
+
+/////////////////////////////////////////////////////////
+//======Steam Detail View Links/Custom Categories======//
+		titleColumn="0 160 240 255"
+		bgTitleColumn=none
+
+		textColumn=White50
+		textColumn_a=White75
+		bgTextColumn=none
+		bgTextColumn_a="0 160 180 23.75"
+		tagColumn=White50
+		bgTagColumn=none
+
+///////////////////////////////
+//======Steam Grid View======//
+		gridInstalled=Friends_Online
+		gridRunning=Friends_InGame
+		gridUninstalled=Grey3
+		gridUpdating=Focus
+		gridShortcut=White
+		gridMod=Friends_Golden
+
+//////////////////////////
+//======List Panel======//
+		bgList_a=Focus
+		bgHeaderList="0 160 240 180"
+		bgHeaderList_a=bgHeaderList
+
+		textHeaderList=white
+		textHeaderList_a=white75
+
+		textList=white50
+		textList_a=white
+		textList_d=white45
+
+
 //////////////////////////////////////////////
 //======Divider / List Panel Separator======//
 		Dividers="0 0 0 30.6"
-		Separators=FrameBorder
+		Separators=frameBorder
+
+
+//////////////////////////////
+//======Downloads Page======//
+		appName=text
+		bgAppName=none
+
+		statusDownload=text
+		bgStatusDownload=none
 
 
 ////////////////////////////////
@@ -115,9 +284,10 @@
 		OverlayHover05="255 255 255 12.75"
 
 
-/////////////////////////////////////////////
-//======Overlay In-game Notifications======//
-		transparent_notification="250 250 250 229.5"
+/////////////////////////////
+//======Notifications======//
+		notifBG=ClientBG
+		notifOverlayBG="250 250 250 229.5"
 
 
 //////////////////////////////////
@@ -130,21 +300,10 @@
 		TextEntry="51 153 204 255"
 
 
-//////////////////////////////////
-//======Top Bar Background======//
-		Header_Dark="0 160 240 255"
-
-
-/////////////////////////////////////
-//======Base Background Color======//
-		ClientBG="230 230 230 255"
-		ClientBGTransparent="0 0 0 40"
-
-
 /////////////////////////////////////////////////
 //======Recent/Installed/Tools Categories======//
-		CategoryBG=ClientBG
-		CategoryText=White
+		CategoryBG=none
+		CategoryText=Focus
 
 
 ///////////////////////////////////////
@@ -152,14 +311,5 @@
 		SecureURL = "130 186 0 255"
 		NotSecureURL = "170 20 20 255"
 
-
-/////////////////////
-//======Other======//
-		W10close_Red_h="232 18 35 255"
-		W10close_Red_p="241 112 121 255"
-		Grey1="40 40 40 255"
-		Grey2="48 48 48 255"
-		Grey3="75 75 75 255"
-		DetailsBackground=White45
 	}
 }

@@ -25,7 +25,7 @@ gameoverlay.styles
 			font-size=16
 			font-size=14 [$OSX||$LINUX]
 			font-weight=400
-			bgcolor="transparent_notification"
+			bgcolor=notifOverlayBG
 			render_bg {}
 			render {}
 		}

@@ -72,8 +72,8 @@
 			bgcolor=black24
 			render_bg
 			{
-        		1="fill( x0-1, y0, x0, y1, FrameBorder )"
-        		2="fill( x1, y0, x1+1, y1, FrameBorder )"
+        		1="fill( x0-1, y0, x0, y1, frameBorder )"
+        		2="fill( x1, y0, x1+1, y1, frameBorder )"
       		}
 		}
 

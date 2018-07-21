@@ -24,7 +24,8 @@
 	{
 		infolabel
 		{
-			textcolor="White"
+			textcolor=titleFriendsPanel
+			bgcolor=bgTitleFriendsPanel
 		}
 		ImagePanel
 		{

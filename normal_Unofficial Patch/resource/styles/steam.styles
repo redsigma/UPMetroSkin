@@ -111,10 +111,20 @@ steam.styles
 			bgcolor="ClientBG"
 			render
 			{
-				1="fill( x0, y0, x1, y0+1, FrameBorder )"		// Top
-				2="fill( x0, y1-1, x1, y1, FrameBorder )"		// Bottom
-				3="fill( x0, y0+1, x0+1, y1-1, FrameBorder )"	// Left
-				4="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
+				1="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
+				2="fill( x0, y1-1, x1, y1, frameBorder )"		// Bottom
+				3="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	// Left
+				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
+			}
+		}
+		Frame:framefocus
+		{
+			render
+			{
+				1="fill( x0, y0, x1, y0+1, frameBorder_a )"
+				2="fill( x0, y1-1, x1, y1, frameBorder_a )"
+				3="fill( x0, y0+1, x0+1, y1-1, frameBorder_a )"
+				4="fill( x1-1, y0+1, x1, y1-1, frameBorder_a )"
 			}
 		}
 
@@ -280,11 +290,16 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //======Replacements for those image texts(better from my point AND compatible with all languages)======//
+		"CProductMarketingDialog FrameTitle"
+		{
+			textcolor="White"
+			padding-bottom=16
+		}
 		"CDialogSettings FrameTitle"
 		{
 			textcolor="White"
@@ -311,7 +326,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 			padding-bottom=28
 			padding-left=8
@@ -344,7 +359,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 			padding-bottom=33
 			minimum-height=76
@@ -359,7 +374,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 			padding-bottom=43
 			minimum-height=91
@@ -373,7 +388,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 			padding-bottom=36
 			padding-left=9
@@ -388,7 +403,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 			}
 			padding-left=10
 			minimum-height=116
@@ -402,7 +417,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 			}
 			minimum-height=116
 		}
@@ -413,7 +428,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 			}
 			padding-left=10
 			minimum-height=116
@@ -425,7 +440,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y0+40, Header_Dark)"
-				1="fill( x0, y0+39, x1, y0+40, FrameBorder)"
+				1="fill( x0, y0+39, x1, y0+40, frameBorder)"
 			}
 			padding-left=2
 			minimum-height=26
@@ -438,7 +453,7 @@ steam.styles
 			render_bg
 			{
 				0="fill( x0, y0, x1, y1, Header_Dark)"
-				1="fill( x0, y1-1, x1, y1, FrameBorder)"
+				1="fill( x0, y1-1, x1, y1, frameBorder)"
 			}
 			padding-bottom=36
 			padding-left=11
@@ -476,8 +491,8 @@ steam.styles
 
 		Label
 		{
-			textcolor="White50"
-			selectedtextcolor="White50"
+			textcolor=text
+			selectedtextcolor=text_a
 			font-family=basefont
 			font-weight=400
 			bgcolor="none"
@@ -487,13 +502,13 @@ steam.styles
 //======This is controls the list elements similar to the interior one but more usefull======//
 		ListPanel
 		{
-			textcolor="White50"
-			selectedtextcolor="White"
-			shadowtextcolor="White50"	// the color of disabled line items
+			textcolor=textList
+			selectedtextcolor=textList_a
+			shadowtextcolor=textList_d	// the color of disabled line items
 			font-family=basefont
 			font-weight=400
 			padding-left=8
-			selectedbgcolor="Focus"
+			selectedbgcolor=bgList_a
 			render_bg {}
 			render {}
 		}
@@ -502,7 +517,7 @@ steam.styles
 //======This is the GameList from left======//
 		"CGamesListPanel"
 		{
-			bgcolor="GameList"
+			bgcolor=bgGameList
 			render_bg {}
 		}
 
@@ -599,15 +614,16 @@ steam.styles
 //======List View Mode List Header Text======//
 		ListPanelColumnheader
 		{
-			textcolor="White"
+			textcolor=textHeaderList
 			font-family=semibold
 			font-style="Uppercase"
-			bgcolor="White10"
+			bgcolor=bgHeaderList
 			render_bg{}
 		}
 		ListPanelColumnHeader:hover
 		{
-			textcolor="White75"
+			textcolor="textHeaderList_a"
+			bgcolor=bgHeaderList_a
 		}
 
 		"CSteamRootDialog ListPanelColumnHeader"
@@ -725,16 +741,15 @@ steam.styles
 //======This controls the dropmenu buttons appearance(inbox,filter button.....)=====//
 		Menu
 		{
-			inset="0 8 0 8"
-			bgcolor="ClientBG"
-			render_bg
+			bgcolor=bgMenu
+			render
 			{
-				1="fill( x0, y0, x1, y0+1, FrameBorder )"		// Top
-				2="fill( x0, y1-1, x1, y1, FrameBorder )"		// Bottom
-				3="fill( x0, y0+1, x0+1, y1-1, FrameBorder )"	// Left
-				4="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
+				1="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
+				2="fill( x0, y1-1, x1, y1, frameBorder )"		// Bottom
+				3="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	// Left
+				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
 			}    
-			render {}
+			render_bg {}
 			padding-right=0
 			corner_rounding=0
 		}
@@ -743,16 +758,14 @@ steam.styles
 //======This controls the dropmenu buttons (inbox,filter button.....)=====//
 		MenuItem
 		{
-			textcolor="White"
+			textcolor=itemMenu
 			font-family=basefont
+			bgcolor=bgItemMenu
 		}
 		MenuItem:hover
 		{
-			textcolor="White"
-			render_bg
-			{
-				1="fill( x0+1, y0, x1-1, y1, White05 )"
-			}
+			textcolor=itemMenu_a
+			bgcolor=bgItemMenu_a
 		}
 		MenuItem:disabled
 		{
@@ -767,7 +780,7 @@ steam.styles
 //======HAMBURGER Menu Dividers=====//
 		MenuSeparator
 		{
-			inset="-2 0 0 0"
+			inset-left=-2
 			textcolor="Dividers"
 			bgcolor="none"
 		}
@@ -776,41 +789,39 @@ steam.styles
 //======This controls the hovermenu buttons appearance(top client buttons)=====//
 		SuperNavMenu
 		{
-			inset="0 8 0 8"
-			bgcolor=ClientBG
-			render_bg
+			bgcolor=bgMenu
+			render
 			{
-				1="fill( x0, y0+1, x0+1, y1-1, FrameBorder )"	//Left
-				2="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	//Right
-				3="fill( x0, y0, x1, y0+1, FrameBorder )"		//Top
-				4="fill( x0, y1-1, x1, y1, FrameBorder )"		//Bottom
+				1="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	//Left
+				2="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	//Right
+				3="fill( x0, y0, x1, y0+1, frameBorder )"		//Top
+				4="fill( x0, y1-1, x1, y1, frameBorder )"		//Bottom
 			}
-			render {}
+			render_bg {}
 		}
 
 ///////////////////////////////////////////////////////////////////////
 //======This controls the hovermenu buttons (top client buttons)=====//
 		SuperNavMenuItem
 		{
-			textcolor=white
+			textcolor=itemMenu
 			font-style="regular"
-			bgcolor="none"
-			padding=0
+			bgcolor=bgItemMenu
 		}
 		SuperNavMenuItem:hover
 		{
-			textcolor=white
+			bgcolor=bgItemMenu_a
 		}
 		SuperNavMenuItem:selected
 		{
-			textcolor="white"
+			textcolor=itemMenu_a
 		}
 
 ////////////////////////////////////////////////////////////////////
 //======Library Dropmenu Dividers(dunno why others don't have)=====//
 		"SuperNavMenuDivider"
 		{
-			inset="-2 0 0 0"
+			inset-left=-2
 			textcolor="Dividers"
 			render_bg{}
 		}
@@ -849,7 +860,7 @@ steam.styles
 		{
 			font-family=basefont
 			font-weight=400
-			bgcolor="ClientBG"
+			bgcolor="notifBG"
 			render_bg {}
 			render{}
 		}
@@ -1061,35 +1072,29 @@ steam.styles
 //======This controls the hovering window=====//
 		"TooltipWindow"
 		{
-			bgcolor=ClientBG
+			bgcolor=bgToolTip
 			//bgcolor="Black"
 			//alpha=191.25
 			render_bg
 			{
-				1="fill( x0, y0, x1, y0+1, FrameBorder )"		// Top
-				2="fill( x0+1, y1-1, x1, y1, FrameBorder )"		// Bottom
-				3="fill( x0, y0+1, x0+1, y1, FrameBorder )"		// Left
-				4="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
+				1="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
+				2="fill( x0+1, y1-1, x1, y1, frameBorder )"		// Bottom
+				3="fill( x0, y0+1, x0+1, y1, frameBorder )"		// Left
+				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
 			}
 		}
 ////////////////////////////////////////////////////////
 //======This controls the hovering window's texts=====//
 		tooltip_headline
 		{
-			textcolor="White"
+			textcolor=titleToolTip
 			font-family=basefont
-			padding-left=8
-			padding-right=8
-			padding-top=2
-			padding-bottom=2
+			bgcolor=bgTitleToolTip
 		}
 		"TooltipWindow Label"
 		{
-			textcolor="White50"
-			padding-left=8
-			padding-right=8
-			padding-top=2
-			padding-bottom=4
+			textcolor=textToolTip
+			bgcolor=bgTextToolTip
 		}
 
 //////////////////////////////////////////////////////////
@@ -1130,8 +1135,7 @@ steam.styles
 
 		URLLabel
 		{
-			textcolor="White50"
-			selectedtextcolor="white"
+			textcolor=url
 			font-family=basefont
 			font-style=underline
 			font-weight=400
@@ -1140,13 +1144,12 @@ steam.styles
 
 		URLLabel:Hover
 		{
-			textcolor="White75"
+			textcolor=url_a
 		}
 
 		URLLabelSimple
 		{
-			textcolor="White50"
-			selectedtextcolor="white"
+			textcolor=url
 			font-family=basefont
 			font-style=regular
 			font-weight=400
@@ -1154,7 +1157,7 @@ steam.styles
 		}
 		URLLabelSimple:Hover
 		{
-			textcolor="White75"
+			textcolor=url_a
 			font-style=underline
 		}
 
@@ -1389,31 +1392,31 @@ steam.styles
 		}
 		friendsdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		achievementsdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		dlcdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		clouddetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		communityfilesdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		newsdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 		screenshotsdetails
 		{
-			bgcolor=DetailPanels
+			bgcolor=bgPanel
 		}
 
 		gamedetails-headerlabel
@@ -1474,10 +1477,10 @@ steam.styles
 			bgcolor=ClientBG
 			render
 			{
-				1="fill( x0, y0, x1, y0+1, FrameBorder )"		// Top
-				2="fill( x0+1, y1-1, x1, y1, FrameBorder )"		// Bottom
-				3="fill( x0, y0+1, x0+1, y1, FrameBorder )"		// Left
-				4="fill( x1-1, y0+1, x1, y1-1, FrameBorder )"	// Right
+				1="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
+				2="fill( x0+1, y1-1, x1, y1, frameBorder )"		// Bottom
+				3="fill( x0, y0+1, x0+1, y1, frameBorder )"		// Left
+				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
 			}
 		}
 

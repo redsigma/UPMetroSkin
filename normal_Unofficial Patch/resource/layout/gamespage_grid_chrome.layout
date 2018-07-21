@@ -45,12 +45,11 @@
 	{
 		ChromeBorderItem
 		{
-			bgcolor=Black75
-		}
-		GridNavDivider
-		{
-			textcolor="none"
-			bgcolor="none"
+			bgcolor=none
+			render
+			{
+				0="fill( x0+9, y0, x1-6, y0+56, black75 )"
+     		 }
 		}
 
 		"GameItem_Uninstalled CUILaunchButton"
@@ -108,14 +107,21 @@
 		{
 			textcolor="White"
 		}
+
+		//Hidden
+		GridNavDivider
+		{
+			textcolor=none
+			bgcolor=none
+		}
 	}
 
 	layout
 	{
-		region { name="actions" align=bottom width=max height=56 x=0 y=210 margin-bottom=0}
-		place{ control=chromeborder region=actions x=0 y=0 width=max height=max }
-		place{ control="launch,details" region=actions height=40 width=40 align=top-center spacing=16 margin=8 }
-		//Hidden
-		place { control=divider width=1 align=right }
+		region { name=center height=max width=96 align=top-center  }
+
+		place { control=divider align=left-center }
+		place { start=divider y=-8 control=chromeborder width=max align=right }
+		place { region=center control="launch,details" height=40 width=40 align=left-center spacing=16 }
 	}
 }

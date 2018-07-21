@@ -312,53 +312,36 @@
 
 		ScrollBarHandle  //vertical scrollbar thumb
 		{
-			bgcolor="none"
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White05 )"
-			}
+			bgcolor=scroll
 		}
 		"ScrollBarHandle:hover"
 		{
+			bgcolor=scroll_a
 			render_bg
 			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
+				0="fill( x0, y0, x1, y1, white05 )"
 			}
 		}
 		"ScrollBarHandle:selected"
 		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1-1, y1, White10 )"
-			}
+			bgcolor=scroll_a
 		}
 
 		"SliderHoriz"  //horizontal scrollbar thumb
 		{
-			render_bg 
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White05 )"
-			}
+			bgcolor=scroll
 		}
 		"SliderHoriz:hover"
 		{
+			bgcolor=scroll_a
 			render_bg
 			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
+				0="fill( x0, y0, x1, y1, white05 )"
 			}
 		}
 		"SliderHoriz:selected"
 		{
-			render_bg
-			{
-				// center fill
-				0="fill( x0, y0, x1, y1, White10 )"
-			}
+			bgcolor=scroll_a
 		}
 
 		ScrollBarSlider // gutter

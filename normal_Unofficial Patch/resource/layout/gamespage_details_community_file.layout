@@ -31,11 +31,11 @@
 		}
 		communityfile_name
 		{
-			textcolor="White"
+			textcolor=itemWorkshopPanel
 		}
 		communityfile_image_border
 		{
-			bgcolor=black45
+			bgcolor=bgItemWorkshopPanel
 		}
 
 		//Hidden

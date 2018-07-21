@@ -17,9 +17,25 @@
 
 	styles
 	{
+		headertext
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-blue
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-green
+		{
+			textcolor=lastplayedLaunchPanel
+		}
+		headertext-red
+		{
+			textcolor=lastplayedLaunchPanel
+		}
 		valuetext
 		{
-			textcolor=White75
+			textcolor=timeLaunchPanel
 		}
 		Label
 		{

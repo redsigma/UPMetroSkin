@@ -12,13 +12,14 @@
 	{
 		title_label
 		{
-			textcolor="White35"
+			textcolor=overlay_titleNewsPanel
+			bgcolor=overlay_bgTitleNewsPanel
 			font-family=basefont
 			font-style="normal"
 		}
 		title_label:hover
 		{
-			textcolor="White"
+			textcolor=overlay_titleNewsPanel_a
 		}
 		//Hidden
 		date_and_author

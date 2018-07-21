@@ -74,7 +74,7 @@
 		BrowseButtonStyle:hover { bgcolor="none" render_bg={} image=graphics/music_browse_hover }
 
 		StatusStyle	{ render_bg={} font-family=basefont textcolor="White75" font-size=16 }
-		InfoLabelStyle { render_bg={0="fill(x0,y1-15,x1,y1-14,FrameBorder)"} font-family=basefont font-size=14 textcolor="White45" }
+		InfoLabelStyle { render_bg={} font-family=basefont font-size=14 textcolor="White45" }
 		TrackListStyle {}
 		NoTracksLabelStyle { bgcolor="none" render_bg={} image=graphics/music_background }
 		SeekBarStyle { bgcolor="none" font-family=basefont font-size=16 }

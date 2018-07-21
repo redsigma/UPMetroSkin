@@ -44,20 +44,20 @@
 		}
 		bodycontent
 		{
-			textcolor="White"
-			selectedtextcolor="White"
+			textcolor=textDLCPanel
+			selectedtextcolor=textDLCPanel
 			render_bg {}
 		}
 
 		"DLC_Uninstalled"
 		{
-			textcolor="White45"
-			selectedtextcolor="White"
+			textcolor=uninstalledDLCPanel
+			selectedtextcolor=highlightDLCPanel
 		}
 		"DLC_Installed"
 		{
-			textcolor="White"
-			selectedtextcolor="White"
+			textcolor=installedDLCPanel
+			selectedtextcolor=installedDLCPanel
 		}
 		"mostrecenttime"
 		{
