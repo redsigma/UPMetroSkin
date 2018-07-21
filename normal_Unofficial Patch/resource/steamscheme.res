@@ -115,9 +115,11 @@ Scheme
 				xpos	r80
 				xpos	22 [$OSX]
 				ypos	1
-				ypos	3 [$OSX]
+				ypos	12 [$OSX]
 				wide	40
+				wide	24 [$OSX]
 				tall	38
+				tall	24 [$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}
@@ -127,9 +129,11 @@ Scheme
 				xpos	r120
 				xpos	43 [$OSX]
 				ypos	1
-				ypos	3 [$OSX]
+				ypos	12 [$OSX]
 				wide	40 
+				wide	24 [$OSX]
 				tall	38
+				tall	24 [$OSX]
 				visible 0 [!$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
@@ -139,9 +143,11 @@ Scheme
 				xpos	r40
 				xpos	1 [$OSX]
 				ypos	1
-				ypos	3 [$OSX]
+				ypos	12 [$OSX]
 				wide	40
+				wide	24 [$OSX]
 				tall	38
+				tall	24 [$OSX]
 				PinCorner	1
 				PinCorner	0 [$OSX]
 			}

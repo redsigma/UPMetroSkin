@@ -396,9 +396,11 @@
 			textcolor=mainButton_c
 			render_bg
 			{
-				0="fill(x0,y0,x1,y1-1,white05)"
-				1="fill(x0, y1-7, x1, y1, focus)"
-				2="fill(x0, y1-6, x1, y1, ClientBG)"
+				0="fill(x0,y0,x1,y1-6,white05)"
+			}
+			render
+			{
+				1="fill(x0, y1-7, x1, y1-6, focus)"
 			}
 		}
 		CUINavButton:disabled
@@ -545,6 +547,7 @@
 		region { name=top align=top y=40 x=0 margin-right=0 }
 		region { name="nav" y=0 height=46 }
 		place { control="back,forward" region=nav x=40 y=1 height=38 width=40 margin-left=0 spacing=0 }
+		place [$OSX] { control="back,forward" x=72 y=1 height=38 width=40 margin-left=0 spacing=0 }
 		place { control="label_store,label_library" region=nav start=forward x=1 y=0 spacing=1 height=46 }
 		place { control="library_filters" region=nav start=label_library height=38 width=15 }
 		place { control="label_news,label_community,label_me,label_console" region=nav start=library_filters x=1 y=0 spacing=1 height=46 }
