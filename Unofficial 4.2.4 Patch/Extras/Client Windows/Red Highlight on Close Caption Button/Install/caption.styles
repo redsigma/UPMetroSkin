@@ -3,7 +3,7 @@
 	styles
 	{
 		//Default Style
-		FrameMinimizeButton
+		FrameMinimizeButton [$WIN32||$WINDOWS||$LINUX]
 		{
 			inset="9 19 0 0"
 			render_bg{}
@@ -15,7 +15,7 @@
 			image="graphics/osx_win_dis"
 			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		FrameMinimizeButton:hover
+		FrameMinimizeButton:hover [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White05
 		}
@@ -38,7 +38,7 @@
 			image="graphics/osx_min_hov"
 			image="graphics/osx_min_hov_new" [$OSX1010]
 		}
-		FrameMinimizeButton:active
+		FrameMinimizeButton:active [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White10
 		}
@@ -48,7 +48,7 @@
 			image="graphics/osx_min_down_new" [$OSX1010]
 		}
 
-		FrameMaximizeButton
+		FrameMaximizeButton [$WIN32||$WINDOWS||$LINUX]
 		{
 			inset="9 14 0 0"
 			render_bg{}
@@ -60,7 +60,7 @@
 			image="graphics/osx_win_dis"
 			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		FrameMaximizeButton:hover
+		FrameMaximizeButton:hover [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White05
 		}
@@ -83,7 +83,7 @@
 			image="graphics/osx_max_hov"
 			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		FrameMaximizeButton:active
+		FrameMaximizeButton:active [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White10
 		}
@@ -93,7 +93,7 @@
 			image="graphics/osx_max_down_new" [$OSX1010]
 		}
 
-		FrameRestoreButton
+		FrameRestoreButton [$WIN32||$WINDOWS||$LINUX]
 		{
 			inset="9 14 0 0"
 			render_bg{}
@@ -105,7 +105,7 @@
 			image="graphics/osx_win_dis"
 			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		FrameRestoreButton:hover
+		FrameRestoreButton:hover [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White05
 		}
@@ -128,7 +128,7 @@
 			image="graphics/osx_max_hov"
 			image="graphics/osx_max_hov_new" [$OSX1010]
 		}
-		FrameRestoreButton:active
+		FrameRestoreButton:active [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=White10
 		}
@@ -138,7 +138,7 @@
 			image="graphics/osx_max_down_new" [$OSX1010]
 		}
 
-		FrameCloseButton
+		FrameCloseButton [$WIN32||$WINDOWS||$LINUX]
 		{
 			inset="9 14 0 0"
 			render_bg{}
@@ -150,7 +150,7 @@
 			image="graphics/osx_win_dis"
 			image="graphics/osx_win_dis_new_dark" [$OSX1010]
 		}
-		FrameCloseButton:hover
+		FrameCloseButton:hover [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=W10close_Red_h
 			image="graphics/metro/icons/caption/close_h"
@@ -174,7 +174,7 @@
 			image="graphics/osx_close_hov"
 			image="graphics/osx_close_hov_new" [$OSX1010]
 		}
-		FrameCloseButton:active
+		FrameCloseButton:active [$WIN32||$WINDOWS||$LINUX]
 		{
 			bgcolor=W10close_Red_p
 			image="graphics/metro/icons/caption/close_p"
@@ -184,7 +184,7 @@
 			image="graphics/osx_close_down"
 			image="graphics/osx_close_down_new" [$OSX1010]
 		}
-		FrameCloseButton:disabled
+		FrameCloseButton:disabled [$WIN32||$WINDOWS||$LINUX]
 		{
 			inset="9 14 0 0"
 			render_bg{}
