@@ -657,7 +657,7 @@ steam.styles
 		}
 		"CGamesListPanel ListPanelColumnSelectButton"   
 		{
-			bgcolor="GameList"
+			bgcolor=bgGameList
 			render_bg{}
 			render{}
 		}
