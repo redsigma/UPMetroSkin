@@ -157,9 +157,10 @@
 
 		view_friends
 		{
+			inset-left=6
 			bgcolor="none"
 			image="graphics/metro/icons/navbar/friends"
-			padding-right=8
+			padding-right=4
 		}
 		view_friends:hover
 		{
