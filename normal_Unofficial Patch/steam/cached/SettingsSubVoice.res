@@ -27,7 +27,7 @@
 		place { region=box start=MicrophoneLabel control=MicrophoneVolume x=16 }
 		place { region=box start=MicrophoneVolume control=SpeakerVolume dir=down }
 		
-		place { region=box start=SpeakerLabel control="MicMeter" y=6 dir=down }
+		place { region=box start=SpeakerLabel control="MicMeter" y=12 dir=down }
 		place { region=box start=MicMeter control="MicMeter2" margin-left=-160 }
 
 		place { region=box start=MicMeter control=TestMicrophone x=6 }

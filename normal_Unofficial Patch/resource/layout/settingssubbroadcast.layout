@@ -47,30 +47,29 @@
 		place { start="BroadcastDisabledLabel" control="BroadcastDisabledSupportURL" x=4 }
 
 		place { region=box start="BroadcastStatusHeader" control="BroadcastStatus" dir=right margin-left=4 }
-		
 		place { region=box start="BroadcastStatusHeader" margin-top=4 control="BroadcastHelpHeader" dir=down }
-		place { region=box start="BroadcastStatus" margin-top=4 control="BroadcastHelpURL" dir=down }
-		
+
+		place { region=box start="BroadcastHelpHeader" control="BroadcastHelpURL" margin-left=4 }
 		place { region=box start="BroadcastStatusHeader" control="Divider1" dir=down margin-top=24 width=max}
-		
+
 		place { region=box start="Divider1" control="PermissionsHeader" dir=down margin-top=20 width=max }
 		place { region=box start="PermissionsHeader" control="Permissions" dir=down margin-top=4 width=350 }
-		
+
 		place { region=box start="Permissions" control="DimensionsHeader" dir=down margin-top=10 width=max }
 		place { region=box start="DimensionsHeader" control="Dimensions" dir=down margin-top=4 width=250 }
-		
+
 		place { region=box start="Dimensions" control="BitrateLimitHeader" dir=down margin-top=10 width=max }
 		place { region=box start="BitrateLimitHeader" control="BitrateLimit" dir=down margin-top=4 width=250 }
-		
+
 		place { region=box start="BitrateLimit" control="EncoderHeader" dir=down margin-top=10 width=max }
 		place { region=box start="EncoderHeader" control="EncoderSetting" dir=down margin-top=4 width=250 }
-		
+
 		place { region=box start="EncoderSetting" control="ShowChatHeader" dir=down margin-top=10 width=max }
 		place { region=box start="ShowChatHeader" control="ShowChatCombo" dir=down margin-top=4 width=250 }
-		
+
 		place { region=box start="ShowChatCombo" control="IncludeDesktop,RecordSystemAudio,RecordMic,ShowDebugInfo,ShowReminder" dir=down margin-top=10 }	
 		place { region=box start="RecordMic" control="ConfigMic" dir=right height=28 }
-		
+
 		place { region=box control="RequiresRestartLabel" width=max margin-top=500 }
 	}
 }
