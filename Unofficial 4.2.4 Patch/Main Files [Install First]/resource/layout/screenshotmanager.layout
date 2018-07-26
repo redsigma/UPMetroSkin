@@ -168,6 +168,7 @@
 		region { name="list" margin-left=16 margin-right=16 margin-top=44 margin-bottom=50 width=max }
 
 		place { control=game_selector region=selectorbar width=max margin-right=200 }
+		place [$OSX] { control=game_selector region=selectorbar align=right width=max margin-left=200 }
 		place {	control="grid" region="list" dir=down x=0 y=0 width=340 height=max }
 		place { control="no_screenshots" region="list" y=50 align="top-center" }
 

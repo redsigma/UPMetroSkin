@@ -59,6 +59,7 @@
 	{
 		//List
 		place { control="GameTabs" margin-top=12 height=max width=max }
+		place [$OSX] { control="GameTabs" margin-top=39 height=max width=max }
 		//Bottom
 		place { control="StatusLabel" width=1 align=right }
 	}
