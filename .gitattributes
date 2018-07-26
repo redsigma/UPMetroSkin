@@ -1,0 +1,20 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=crlf
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.styles text
+*.layout text
+*.res text
+*.css text
+*.menu text
+*.url text
+*.txt text
+
+# Denote all files that are truly binary and should not be modified.
+*.tga binary
+*.png binary
+*.ttf binary
+*.psd binary
+*.rtf binary
+*.jpg binary
