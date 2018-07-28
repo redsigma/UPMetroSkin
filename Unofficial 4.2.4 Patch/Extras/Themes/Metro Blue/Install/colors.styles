@@ -1,4 +1,4 @@
-"settings.styles" 
+"colors.styles" 
 {
 	include "custom.styles"
 	colors
@@ -15,10 +15,9 @@
 
 ///////////////////////////
 //======Base Colors======//
-		Focus_T="0 114 198 30.6" 
 		white03="0 0 0 7.65"
-		white08="0 0 0 20.4"
 		white05="0 0 0 12.75"
+		white08="0 0 0 20.4"
 		white10="0 0 0 25.5"
 		white12="0 0 0 30.6"
 		white15="0 0 0 38.25"
@@ -27,7 +26,7 @@
 		white25="0 0 0 63.75"
 		white35="0 0 0 89.25"
 		white45="0 0 0 114.75"
-		white50="0 0 0 127.5"	
+		white50="0 0 0 127.5"
 		white75="0 0 0 191.25"
 		white="0 0 0 255"
 
@@ -83,17 +82,17 @@
 
 ///////////////////////////////////////
 //======Nickname/Balance Button======//
-		ingameNick=white
-		onlineNick=white
-		offlineNick=white
+		ingameNick=Friends_InGame
+		onlineNick=Friends_Online
+		offlineNick=Friends_Offline
 
-		bgIngameNick=Friends_InGame
-		bgOnlineNick=Friends_Online
+		bgIngameNick=none
+		bgOnlineNick=none
 		bgOfflineNick=none
 
-		bgIngameNearAvatar=none
-		bgOnlineNearAvatar=none
-		bgOfflineNearAvatar=none
+		bgIngameNearAvatar=Friends_InGame
+		bgOnlineNearAvatar=Friends_Online
+		bgOfflineNearAvatar=Friends_Offline
 
 		textCash=white
 		bgTextCash=none
@@ -256,7 +255,7 @@
 
 //////////////////////////////////////////////
 //======Divider / List Panel Separator======//
-		Dividers="0 0 0 30.6"
+		Dividers=white12
 		Separators=frameBorder
 
 
@@ -292,7 +291,7 @@
 
 //////////////////////////////////
 //======Chat Window border======//
-		chatframe=White50
+		chatframe=white50
 
 
 //////////////////////////
@@ -310,6 +309,5 @@
 //======URL Secure / Not Secure======//
 		SecureURL = "130 186 0 255"
 		NotSecureURL = "170 20 20 255"
-
 	}
 }
