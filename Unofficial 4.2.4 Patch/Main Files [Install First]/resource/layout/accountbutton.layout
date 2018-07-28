@@ -1,110 +1,57 @@
 "resource/layout/accountbutton.layout"
 {
-	controls
-	{
-		account_avatar
-		{
-			"ControlName"	"Image"
-			"fieldName"		"account_avatar"
-			"zpos" 			"-2" // behind dropdown button
-		}
-
-		account_drop_down
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_drop_down"
-			"zpos" 			"-2" // behind dropdown button
-			"style"			"AccountDropDownStyleOffline"
-		}
-
-		account_balance
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_balance"
-			"style"			"AccountBalanceStyle"
-			
-			"zpos" 			"-2" // behind dropdown button
-		}
-
-		account_persona
-		{
-			"ControlName"	"Label"
-			"fieldName"		"account_persona"
-			"style" 		"AccountPersonaStyleOffline"
-			"labelText"		"%persona%"
-			"zpos" 			"-2" // behind dropdown button
-		}
-
-		account_menu_button
-		{
-			"ControlName"	"Button"
-			"fieldName"		"account_menu_button"
-			"labelText"		""
-			"style" 		"AccountMenuButtonStyle"
-		}
-	}
-
 	styles
 	{
 		AccountPersonaStyleOffline
 		{
 			bgcolor=bgOfflineNick
 			textcolor=offlineNick
+			font-style=uppercase
+			padding-right=8
+			padding-left=12
 			render_bg
 			{
-				0="fill(x0, y0, x0+6, y1, bgOfflineNearAvatar)"
+				0="fill(x0-33, y0+3, x0+1, y1-2, bgOfflineNearAvatar)"
 			}
-			padding-left=8
-			padding-right=4
 		}
 
 		AccountPersonaStyleOnline
 		{
 			bgcolor=bgOnlineNick
 			textcolor=onlineNick
+			font-style=uppercase
+			padding-right=8
+			padding-left=12
 			render_bg
 			{
-				0="fill(x0, y0, x0+6, y1, bgOnlineNearAvatar)"
+				0="fill(x0-33, y0+3, x0+1, y1-2, bgOnlineNearAvatar)"
 			}
-			padding-left=8
-			padding-right=4
-			
 		}
 
 		AccountPersonaStyleInGame
 		{
 			bgcolor=bgIngameNick
 			textcolor=ingameNick
+			font-style=uppercase
+			padding-right=8
+			padding-left=12
 			render_bg
 			{
-				0="fill(x0, y0, x0+6, y1, bgIngameNearAvatar)"
+				0="fill(x0-33, y0+3, x0+1, y1-2, bgIngameNearAvatar)"
 			}
-			padding-left=8
-			padding-right=4
 		}
 
 		AccountDropDownStyleOffline
 		{
 			bgcolor=none
-			render{}
 		}
+
 		AccountDropDownStyleOnline
 		{
 			bgcolor=none
-			render{}
 		}
+
 		AccountDropDownStyleInGame
-		{
-			bgcolor=none
-			render{}
-		}
-
-		AccountButtonStyle
-		{
-			bgcolor=none
-		}
-
-		AccountButtonStyle:hover
 		{
 			bgcolor=none
 		}
@@ -113,35 +60,33 @@
 		{
 			textcolor=textCash
 			bgcolor=bgTextCash
-			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=regular
-			padding-right=8
+			padding-right=14
+			padding-left=8
 		}
 
 		AccountMenuButtonStyle
 		{
 			bgcolor=none
 		}
-
 		AccountMenuButtonStyle:hover
 		{
-			bgcolor=White05
-		}
+			bgcolor=white05
 
+		}
 		AccountMenuButtonStyle:active
 		{
-			bgcolor=White10
+			bgcolor=white10
 		}
 	}
 
 	layout
 	{
-		place { control="account_menu_button" align=left height=39 width=max }
-		place { control="account_balance" y=9 align=right height=24 }
-		place { control="account_drop_down" y=7 align=right end-right="account_balance" margin-top=1 height=24 width=4 }
-		place { control="account_persona" y=8 align=right end-right="account_drop_down" height=24 }
-		place { control="account_avatar" y=8 align=right end-right="account_persona" margin-left=4 height=24 width=24 }
+		place { control="account_menu_button" align=left height=39 width=max } // span over everything
+		place { control="account_persona" align=right height=39 }
+		place { control="account_avatar" align=right end-right="account_persona" margin-top=4 height=32 width=32 }
+		place { control="account_balance" align=right end-right="account_avatar" height=39 }
+
+		//hidden
+		place { control="account_drop_down" height=0 width=0 }
 	}
 }
