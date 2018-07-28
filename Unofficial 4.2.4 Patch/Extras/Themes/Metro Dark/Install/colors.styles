@@ -15,7 +15,6 @@
 
 ///////////////////////////
 //======Base Colors======//
-		Focus_T="0 114 198 30.6"
 		white03="255 255 255 7.65"
 		white05="255 255 255 12.75"
 		white08="255 255 255 20.4"
@@ -83,17 +82,17 @@
 
 ///////////////////////////////////////
 //======Nickname/Balance Button======//
-		ingameNick=white
-		onlineNick=white
-		offlineNick=white
+		ingameNick=Friends_InGame
+		onlineNick=Friends_Online
+		offlineNick=Friends_Offline
 
-		bgIngameNick=Friends_InGame
-		bgOnlineNick=Friends_Online
+		bgIngameNick=none
+		bgOnlineNick=none
 		bgOfflineNick=none
 
-		bgIngameNearAvatar=none
-		bgOnlineNearAvatar=none
-		bgOfflineNearAvatar=none
+		bgIngameNearAvatar=Friends_InGame
+		bgOnlineNearAvatar=Friends_Online
+		bgOfflineNearAvatar=Friends_Offline
 
 		textCash=white
 		bgTextCash=none
