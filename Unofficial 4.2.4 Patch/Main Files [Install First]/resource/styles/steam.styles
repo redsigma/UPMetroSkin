@@ -2,8 +2,8 @@ steam.styles
 {
 	include "custom.styles"
 
-	include "resource/styles/windows.styles" [$WIN32||$WINDOWS||$OSX]
-	include "resource/styles/linux.styles" [$LINUX]
+	include [$WIN32||$WINDOWS||$OSX||$OSX1010] "resource/styles/windows.styles"
+	include [$LINUX] "resource/styles/linux.styles"
 
 	include "controls.styles"
 	include "UI.styles"
