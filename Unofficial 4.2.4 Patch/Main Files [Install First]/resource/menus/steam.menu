@@ -3,10 +3,8 @@
 	Steam
 	{
 		text=""
-		SkinVersion		{	text="Metro for Steam - Unofficial Patch 9"	shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
-		Divider {}
-		Website			{	text="Official Website"			shellcmd="steam://openurl/https://metroforsteam.com" }
-		Group			{	text="Steam Community Group"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroforsteam" }
+		SkinVersion		{	text="Metro for Steam 4.2.4"			shellcmd="steam://openurl/https://metroforsteam.com" }
+		SkinVersionMod		{	text="Unofficial Patch 9.1a"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
 		MyAccount		{	text="#steam_menu_account_details"		shellcmd="steam://url/StoreAccount" }
 		MyProfile		{	text="#steam_menu_account_view_profile"		shellcmd="steam://url/SteamIDMyProfile" }
