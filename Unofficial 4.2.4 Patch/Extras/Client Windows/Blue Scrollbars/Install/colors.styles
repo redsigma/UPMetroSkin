@@ -83,17 +83,17 @@
 
 ///////////////////////////////////////
 //======Nickname/Balance Button======//
-		ingameNick=white
-		onlineNick=white
-		offlineNick=white
+		ingameNick=Friends_InGame
+		onlineNick=Friends_Online
+		offlineNick=Friends_Offline
 
-		bgIngameNick=Friends_InGame
-		bgOnlineNick=Friends_Online
+		bgIngameNick=none
+		bgOnlineNick=none
 		bgOfflineNick=none
 
-		bgIngameNearAvatar=none
-		bgOnlineNearAvatar=none
-		bgOfflineNearAvatar=none
+		bgIngameNearAvatar=Friends_InGame
+		bgOnlineNearAvatar=Friends_Online
+		bgOfflineNearAvatar=Friends_Offline
 
 		textCash=white
 		bgTextCash=none
