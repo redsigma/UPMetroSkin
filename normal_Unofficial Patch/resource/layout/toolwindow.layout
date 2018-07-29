@@ -1,11 +1,5 @@
 "resource/layout/toolwindow.layout"
 {
-	controls
-	{
-		// the container
-		ToolWindowSheet	{	controlname="PropertySheet" }
-	} 
-
 	styles
 	{
 		ToolWindow
@@ -31,14 +25,14 @@
 		{
 			textcolor="none"
 			bgcolor="none"
-			render_bg 
+			render_bg
 			{
 				0="image(x0+8,y0+8,x1,y1,graphics/new_tab)"
 			}
 		}
 		Button:hover
 		{
-			render_bg 
+			render_bg
 			{
 				0="image(x0+8,y0+8,x1,y1,graphics/new_tab_hover)"
 			}
@@ -50,13 +44,15 @@
 			bgcolor="none"
 			render_bg{}
 		}
+
 		TabMenuButtonFlash
-		{ 
+		{
 			render_bg
 			{
 				0="fill(x0+2,y0+5,x1+1,y1-6,Focus)"
 			}
 		}
+
 		TabMenuItemFlash
 		{
 			textcolor="Focus"

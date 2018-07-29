@@ -1,76 +1,12 @@
 "friends/ChatRoomDlgFriend.res"
 {
-	controls
-	{
-		"ChatRoomDlg"
-		{
-			"ControlName"		"CChatRoomDlg"
-			"title"		"#Friends_Chat_Title"
-		}
-		"TextEntry"
-		{
-			"ControlName"		"TextEntry"
-			"tabPosition"		"1"
-			"editable"		"1"
-			"maxchars"		"2048"
-			"unicode"		"1"
-			style="textentryfocus_chat"
-		}
-		"ChatHistory"
-		{
-			"ControlName"		"RichText"
-			"maxchars"		"-1"
-			"ScrollBar"		"1"
-			style="ListPanel"
-		}
-		"SendButton"
-		{
-			"ControlName"		"Button"
-			"tabPosition"		"2"
-			"paintbackground"		"1"
-			"labelText"		"#Friends_Chat_Send"
-			"textAlignment"		"west"
-			"Default"		"1"
-			style="button"
-		}
-		"StatusLabel"
-		{
-			"ControlName"		"Label"
-			"labelText"			""
-		}
-		"TitlePanel"
-		{
-			"ControlName"		"CFriendPanel"
-			"zpos"		"-2"
-			paintbackgroundenabled=0
-
-		}
-		"VoiceBar"
-		{
-			"ControlName"		"CVoiceBar"
-		}
-		"VoiceChat"
-		{
-			"ControlName"		"Button"
-			style="controlbutton"
-			minimum-width="120"
-		}
-		"GameInviteBar"
-		{
-			"ControlName"		"GameInviteBar"
-		}
-		"EmoticonButton"
-		{
-			"ControlName"		"CEmoticonButton"
-		}
-	}
-
 	styles
 	{
 		label
 		{
 			textcolor=White45
 			font-style=uppercase
+			font-size=12
 		}
 
 		controlbutton
@@ -123,39 +59,46 @@
 			font-family=semibold
 			font-style=uppercase
 		}
+
+		ScrollBar
+		{
+			inset-bottom=20
+		}
 	}
 
 	layout
 	{
-		//Voice Chat Close Button
-		place { control="VoiceChat" y=55 align=right margin=4 width=16 height=16 dir=right }
-
 		//Title Panel
 		place { control="TitlePanel" x=0 y=0 height=56 width=max margin-right=16 end-right=ChatActionsButton }
 
 		//Menu Button
-		place { control="ChatActionsButton" height=54 width=54 align=right dir=right }
+		place { control="ChatActionsButton" height=54 width=54 align=right }
 
-		//Bar Height Override
-		place { control="GameInviteBar,TradeInviteBar,ChatInfoBar,VoiceBar,BIBar,BABar" height=54 }
+		//ChatHistory Region
+		region { name=topregion y=55 height=max width=max align=right margin-bottom=61 margin-right=1 }
 
 		//Voice Chat Bar
-		place { control="VoiceBar" y=55 width=max height=54 dir=down end-right=VoiceChat }
+		place { control="VoiceBar" region=topregion width=max height=54 end-right=VoiceChat }
+
+		//Voice Chat Close Button
+		place { control="VoiceChat" region=topregion start=VoiceBar align=right margin=4 width=16 height=16 }
 
 		//Bar Position Info
-		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" start=VoiceBar y=0 width=max height=max align=right dir=down margin-bottom=61 margin-right=1 }
+		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar" region=topregion start=VoiceBar width=max height=54 dir=down }
 
-		//Regions
-		region { name=bottom1 align=bottom height=71 width=max margin=8 }
-		region { name=bottom align=bottom height=40 }
+		//Chat History
+		place { control="ChatHistory" region=topregion start=BABar width=max height=max dir=down margin-bottom=-20 }
+
+		//Bottom Region
+		region { name=bottomregion align=bottom height=59 width=max }
 
 		//Text Box
-		place { control="TextEntry" region=bottom height=max width=max end-right=EmoticonButton }
+		place { control="TextEntry" region=bottomregion height=40 width=max align=bottom end-right=EmoticonButton }
 
 		//Emoticon Menu
-		place { control="EmoticonButton,SendButton" region=bottom height=max width=40 align=right margin-right=1 }
+		place { control="EmoticonButton,SendButton" region=bottomregion start=TextEntry height=40 width=40 align=right dir=right margin-right=1 }
 
 		//Last Message Received
-		place { control="StatusLabel" region=bottom1 height=25 }
+		place { control="StatusLabel" region=bottomregion height=19 width=max align=top margin-left=8 }
 	}
 }

@@ -1,4 +1,4 @@
-"UI.styles" 
+"UI.styles"
 {
 	styles
 	{
@@ -7,7 +7,7 @@
 			render
 			{
 				1="fill( x0, y0+54, x1, y0+55, frameBorder )"
-				2="fill( x0, y1-61, x1, y1-60, Black25 )"
+				2="fill( x0, y1-61, x1, y1-60, Header_Dark )"
 			}
 		}
 		CPlayersDialog
@@ -443,9 +443,9 @@
 /////////////////////////////////////////
 //======Friends Game Invite Dialog=====//
 		CFriendGameInviteDialog
-		{			
+		{
 			bgcolor="ClientBG"
-			render_bg 
+			render_bg
 			{
 				1="fill( x0, y1-44, x1, y1-43, frameBorder )"
 				2="fill( x0, y1-43, x1, y1, Header_Dark )"
