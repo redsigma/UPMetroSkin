@@ -87,6 +87,6 @@
 		place { control="account_balance" align=right end-right="account_avatar" height=39 }
 
 		//hidden
-		place { control="account_drop_down" height=0 width=0 }
+		place { control="account_drop_down" margin-left=-999 }
 	}
 }
