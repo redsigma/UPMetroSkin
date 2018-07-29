@@ -216,14 +216,14 @@
 
 	layout
 	{
-		region	{ name="details" y=0 x=262 width=max height=max margin-top=38 overflow=scroll-vertical margin-left=0 margin-right=-1 }
+		region	{ name="details" y=0 x=262 width=max height=max overflow=scroll-vertical margin-left=0 margin-right=-1 }
 		region	{ name="headertext" region=details width=max height=max margin-right=170 }
 
 		//List
-		place 	{ control=GamesList width=262 height=max margin=0 margin-top=38 margin-bottom=-1 }
+		place 	{ control=GamesList width=262 height=max margin-bottom=-1 }
 
 		//Empty List Text 
-		place	{ control=emptylisttext y=1 width=max height=max margin-top=38 margin-left=8 }
+		place	{ control=emptylisttext y=1 width=max height=max margin-left=8 }
 
 		//Header
 		place 	{ control=gametitleheader region=headertext dir=down width=max y=16 margin-left=10 }
@@ -238,8 +238,8 @@
 		place { control=linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,editconfiglink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,edittagslink,*taglink region=rightcolumn dir=down height=32 width=max }
 
 		//Background Images
-		place 	{ control=headerimagea align=left margin-top=38 margin-left=262 height=550 width=1024 }
-		place 	{ control=headerimageb align=left margin-top=38 margin-left=262 height=550 width=1024 }
+		place 	{ control=headerimagea align=left margin-left=262 height=550 width=1024 }
+		place 	{ control=headerimageb align=left margin-left=262 height=550 width=1024 }
 
 		//?
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
