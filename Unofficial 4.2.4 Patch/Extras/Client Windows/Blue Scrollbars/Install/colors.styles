@@ -1,4 +1,4 @@
-"settings.styles" 
+"colors.styles"
 {
 	include "custom.styles"
 	colors
@@ -15,10 +15,9 @@
 
 ///////////////////////////
 //======Base Colors======//
-		Focus_T="0 114 198 30.6" 
 		white03="255 255 255 7.65"
-		white08="255 255 255 20.4"
 		white05="255 255 255 12.75"
+		white08="255 255 255 20.4"
 		white10="255 255 255 25.5"
 		white12="255 255 255 30.6"
 		white15="255 255 255 38.25"
@@ -27,7 +26,7 @@
 		white25="255 255 255 63.75"
 		white35="255 255 255 89.25"
 		white45="255 255 255 114.75"
-		white50="255 255 255 127.5"	
+		white50="255 255 255 127.5"
 		white75="255 255 255 191.25"
 		white="255 255 255 255"
 
@@ -256,7 +255,7 @@
 
 //////////////////////////////////////////////
 //======Divider / List Panel Separator======//
-		Dividers="255 255 255 30.6"
+		Dividers=white12
 		Separators=frameBorder
 
 
@@ -292,7 +291,7 @@
 
 //////////////////////////////////
 //======Chat Window border======//
-		chatframe=White50
+		chatframe=white50
 
 
 //////////////////////////
@@ -310,6 +309,5 @@
 //======URL Secure / Not Secure======//
 		SecureURL = "130 186 0 255"
 		NotSecureURL = "170 20 20 255"
-
 	}
 }

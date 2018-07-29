@@ -49,20 +49,20 @@
 //======Other======//
 		W10close_Red_h="232 18 35 255"
 		W10close_Red_p="241 112 121 255"
-		Grey1="40 40 40 255"
-		Grey2="48 48 48 255"
-		Grey3="75 75 75 255"
+		Grey1="14 14 14 255"
+		Grey2="32 32 32 255"
+		Grey3="64 64 64 255"
 
 /////////////////////////////////////
 //======Base Background Color======//
-		ClientBG="26 26 26 255"
-		ClientBGTransparent="43 43 43 191.25"
+		ClientBG=Black
+		ClientBGTransparent=Black75
 
 
 /////////////////////////
 //======Scrollbar======//
-		scroll=Focus
-		scroll_a=Focus
+		scroll=white08
+		scroll_a=white12
 
 
 ////////////////////
@@ -101,13 +101,13 @@
 
 ////////////////////////////////////
 //======Steam Windows Border======//
-		frameBorder="15 15 15 255"
+		frameBorder=Grey3
 		frameBorder_a=frameBorder
 
 
 //////////////////////////////////
 //======Top Bar Background======//
-		Header_Dark="20 20 20 255"
+		Header_Dark="12 12 12 255"
 
 ///////////////////////////////
 //======Top Bar Buttons======//
@@ -140,7 +140,7 @@
 
 ///////////////////////////////////////
 //======Library Game/Music List======//
-		bgGameList="38 38 38 255"
+		bgGameList=Header_Dark
 		bgMusicList=bgGameList
 
 		game_installed=white
@@ -291,12 +291,12 @@
 
 //////////////////////////////////
 //======Chat Window border======//
-		chatframe=white50
+		chatframe=frameBorder
 
 
 //////////////////////////
 //======Search Bar======//
-		TextEntry="39 39 39 255"
+		TextEntry=Grey1
 
 
 /////////////////////////////////////////////////
