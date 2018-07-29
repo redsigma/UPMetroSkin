@@ -84,7 +84,7 @@
 //======Nickname/Balance Button======//
 		ingameNick=Friends_InGame
 		onlineNick=Friends_Online
-		offlineNick=white
+		offlineNick=Friends_Offline
 
 		bgIngameNick=none
 		bgOnlineNick=none
