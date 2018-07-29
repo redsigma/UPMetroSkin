@@ -366,7 +366,6 @@
 		place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
 
 		// Hidden
-		place { control="AnnouncementButton,fullscreen,add_game,frame_title" width=1 align=right }
-		place { control="universe_label" width=10 height=10 align=right }
+		place { control="AnnouncementButton,fullscreen,add_game,universe_label,New" margin-left=-999 dir=down }
 	}
 }

@@ -7,7 +7,7 @@
 			bgcolor=ClientBG
 			render_bg
 			{
-        		1="fill( x0, y0, x0+1, y1, FrameBorder )"
+			1="fill( x0, y0, x0+1, y1, FrameBorder )"
 			}
 		}
 
