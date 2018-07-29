@@ -6,21 +6,14 @@
 		SkinVersion		{	text="Metro for Steam 4.2.4"			shellcmd="steam://openurl/https://metroforsteam.com" }
 		SkinVersionMod		{	text="Unofficial Patch 9.1a"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
-		MyAccount		{	text="#steam_menu_account_details"		shellcmd="steam://url/StoreAccount" }
-		MyProfile		{	text="#steam_menu_account_view_profile"		shellcmd="steam://url/SteamIDMyProfile" }
-		Settings		{	text="#steam_menu_settings"			command="Settings" }
-		Divider {}
 		MiniMode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
 		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 		BigPicture		{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
-		MusicDetails		{	text="#steam_menu_view_music_details"		shellcmd="steam://nav/music/details" }
 		MusicPlayer		{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
 		Divider {}
-		Friends			{	text="#steam_menu_friends"			shellcmd="steam://open/friends" }
 		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
-		Downloads		{	text="#steam_menu_downloads"			shellcmd="steam://nav/downloads" }
 		Divider {}
 		ActivateRetail		{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
 		RedeemWalletVoucher	{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
@@ -35,6 +28,7 @@
 		Divider {}
 		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		SystemInfo		{	text="#steam_menu_systeminfo"			command="SystemInfo" }
+    Settings		{	text="#steam_menu_settings"			command="Settings" }
 		About			{	text="#steam_about"				command="About" }
 		Divider {}
 		ChangeUser		{	text="#steam_menu_changeuser"			command="ChangeUser" }
@@ -42,6 +36,6 @@
 		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
 		Restart 		{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
 		Divider {}
-		Exit			{	text="#Steam_ExitSteam"				command="Exit" }
-	}
+    Exit			{	text="#Steam_ExitSteam"				command="Exit" }
+  }
 }
