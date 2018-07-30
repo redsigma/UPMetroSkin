@@ -22,10 +22,10 @@
 
 		view_friends
 		{
-			inset-left=6
+			padding-left=6
 			bgcolor="none"
 			image="graphics/metro/icons/navbar/friends"
-			padding-right=4
+			padding-right=2
 		}
 		view_friends:hover
 		{
@@ -189,9 +189,9 @@
 				1="fill(x0,y1,x1,y1+1,focus)"
 			}
 			render {}
-			padding-left=15
+			padding-left=13
 			padding-right=0
-			padding-top=-4	//numbers are centered
+			padding-top=-5	//numbers are centered
 		}
 		inbox_button_active:hover
 		{
