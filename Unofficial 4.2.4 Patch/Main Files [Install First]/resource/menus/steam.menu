@@ -4,7 +4,7 @@
 	{
 		text=""
 		SkinVersion		{	text="Metro for Steam 4.2.4"			shellcmd="steam://openurl/https://metroforsteam.com" }
-		SkinVersionMod		{	text="Unofficial Patch 9.1c"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
+		SkinVersionMod		{	text="Unofficial Patch"				shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
 		MiniMode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
 		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
@@ -27,7 +27,7 @@
 		Legal			{	text="#steam_menu_LegalInformation"		shellcmd="steam://url/LegalInformation" }
 		SSA			{	text="#steam_menu_SteamSubscriberAgreement"	shellcmd="steam://url/SSA" }
 		Divider {}
-		Announcements		{	text="Steam Blog Announcements"			shellcmd="steam://url/SteamAnnouncements" }
+		Announcements		{	text="Steam Announcements"			shellcmd="steam://url/SteamAnnouncements" }
 		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		SystemInfo		{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		Settings		{	text="#steam_menu_settings"			command="Settings" }
