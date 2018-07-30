@@ -222,6 +222,6 @@
 		//Hidden
 		place { control="*taglink,tagslabel" margin-left=-999 }
 		place { control=gamesubheaderright margin-left=-999 }
-		place { control=achievementslink,linkslabel,dlclink align=right margin-left=-999 }
+		place { control=achievementslink,linkslabel,dlclink margin-left=-999 }
 	}
 }
