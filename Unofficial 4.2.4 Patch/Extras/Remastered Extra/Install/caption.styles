@@ -7,7 +7,7 @@
 		{
 			inset="9 19 0 0"
 			render_bg{}
-			image="graphics/metro/icons/caption/minimize"
+			image="graphics/metro/icons/caption/minimize_h"
 		}
 		FrameMinimizeButton [$OSX]
 		{
@@ -52,7 +52,7 @@
 		{
 			inset="9 14 0 0"
 			render_bg{}
-			image="graphics/metro/icons/caption/maximize"
+			image="graphics/metro/icons/caption/maximize_h"
 		}
 		FrameMaximizeButton [$OSX]
 		{
@@ -97,7 +97,7 @@
 		{
 			inset="9 14 0 0"
 			render_bg{}
-			image="graphics/metro/icons/caption/restore"
+			image="graphics/metro/icons/caption/restore_h"
 		}
 		FrameRestoreButton [$OSX]
 		{
@@ -142,7 +142,7 @@
 		{
 			inset="9 14 0 0"
 			render_bg{}
-			image="graphics/metro/icons/caption/close"
+			image="graphics/metro/icons/caption/close_h"
 		}
 		FrameCloseButton [$OSX]
 		{
