@@ -7,12 +7,6 @@
 			textcolor="White"
 		}
 
-		CGamesPage_Details
-		{
-			inset="0 0 0 0"
-			bgcolor="none"
-		}
-
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel"
 		{
@@ -68,14 +62,6 @@
 		DetailsBorderPanel
 		{
 			bgcolor="none"
-		}
-
-		CGamesPage_Details
-		{
-			render_bg
-			{
-				1="fill( x0+262, y0+37, x1, y0+38, Black25 )"
-			}
 		}
 
 		//Hidden
