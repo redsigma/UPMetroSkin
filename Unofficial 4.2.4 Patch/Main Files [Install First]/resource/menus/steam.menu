@@ -4,7 +4,7 @@
 	{
 		text=""
 		SkinVersion		{	text="Metro for Steam 4.2.4"			shellcmd="steam://openurl/https://metroforsteam.com" }
-		SkinVersionMod		{	text="Unofficial Patch 9.1a"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
+		SkinVersionMod		{	text="Unofficial Patch 9.1b"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
 		MiniMode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
 		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
@@ -28,7 +28,7 @@
 		Divider {}
 		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		SystemInfo		{	text="#steam_menu_systeminfo"			command="SystemInfo" }
-    Settings		{	text="#steam_menu_settings"			command="Settings" }
+		Settings		{	text="#steam_menu_settings"			command="Settings" }
 		About			{	text="#steam_about"				command="About" }
 		Divider {}
 		ChangeUser		{	text="#steam_menu_changeuser"			command="ChangeUser" }
@@ -36,6 +36,6 @@
 		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
 		Restart 		{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
 		Divider {}
-    Exit			{	text="#Steam_ExitSteam"				command="Exit" }
-  }
+		Exit			{	text="#Steam_ExitSteam"				command="Exit" }
+	}
 }

@@ -1,47 +1,29 @@
 "resource/layout/musicpage_detail_content.layout"
 {
-	controls
-	{
-		AlbumList { tabposition=1 }
-		ArtistList { tabposition=1 }
-		PlaylistList { tabposition=1 }
-		DetailsBorder { controlname=EditablePanel style="DetailsBorderPanel" zpos="-1" }
-		EmptyDatabaseText { controlname="RichText" text="#Music_NoLibrary" style="EmptyDatabaseText" }
-		CrawlingText { controlname="RichText" style="CrawlingText" }
-
-		// Background image, plus overlays 
-		BackgroundImageA { controlname="ImagePanel" style="HeaderImage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
-		BackgroundImageB { controlname="ImagePanel" style="HeaderImage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
-		BackgroundImageMask { controlname="ImagePanel" style="HeaderImage" zpos="-3" visible=1 scaling="none" horizontal-align=left vertical-align=top }
-	}
-
 	styles
 	{
 		DetailsBorderPanel
 		{
 			bgcolor="none"
-			render_bg{}
-			render {}
 		}
 
 		AlbumOrArtistListStyle
 		{
 			bgcolor=bgMusicList
-			render_bg {}
 		}
 
 //////////////////////////////////////////////
 //======"We've come up empty...." text======//
 		EmptyDatabaseText
 		{
-			textcolor="White"
-			render_bg {}
+			textcolor=white75
+			font-size=24
 		}
 ///////////////////////////////////////
 //======"... in settings." text======//
 		"CMusicPage_Details_Content RichText URL"
 		{
-			textcolor=White
+			textcolor=white75
 			font-size=24
 		}
 
@@ -49,44 +31,34 @@
 //======"Your Library is scanned...." text======//
 		CrawlingText
 		{
-			textcolor="White75"
+			textcolor=white75
 			font-size=24
-			render_bg {}
 		}
 
 		CMusicPage_Details_Content
 		{
 			bgcolor="none"
-			render_bg{}
-			render{}
 		}
 
 		// Some overrides for our listpanel
 		"MusicPage_Details_Content ListPanel"
 		{
 			bgcolor="white03"
-			render_bg {}
-			render {}
 		}
 
 		"MusicPage_Details_Content ListPanelInterior"
 		{
 			inset="0 0 0 0"
 			bgcolor="none"
-			render_bg {}
-			render {}
 		}
 		"MusicPage_Details_Content ListPanelInterior:scrollbar"
 		{
 			bgcolor="none"
-			render_bg {}
 		}
 
 		"MusicPage_Details_Content ListPanelDragger"
 		{
 			bgcolor="none"
-			render_bg {}
-			render {}
 		}
 
 		"MusicPage_Details_Content ListPanelColumnHeader"
@@ -94,22 +66,17 @@
 			inset="0 0 0 0"
 			font-size=14
 			bgcolor="none"
-			render_bg {}
-			render {}
 		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton"   
 		{
 			bgcolor="none"
-			render_bg{}
-			render{}
 			image="graphics/metro/icons/plus"
 		}
 
 		DetailsBorderPanel
 		{
 			bgcolor="none"
-			render {}
 		}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
