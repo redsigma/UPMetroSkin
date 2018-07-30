@@ -227,14 +227,6 @@
 			render {}
 		}
 
-		announcement_button{
-			textcolor=Focus
-		}
-
-		AccountButtonStyle{
-			textcolor=Focus
-		}
-
 		parental_lock_button
 		{
 			bgcolor="none"
@@ -318,26 +310,6 @@
 			textcolor="none"
 			bgcolor="none"
 		}
-	}
-
-	colors
-	{
-		support_flag_red "169 72 71 255"
-		green "130 186 0 255"
-
-		support_hover_red1 "193 94 93 255"
-		support_hover_red2 "156 64 63 255"
-
-		inbox_active_text "112 186 36 255"
-		inbox_inactive_text "191 191 191 255"
-
-		inbox_active "92 126 16 255"
-		inbox_active_hover1 "129 176 25 255"
-		inbox_active_hover2 "104 142 19 255"
-
-		inbox_inactive "38 38 37 255"
-		inbox_inactive_hover1 "92 89 86 255"
-		inbox_inactive_hover2 "77 75 72 255"
 	}
 
 	layout
