@@ -14,6 +14,7 @@
 		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
+		NewForYou		{	text="#SteamUI_GameProperties_UpdateNews"	shellcmd="steam://open/newforyou" }
 		Divider {}
 		ActivateRetail		{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
 		RedeemWalletVoucher	{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
@@ -26,6 +27,7 @@
 		Legal			{	text="#steam_menu_LegalInformation"		shellcmd="steam://url/LegalInformation" }
 		SSA			{	text="#steam_menu_SteamSubscriberAgreement"	shellcmd="steam://url/SSA" }
 		Divider {}
+		Announcements		{	text="Steam Blog Announcements"			shellcmd="steam://url/SteamAnnouncements" }
 		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
 		SystemInfo		{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		Settings		{	text="#steam_menu_settings"			command="Settings" }
