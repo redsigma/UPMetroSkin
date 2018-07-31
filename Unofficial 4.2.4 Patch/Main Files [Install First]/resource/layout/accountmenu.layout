@@ -1,15 +1,5 @@
 "resource/layout/accountmenu.layout"
 {
-	controls
-	{
-		view_profile_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_view_profile" }
-		view_account_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_details" }
-		view_wallet_button	{ controlname="Button" style="account_menu_button" labelText="#steam_menu_account_wallet" }
-		view_preferences_button { controlname="Button" style="account_menu_button" labelText="#steam_menu_account_preferences" }
-		change_user_button	{ controlname="Button" style="account_menu_button" labelText="#steam_menu_account_logout" }
-		account_name_label	{ controlname="Label"  style="account_menu_label" labelText="%account%" }
-		wallet_amount_label { controlname="Label"  style="account_menu_label" labelText="%wallet%" }
-	}
 	styles
 	{
 		AccountMenuStyle
