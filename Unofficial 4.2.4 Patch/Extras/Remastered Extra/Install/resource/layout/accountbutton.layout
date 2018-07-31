@@ -1,0 +1,61 @@
+"resource/layout/accountbutton.layout"
+{
+	styles
+	{
+		AccountBalanceStyle
+		{
+			textcolor=textCash
+			bgcolor=bgTextCash
+			padding-right=14
+			padding-left=8
+		}
+
+		//Hidden
+		AccountMenuButtonStyle
+		{
+			bgcolor=none
+		}
+		AccountDropDownStyleOffline
+		{
+			bgcolor=none
+		}
+		AccountDropDownStyleOnline
+		{
+			bgcolor=none
+		}
+		AccountDropDownStyleInGame
+		{
+			bgcolor=none
+		}
+		AccountPersonaStyleOffline
+		{
+			bgcolor=none
+			textcolor=none
+		}
+		AccountPersonaStyleOnline
+		{
+			bgcolor=none
+			textcolor=none
+		}
+		AccountPersonaStyleInGame
+		{
+			bgcolor=none
+			textcolor=none
+		}
+		ImagePanel
+		{
+			inset-left=-999
+			bgcolor=none
+		}
+	}
+
+	layout
+	{
+		place { control="account_balance" y=8 align=right }
+		place { control="account_persona" width=1 }
+		place { control="account_avatar" width=1 margin-left=-999 }
+
+		//hidden
+		place { control="account_menu_button,account_drop_down" margin-left=-999 }
+	}
+}
