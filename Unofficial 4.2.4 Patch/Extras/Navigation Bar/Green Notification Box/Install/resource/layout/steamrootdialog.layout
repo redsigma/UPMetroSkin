@@ -319,7 +319,6 @@
 		//Caption Buttons
 		place [!$OSX] { control="frame_minimize,frame_maximize,frame_close" y=1 align=right width=40 height=38 }
 
-
 		//Content
 		place { control="UINavigatorPanel" width=max height=max x=1 margin-right=1 }
 
