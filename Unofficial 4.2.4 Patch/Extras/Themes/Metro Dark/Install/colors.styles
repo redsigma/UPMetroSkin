@@ -65,8 +65,8 @@
 
 /////////////////////////
 //======Scrollbar======//
-		scroll=white08
-		scroll_a=white12
+		scroll=white05
+		scroll_a=white10
 
 
 ////////////////////
@@ -299,7 +299,7 @@
 
 //////////////////////////
 //======Search Bar======//
-		TextEntry=Grey1
+		TextEntry=Header_Dark
 
 
 /////////////////////////////////////////////////
