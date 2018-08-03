@@ -8,7 +8,7 @@ Additional details and feedback are available on [MetroSkin](https://steamcommun
 
 1. Download the Repository
 2. Navigate to the 'Main Files [Install First]' directory within the repository
-3. In a new file explorer windows, for 
+3. In a new file explorer window, for 
     - Windows: Open the directory C:/Program Files (x86)/Steam/skins
     - MAC OS X: Press Cmd+Shift+G in Finder and type ~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins)
     - Linux: ~/.local/share/Steam/skins/)
