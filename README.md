@@ -9,9 +9,9 @@ Additional details and feedback are available on [MetroSkin](https://steamcommun
 1. Download the Repository
 2. Navigate to the 'Main Files [Install First]' directory within the repository
 3. In a new file explorer windows, for 
-        a. Windows: Open the directory C:/Program Files (x86)/Steam/skins
-        b. MAC OS X: Press Cmd+Shift+G in Finder and type ~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins)
-        c. Linux: ~/.local/share/Steam/skins/)
+a. Windows: Open the directory C:/Program Files (x86)/Steam/skins
+b. MAC OS X: Press Cmd+Shift+G in Finder and type ~/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins)
+c. Linux: ~/.local/share/Steam/skins/)
 4. Create a new folder called 'Metro' and copy all the files from 'Main Files [Install First' into this new directory.
 5. Open the Steam interface and in top tab, click on “Steam” / “Settings”.
 6. Then open the Interface section.
