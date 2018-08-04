@@ -1,0 +1,73 @@
+"resource/layout/overlay_achievementsdetails.layout"
+{
+	controls
+	{
+		AchievementsDetailPanel { controlname="COverlay_Details_Acheivements" style=detailsbox }
+		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
+		ViewAchievementsButton { controlname=button labeltext="#Overlay_Friends_ViewAchievements" }
+		progressbackground { controlname="ImagePanel" style="progressbackground" }
+		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+		ProgressTextEarned { controlname=label style=Focus labeltext="#Overlay_Achievement_Progress" }
+	}
+	colors
+	{
+	}
+	styles
+	{
+		detailsbox
+		{
+			bgcolor=none
+		}
+		detailsboxtitle
+		{
+			textcolor=white
+			font-family=light
+			font-weight=300
+			font-size="32"
+			font-style=regular
+		}
+		highlight
+		{
+			textcolor=White45
+			font-size=20
+		}
+		Button
+		{
+			bgcolor=none
+			image=graphics/metro/overlay/icons/achievements
+			inset-left=-6
+		}
+		Button:hover
+		{
+			image=graphics/metro/overlay/icons/achievements_h		
+		}
+		Button:active
+		{
+			image=graphics/metro/overlay/icons/achievements_p		
+		}
+		//Hidden
+		progressbackground
+		{
+			bgcolor="none"
+			render_bg{}
+		}
+		progressbarimage
+		{
+			bgcolor="none"
+			render_bg{}
+		}
+	}
+	layout
+	{
+		//Left
+		place { controls=ViewAchievementsButton y=16 width=40 height=40 }
+
+		//Right
+		place { control="TitleText" x=56 y=7 }
+		place { control="ProgressTextEarned" x=56 y=40 }
+
+		//Hidden
+		place { control=*achievement x=0 y=72 height=200 dir=right width=200 }
+		place { control=progressbarimage,progressbackground }
+	}
+}
