@@ -54,7 +54,7 @@
 		clocksuffix
 		{
 			textcolor=OverlayClock
-			font-family=light
+			font-family=basefont
 			font-style=uppercase
 		}
 		// Session, Weeks,Total
@@ -71,7 +71,7 @@
 		place { control="WorkshopButton" margin-left=60 x=30 y=48 }
 
 		place { control="clock" align=top-center y=20 }
-		place { control="clocksuffix" start=clock x=-10 }
+		place { control="clocksuffix" align=top-center y=10 }
 		place { control="SessionText,TwoWeeksText,ForeverText" align=top-center start=clock dir=down }
 
 		//Panel Height

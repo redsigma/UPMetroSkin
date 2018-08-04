@@ -62,7 +62,7 @@
 		// Session, Weeks,Total
 		timeStrings
 		{
-			textcolor=OverlayClock
+			textcolor=White45
 			font-family=basefont
 			font-style=regular
 			font-size=20
@@ -71,17 +71,24 @@
 		{
 			padding-left=8
 			padding-right=8
+			render
+			{
+				0="fill(x0,y1+2,x1,y1+3,white12)"
+			}
 		}
 		URLLabel:hover
 		{
-			bgcolor=white12
+			render
+			{
+				0="fill(x0,y0+3,x1,y1-3,white12)"
+				1="fill(x0,y1+2,x1,y1+3,white12)"
+			}
 		}
 	}
 	layout
 	{
 		place { control="clock,clocksuffix" x=78 y=72 }
-		place { control=ForeverText start=clocksuffix x=16 y=8 }
-		place { control="SessionText,TwoWeeksText" x=78 y=100 dir=down }
+		place { control="SessionText,TwoWeeksText,ForeverText" x=78 y=100 }
 
 		//Panels
 		place { control="FriendsDetailPanel,ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" x=16 y=144 align=left width=600 height=72 dir=down }
@@ -90,7 +97,7 @@
 		place { control="GuidesDetailPanel" start=AchievementsDetailPanel dir=down width=400 height=224 }
 
 		//Small
-		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" dir=down y=185 height=40 align=right margin-right=12 }
+		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" dir=down y=185 width=150 height=34 align=right spacing=4 }
 
 		//Hidden
 		place { control="NewsDetailPanel" margin-left=-999 }
