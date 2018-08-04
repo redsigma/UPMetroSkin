@@ -88,7 +88,7 @@
 	layout
 	{
 		place { control="clock,clocksuffix" x=78 y=72 }
-		place { control="SessionText,TwoWeeksText,ForeverText" x=78 y=100 }
+		place { control="SessionText,TwoWeeksText,ForeverText" spacing=6 x=78 y=100 }
 
 		//Panels
 		place { control="FriendsDetailPanel,ScreenshotsDetailPanel,CommunityHubDetailPanel,CommunityDiscussionsDetailPanel" x=16 y=144 align=left width=600 height=72 dir=down }
