@@ -80,7 +80,7 @@ gameoverlay.styles
 		}
 
 		//Switching to the Default Caption buttons since we have space now
-		"ToolWindow FrameCloseButton"
+		"FrameCloseButton"
 		{
 			inset="9 14 0 0"
 			render_bg{}
@@ -88,11 +88,11 @@ gameoverlay.styles
 			minimum-width=40
 			minimum-height=38
 		}
-		"ToolWindow FrameCloseButton:hover"
+		"FrameCloseButton:hover"
 		{
 			bgcolor=W10close_Red_h
 		}
-		"ToolWindow FrameCloseButton:active"
+		"FrameCloseButton:active"
 		{
 			bgcolor=W10close_Red_p
 			image="graphics/metro/icons/caption/close_p"

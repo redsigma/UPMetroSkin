@@ -28,7 +28,7 @@ steam.styles
 		URLStatusImage
 		{
 			render_bg {}
-			image="graphics/html_lock_disabled" // this reads html_lock.tga <-DON'T CHANGE 
+			image="graphics/html_lock_disabled" // this reads html_lock.tga <-DON'T CHANGE
 		}
 
 		LabelEVCert
@@ -128,19 +128,32 @@ steam.styles
 			}
 		}
 
-		CGamesPage_List
+///////////////////////////////////////////
+//===Top Bar Separator Line in Library===//
+
+		CGamesPage_Details
 		{
+			inset="0 0 0 0"
+			bgcolor="none"
 			render_bg
 			{
-				1="fill( x0, y0, x1, y0+1, Black25 )"
-				2="fill( x0, y0+19, x1, y0+20, Black25 )"
+				1="fill( x0+1, y0-1, x1-1, y0, Header_Dark )"
 			}
 		}
+
 		CGamesPage_Grid
 		{
 			render_bg
 			{
-				1="fill( x0, y0, x1, y0+1, Black25 )"
+				1="fill( x0+1, y0-1, x1-1, y0, Header_Dark )"
+			}
+		}
+
+		CMusicPage_Details
+		{
+			render_bg
+			{
+				1="fill( x0+1, y0-1, x1-1, y0, Header_Dark )"
 			}
 		}
 
@@ -655,7 +668,7 @@ steam.styles
 			render{}
 			image="graphics/metro/icons/plus_p"
 		}
-		"CGamesListPanel ListPanelColumnSelectButton"   
+		"CGamesListPanel ListPanelColumnSelectButton"
 		{
 			bgcolor=bgGameList
 			render_bg{}
@@ -743,14 +756,13 @@ steam.styles
 		Menu
 		{
 			bgcolor=bgMenu
-			render
+			render_bg
 			{
 				1="fill( x0, y0, x1, y0+1, frameBorder )"		// Top
 				2="fill( x0, y1-1, x1, y1, frameBorder )"		// Bottom
 				3="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	// Left
 				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
-			}    
-			render_bg {}
+			}
 			padding-right=0
 			corner_rounding=0
 		}
@@ -791,14 +803,13 @@ steam.styles
 		SuperNavMenu
 		{
 			bgcolor=bgMenu
-			render
+			render_bg
 			{
 				1="fill( x0, y0+1, x0+1, y1-1, frameBorder )"	//Left
 				2="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	//Right
 				3="fill( x0, y0, x1, y0+1, frameBorder )"		//Top
 				4="fill( x0, y1-1, x1, y1, frameBorder )"		//Bottom
 			}
-			render_bg {}
 		}
 
 ///////////////////////////////////////////////////////////////////////
@@ -872,12 +883,12 @@ steam.styles
 			render_bg{}
 		}
 
-	    "CSteamRootDialog Page"
+		"CSteamRootDialog Page"
 		{
 			render_bg {}
 		}
 
-	    "ToolWindow PageTab"
+		"ToolWindow PageTab"
 		{
 			minimum-width=80
 		}
@@ -1485,7 +1496,7 @@ steam.styles
 			}
 		}
 
-//////////////// styles for White used in RichText controls in various places //////////////// 
+//////////////// styles for White used in RichText controls in various places ////////////////
 
 ////////////////////////////////////////////////////////
 //======Steam Developer Console debug texts(-dev)=====//
@@ -1502,7 +1513,7 @@ steam.styles
 			font-family="basefont"
 			selectedbgcolor="Focus"
 		}
-		
+
 ////////////////////////////////////////
 //======Chat Window Related texts=====//
 
@@ -1629,7 +1640,7 @@ steam.styles
 		}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-//======Chat Window Close Button text wrap{when the ... appears after the friends names}======// 
+//====Chat Window Close Button text wrap{when the ... appears after the friends names}=====//
 		TabPageCloseButton
 		{
 			padding-right=16
