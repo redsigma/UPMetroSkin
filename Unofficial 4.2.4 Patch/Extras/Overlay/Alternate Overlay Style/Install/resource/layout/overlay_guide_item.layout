@@ -1,0 +1,46 @@
+"resource/layout/overlay_guide_item.layout"
+{
+	controls
+	{
+		icon { controlname="ImagePanel" scaleimage=1 }
+		name { controlname=label style=name }
+
+		Background { controlname="ImagePanel" style=Background visible=1 }
+		IconBackground { controlname="ImagePanel" style=IconBackground visible=1 }
+	}
+	colors
+	{
+	}
+	styles
+	{
+		name
+		{
+			textcolor=White45
+			font-style="none"
+			font-size=20
+			padding-left=3
+			padding-right=3
+		}
+		name:hover
+		{
+			textcolor=White
+			bgcolor=white12
+		}
+		Background
+		{
+			bgcolor="none"
+		}
+		IconBackground
+		{
+		}
+	}
+	layout
+	{
+		region { name=body width=max height=max }
+
+		place { control="Background" region=body x=0 y=0 width=max height=max }
+		place { region=body control=IconBackground y=0 x=0 width=40 height=40 }
+		place { region=body control=icon y=0 x=0 width=40 height=40 }
+		place { region=body control=name y=0 x=48 height=max width=max }
+	}
+}
