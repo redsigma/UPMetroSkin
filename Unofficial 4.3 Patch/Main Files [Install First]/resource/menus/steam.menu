@@ -3,7 +3,7 @@
 	Steam
 	{
 		text=""
-		SkinVersion		{	text="Metro for Steam 4.2.4"			shellcmd="steam://openurl/https://metroforsteam.com" }
+		SkinVersion		{	text="Metro for Steam 4.3"			shellcmd="steam://openurl/https://metroforsteam.com" }
 		SkinVersionMod		{	text="Unofficial Patch 9"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
 		MiniMode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
