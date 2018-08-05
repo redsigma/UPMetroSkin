@@ -1,0 +1,93 @@
+"resource/layout/overlaytaskbar.layout"
+{
+	controls
+	{
+		TaskbarPanel
+		{
+			controlname="EditablePanel"
+		}
+		SettingsButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Settings"
+			style=taskbar
+		}
+		WebBrowserButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_WebBrowser"
+			style=taskbar
+		}
+		SteamLogo	
+		{ 
+			controlname="ImagePanel" zpos=1 image="resource/steam_logo_big"
+			scaleimage=1
+		}
+		view_friends
+		{
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			command="OpenFriendsDialog"
+			
+			style="view_friends"
+			textAlignment=east
+		}
+	}
+
+	styles
+	{
+		taskbar
+		{
+			textcolor=OverlaySideButtons
+			font-family=basefont
+			font-style=regular
+			padding-left=8
+			padding-right=8
+			render
+			{
+				0="fill(x0,y1+2,x1,y1+3,white12)"
+			}
+		}
+		taskbar:hover
+		{
+			textcolor=OverlaySideButtons_h
+			font-family=basefont
+			font-style=regular
+			render
+			{
+				0="fill(x0,y0+3,x1,y1-3,white12)"
+				1="fill(x0,y1+2,x1,y1+3,white12)"
+			}
+		}
+		//Hidden
+		view_friends
+		{
+			textcolor=OverlaySideButtons
+			font-family=basefont
+			font-weight=400
+			font-style=regular,uppercase
+			font-size=24
+			bgcolor=none
+			padding-left=8
+			padding-right=8
+		}
+		view_friends:hover
+		{
+			 bgcolor=white12
+		}
+		ImagePanel
+		{
+			inset-right=-99
+		}
+	}
+
+	layout
+	{
+		//Avatar
+		place { control=view_friends y=4 align=right margin-right=44 }
+		//Links
+		place { control="WebBrowserButton,MusicPlayerButton,SettingsButton" start=view_friends spacing=4 dir=down width=186 height=34 }
+		//Hidden
+		place { control="SteamLogo" margin-left=-999 }
+	}
+}

@@ -1,0 +1,128 @@
+"resource/layout/overlaydashboard.layout"
+{
+	controls
+	{
+		BaseDashboardPanel 
+		{ 
+			controlname="EditablePanel" 
+			style="overlaymain"	
+		}
+		TaskbarPanel
+		{ 
+			controlname="EditablePanel" 
+		}
+		TopFadePanel
+		{
+			controlname="EditablePanel"
+			style=topfade
+			zpos=-1
+			mouseinputenabled=0
+		}
+		BottomFadePanel
+		{
+			controlname="EditablePanel"
+			style=bottomfade
+			zpos=-1
+		}
+
+		GameName
+		{
+			controlname="Label"
+			labeltext="%gamename%"
+			style=topbar
+			textalignment=east
+		}
+		PowerMeterDim
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_dim"
+		}
+		PowerMeterBright
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_bright"
+		}
+
+		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" style="OverlayURLLabel"}
+		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style="hotkey" }	
+		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 style="LabelOverlay"}
+	}
+
+	colors
+	{
+	}
+
+	styles
+	{
+		overlaymain
+		{
+			bgcolor = "OverlayBackground"
+		}
+
+		//Back Button
+		OverlayURLLabel
+		{
+			bgcolor="none"
+			image=graphics/metro/overlay/icons/close
+		}
+		OverlayURLLabel:hover
+		{
+			bgcolor="none"
+			image=graphics/metro/overlay/icons/close_h
+		}
+
+		topbar
+		{
+			textcolor=white
+			font-size=32
+		}
+		hotkey
+		{
+			textcolor=White45
+			font-size=20
+		}
+		TopFade
+		{
+			textcolor=none
+			render_bg
+			{
+				0="image(x0,y0,x1,y1,graphics/metro/overlay/icons/time)"
+			}
+		}
+		//Hidden
+		bottomfade
+		{
+			bgcolor="none"
+			textcolor="none"
+			render_bg{}
+		}
+		LabelOverlay
+		{
+			bgcolor="none"
+			textcolor="none"
+		}
+	}
+
+	layout
+	{
+		//Overlay Margin
+		region { name=overlay width=max align=top-center margin=16 margin-top=15 overflow=allow-both }
+
+		//Top-Left
+		place { control="CloseButton" width=26 height=26 x=30 y=16 }
+		place { control=gamename start=CloseButton x=16 y=-6 }
+		place { control=HotkeyLabel start=CloseButton x=16 y=24 }
+
+		//Time Panel
+		place { control="TopFadePanel" region=overlay width=40 height=40 y=72 }
+
+		//Top-Right
+		place { control="TaskbarPanel" align=right width=500 height=180 }
+
+		//Battery Indicator
+		place { control="PowerMeterDim" region=overlay align=top-center width=95 }
+
+		//Hidden
+		place { control="BottomFadePanel,HotkeyExplain" margin-left=-999 }
+	}
+}

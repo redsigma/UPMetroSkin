@@ -1,0 +1,29 @@
+"resource/layout/overlay_achievement_item.layout"
+{
+	controls
+	{
+		icon { controlname="ImagePanel" scaleimage=1 }
+		caption { controlname=label labeltext="#Overlay_Achievement_Recent" }
+		name { controlname=label style=name }
+	}
+	colors
+	{
+	}
+	styles
+	{
+		Label
+		{
+			font-size=18
+			font-size=16 [$OSX||$LINUX]
+		}
+		name
+		{
+			textcolor=white
+		}
+	}
+
+	layout
+	{
+		place { control=caption,icon,name dir=down spacing=4 align=top-center }
+	}
+}

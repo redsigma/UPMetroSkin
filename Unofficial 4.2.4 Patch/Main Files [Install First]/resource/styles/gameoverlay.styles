@@ -80,7 +80,7 @@ gameoverlay.styles
 		}
 
 		//Switching to the Default Caption buttons since we have space now
-		"ToolWindow FrameCloseButton"
+		"FrameCloseButton"
 		{
 			inset="9 14 0 0"
 			render_bg{}
