@@ -123,10 +123,10 @@
 				3="fill( x0, y0+1, x0+1, y1, frameBorder )"		// Left
 				4="fill( x1-1, y0+1, x1, y1-1, frameBorder )"	// Right
 				5="fill( x0, y0, x0+170, y1, Header_Dark )"
-				6="fill(x0+178,y1-44,x1-8,y1-43,White12)"	// Bottom-Right
+				6="fill(x0+178,y1-44,x1-8,y1-43,White12)"		// Bottom-Right
 			}
-			minimum-width="744"
-			minimum-height="580"
+			minimum-width="710"
+			minimum-height="600"
 		}
 		CMusicPlayerPanel
 		{
