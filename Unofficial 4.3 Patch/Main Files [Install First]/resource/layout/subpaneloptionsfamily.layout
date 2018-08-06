@@ -76,8 +76,8 @@
 		place { region=box controls="AuthorizedDeviceCheck,ManageSharingLabel" start=FamilySharingInfoText height=28 dir=down }
 
 		//Borrowers List
-		place { region=box start=ManageSharingLabel controls="BorrowersLabel" y=6 width=max dir=down }
-		place { region=box start=BorrowersLabel controls="BorrowersList"  y=6 width=max height=max dir=down margin-bottom=34 }
-		place { region=box start=BorrowersList controls="ShowNotificationsCheck" y=2 dir=down height=28 }
+		place { region=box start=ManageSharingLabel controls="BorrowersLabel" y=6 width=490 dir=down }
+		place { region=box start=ManageSharingLabel controls="BorrowersList" y=46 width=max height=161 dir=down }
+		place { region=box start=BorrowersList controls="ShowNotificationsCheck" y=2 dir=down width=max height=28 }
 	}
 }
