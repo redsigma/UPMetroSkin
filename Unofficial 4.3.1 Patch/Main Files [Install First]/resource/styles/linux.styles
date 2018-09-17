@@ -1,11 +1,11 @@
 linux.styles
 {
-	colors [$LINUX]
+	colors
 	{
-		basefont="Open Sans"
-		semibold="Open Sans Semibold"
-		semilight="Open Sans Light"
-		light="Open Sans Light"
+		basefont="Liberation Sans"
+		semibold="Liberation Sans"
+		semilight="Liberation Sans"
+		light="Liberation Sans"
 	}
 	styles
 	{
