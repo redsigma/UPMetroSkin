@@ -114,7 +114,7 @@
 		//Panels
 		region  { name="detailsbody" region=details y=144 width=max margin-left=10 margin-right=8 overflow=allow-vertical }
 		place 	{ region=headertext control=gamesubheader start=gametitleheader height=100 width=max dir=down }
-		place 	{ region=detailsbody control=turnnotifications,welcomedetails,nonsteamdetails,rentaldetails,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails start=edittagslink x=-25 dir=down width=max margin-bottom=8 margin-top=10 spacing=10 }
+		place 	{ region=detailsbody control=compatsubheader,turnnotifications,welcomedetails,nonsteamdetails,rentaldetails,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails start=edittagslink x=-25 dir=down width=max margin-bottom=8 margin-top=10 spacing=10 }
 
 		//Background Images
 		place 	{ control=headerimagea align=left margin-left=262 height=550 width=1024 }
