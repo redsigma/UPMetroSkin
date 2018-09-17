@@ -44,13 +44,13 @@
 		// Content Libraries
 		place { region=box control="LibrariesLabel,ManageInstalledappsLabel" dir=down spacing=6 }
 		place { region=box start=ManageInstalledappsLabel control=ManageInstalledApps y=6 width=360 dir=down }
-		place { region=box start=ManageInstalledApps control=Divider1 y=6 dir=down }
+		place { region=box start=ManageInstalledApps control=Divider1 y=6 width=max dir=down }
 
 		// Download Region
 		place { region=box start=Divider1 control=RegionLabel y=6 dir=down }
 		place { region=box start=RegionLabel control=RegionInfoLabel y=6 width=max dir=down }
 		place { region=box start=RegionInfoLabel control=DownloadRegionCombo y=6 width=500 dir=down }
-		place { region=box start=DownloadRegionCombo control=Divider2 y=6 dir=down }
+		place { region=box start=DownloadRegionCombo control=Divider2 y=6 width=max dir=down }
 
 		// Download Restrictions
 		place { region=box start=Divider2 control="RestrictionsLabel,ThrottleRatesLabel" y=6 dir=down spacing=6 }
@@ -66,7 +66,7 @@
 		place { region=box start=AutoUpdateTimeRestrictEndLabel control=AutoUpdateTimeRestrictEnd x=4 width=78 }
 
 		place { region=box control="AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox" start=AutoUpdateTimeRestrictCheckbox dir=down }
-		place { region=box start=DownloadRatesInBitsCheckbox control=Divider3 y=6 dir=down }
+		place { region=box start=DownloadRatesInBitsCheckbox control=Divider3 y=6 width=max dir=down }
 
 		// Clear Download Cache
 		place { region=box start=Divider3 control=FlushDownloadConfig y=6 width=360 dir=down }

@@ -19,11 +19,6 @@
 
 	styles
 	{
-		nonsteamdetails 
-		{
-			bgcolor="black45"
-			minimum-height=68
-		}
 		"RichText"
 		{
 			inset-top=-4
