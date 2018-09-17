@@ -7,12 +7,6 @@
 			textcolor="White"
 		}
 
-		CGamesPage_Details
-		{
-			inset="0 0 0 0"
-			bgcolor="none"
-		}
-
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel"
 		{
@@ -117,18 +111,9 @@
 			bgcolor="none"
 		}
 
-
 		DetailsBorderPanel
 		{
 			bgcolor="none"
-		}
-
-		CGamesPage_Details
-		{
-			render_bg
-			{
-				1="fill( x0+262, y0+37, x1, y0+38, Black25 )"
-			}
 		}
 	}
 
@@ -149,7 +134,7 @@
 		//Panels
 		region  { name="detailsbody" region=details y=144 width=max margin-left=10 margin-right=170 overflow=allow-vertical }
 		place 	{ region=headertext control=gamesubheader start=gametitleheader width=max height=100 dir=down }
-		place 	{ region=detailsbody control=turnnotifications,welcomedetails,nonsteamdetails,rentaldetails,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails start=gamesubheader dir=down width=max margin-bottom=8 margin-top=10 spacing=10 }
+		place 	{ region=detailsbody control=compatsubheader,turnnotifications,welcomedetails,nonsteamdetails,rentaldetails,friendsdetails,achievementsdetails,screenshotsdetails,communityfilesdetails,dlcdetails,clouddetails,newsdetails start=gamesubheader dir=down width=max margin-bottom=8 margin-top=10 spacing=10 }
 
 		//Sidebar
 		region	{ name="rightcolumn" region=details y=144 align=right height=max width=162 margin-right=8 overflow=allow-vertical }

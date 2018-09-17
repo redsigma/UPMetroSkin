@@ -1,10 +1,10 @@
 steam.styles
 {
+	include [$LINUX] "resource/styles/linux.styles"
 	include "custom.styles"
 
 	include [$WIN32||$WINDOWS||$OSX||$OSX1010] "resource/styles/windows.styles"
-	include [$LINUX] "resource/styles/linux.styles"
-
+	
 	include "controls.styles"
 	include "UI.styles"
 	include "caption.styles"
@@ -1399,6 +1399,15 @@ steam.styles
 
 ///////////////////////////////////////////////////////////////////////////////
 //======Library Panels(Friends,Achievements,Screenshots,Workshop...etc.)=====//
+		CDetailsCompatSubHeaderPanel
+		{
+			bgcolor=bgPanel
+			minimum-height=68
+			render_bg
+			{
+				0="image(x0+16,y0+16,x1,y1,graphics/metro/icons/info)"
+			}
+		}
 		turnnotifications
 		{
 		}
@@ -1429,6 +1438,11 @@ steam.styles
 		screenshotsdetails
 		{
 			bgcolor=bgPanel
+		}
+		nonsteamdetails 
+		{
+			bgcolor=bgPanel
+			minimum-height=68
 		}
 
 		gamedetails-headerlabel
