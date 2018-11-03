@@ -33,7 +33,10 @@
 			textAlignment=east
 		}
 	}
-
+	colors
+	{
+		white12="255 255 255 30.6"
+	}
 	styles
 	{
 		taskbar
