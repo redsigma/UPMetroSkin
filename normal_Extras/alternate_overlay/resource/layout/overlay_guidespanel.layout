@@ -10,6 +10,8 @@
 	}
 	colors
 	{
+		white="255 255 255 255"
+		white45="255 255 255 114.75"
 	}
 	styles
 	{
@@ -30,7 +32,7 @@
 		}
 		highlight
 		{
-			textcolor=White45
+			textcolor=white45
 			font-size=20
 		}
 		Button

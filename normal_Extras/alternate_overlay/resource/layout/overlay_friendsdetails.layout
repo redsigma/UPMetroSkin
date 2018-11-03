@@ -28,6 +28,9 @@
 	}
 	colors
 	{
+		white="255 255 255 255"
+		white45="255 255 255 114.75"
+		white75="255 255 255 191.25"
 	}
 	styles
 	{
@@ -42,7 +45,7 @@
 		}
 		highlight
 		{
-			textcolor=White45
+			textcolor=white45
 			font-size=20
 		}
 		Button
@@ -68,7 +71,7 @@
 		}
 		Button:active
 		{
-			textcolor=White75
+			textcolor=white75
 		}
 
 		//Hidden

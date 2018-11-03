@@ -27,6 +27,8 @@
 
 	colors
 	{
+		white12="255 255 255 30.6"
+		white45="255 255 255 114.75"
 	}
 
 	styles
@@ -62,7 +64,7 @@
 		// Session, Weeks,Total
 		timeStrings
 		{
-			textcolor=White45
+			textcolor=white45
 			font-family=basefont
 			font-style=regular
 			font-size=20

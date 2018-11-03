@@ -10,12 +10,15 @@
 	}
 	colors
 	{
+		white="255 255 255 255"
+		white12="255 255 255 30.6"
+		white45="255 255 255 114.75"
 	}
 	styles
 	{
 		name
 		{
-			textcolor=White45
+			textcolor=white45
 			font-style="none"
 			font-size=20
 			padding-left=3
@@ -23,7 +26,7 @@
 		}
 		name:hover
 		{
-			textcolor=White
+			textcolor=white
 			bgcolor=white12
 		}
 		Background
