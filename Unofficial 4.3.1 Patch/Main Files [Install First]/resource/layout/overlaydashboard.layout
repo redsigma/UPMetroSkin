@@ -117,6 +117,6 @@
 		place { control="PowerMeterDim" region=overlay align=left width=95 }
 
 		//Hidden
-		place { control="BottomFadePanel,HotkeyExplain,gamename,HotkeyLabel,TopFadePanel" width=1 align=right }
+		place { control="BottomFadePanel,HotkeyExplain,gamename,HotkeyLabel,TopFadePanel" height=0 }
 	}
 }
