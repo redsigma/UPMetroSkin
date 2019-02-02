@@ -40,7 +40,7 @@
 		}
 		sidemenu:hover
 		{
-			bgcolor=OverlayHover05
+			textcolor=white50
 		}
 		topbar
 		{
@@ -71,7 +71,7 @@
 		region 	{ name="topbar" region=overlay width="max" height=100 }
 		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
 
-		place { controls="WorkshopButton,DLCButton,GameGroupsButton,WebSiteButton,GuideButton,LegacyCDKeyButton,RecommendButton,ChatRoomButton" y=50 align=right region=overlay dir=down spacing=6 }
+		place { controls="WorkshopButton,DLCButton,GameGroupsButton,WebSiteButton,GuideButton,LegacyCDKeyButton,RecommendButton,ChatRoomButton,EditControllerConfig,ForceQuitButton" y=50 align=right region=overlay dir=down spacing=6 }
 
 		place { controls="BroadcastDetailPanel" region=detailpanelsTop width=330 height=240 spacing=10 }
 		place { controls="FriendsDetailPanel,NewsDetailPanel,AchievementsDetailPanel,GuidesDetailPanel" region=detailpanelsMiddle width=330 height=240 spacing=10 }

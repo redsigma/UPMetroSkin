@@ -99,7 +99,7 @@
 		place { control="GuidesDetailPanel" start=AchievementsDetailPanel dir=down width=400 height=224 }
 
 		//Small
-		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton" dir=down y=185 width=150 height=34 align=right spacing=4 }
+		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,ForceQuitButton,EditControllerConfig" dir=down y=185 width=150 height=34 align=right spacing=4 }
 
 		//Hidden
 		place { control="NewsDetailPanel" margin-left=-999 }

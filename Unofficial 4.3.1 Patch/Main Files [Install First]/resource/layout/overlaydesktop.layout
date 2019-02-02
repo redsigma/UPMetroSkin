@@ -68,7 +68,7 @@
 	layout
 	{
 		//Workshop
-		place { control="WorkshopButton" margin-left=60 x=30 y=48 }
+		place { control="WorkshopButton,EditControllerConfig,ForceQuitButton" margin-left=60 x=30 y=48 dir=down }
 
 		place { control="clock" align=top-center y=20 }
 		place { control="clocksuffix" align=top-center y=10 }
