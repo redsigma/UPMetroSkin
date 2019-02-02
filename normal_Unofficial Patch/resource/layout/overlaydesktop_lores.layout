@@ -84,7 +84,7 @@ resource/layout/overlaydesktop_lores.layout
 		region { name=overlay height=max width=max margin-left=16 margin-right=16 }
 		region { name=broadcast height=100 width=max margin-bottom=8 margin-right=8 align=bottom }
 
-		place { control=FriendsButton,WorkshopButton,ScreenshotsButton,PlayersButton,AchievementsButton,DLCButton region=overlay x=6 y=144 height=30 spacing=8 align=left }
+		place { control=FriendsButton,WorkshopButton,ScreenshotsButton,PlayersButton,AchievementsButton,DLCButton,ForceQuitButton,EditControllerConfig  region=overlay x=6 y=144 height=30 spacing=8 align=left }
 		place { control=GameGroupsButton,ForumsButton,WebSiteButton region=overlay x=6 y=200 height=30 spacing=8 align=left dir=down }
 		place { control=GuideButton,GuidesButton,GameHubButton,LegacyCDKeyButton,RecommendButton,ChatRoomButton x=130 y=200 region=overlay height=30 spacing=8 align=left dir=down }
 
