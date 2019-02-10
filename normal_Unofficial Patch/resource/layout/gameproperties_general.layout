@@ -130,6 +130,10 @@
 		place {control=SteamInputPerGameLabel start=Divider2 dir=down margin-top=20 }
 		place {control=SteamInputPerGameCombo start=SteamInputPerGameLabel y=6 dir=down width=450 }
 
+		place {control=Divider3 start=SteamInputPerGameCombo dir=down margin-top=20 region=main width=max }
+		place {controls=SteamPlayOverrideCheck,SteamPlayOverrideCombo start=Divider3 dir=down margin-top=20 spacing=0 width=max region=main }
+
 		place {controls=FamilySharingUnsupportedLabel margin-top=472 margin-left=16 }
 	}
 }
+
