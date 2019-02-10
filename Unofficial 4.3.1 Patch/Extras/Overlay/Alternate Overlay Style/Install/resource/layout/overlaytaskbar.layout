@@ -80,7 +80,7 @@
 		}
 		ImagePanel
 		{
-			inset-right=-99
+			inset-right=-999
 		}
 	}
 
@@ -91,6 +91,6 @@
 		//Links
 		place { control="WebBrowserButton,MusicPlayerButton,SettingsButton" start=view_friends spacing=4 dir=down width=186 height=34 }
 		//Hidden
-		place { control="SteamLogo" margin-left=-999 }
+		place { control="SteamLogo" }
 	}
 }

@@ -78,6 +78,6 @@
 		place { control="AllFriendsButton,ViewPlayersButton" x=68 y=11 }
 		place { control="TextThisManyFriends" x=68 y=37 }
 		//Hidden
-		place { control=grid width=1 align=right }
+		place { control=grid margin-left=-999 }
 	}
 }
