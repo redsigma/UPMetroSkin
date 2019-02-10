@@ -42,9 +42,9 @@
 		place { start=AdvancedTitle control=CompatForcedInfo y=6 width=max dir=down }
 		place { start=CompatForcedInfo control=CompatForcedCheckbox,CompatOverrideCheckbox dir=down }
 		
-		place { start=CompatOverrideCheckbox control=AdvancedToolLabel y=6 width=200 dir=down }
-		place { start=AdvancedToolLabel control=AdvancedToolComboBox y=6 width=max height=28 margin-right=16 dir=down }
+		place { start=CompatForcedCheckbox control=AdvancedToolLabel y=6 width=200 dir=down }
+		place { start=AdvancedToolLabel control=AdvancedToolComboBox width=max height=28 margin-right=16 }
 		
-		place { start=AdvancedToolComboBox control=DescriptionLink y=16 width=max dir=down margin-right=16 }
+		place { start=AdvancedToolLabel control=DescriptionLink y=16 width=max dir=down margin-right=16 }
 	}
 }
