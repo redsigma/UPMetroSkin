@@ -99,6 +99,6 @@ resource/layout/overlaydashboard_lores.layout
 		place { control=CloseButton x=20 y=27 width=210 height=60 }
 
 		//Hidden
-		place { control="BottomFadePanel,HotkeyExplain,gamename,TopFadePanel" width=1 align=right }
+		place { control="BottomFadePanel,HotkeyExplain,gamename,TopFadePanel" align=right margin-right=-999 }
 	}
 }

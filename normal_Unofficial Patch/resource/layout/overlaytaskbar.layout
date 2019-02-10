@@ -80,6 +80,6 @@
 		place { control="FriendPanel" y=43 width=44 height=44 margin-right=30 align=right dir=right }
 
 		//Hidden
-		place { control="SteamLogo,view_friends,online_friends" width=1 align=right }
+		place { control="SteamLogo,view_friends,online_friends" align=right margin-right=-999 }
 	}
 }
