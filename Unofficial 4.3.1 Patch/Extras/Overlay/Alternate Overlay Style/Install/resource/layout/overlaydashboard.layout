@@ -125,6 +125,6 @@
 		place { control="PowerMeterDim" region=overlay align=top-center width=95 }
 
 		//Hidden
-		place { control="BottomFadePanel,HotkeyExplain" margin-left=-999 }
+		place { control="BottomFadePanel,HotkeyExplain" }
 	}
 }

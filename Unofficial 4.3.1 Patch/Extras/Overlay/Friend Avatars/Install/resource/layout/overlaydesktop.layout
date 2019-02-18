@@ -62,6 +62,6 @@
 		place { control="AchievementsDetailPanel,GuidesDetailPanel" dir=down y=148 width=380 spacing=10 align=right margin-right=10 }
 
 		//Hidden
-		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton" width=1 align=right }
+		place { control="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton" align=right margin-right=-999 }
 	}
 }
