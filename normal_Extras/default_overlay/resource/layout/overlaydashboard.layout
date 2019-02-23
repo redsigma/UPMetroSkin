@@ -76,7 +76,7 @@
 		place { controls="gamename" region=topbar align=right width=400 }
 
 		place { control="PowerMeterDim" region=powermeter align=right }
-		place { control="CloseButton" x=4 y=8 width=270 height=160 }
+		place { control="CloseButton" region=overlay width=270 height=160 }
 
 		place { control="TaskbarPanel" region=taskbar height=64 width=max }
 
