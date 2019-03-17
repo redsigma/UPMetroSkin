@@ -50,10 +50,10 @@
 
 		place { region=box control="RemoteClientList" height=160 }
 		place { region=box control="DescriptionLabel,RemoteClientList" dir=down align=top width=max y=33 spacing=8 }
-		place { region=box start=RemoteClientList control=EnableStreaming y=8 dir=down }
-		place { region=box start=RemoteClientList control=SetPIN y=6 z=4 dir=down align=right }  // dunno why valve added z here, it does nothing :\
+		place { region=box start=RemoteClientList control=EnableStreaming y=6 dir=down }
+		place { region=box start=EnableStreaming control=Pair,SetPIN spacing=6 align=right }  // dunno why valve added z here, it does nothing :\
 
-		place { region=box control="HostDivider,HostLabel" start=EnableStreaming y=2 dir=down width=max spacing=8 }
+		place { region=box control="HostDivider,HostLabel" start=EnableStreaming y=4 dir=down width=max spacing=8 }
 		place { region=box control="AdvancedHostOptions" y=8 dir=down start=HostLabel height=28 }
 		place { region=box control="UnsupportedPlatform" y=8 dir=down start=HostLabel height=28 }
 
