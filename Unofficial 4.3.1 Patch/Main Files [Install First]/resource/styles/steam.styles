@@ -330,7 +330,7 @@ steam.styles
 			render_bg{}
 			padding-left=16
 			padding-right=100
-			minimum-height=1150
+			minimum-height=1200
 		}
 		"CGameLaunchParametersDialog FrameTitle"
 		{
