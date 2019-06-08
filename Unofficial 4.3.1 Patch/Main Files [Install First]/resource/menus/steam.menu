@@ -14,7 +14,7 @@
 		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
-		NewForYou		{	text="#SteamUI_GameProperties_UpdateNews"	shellcmd="steam://open/newforyou" }
+		NewForYou		{	text="#Steam_GamesDialog_RightClick_UpdateNews"	shellcmd="steam://open/newforyou" }
 		Divider {}
 		ActivateRetail		{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
 		RedeemWalletVoucher	{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
