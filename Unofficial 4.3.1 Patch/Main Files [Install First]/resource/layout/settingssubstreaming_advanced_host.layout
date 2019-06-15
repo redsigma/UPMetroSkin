@@ -30,10 +30,10 @@
 
 	layout
 	{
-		place { control="DescriptionLabel,ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding" y=44 dir=down width=max margin-left=16 margin-right=16 spacing=0 }
+		place { control="DescriptionLabel,HostPlayAudioAlways,ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding" y=44 dir=down width=max margin-left=16 margin-right=16 spacing=0 }
 		place { start=EnableHardwareEncoding control="EnableHardwareEncodingNVIDIA,EnableHardwareEncodingAMD,EnableHardwareEncodingIntel" x=16 dir=down width=max margin-right=16 spacing=2 }
 
-		region { name=down align=bottom height=200 }
+		region { name=down align=bottom height=175 }
 		place { region=down control="SoftwareEncodingThreadsLabel,SoftwareEncodingThreads" dir=down width=max margin-left=16 margin-right=16 spacing=2 }
 
 		place { start=SoftwareEncodingThreads control="EnableTrafficPriorityLabel,EnableTrafficPriority" y=4 dir=down width=max margin-right=16 spacing=-2 }

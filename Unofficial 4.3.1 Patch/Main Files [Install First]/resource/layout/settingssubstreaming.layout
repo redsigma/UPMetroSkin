@@ -47,22 +47,23 @@
 	layout
 	{
 		region { name=box margin-left=16 margin-right=16 }
+    region { name=center width=max align=center }
 
 		place { region=box control="RemoteClientList" height=160 }
-		place { region=box control="DescriptionLabel,RemoteClientList" dir=down align=top width=max y=33 spacing=8 }
-		place { region=box start=RemoteClientList control=EnableStreaming y=6 dir=down }
-		place { region=box start=EnableStreaming control=Pair,SetPIN spacing=6 align=right }  // dunno why valve added z here, it does nothing :\
+		place { region=box control="DescriptionLabel,EnableStreaming,RemoteClientList" dir=down align=top width=max y=33 spacing=6 }
+		place { start=RemoteClientList control=Pair y=6 width=155 dir=down }  // dunno why valve added z here, it does nothing :\
+    place { start=Pair control="Unpair,SetPIN" x=6 width=155 spacing=6 }
 
-		place { region=box control="HostDivider,HostLabel" start=EnableStreaming y=4 dir=down width=max spacing=8 }
-		place { region=box control="AdvancedHostOptions" y=8 dir=down start=HostLabel height=28 }
-		place { region=box control="UnsupportedPlatform" y=8 dir=down start=HostLabel height=28 }
+		place { region=box control="HostDivider,HostLabel" start=Pair y=6 dir=down width=max spacing=8 }
+		place { region=box control="AdvancedHostOptions" y=6 dir=down start=HostLabel height=28 }
+		place { region=box control="UnsupportedPlatform" y=6 dir=down start=HostLabel height=28 }
 
-		place { region=box control="ClientDivider,ClientLabel" y=8 start=AdvancedHostOptions dir=down width=max spacing=8 }
+		place { region=box control="ClientDivider,ClientLabel" y=6 start=AdvancedHostOptions dir=down width=max spacing=8 }
 
-		place { region=box control="QualityFast" y=8 start="ClientLabel" dir=down }
+		place { region=box control="QualityFast" y=6 start="ClientLabel" dir=down }
 		place { region=box control="QualityBalanced" x=8 start="QualityFast" }
 		place { region=box control="QualityBeautiful" x=8 start="QualityBalanced" }
 
-		place { region=box control="AdvancedClientOptions,SupportInformationLabel" y=8 spacing=8 height=28 start="QualityFast" dir=down }
+		place { region=box control="AdvancedClientOptions,SupportInformationLabel" y=6 spacing=8 height=28 start="QualityFast" dir=down }
 	}
 }

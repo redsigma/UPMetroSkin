@@ -194,7 +194,8 @@
 			bgcolor="white05"
 			render_bg
 			{
-				1="fill(x0,y1,x1,y1+1,focus)"
+      	1="fill(x0,y1,x1,y1+1,focus)"
+				1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
 			}
 			image="graphics/down_arrow"
 			padding-left=-4
@@ -206,6 +207,7 @@
 			{
 				0="fill(x0,y0,x1,y1,white08)"
 				1="fill(x0,y1,x1,y1+1,focus)"
+        1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
 			}
 			image="graphics/down_arrow_h"
 		}
@@ -216,6 +218,7 @@
 			{
 				0="fill(x0,y0,x1,y1,white08)"
 				1="fill(x0,y1,x1,y1+1,focus)"
+        1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
 			}
 			image="graphics/down_arrow_p"
 		}
@@ -381,7 +384,8 @@
 			bgcolor="none"
 			padding-left=8
 			padding-right=8
-			padding-bottom=6
+      padding-bottom=6
+			padding-bottom=0 [$OSX||$LINUX]
 		}
 		CUINavButton:hover
 		{
@@ -389,6 +393,7 @@
 			render_bg
 			{
 				1="fill(x0,y0,x1,y1-6,white05)"
+        1="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
 			}
 		}
 		CUINavButton:selected
@@ -397,10 +402,12 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1-6,white05)"
+        0="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
 			}
 			render
 			{
 				1="fill(x0, y1-7, x1, y1-6, focus)"
+        1="fill(x0, y0+1, x1, y0+2, focus)" [$OSX||$LINUX]
 			}
 		}
 		CUINavButton:disabled
@@ -408,8 +415,9 @@
 			textcolor=mainButton_d
 			render_bg
 			{
-				1="fill(x0,y1-7,x1,y1,white45)"
-				2="fill(x0, y1-6, x1, y1, ClientBG)"
+				1="fill(x0,y1-7,x1,y1-6, white45)"
+        1="fill(x0, y0+1, x1, y0+2, white45)" [$OSX||$LINUX]
+				//2="fill(x0, y1-6, x1, y1, ClientBG)"
 			}
 		}
 
@@ -548,9 +556,9 @@
 		region { name="nav" y=0 height=46 }
 		place { control="back,forward" region=nav x=40 y=1 height=38 width=40 margin-left=0 spacing=0 }
 		place [$OSX] { control="back,forward" x=72 y=1 height=38 width=40 margin-left=0 spacing=0 }
-		place { control="label_store,label_library" region=nav start=forward x=1 y=0 spacing=1 height=46 }
+		place { control="label_store,label_library" region=nav start=forward x=1 y=0 spacing=1 height=40 }
 		place { control="library_filters" region=nav start=label_library height=38 width=15 }
-		place { control="label_news,label_community,label_me,label_console" region=nav start=library_filters x=1 y=0 spacing=1 height=46 }
+		place { control="label_news,label_community,label_me,label_console" region=nav start=library_filters x=1 y=0 spacing=1 height=40 }
 
 		//URLBar
 		place { control="stop,refresh,label_community_new" height=40 dir=down }
