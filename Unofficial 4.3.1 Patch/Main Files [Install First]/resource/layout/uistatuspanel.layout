@@ -26,8 +26,7 @@
 			bgcolor="none"
 			render_bg
 			{
-				1="fill(x0,y0,x1,y0+1,White)"
-				2="fill(x0,y0+4,x1,y0+5,White)"
+				1="fill(x0,y0,x1,y0+2,White)"
 			}
 		}
 		StatusLabelDim:hover
@@ -50,7 +49,7 @@
 	{
 		region { name="action" height=12 align=bottom }
 
-		place { control="StatusPaused" y=28 height=5 align=top-center margin-left=7 margin-right=7 }
+		place { control="StatusPaused" y=28 align=top-center margin-left=7 margin-right=7 }
 		place { region=action control="StatusComplete" height=1 align=top-center margin-left=7 margin-right=7 margin-top=-3 }
 
 		place { control="StatusDownloading" height=39 width=27 }
