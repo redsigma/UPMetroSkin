@@ -109,31 +109,32 @@
 			textcolor=white50
 			font-family=basefont
 			font-size=16
-			
 		}
 	}
 	layout
 	{
 		region { name=main margin=16 }
-		place { control=HomepageLabelName,DeveloperLabelName,ManualLabelName spacing=20 dir=down region=main }
-		place { controls=HomepageLabel,DeveloperLabel spacing=20 dir=down x=100 region=main }
-		place { control=NoManualLabel,ManualLabel start=DeveloperLabel spacing=20 margin-top=20 dir=down region=main }
+		place { control=HomepageLabelName,DeveloperLabelName,ManualLabelName spacing=16 dir=down region=main }
+		place { controls=HomepageLabel,DeveloperLabel spacing=16 dir=down x=100 region=main }
+		place { control=NoManualLabel,ManualLabel start=DeveloperLabel spacing=16 margin-top=16 dir=down region=main }
 
 		place {controls=ExternalSignupLabel,ExternalSignupButton x=260 margin-top=34 dir=down margin-left=16 width=260 height=24 spacing=0 region=main }
 
-		place {control=Divider1 start=ManualLabelName dir=down margin-top=20 region=main width=max }
+		place {control=Divider1 start=ManualLabelName dir=down margin-top=16 region=main width=max }
 
-		place {controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down margin-top=20 spacing=0 width=max region=main }
+		place {controls=EnableOverlayCheck,EnableDesktopGameTheater start=Divider1 dir=down margin-top=16 spacing=0 width=max region=main }
 		place {controls=LaunchOptionsButton,CreateDesktopShortcutButton start=EnableDesktopGameTheater dir=down margin-top=15 spacing=10 width=240 height=24 region=main }
 
-		place {control=Divider2 start=CreateDesktopShortcutButton dir=down margin-top=20 region=main width=max }
-		place {control=SteamInputPerGameLabel start=Divider2 dir=down margin-top=20 }
+		place {control=Divider2 start=CreateDesktopShortcutButton dir=down margin-top=16 region=main width=max }
+		place {control=SteamInputPerGameLabel start=Divider2 dir=down margin-top=10 }
 		place {control=SteamInputPerGameCombo start=SteamInputPerGameLabel y=6 dir=down width=450 }
 
-		place {control=Divider3 start=SteamInputPerGameCombo dir=down margin-top=20 region=main width=max }
-		place {controls=SteamPlayOverrideCheck,SteamPlayOverrideCombo start=Divider3 dir=down margin-top=20 spacing=0 width=max region=main }
+    place {controls=BPMOverlayPerGameLabel start=SteamInputPerGameCombo dir=down margin-top=10 }
+    place {controls=BPMOverlayPerGameCombo start=BPMOverlayPerGameLabel y=6 dir=down width=450 }
 
-		place {controls=FamilySharingUnsupportedLabel margin-top=472 margin-left=16 }
+		place {control=Divider3 start=BPMOverlayPerGameCombo dir=down margin-top=16 region=main width=max }
+		place {controls=SteamPlayOverrideCheck,SteamPlayOverrideCombo start=Divider3 dir=down margin-top=16 spacing=0 width=max region=main }
+
+		place {controls=FamilySharingUnsupportedLabel margin-top=500 margin-left=16 }
 	}
 }
-
