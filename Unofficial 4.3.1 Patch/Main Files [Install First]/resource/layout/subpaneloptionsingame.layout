@@ -56,13 +56,13 @@
 		place [$OSX||$LINUX] { region=box start=EnableOverlayCheck controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck,OverlayHomePageLabel,OverlayHomePage,Divider1 dir=down spacing=4 width=max }
 
 		//Left - Screenshot
-		place { start=Divider1 control=ScreenshotLabel,ScreenshotHotKeySelector dir=down margin-top=8 width=200 height=24 }
+		place { start=Divider1 control=ScreenshotLabel,ScreenshotHotKeySelector dir=down margin-top=8 width=240 height=24 }
 		place { start=ScreenshotHotKeySelector control=ScreenshotActionLabel,ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down height=24 }
 		place { start=ScreenshotSaveUncompressedCheck control=SetScreenshotFolderButton dir=down margin-top=4 width=200 height=24 }
 
 		//Right - Shortcut
-		place { start=ScreenshotLabel controls=HotKeySelectorLabel x=36 width=200 height=24 }
-		place { start=HotKeySelectorLabel controls=HotKeySelector width=200 height=24 dir=down }
+		place { start=ScreenshotLabel controls=HotKeySelectorLabel x=16 width=220 height=24 }
+		place { start=HotKeySelectorLabel controls=HotKeySelector width=220 height=24 dir=down }
 
 		//Ping
 		place { controls="PingRateLabel" start=SetScreenshotFolderButton y=10 width=max dir=down }
