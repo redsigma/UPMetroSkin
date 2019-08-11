@@ -59,7 +59,7 @@
 
 		// Download Restrictions
 		place { region=box start=Divider2 control="RestrictionsLabel,ThrottleRatesLabel" y=6 dir=down spacing=6 }
-		place { region=box start=ThrottleRatesLabel control=ThrottleRates y=6 width=120 dir=down }
+		place { region=box start=ThrottleRatesLabel control=ThrottleRates y=6 width=200 dir=down }
 
 		// Auto-Update Interval
 		place { region=box start=ThrottleRates control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }

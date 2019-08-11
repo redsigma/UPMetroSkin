@@ -23,7 +23,7 @@
 		}
 		Description
 		{
-			textcolor="White"
+			textcolor="White45"
 			font-family=semilight
 		}
 		//Hidden
@@ -37,12 +37,7 @@
 	layout
 	{
 		region { name="top" width=max height=260 margin=10 margin-top=40 }
-
-		//Text
-		place { control="Description" region="top" margin-top=4 margin-left=6 margin-right=6 width=max }
-
-		//Password
-		place { control="PIN1,PIN2" region="top" width=165 align=top-center margin-top="45" dir=down spacing=8 }
+		place { control="Description,PIN1,PIN2" region="top" margin-top=4 margin-left=6 margin-right=6 width=max spacing=8 dir=down }
 
 		//Footer
 		region { name="bottom" align=bottom height=44 margin=8 }
