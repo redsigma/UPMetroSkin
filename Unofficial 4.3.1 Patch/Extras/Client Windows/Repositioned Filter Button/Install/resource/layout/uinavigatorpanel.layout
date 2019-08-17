@@ -207,7 +207,7 @@
 			{
 				0="fill(x0,y0,x1,y1,white08)"
 				1="fill(x0,y1,x1,y1+1,focus)"
-        1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
+				1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
 			}
 			image="graphics/down_arrow_h"
 		}
@@ -218,7 +218,7 @@
 			{
 				0="fill(x0,y0,x1,y1,white08)"
 				1="fill(x0,y1,x1,y1+1,focus)"
-        1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
+				1="fill(x0,y0+1,x1,y0+2,focus)" [$OSX||$LINUX]
 			}
 			image="graphics/down_arrow_p"
 		}
@@ -384,7 +384,7 @@
 			bgcolor="none"
 			padding-left=8
 			padding-right=8
-      padding-bottom=6
+			padding-bottom=6
 			padding-bottom=0 [$OSX||$LINUX]
 		}
 		CUINavButton:hover
@@ -393,7 +393,7 @@
 			render_bg
 			{
 				1="fill(x0,y0,x1,y1-6,white05)"
-        1="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
+				1="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
 			}
 		}
 		CUINavButton:selected
@@ -402,12 +402,12 @@
 			render_bg
 			{
 				0="fill(x0,y0,x1,y1-6,white05)"
-        0="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
+				0="fill(x0,y0,x1,y1,white05)" [$OSX||$LINUX]
 			}
 			render
 			{
 				1="fill(x0, y1-7, x1, y1-6, focus)"
-        1="fill(x0, y0+1, x1, y0+2, focus)" [$OSX||$LINUX]
+				1="fill(x0, y0+1, x1, y0+2, focus)" [$OSX||$LINUX]
 			}
 		}
 		CUINavButton:disabled
@@ -416,7 +416,7 @@
 			render_bg
 			{
 				1="fill(x0,y1-7,x1,y1-6, white45)"
-        1="fill(x0, y0+1, x1, y0+2, white45)" [$OSX||$LINUX]
+				1="fill(x0, y0+1, x1, y0+2, white45)" [$OSX||$LINUX]
 				//2="fill(x0, y1-6, x1, y1, ClientBG)"
 			}
 		}
@@ -515,11 +515,11 @@
 
 		//Search
 		region { name=search_bar align=top y=40 width=262 }
-		place { control="label_search_icon" region=top height=38 width=38 dir=down }
+		place { control="label_search_icon" start=subnavgroup_library y=-40 height=38 width=38 dir=down }
 		place { control="library_search" region=search_bar start=label_search_icon height=38 width=max }
 
 		//Filters
-		place { control="library_zoom" region=top align=right y=10 height=26 width=100 margin-right=100 }
+		place { start=library_search  control=library_zoom align=right y=10 height=26 width=100 margin-right=100 }
 		place { start=library_search  control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=39 spacing=1 margin-right=1 }
 		place { start=library_search  control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search  control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
@@ -570,11 +570,11 @@
 
 		//Search
 		region { name=search_bar align=top y=40 width=262 }
-		place { control="label_search_icon" region=top height=38 width=38 dir=down }
+		place { control="label_search_icon" start=subnavgroup_library y=-40 height=38 width=38 dir=down }
 		place { control="library_search" region=search_bar start=label_search_icon height=38 width=max }
 
 		//Filters
-		place { control="library_zoom" region=top align=right y=10 height=26 width=100 margin-right=100 }
+		place { start=library_search control=library_zoom region=top align=right y=10 height=26 width=100 margin-right=100 }
 		place { start=library_search control="library_filters_list,library_filters_details,library_filters_grid" align=right width=28 height=38 spacing=1 margin-right=1 }
 		place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 		place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }

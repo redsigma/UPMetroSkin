@@ -241,7 +241,7 @@ styles
 
 	LibrarySearchIcon
 	{
-		bgcolor=TextEntry
+		bgcolor=none
 		image="graphics/search_lg"
 		padding-left=12
 	}
