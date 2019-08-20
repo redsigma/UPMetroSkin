@@ -53,6 +53,7 @@
 		Grey2="48 48 48 255"
 		Grey3="75 75 75 255"
 
+		green50="87 119 15 255"
 		green="130 186 0 255"
 		green_bright="0 255 0 255"
 		Red="255 0 0 255"
@@ -237,7 +238,7 @@
 //======Steam Grid View======//
 		gridInstalled=Friends_Online
 		gridRunning=Friends_InGame
-		gridUninstalled=Grey3
+		gridUninstalled=none
 		gridUpdating=Focus
 		gridShortcut=White
 		gridMod=Friends_Golden
