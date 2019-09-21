@@ -95,12 +95,11 @@
 	}
 	layout
 	{
-		
-		place { control="Previous,Next" align=left x=1 y=1 height=38 width=40 } //Buttons
-		place { control="FindEntry" start=Next width=max height=max end-right=FindCount margin-right=16 } //TextBox
-		place { control="FindCount" align=right height=40 margin-right=8 end-right=Close } //Count
-		place { control="Close" align=right y=1 width=40 height=38 margin-right=1 }
-		//Hidden
-		place { control="SearchThisPage" width=1 } //Search//Icon
+    place { control="Previous,Next" align=left x=1 y=1 height=38 width=40 }
+    place { control="FindEntry" start=Next width=max height=max margin-right=116 }
+    place { control="FindCount" align=right width=70 height=40 margin-right=44 }
+    place { control="Close" align=right y=1 width=40 height=38 margin-right=1 }
+    // Hidden
+    place { control="SearchThisPage" width=1 } //Search//Icon
 	}
 }
