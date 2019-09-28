@@ -14,6 +14,7 @@
 		BigPicture		{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
 		MusicPlayer		{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
 		Divider {}
+    CommentHistory { text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
 		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
