@@ -43,5 +43,8 @@
 
 		place { start=LibraryLowBandwidthCheckbox control=LibraryLowPerfLabel y=16 width=max dir=down }
     place { start=LibraryLowPerfLabel control=LibraryLowPerfCheckbox dir=down }
+
+    place { start=LibraryLowPerfCheckbox control=LibraryDisableCommunityContentLabel y=16 width=max dir=down }
+    place { start=LibraryDisableCommunityContentLabel control=LibraryDisableCommunityContentCheckbox dir=down }
 	}
 }

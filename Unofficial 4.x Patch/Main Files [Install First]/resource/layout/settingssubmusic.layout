@@ -77,9 +77,11 @@
 		//Logging
 		place { region=box control=LoggingHeader x=271 y=300 }
 		place { region=box control=LoggingCrawlingCheckbox start=LoggingHeader dir=down }
+		//Audio | 3rd row
+    place { region=box control=AdditionalFilesHeader start=VolumeDivider dir=down y=8 }
+		place { region=box control=AdditionalFilesHighQualityCheckbox start=AdditionalFilesHeader height=24 width=264 dir=down }
 
-		//Volume | 3rd row
-		place { region=box control=VolumeHeader start=VolumeDivider dir=down y=8 }
-		place { region=box control=VolumeSlider start=VolumeHeader height=24 width=180 dir=down }
+		place { region=box control=VolumeHeader x=271 y=374 }
+		place { region=box control=VolumeSlider start=VolumeHeader height=24 width=250 dir=down }
 	}
 }
