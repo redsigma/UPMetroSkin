@@ -28,7 +28,7 @@
 	layout
 	{
 		place { control="DescriptionLabel" y=44 dir=down width=max margin-left=16 margin-right=16 spacing=8 }
-		place { control="BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,EnableHardwareDecoding,EnableDebugOverlay" start="DescriptionLabel" y=8 dir=down width=max height=28 margin-right=16 spacing=-2 }
+		place { control="BandwidthLabel,BandwidthLimit,ResolutionLabel,ResolutionLimit,AudioChannelsLabel,AudioChannelSelect,PerformanceOverlayLabel,PerformanceOverlay,EnableHardwareDecoding" start="DescriptionLabel" y=8 dir=down width=max height=28 margin-right=16 spacing=-2 }
 
 		region { name=bottom align=bottom height=44 margin=8 }
 		region { name=support align=bottom height=80 margin=8 }
