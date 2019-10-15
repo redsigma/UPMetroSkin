@@ -1,8 +1,8 @@
-# Unofficial Patch 9.1f for Metro for Steam 4.3.1 skin
+# Unofficial Patch for the Metro for Steam skin
 
-This unofficial patch for [Metro for Steam skin](https://metroforsteam.com) fixes bugs with current version of the skin, implements newly added Steam client features and adds optional ones for unhindered and customized design.
+This unofficial patch for the [Metro for Steam skin](https://metroforsteam.com) fixes bugs with current version of the skin, implements newly added Steam client features and adds optional ones for productivity and aesthetic.
 
-Additional details and feedback are available on [MetroSkin](https://steamcommunity.com/groups/metroskin) Steam community group. Installation instructions can be found on the [Unofficial Patch thread](https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907).
+Additional details and feedback are available on [MetroSkin](https://steamcommunity.com/groups/metroskin) Steam group. Installation instructions can be found on the [Steam discussion thread](https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907).
 
 ## License
 
