@@ -15,7 +15,7 @@
 		MusicPlayer		{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
 		Divider {}
     CommentHistory { text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
-		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
+    ThirdPartyLogins { text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
 		NewForYou		{	text="#SteamUI_GameProperties_UpdateNews"	shellcmd="steam://open/newforyou" }
