@@ -1,0 +1,137 @@
+div::-webkit-scrollbar-thumb, iframe::-webkit-scrollbar-thumb {
+	background-image: none !important;
+}
+
+
+::-webkit-scrollbar {
+	width: 16px!important;
+	background-color: #262626 !important;
+}
+
+::-webkit-scrollbar-corner {
+	display: none!important;
+}
+
+::-webkit-scrollbar-button:vertical,
+::-webkit-scrollbar-track:vertical,
+::-webkit-scrollbar-thumb:vertical {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+::-webkit-scrollbar-button:horizontal,
+::-webkit-scrollbar-track:horizontal,
+::-webkit-scrollbar-thumb:horizontal {
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+::-webkit-scrollbar-button {
+    display: none!important;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #404040 !important;
+	border-radius: 16px!important;
+	border: 4px solid #262626!important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #4d4d4d !important;
+}
+
+::-webkit-scrollbar-track:vertical, ::-webkit-scrollbar-track:horizontal {
+	background-color: transparent!important;
+	display:none!important;
+}
+
+
+/*
+::-webkit-scrollbar-thumb {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpi/P//PwMhwAQibly/9h8fzUi0SefPnfuPjybepKNHjvxHpQ+j0MSbtGvXzv/I9G44vYN4kwACDAA7RESWY5qxTAAAAABJRU5ErkJggg==);
+}
+*/
+
+/* Up */
+::-webkit-scrollbar-button:vertical:decrement {
+	height: 22px;
+	background-position: center;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJUlEQVQI12OAgxQGBsaVDAxsbg4MkowTGFKAcAKDBIMDAwtMBQBYIAP5KnftSQAAAABJRU5ErkJggg==);
+	display: none!important;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:hover {
+	height: 22px;
+	background-position: center;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAX7+ciytYAAAAJUlEQVQI12OAgxQGBsaVDAxsbg4MkowTGFKAcAKDBIMDAwtMBQBYIAP5KnftSQAAAABJRU5ErkJggg==);
+	display: none!important;
+}
+
+/* Down */
+::-webkit-scrollbar-button:vertical:increment {
+	height: 22px;
+	background-position: center;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
+	display: none!important;
+}
+
+::-webkit-scrollbar-button:vertical:increment:hover {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAX7+ciytYAAAAJElEQVQI12OAAQcGFoYJDBIMKUAoyTiBgc3NgYFxJVAiBa4EAFbgA/lztmmEAAAAAElFTkSuQmCC);
+	display: none!important;
+}
+
+/* Left */
+::-webkit-scrollbar-button:horizontal:decrement {
+	width: 22px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAJElEQVQI12NgYHNgYJBkYGBIYWBgnADhcjGAaBAfLA6UBwsAAEcYAz8mgHA8AAAAAElFTkSuQmCC);
+	display: none!important;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:hover {
+	width: 22px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAX7+ciytYAAAAJElEQVQI12NgYHNgYJBkYGBIYWBgnADhcjGAaBAfLA6UBwsAAEcYAz8mgHA8AAAAAElFTkSuQmCC);
+	display: none!important;
+}
+
+/* Right */
+::-webkit-scrollbar-button:horizontal:increment {
+	width: 22px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAQIDntwj7AAAAI0lEQVQI12Ngc2BgYJzAwMCQAsSSQAwSYGoA0RB+CkgezAUAUN4Dt/sHRo4AAAAASUVORK5CYII=);
+	display: none!important;
+}
+
+::-webkit-scrollbar-button:horizontal:increment:hover {
+	width: 22px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMAAADUwp+1AAAACVBMVEUAAAD///////9zeKVjAAAAA3RSTlMAX7+ciytYAAAAI0lEQVQI12Ngc2BgYJzAwMCQAsSSQAwSYGoA0RB+CkgezAUAUN4Dt/sHRo4AAAAASUVORK5CYII=);
+	display: none!important;
+}
+
+.ReactVirtualized__List:hover::-webkit-scrollbar-thumb,
+.gamelist_Container_1ijTa:hover::-webkit-scrollbar-thumb {
+    background-color: #404040!important;
+    background-clip: padding-box!important;
+	border: 4px solid transparent !important;
+}
+
+.ReactVirtualized__List:hover::-webkit-scrollbar-thumb:hover {
+    background-color: #4d4d4d!important;
+    background-clip: padding-box!important;
+	border: 4px solid transparent !important;
+}
+
+.ReactVirtualized__List::-webkit-scrollbar-thumb {
+    background-color: transparent!important;
+	border: 4px solid transparent !important;
+}
+
+.ReactVirtualized__Grid::-webkit-scrollbar {
+    background-color: transparent!important;
+}
+
+.library_LeftListSizableContainer_9sPoV::-webkit-scrollbar:horizontal {
+	background-color: transparent!important;
+}
+
+::-webkit-resizer { 
+	background-color: #404040!important;
+}
