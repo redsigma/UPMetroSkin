@@ -3,7 +3,7 @@
 
 This unofficial patch for the [Metro for Steam skin](https://metroforsteam.com) fixes bugs with current version of the skin, implements newly added Steam client features and adds optional ones for customizable productivity and aesthetics.
 
-Additional details and feedback are available on [MetroSkin](https://steamcommunity.com/groups/metroskin) Steam group. Installation instructions can be found on the [Steam discussion thread](https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907).
+Additional details and feedback are available on the [MetroSkin](https://steamcommunity.com/groups/metroskin) Steam group. Installation instructions can be found on the [Steam discussion thread](https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907).
 
 ## License
 
