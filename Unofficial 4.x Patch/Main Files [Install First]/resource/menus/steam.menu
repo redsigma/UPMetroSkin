@@ -6,29 +6,26 @@
 		SkinVersion		{	text="Metro for Steam 4.x"			shellcmd="steam://openurl/https://metroforsteam.com" }
 		SkinVersionMod		{	text="Unofficial Patch 9"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
-		MiniMode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
-		LargeMode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
+		Mini_Mode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
+		Large_Mode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
 		BigPicture		{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
+    Divider {}
 		MusicPlayer		{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
     MusicDetails	{	text="#steam_menu_view_music_details"	shellcmd="steam://nav/music/details" }
 		Divider {}
     CommentHistory { text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
     ThirdPartyLogins { text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
-		ViewPlayerList		{	text="#steam_menu_view_players"			shellcmd="steam://friends/players" }
 		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
 		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
 		NewForYou		{	text="#Steam_GamesDialog_RightClick_UpdateNews"	shellcmd="steam://open/newforyou" }
 		Divider {}
 		ActivateRetail		{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
-		RedeemWalletVoucher	{	text="#Steam_RedeemWalletVoucher"		shellcmd="steam://url/RedeemWalletVoucher" }
 		ManageGuestPasses	{	text="#Steam_ManageGuestPasses"			command="ManageGuestPasses" }
 		AddShortcut		{	text="#Steam_menu_AddShortcut"			shellcmd="steam://AddNonSteamGame" }
 		BackupGames		{	text="#steam_menu_backupgames"			command="backupgames" }
 		Divider {}
 		Support			{	text="#steam_menu_support"			command="Support" }
-		Privacy			{	text="#steam_menu_PrivacyPolicy"		shellcmd="steam://url/PrivacyPolicy" }
 		Legal			{	text="#steam_menu_LegalInformation"		shellcmd="steam://url/LegalInformation" }
-		SSA			{	text="#steam_menu_SteamSubscriberAgreement"	shellcmd="steam://url/SSA" }
 		Divider {}
 		Announcements		{	text="Steam Announcements"			shellcmd="steam://url/SteamAnnouncements" }
 		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
