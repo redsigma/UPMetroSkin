@@ -10,7 +10,6 @@
 ::-webkit-scrollbar-thumb:vertical {
 	background-repeat: no-repeat;
 	background-position: center;
-	box-shadow: -1px 0 0 #000000;
 }
 
 ::-webkit-scrollbar-button:horizontal,
@@ -18,7 +17,6 @@
 ::-webkit-scrollbar-thumb:horizontal {
 	background-repeat: no-repeat;
 	background-position: center;
-	box-shadow: 0 -1px 0 #000000;
 }
 
 ::-webkit-scrollbar-thumb {
