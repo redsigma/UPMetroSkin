@@ -2,6 +2,7 @@
 "Blue Scrollbars";"blue_scrollbars";"";"Client Windows"
 "Hide Account Details";"hide_account";"";"Client Windows"
 "Red Highlight on Close Caption Button";"redclose";"";"Client Windows"
+"Removed Message Preview";"removed_message_preview";"";"Friends and Chat"
 "Big Picture Button";"big_picture_button";"";"Navigation Bar"
 "Green Notification Box";"greenbox";"";"Navigation Bar"
 "Green Notification Icon";"greenicon";"";"Navigation Bar"
