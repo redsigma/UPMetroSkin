@@ -39,7 +39,7 @@
 
     place { start=LibraryDisplaySizeLarge control=LibraryDisplayIconInGameListCheckbox region=box width=max dir=down }
 
-    place { start=LibraryDisplayIconInGameListCheckbox control=LibraryLowBandwidthLabel y=20 width=max dir=down }
+    place { start=LibraryDisplaySizeLarge control=LibraryLowBandwidthLabel y=40 width=max dir=down }
     place { start=LibraryLowBandwidthLabel control=LibraryLowBandwidthCheckbox dir=down }
 
     place { start=LibraryLowBandwidthCheckbox control=LibraryLowPerfLabel y=16 width=max dir=down }
