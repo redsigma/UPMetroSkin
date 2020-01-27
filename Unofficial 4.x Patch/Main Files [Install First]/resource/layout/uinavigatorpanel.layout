@@ -534,7 +534,7 @@ layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this mov
 	place { start=forward control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" y=0 spacing=1 height=40 }
 
 	//URLBar
-	place { control="stop,refresh,label_community_new" height=40 dir=down }
+	place { control="stop,refresh,subnavgroup_library" height=40 dir=down } // hacky solution for the url checkbox on/off
 	place { control="EVCert,URLBar" region=top y=0 align=left width=max height=39 margin-right=80 }
 	place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
