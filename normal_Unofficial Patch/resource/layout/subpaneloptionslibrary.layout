@@ -30,22 +30,22 @@
   layout
   {
     region { name=box margin-left=16 margin-right=16 }
-    place { control=TitleLabel,LibraryDisplaySizeLabel region=box spacing=6 dir=down } 
+    place { controls=TitleLabel,LibraryDisplaySizeLabel region=box spacing=6 dir=down } 
+    
     place { start=LibraryDisplaySizeLabel control="LibraryDisplaySizeAutomatic" dir=down }
     place { start=LibraryDisplaySizeAutomatic control="LibraryDisplaySizeAutomaticLabel" x=6 y=5 }
     place { start=LibraryDisplaySizeAutomatic control="LibraryDisplaySizeSmall" dir=down }
     place { start=LibraryDisplaySizeSmall control="LibraryDisplaySizeMedium" dir=down }
     place { start=LibraryDisplaySizeMedium control="LibraryDisplaySizeLarge" dir=down }
-
-    place { start=LibraryDisplaySizeLarge control=LibraryDisplayIconInGameListCheckbox region=box width=max dir=down }
-
-    place { start=LibraryDisplaySizeLarge control=LibraryLowBandwidthLabel y=40 width=max dir=down }
+    
+    place { start=LibraryDisplaySizeLarge control=LibraryLowBandwidthLabel y=16 width=max dir=down }
     place { start=LibraryLowBandwidthLabel control=LibraryLowBandwidthCheckbox dir=down }
-
+    
     place { start=LibraryLowBandwidthCheckbox control=LibraryLowPerfLabel y=16 width=max dir=down }
     place { start=LibraryLowPerfLabel control=LibraryLowPerfCheckbox dir=down }
-
+    
     place { start=LibraryLowPerfCheckbox control=LibraryDisableCommunityContentLabel y=16 width=max dir=down }
     place { start=LibraryDisableCommunityContentLabel control=LibraryDisableCommunityContentCheckbox dir=down }
+	place { start=LibraryDisableCommunityContentCheckbox control=LibraryDisplayIconInGameListCheckbox dir=down }
   }
 }
