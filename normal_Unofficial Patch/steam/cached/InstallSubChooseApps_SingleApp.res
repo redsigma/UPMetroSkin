@@ -237,7 +237,7 @@
 	layout
 	{
 		place { control=Label1 x=16 y=16 margin-right=16 width=max }
-		place { start=Label1 y=16 control=CreateShortcutCheck,CreateStartMenuShortcutCheck dir=down height=24 }
+		place { start=Label1 y=16 control=CreateShortcutCheck,CreateStartMenuShortcutCheck width=max height=24 dir=down margin-right=200 }
 
 		place { start=CreateStartMenuShortcutCheck y=16 control=InstallSize height=24 dir=down end-right=InstallSizeLabel }
 		place { start=InstallSize control=InstallSizeLabel height=24 margin-right=16 }
