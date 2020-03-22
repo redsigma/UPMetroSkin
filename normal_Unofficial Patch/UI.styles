@@ -209,6 +209,7 @@
 				1="fill( x0, y1-48, x1, y1-47, frameBorder )"
 				2="fill( x0, y1-47, x1, y1, Header_Dark )"
 			}
+      minimum-width=496
 		}
 
 		CRegisterCDKeyWizard
