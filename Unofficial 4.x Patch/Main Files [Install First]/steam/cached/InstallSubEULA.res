@@ -48,14 +48,9 @@
 	}
 	styles
 	{
-		HTML
-		{
-			inset-left=-10
-		}
 	}
 	layout
 	{
-		place { control=Label1 y=16 }
-		place { start=Label1 control=HTMLEULA dir=down margin-bottom=4 }
+		place { control=Label1 x=16 y=6 }
 	}
 }

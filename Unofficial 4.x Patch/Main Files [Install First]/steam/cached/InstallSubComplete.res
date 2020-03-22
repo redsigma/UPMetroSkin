@@ -98,8 +98,8 @@
 	}
 	layout
 	{
-		place { control="InstallCompleteLabel" y=16 width=max margin-bottom=0 }
+		place { control="InstallCompleteLabel" x=16 y=16 width=max margin-bottom=0 }
 		place { start=InstallCompleteLabel control="DontShowAgainCheck,AutoLaunchCheck" width=max dir=down margin-right=200 }
-		place { control="DownloadsPageLink" align=bottom margin-bottom=16 }
+		place { control="DownloadsPageLink" x=16 align=bottom margin-bottom=16 }
 	}
 }
