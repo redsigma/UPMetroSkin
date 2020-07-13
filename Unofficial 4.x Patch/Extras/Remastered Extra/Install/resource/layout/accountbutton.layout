@@ -51,7 +51,7 @@
 
 	layout
 	{
-		place { control="account_balance" y=8 align=right }
+		place { control="account_balance" align=right height=39 }
 		place { control="account_persona" width=1 }
 		place { control="account_avatar" width=1 margin-left=-999 }
 
