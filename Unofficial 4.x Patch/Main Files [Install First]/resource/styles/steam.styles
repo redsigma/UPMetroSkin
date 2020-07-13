@@ -840,13 +840,19 @@ steam.styles
 
 /////////////////////////////////////////
 //======This is the HAMBURGER Menu=====//
+		RootMenu
+		{
+			render
+			{
+				0="image(x0+6,y0+10,x1,y1, graphics/login_logo_mini)"
+				1="image(x0+39,y0+13,x1,y1, graphics/metro/icons/navbar/menu)"
+			}
+		}
 		"MenuBar MenuButton"
 		{
 			bgcolor="none"
 			render_bg{}
-			image="graphics/metro/icons/navbar/menu"
-			padding-left=5
-			minimum-width=38
+			padding-left=14
 		}
 		"MenuBar MenuButton:hover"
 		{
