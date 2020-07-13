@@ -337,7 +337,7 @@
 		place { control="XPVistaAlert,SupportAlert,AccountButton,InboxButton,view_friends,startvr,exitvr,ParentalLockButton,fullscreen" region=top align=right end-right=UIStatusPanel spacing=1 margin-right=1 height=39 }
 		place { control="UIStatusPanel" region=top align=right end-right=frame_minimize margin-right=1 width=27 height=40 }
 		place [$OSX] { control="UIStatusPanel" region=top align=right margin-right=1 width=27 height=40 }
-		place { control="MenuBar" region=top height=38 width=38 x=1 y=1 }
+		place { control="MenuBar" region=top height=38 width=67 x=1 y=1 }
 
 		// Hidden
 		place { control="AnnouncementButton,add_game,universe_label,New" margin-left=-999 dir=down }
