@@ -1,44 +1,51 @@
 "menubar"
 {
+	Store
+	{
+		text = ""
+		SkinVersion		{	text="Metro for Steam 4.x"  shellcmd="steam://openurl/https://metroforsteam.com" }
+		SkinVersionMod	{	text="Unofficial Patch 9"  shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
+		Divider {}
+		Mini_Mode		{	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
+		Large_Mode		{	text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+		BigPicture		{	text="#steam_menu_bigpicturemode"  shellcmd="steam://open/bigpicture" }
+		Divider {}
+		
+		BackupGames		{	text="#steam_menu_backupgames"  command="backupgames" }
+		Divider {}
+		Announcements	{	text="Steam Announcements"  shellcmd="steam://url/SteamAnnouncements" }
+		Support			{	text="#steam_menu_support"  command="Support" }
+		Legal			{	text="#steam_menu_LegalInformation"  shellcmd="steam://url/LegalInformation" }
+		Divider {}
+
+		CheckForUpdates	{	text="#steam_menu_checkforupdates"  command="CheckForUpdates" }
+		SystemInfo		{	text="#steam_menu_systeminfo"  command="SystemInfo" }
+		Settings		{	text="#steam_menu_settings"  command="Settings" }
+		About			{	text="#steam_about"  command="About" }
+		Divider {}
+		ChangeUser		{	text="#steam_menu_changeuser"  command="ChangeUser" }
+		GoOnline		{	text="#SteamUI_OfflineMode_GoOnline"  command="goonline" }
+		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"  command="gooffline" }
+		Restart 		{	text="#Steam_MustRestart_Button"  command="RestartSteam" }
+		Divider {}
+		Exit		{	text="#Steam_ExitSteam"  command="Exit" }
+	}
 	Steam
 	{
-		text=""
-		SkinVersion		{	text="Metro for Steam 4.x"			shellcmd="steam://openurl/https://metroforsteam.com" }
-		SkinVersionMod		{	text="Unofficial Patch 9"			shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
+		text = "-------DONT-MODIFY-ME-------"
+		ActivateRetail  {	text="#Steam_RegisterProductCode"  command="ActivateRetail" }
+		ManageGuestPasses {	text="#Steam_ManageGuestPasses"  command="ManageGuestPasses" }
+		AddShortcut		{	text="#Steam_menu_AddShortcut"  shellcmd="steam://AddNonSteamGame" }
 		Divider {}
-		Mini_Mode		{	text="#steam_menu_minimode"			shellcmd="steam://open/minigameslist" }
-		Large_Mode		{	text="#steam_menu_largemode"			shellcmd="steam://open/largegameslist" }
-		BigPicture		{	text="#steam_menu_bigpicturemode" 		shellcmd="steam://open/bigpicture" }
-    Divider {}
-		MusicPlayer		{	text="#steam_menu_view_musicplayer"		shellcmd="steam://open/musicplayer" }
-    MusicDetails	{	text="#steam_menu_view_music_details"	shellcmd="steam://nav/music/details" }
-		Divider {}
-    CommentHistory { text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
-    ThirdPartyLogins { text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
-		Servers			{	text="#steam_menu_servers"			shellcmd="steam://open/servers" }
-		Screenshots		{	text="#steam_screenshots"			command="Screenshots" }
+		SteamPoints 	{	text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
 		NewForYou		{	text="#Steam_GamesDialog_RightClick_UpdateNews"	shellcmd="steam://open/newforyou" }
+		MusicPlayer		{	text="#steam_menu_view_musicplayer"  shellcmd="steam://open/musicplayer" }
+		MusicDetails	{	text="#steam_menu_view_music_details"  shellcmd="steam://nav/music/details" }
 		Divider {}
-		ActivateRetail		{	text="#Steam_RegisterProductCode"		command="ActivateRetail" }
-		ManageGuestPasses	{	text="#Steam_ManageGuestPasses"			command="ManageGuestPasses" }
-		AddShortcut		{	text="#Steam_menu_AddShortcut"			shellcmd="steam://AddNonSteamGame" }
-		BackupGames		{	text="#steam_menu_backupgames"			command="backupgames" }
-		Divider {}
-		Support			{	text="#steam_menu_support"			command="Support" }
-		Legal			{	text="#steam_menu_LegalInformation"		shellcmd="steam://url/LegalInformation" }
-		Divider {}
-		Announcements		{	text="Steam Announcements"			shellcmd="steam://url/SteamAnnouncements" }
-		CheckForUpdates		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
-		SystemInfo		{	text="#steam_menu_systeminfo"			command="SystemInfo" }
-		Settings		{	text="#steam_menu_settings"			command="Settings" }
-		About			{	text="#steam_about"				command="About" }
-		Divider {}
-		ChangeUser		{	text="#steam_menu_changeuser"			command="ChangeUser" }
-		GoOnline		{	text="#SteamUI_OfflineMode_GoOnline"		command="goonline" }
-		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"		command="gooffline" }
-		Restart 		{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
-		Divider {}
-		Exit			{	text="#Steam_ExitSteam"				command="Exit" }
+		CommentHistory 	{ 	text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
+		ThirdPartyLogins{	text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
+		Servers		{	text="#steam_menu_servers"  shellcmd="steam://open/servers" }
+		Screenshots		{	text="#steam_screenshots"  command="Screenshots" }
 	}
   
   
@@ -66,6 +73,7 @@
   {
 		text="#steam_store"
 
+		SteamPoints { text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
 		Featured { text="#steam_subnav_featured" shellcmd="steam://url/StoreFrontPage"  }
 		Explore { text="#steam_subnav_explore" shellcmd="steam://url/StoreExplore" }
 		Upcoming { text="Upcoming" shellcmd="steam://openurl/https://store.steampowered.com/explore/upcoming/" }
@@ -118,7 +126,7 @@
 		Divider {}
 		Online { text="#friends_online" shellcmd="steam://friends/status/online" checkable=1 }
 		Away { text="#friends_away" shellcmd="steam://friends/status/away" checkable=1  }
-    Invisible { text="#friends_invisible" shellcmd="steam://friends/status/invisible" checkable=1  }
+		Invisible { text="#friends_invisible" shellcmd="steam://friends/status/invisible" checkable=1  }
 		Play { text="#friends_lookingtoplay"  shellcmd="steam://friends/status/play" checkable=1 }
 		Trade { text="#friends_lookingtotrade" shellcmd="steam://friends/status/trade" checkable=1 }
 		Busy { text="#friends_busy" shellcmd="steam://friends/status/busy" checkable=1 }

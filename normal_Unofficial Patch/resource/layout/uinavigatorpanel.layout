@@ -474,8 +474,8 @@ layout [$WINDOWS]
 {
 	//Header
 	region { name=top align=top y=40 x=0 margin-right=0 }
-	place { control="back,forward" x=39 y=1 height=38 width=40 margin-left=0 spacing=0 }
-	place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=120 y=0 spacing=1 height=40 }
+	place { control="back,forward" x=67 y=1 height=38 width=40 margin-left=0 spacing=0 }
+	place { control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" x=147 y=0 spacing=1 height=40 }
 
 	//URLBar
 	place { control="stop,refresh,subnavgroup_library" height=40 dir=down } // hacky solution for the url checkbox on/off
@@ -529,12 +529,12 @@ layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this mov
 {
 	//Header
 	region { name=top align=top y=40 x=0 margin-right=0 }
-	place { control="back,forward" x=40 y=1 height=38 width=40 margin-left=0 spacing=0 }
-	place [$OSX] { control="back,forward" x=72 y=1 height=38 width=40 margin-left=0 spacing=0 }
+	place { control="back,forward" x=67 y=1 height=38 width=40 margin-left=0 spacing=0 }
+	place [$OSX] { control="back,forward" x=99 y=1 height=38 width=40 margin-left=0 spacing=0 }
 	place { start=forward control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" y=0 spacing=1 height=40 }
 
 	//URLBar
-  place { control="stop,refresh,subnavgroup_library" height=40 dir=down } // hacky solution for the url checkbox on/off
+	place { control="stop,refresh,subnavgroup_library" height=40 dir=down } // hacky solution for the url checkbox on/off
 	place { control="EVCert,URLBar" region=top y=0 align=left width=max height=39 margin-right=80 }
 	place { control="PageLoadThrobber,refresh,stop" start=URLBar align=right width=38 height=39 }
 
