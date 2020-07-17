@@ -64,7 +64,7 @@
 		//Header
 		region { name=top align=top y=40 height=40 x=0 margin-right=0 }
 		place { control="library_filters" region=top start=library_search height=40 width=38 }
-		place { control="MenuBar" height=38 width=38 x=1 y=1 }
+		place { control="MenuBar" height=38 width=67 x=1 y=1 }
 
 		//Search
 		place { control="label_search_icon" region=top height=40 width=38 }
