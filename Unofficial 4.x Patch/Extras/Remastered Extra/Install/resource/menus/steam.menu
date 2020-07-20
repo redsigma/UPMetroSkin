@@ -37,6 +37,7 @@
 		StoreConfig		{	text="#steam_menu_account_preferences"  shellcmd="steam://url/SteamPreferences" }
 		Divider {}
 		MusicPlayer		{	text="#steam_menu_view_musicplayer"  shellcmd="steam://open/musicplayer" }
+		Hidden			{	text="#steam_menu_hidden_games" shellcmd="steam://nav/library/collection/hidden" }
 		Divider {}
 		CommentHistory	{	text="#ServerBrowser_HistoryTab"  shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
 		ThirdPartyLogins	{		text="#Steam_DeveloperUnknownThirdParty"  shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
