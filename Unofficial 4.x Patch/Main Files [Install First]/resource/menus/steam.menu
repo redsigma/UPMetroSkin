@@ -1,57 +1,56 @@
 "menubar"
 {
-	Store
+	Store [$WINDOWS||$LINUX]
 	{
 		text = ""
-		SkinVersion		{	text="Metro for Steam 4.x"  shellcmd="steam://openurl/https://metroforsteam.com" }
-		SkinVersionMod	{	text="Unofficial Patch 9"  shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
+		SkinVersion { text="Metro for Steam 4.x"  shellcmd="steam://openurl/https://metroforsteam.com" }
+		SkinVersionMod {	text="Unofficial Patch 9"  shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
-		Mini_Mode		{	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
-		Large_Mode		{	text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
-		BigPicture		{	text="#steam_menu_bigpicturemode"  shellcmd="steam://open/bigpicture" }
+		Mini_Mode {	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
+		Large_Mode { text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+		BigPicture { text="#steam_menu_bigpicturemode"  shellcmd="steam://open/bigpicture" }
 		Divider {}
 		
-		BackupGames		{	text="#steam_menu_backupgames"  command="backupgames" }
+		BackupGames { text="#steam_menu_backupgames"  command="backupgames" }
 		Divider {}
-		Announcements	{	text="Steam Announcements"  shellcmd="steam://url/SteamAnnouncements" }
-		Support			{	text="#steam_menu_support"  command="Support" }
-		Legal			{	text="#steam_menu_LegalInformation"  shellcmd="steam://url/LegalInformation" }
+		Announcements { text="Steam Announcements"  shellcmd="steam://url/SteamAnnouncements" }
+		Support { text="#steam_menu_support"  command="Support" }
+		Legal { text="#steam_menu_LegalInformation"  shellcmd="steam://url/LegalInformation" }
 		Divider {}
 
-		CheckForUpdates	{	text="#steam_menu_checkforupdates"  command="CheckForUpdates" }
-		SystemInfo		{	text="#steam_menu_systeminfo"  command="SystemInfo" }
-		Settings		{	text="#steam_menu_settings"  command="Settings" }
-		About			{	text="#steam_about"  command="About" }
+		CheckForUpdates { text="#steam_menu_checkforupdates"  command="CheckForUpdates" }
+		SystemInfo { text="#steam_menu_systeminfo"  command="SystemInfo" }
+		Settings { text="#steam_menu_settings"  command="Settings" }
+		About { text="#steam_about"  command="About" }
 		Divider {}
-		ChangeUser		{	text="#steam_menu_changeuser"  command="ChangeUser" }
-		GoOnline		{	text="#SteamUI_OfflineMode_GoOnline"  command="goonline" }
-		GoOffline		{	text="#SteamUI_OfflineMode_GoOffline"  command="gooffline" }
-		Restart 		{	text="#Steam_MustRestart_Button"  command="RestartSteam" }
+		ChangeUser { text="#steam_menu_changeuser"  command="ChangeUser" }
+		GoOnline { text="#SteamUI_OfflineMode_GoOnline"  command="goonline" }
+		GoOffline { text="#SteamUI_OfflineMode_GoOffline"  command="gooffline" }
+		Restart { text="#Steam_MustRestart_Button"  command="RestartSteam" }
 		Divider {}
-		Exit		{	text="#Steam_ExitSteam"  command="Exit" }
+		Exit { text="#Steam_ExitSteam" command="Exit" }
 	}
-	Steam
+	Steam [$WINDOWS||$LINUX]
 	{
 		text = "-------DONT-MODIFY-ME-------"
-		ActivateRetail  {	text="#Steam_RegisterProductCode"  command="ActivateRetail" }
+		ActivateRetail { text="#Steam_RegisterProductCode"  command="ActivateRetail" }
 		ManageGuestPasses {	text="#Steam_ManageGuestPasses"  command="ManageGuestPasses" }
-		AddShortcut	 {	text="#Steam_menu_AddShortcut"  shellcmd="steam://AddNonSteamGame" }
+		AddShortcut { text="#Steam_menu_AddShortcut"  shellcmd="steam://AddNonSteamGame" }
 		Divider {}
-		SteamPoints 	{	text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
-		NewForYou	{	text="#Steam_GamesDialog_RightClick_UpdateNews"	shellcmd="steam://open/newforyou" }
-		MusicPlayer	{	text="#steam_menu_view_musicplayer"  shellcmd="steam://open/musicplayer" }
-		MusicDetails	{	text="#steam_menu_view_music_details"  shellcmd="steam://nav/music/details" }
-		Hidden	{	text="#steam_menu_hidden_games" shellcmd="steam://nav/library/collection/hidden" }
+		SteamPoints { text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
+		NewForYou { text="#Steam_GamesDialog_RightClick_UpdateNews"	shellcmd="steam://open/newforyou" }
+		MusicPlayer { text="#steam_menu_view_musicplayer"  shellcmd="steam://open/musicplayer" }
+		MusicDetails { text="#steam_menu_view_music_details"  shellcmd="steam://nav/music/details" }
+		Hidden { text="#steam_menu_hidden_games" shellcmd="steam://nav/library/collection/hidden" }
 		Divider {}
-		CommentHistory	{ 	text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
-		ThirdPartyLogins{	text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
-		Servers		{	text="#steam_menu_servers"  shellcmd="steam://open/servers" }
-		Screenshots {	text="#steam_screenshots"  command="Screenshots" }
+		CommentHistory { text="#ServerBrowser_HistoryTab" shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
+		ThirdPartyLogins { text="#Steam_DeveloperUnknownThirdParty" shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
+		Servers { text="#steam_menu_servers"  shellcmd="steam://open/servers" }
+		Screenshots { text="#steam_screenshots"  command="Screenshots" }
 	}
   
-  
-  Steam [$OSX] 
-  {
+	Steam [$OSX] 
+	{
 		text = "Account" 
 		
 		ViewProfile { text="#steam_menu_account_view_profile" shellcmd="steam://url/SteamIDMyProfile" }
@@ -67,18 +66,18 @@
 		Divider {}
 		Settings { text="#steam_menu_settings" shellcmd="steam://open/settings" }
 		Restart { text="#Steam_MustRestart_Button" command="RestartSteam" }
-		Exit { text="#Steam_ExitSteam" command="Exit" } 
+		Exit { text="#Steam_ExitSteam" command="Exit" }
 	}
 	
 	Store [$OSX] 
-  {
+	{
 		text="#steam_store"
 
 		SteamPoints { text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
 		Featured { text="#steam_subnav_featured" shellcmd="steam://url/StoreFrontPage"  }
-		Explore { text="#steam_subnav_explore" shellcmd="steam://url/StoreExplore" }
+		Explore { text="#Steam_P2P_ExploreButton" shellcmd="steam://url/StoreExplore" }
 		Upcoming { text="Upcoming" shellcmd="steam://openurl/https://store.steampowered.com/explore/upcoming/" }
-		Curators { text="#steam_subnav_curators" shellcmd="steam://url/StoreCurators" }
+		Curators { text="Curators" shellcmd="steam://url/StoreCurators" }
 		Wishlist { text="#steam_subnav_wishlist" shellcmd="steam://url/UserWishlist" }
 		News { text="#steam_subnav_news" shellcmd="steam://open/news" }
 		Stats { text="#steam_subnav_stats" shellcmd="steam://url/StoreStats" }
@@ -87,7 +86,7 @@
 	}
 
 	Library [$OSX] 
-  {
+	{
 		text="#steam_library"
 		
 		Games { text="#steam_menu_view_games" shellcmd="steam://nav/games" }
@@ -105,7 +104,7 @@
 	}
 
 	Community [$OSX] 
-  {
+	{
 		text="#steam_menu_community"
 
 		Home { text="#steam_subnav_community_home" shellcmd="steam://url/CommunityHome" }
@@ -117,7 +116,7 @@
 	}
 	
 	Friends [$OSX] 
-  {
+	{
 		text="#steam_menu_friends_view"
 
 		Activity { text="#steam_subnav_activity" shellcmd="steam://url/SteamIDControlPage" }
@@ -140,7 +139,7 @@
 	}
 
 	View [$OSX] 
-  {
+	{
 		text="#steam_menu_view"
 
 		Divider {}
@@ -154,7 +153,7 @@
 	}
 
 	Window [$OSX] 
-  {
+	{
 		text="#steam_menu_window"
 
 		Divider {}
@@ -163,7 +162,7 @@
 	}
 	
 	Help [$OSX] 
-  {
+	{
 		text="#steam_menu_help"
 		
 		Support { text="#steam_menu_support" command="Support" }

@@ -496,30 +496,30 @@ layout [$WINDOWS]
 	place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 	place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
   
-  // Probably used for banners
-  place { control=URLAnchor align=left y=84 height=28 width=max }
+	// Probably used for banners
+	place { control=URLAnchor align=left y=84 height=28 width=max }
 	place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
   
 	//Reminder banners
 	place { control=emailreminderbar,phonereminderbar align=bottom dir=down width=max height=40 }
 
 	// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-	place { control=DownloadsPage 		y=39 width=max height=max margin-bottom=1 }
-	place { control=GamesPage_List 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=GamesPage_Details 	y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=GamesPage_Grid 		y=39 width=max height=max start=subnavgroup_library dir=down }
-	place { control=WebPanel 			y=40 width=max height=max margin-bottom=7 start=subnavgroup_library dir=down }
+	place { control=DownloadsPage y=39 width=max height=max margin-bottom=1 }
+	place { control=GamesPage_List y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=GamesPage_Details y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=GamesPage_Grid y=39 width=max height=max start=subnavgroup_library dir=down }
+	place { control=WebPanel y=40 width=max height=max margin-bottom=7 start=subnavgroup_library dir=down }
 
-	place { control=MusicPage_Details 	y=39 width=max height=max start=subnavgroup_library dir=down }
-	place { control=ScreenshotsPage 	y=39 width=max height=max margin-top=1 start=subnavgroup_library dir=down }
+	place { control=MusicPage_Details y=39 width=max height=max start=subnavgroup_library dir=down }
+	place { control=ScreenshotsPage y=39 width=max height=max margin-top=1 start=subnavgroup_library dir=down }
+	
+	place { control=ConsolePage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=NewLibraryPage width=max height=max margin-top=40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=MediaPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=ToolsPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
 
-	place { control=ConsolePage 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-  place { control=NewLibraryPage	width=max height=max margin-top=40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=MediaPage 			y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=ToolsPage 			y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-
-	place { control=BroadcastPage 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
+	place { control=BroadcastPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=BroadcastPageMin width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 	place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
 	//Hidden
@@ -530,7 +530,7 @@ layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this mov
 	//Header
 	region { name=top align=top y=40 x=0 margin-right=0 }
 	place { control="back,forward" x=67 y=1 height=38 width=40 margin-left=0 spacing=0 }
-	place [$OSX] { control="back,forward" x=99 y=1 height=38 width=40 margin-left=0 spacing=0 }
+	place [$OSX] { control="back,forward" x=67 y=1 height=38 width=40 margin-left=0 spacing=0 }
 	place { start=forward control="label_store,label_library,label_news,label_friends,label_community,label_me,label_console" y=0 spacing=1 height=40 }
 
 	//URLBar
@@ -552,31 +552,31 @@ layout [$OSX||$LINUX] //Both OSX and Linux use OS provided menu bar, so this mov
 	place { start=library_search control="library_music_menu" align=right height=38 end-right="library_music_add_button" }
 	place { start=library_search control="library_music_add_button,library_music_player_icon" align=right height=38 width=28 }
 
-  // Probably used for banners
-  place { control=URLAnchor align=left y=84 height=28 width=max }
+    // Probably used for banners
+    place { control=URLAnchor align=left y=84 height=28 width=max }
 	place { control=LibraryAnchor height=28 width=max start=URLAnchor dir=down }
   
 	//Reminder banners | so far this method works better than expected
 	place { control=emailreminderbar,phonereminderbar align=bottom dir=down width=max height=40 }
 
 	// content pages - these are all pushed down by the email reminder bar (above) if it's visible
-	place { control=DownloadsPage 		y=39 width=max height=max margin-bottom=1 }
-	place { control=GamesPage_List 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=GamesPage_Details 	y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=GamesPage_Grid 		y=39 width=max height=max start=subnavgroup_library dir=down }
-	place { control=WebPanel 			y=40 width=max height=max margin-bottom=7 start=subnavgroup_library dir=down }
+	place { control=DownloadsPage y=39 width=max height=max margin-bottom=1 }
+	place { control=GamesPage_List y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=GamesPage_Details y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=GamesPage_Grid y=39 width=max height=max start=subnavgroup_library dir=down }
+	place { control=WebPanel y=40 width=max height=max margin-bottom=7 start=subnavgroup_library dir=down }
 
-	place { control=MusicPage_Details 	y=39 width=max height=max start=subnavgroup_library dir=down }
-	place { control=ScreenshotsPage 	y=39 width=max height=max margin-top=1 start=subnavgroup_library dir=down }
+	place { control=MusicPage_Details y=39 width=max height=max start=subnavgroup_library dir=down }
+	place { control=ScreenshotsPage y=39 width=max height=max margin-top=1 start=subnavgroup_library dir=down }
 
-	place { control=ConsolePage 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-  place { control=NewLibraryPage	width=max height=max margin-top=40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=MediaPage 			y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=ToolsPage 			y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=ConsolePage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+    place { control=NewLibraryPage width=max height=max margin-top=40 margin-left=0 margin-right=0 margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=MediaPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=ToolsPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
 
-	place { control=BroadcastPage 		y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
-	place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
-	place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
+	place { control=BroadcastPage y=39 width=max height=max margin-bottom=1 start=subnavgroup_library dir=down }
+	place { control=BroadcastPageMin width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
+	place { control=BroadcastPageMinHoriz width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
 
 	//Hidden
 	place { control="label_library_zoom,label_zoom_separator,label_community_new,label_library_view,URLStatusImage" dir=down margin-left=-999 }
