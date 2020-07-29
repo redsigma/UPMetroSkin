@@ -4,6 +4,7 @@
 "Red Highlight on Close Caption Button";"redclose";"";"Client Windows"
 "Removed Message Preview";"removed_message_preview";"";"Friends and Chat"
 "Removed In-Game tag";"removed_ingame_tag";"";"Friends and Chat"
+"No Dropmenu Profile Text";"no_profile_text";"";"Navigation Bar"
 "Big Picture Button";"big_picture_button";"";"Navigation Bar"
 "Green Notification Box";"greenbox";"";"Navigation Bar"
 "Green Notification Icon";"greenicon";"";"Navigation Bar"
