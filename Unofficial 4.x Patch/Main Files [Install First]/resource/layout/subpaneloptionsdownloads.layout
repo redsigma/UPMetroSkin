@@ -58,11 +58,15 @@
 		place { region=box start=DownloadRegionCombo control=Divider2 y=6 width=max dir=down }
 
 		// Download Restrictions
-		place { region=box start=Divider2 control="RestrictionsLabel,ThrottleRatesLabel" y=6 dir=down spacing=6 }
-		place { region=box start=ThrottleRatesLabel control=ThrottleRates y=6 width=200 dir=down }
+		place { region=box start=Divider2 control="RestrictionsLabel" y=6 dir=down spacing=6 }
+
+		place { region=box start=RestrictionsLabel control=ThrottleCheckBox,ThrottleRateEditLabel y=6 width=200 dir=down }
+		place { region=box start=ThrottleCheckBox control=ThrottleRateCurrent height=27 }
+		place { region=box start=ThrottleCheckBox control=ThrottleRateEdit height=24 dir=down width=200 }
+		place { region=box start=ThrottleRateEdit control=ThrottleRateEditSuffix,ThrottleRateApply x=6 height=24 spacing=6 }
 
 		// Auto-Update Interval
-		place { region=box start=ThrottleRates control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }
+		place { region=box start=ThrottleRateEdit control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }
 
 		place { region=box start=AutoUpdateTimeRestrictCheckbox control=AutoUpdateTimeRestrictStartLabel x=6 y=2 }
 		place { region=box start=AutoUpdateTimeRestrictStartLabel control="AutoUpdateTimeRestrictStart" width=78 spacing=4 }
@@ -76,5 +80,8 @@
 		// Clear Download Cache
 		place { region=box start=Divider3 control=FlushDownloadConfig y=6 width=360 dir=down }
 		place { region=box start=FlushDownloadConfig control="FlushDownloadConfigLabel" y=6 dir=down }
+		
+		// Hidden
+		place { control=ThrottleRateEditLabel margin-left=-999 }
 	}
 }
