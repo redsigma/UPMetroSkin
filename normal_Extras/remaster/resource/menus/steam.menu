@@ -41,10 +41,10 @@
 		Divider {}
 		CommentHistory { text="#ServerBrowser_HistoryTab"  shellcmd="steam://openurl/https://steamcommunity.com/my/commenthistory" }
 		ThirdPartyLogins { text="#Steam_DeveloperUnknownThirdParty"  shellcmd="steam://openurl/https://help.steampowered.com/en/accountdata/ThirdPartyLogins" }
+		ViewPlayerList { text="#steam_menu_view_players" shellcmd="steam://friends/players" }
 		Servers { text="#steam_menu_servers"  shellcmd="steam://open/servers" }
 		Screenshots { text="#steam_screenshots"  command="Screenshots" }
 		NewForYou { text="#SteamUI_GameProperties_UpdateNews"  shellcmd="steam://open/newforyou" }
-		SteamPoints { text="SteamPoints" shellcmd="steam://openurl/https://store.steampowered.com/points/shop/" }
 		Divider {}
 		ActivateRetail { text="#Steam_RegisterProductCode"  command="ActivateRetail" }
 		RedeemWalletVoucher { text="#Steam_RedeemWalletVoucher"  shellcmd="steam://url/RedeemWalletVoucher" }
