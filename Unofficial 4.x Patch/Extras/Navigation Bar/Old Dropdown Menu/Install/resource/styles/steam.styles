@@ -844,7 +844,6 @@ steam.styles
 		{
 			render
 			{
-				//0="image(x0+6,y0+10,x1,y1, graphics/login_logo_mini)"
 				0="image(x0+12,y0+13,x1,y1, graphics/metro/icons/navbar/menu)"
 			}
 		}
@@ -852,7 +851,6 @@ steam.styles
 		{
 			bgcolor="none"
 			render_bg{}
-			//padding-left=14
 		}
 		"MenuBar MenuButton:hover"
 		{
