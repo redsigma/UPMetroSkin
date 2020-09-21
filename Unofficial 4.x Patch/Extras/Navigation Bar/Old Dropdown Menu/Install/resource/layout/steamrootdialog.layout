@@ -181,7 +181,7 @@
 		inbox_button_active
 		{
 			inset="8 0 -1 0"
-			textcolor=green_bright
+			textcolor=white
 			bgcolor="none"
 			render_bg
 			{
@@ -195,7 +195,7 @@
 		}
 		inbox_button_active:hover
 		{
-			textcolor=green_bright
+			textcolor=white
 			bgcolor=white05
 			render_bg
 			{
@@ -206,7 +206,7 @@
 		}
 		inbox_button_active:selected
 		{
-			textcolor=green_bright
+			textcolor=white
 			bgcolor=white10
 			render_bg
 			{
@@ -217,7 +217,7 @@
 		}
 		inbox_button_active:disabled
 		{
-			textcolor=green_bright
+			textcolor=white
 			bgcolor="none"
 			render_bg
 			{
@@ -275,7 +275,6 @@
 			image="graphics/icon_vr_disabled"
 			bgcolor=White10
 		}
-
 		VRButtonExit
 		{
 			padding-left=8
