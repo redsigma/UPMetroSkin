@@ -44,6 +44,10 @@ gameoverlay.styles
 			font-size=16 [$OSX||$LINUX]
 			bgcolor="none"
 		}
+		"CSettingsSubInGame Highlight"
+		{
+			font-size=28
+		}
 
 		detailsbox
 		{
