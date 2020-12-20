@@ -57,23 +57,26 @@
 		//Left - Screenshot
 		place { start=Divider1 control=ScreenshotLabel,ScreenshotHotKeySelector dir=down margin-top=8 width=240 height=24 }
 		place { start=ScreenshotHotKeySelector control=ScreenshotActionLabel,ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down height=24 }
-		place { start=ScreenshotSaveUncompressedCheck control=SetScreenshotFolderButton dir=down margin-top=4 width=200 height=24 }
-
+	
 		//Right - Shortcut
 		place { start=ScreenshotLabel controls=HotKeySelectorLabel x=16 width=220 height=24 }
 		place { start=HotKeySelectorLabel controls=HotKeySelector width=220 height=24 dir=down }
-		place { start=HotKeySelector controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck width=220 height=24 dir=down }
+		place { start=HotKeySelector controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck,SetScreenshotFolderButton spacing=2 width=220 height=24 dir=down }
 		
 		//Ping
-		place { controls="PingRateLabel" start=SetScreenshotFolderButton y=10 width=max dir=down }
+		place { controls="PingRateLabel" start=ScreenshotSaveUncompressedCheck y=8 width=max dir=down }
 		place { controls="PingRateCombo" start=PingRateLabel y=4 width=400 height=24 dir=down }
 		place { controls="PingRateInfo" start=PingRateCombo y=4 width=max dir=down }
 		
 		//Profanity
 		place { controls="TextFilterUpdateSettingURL" start=PingRateInfo y=4 width=400 height=26 dir=down }
 		place { controls="TextFilterStatus" start=TextFilterUpdateSettingURL y=4 width=max dir=down }
+		
+		place { controls="ShareIPNetworkingLabel" start=TextFilterStatus y=4 width=max dir=down }
+		place { controls="ShareIPNetworkingCombo" start=ShareIPNetworkingLabel y=4 width=400 height=24 dir=down }
+		place { controls="ShareIPNetworkingInfo" start=ShareIPNetworkingCombo y=4 width=max dir=down }
 
 		//Hidden
-		place { control=DescriptionLabel,TextFilterLabel width=10 height=10 align=right }
+		place { control=DescriptionLabel,TextFilterLabel,ShareIPNetworkingURL width=10 height=10 align=right }
 	}
 }
