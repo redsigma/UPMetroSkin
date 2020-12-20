@@ -17,7 +17,7 @@
 		place { region=box control="LanguageCombo" width=310 }
 		place { region=box control="FavoriteWindowCombo" width=310 }
 		place { region=box control="SkinCombo" width=310 }
-		place { region=box control="Label4,LanguageCombo,TranslationLabel" y=17 margin-top=16 height=24 dir=down }
+		place { region=box control="LabelLanguageCombo,LanguageCombo,TranslationLabel" y=17 margin-top=16 height=24 dir=down }
 		place { start=TranslationLabel control="Label2,FavoriteWindowCombo" y=8 height=24 dir=down }
 		place { start=FavoriteWindowCombo control="Label3,SkinCombo" y=8 height=24 dir=down }
 		place { start=SkinCombo control="Divider3,AutoLaunchCheck,BigPictureModeCheck,UrlBarCheck,DWriteCheck,H264HWAccelCheck,SmoothScrollWebViewCheck,DPIScalingCheck,GPUWebViewCheck,NotifyAvailableGamesCheck" y=6 spacing=2 dir=down }
