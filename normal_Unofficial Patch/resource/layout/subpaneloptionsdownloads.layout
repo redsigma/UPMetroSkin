@@ -67,9 +67,7 @@
 
 		// Auto-Update Interval
 		place { region=box start=ThrottleRateEdit control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }
-
-		place { region=box start=AutoUpdateTimeRestrictCheckbox control=AutoUpdateTimeRestrictStartLabel x=6 y=2 }
-		place { region=box start=AutoUpdateTimeRestrictStartLabel control="AutoUpdateTimeRestrictStart" width=78 spacing=4 }
+		place { region=box start=AutoUpdateTimeRestrictCheckbox control="AutoUpdateTimeRestrictStart" y=2 width=78 spacing=4 }
 
 		place { region=box start=AutoUpdateTimeRestrictStart control=AutoUpdateTimeRestrictEndLabel x=6 }
 		place { region=box start=AutoUpdateTimeRestrictEndLabel control=AutoUpdateTimeRestrictEnd width=78 }
