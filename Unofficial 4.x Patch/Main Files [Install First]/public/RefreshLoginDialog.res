@@ -170,9 +170,11 @@
 	}
 	layout
 	{
-		place { control="ErrorInfoLabel" y=56 margin-left=32 }
-		place { control="SavePasswordCheck" start="PasswordEdit" x=-16 y=8 dir=down }
-		place { control="LoginButton" start=SavePasswordCheck dir=down y=8 }
+		place { control="ErrorInfoLabel" margin-top=46 margin-left=32 }
+		
+		place { control="TwoFactorLabel" y=34 start=UserNameLabel dir=down } // below pause
+		place { control="TwoFactorEdit,SavePasswordCheck" y=8 start=PasswordEdit dir=down spacing=8 }
+		place { control="LoginButton" start=SavePasswordCheck dir=down spacing=16 }
 		place { control="CancelButton" start=LoginButton x=8 }
 	}
 }
