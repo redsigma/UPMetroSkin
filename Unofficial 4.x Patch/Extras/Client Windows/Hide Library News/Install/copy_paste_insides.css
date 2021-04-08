@@ -1,0 +1,12 @@
+/* 
+    Copy paste the code blocks delimited by /* --- /* at the end of the webkit.css file
+    The file can be found in metroskin/resource/webkit.css
+*/
+
+/*-------------------------*/
+/* Hide What's New panel   */
+/*-------------------------*/
+[class*="libraryhome_WhatsNew"] {
+    display: none !important;
+}
+/*-------------------------*/
