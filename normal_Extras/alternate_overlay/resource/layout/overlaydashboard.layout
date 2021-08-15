@@ -65,12 +65,12 @@
 		OverlayURLLabel
 		{
 			bgcolor="none"
-			image=graphics/metro/overlay/icons/close
+			image=graphics/icon_button_back
 		}
 		OverlayURLLabel:hover
 		{
 			bgcolor="none"
-			image=graphics/metro/overlay/icons/close_h
+			image=graphics/icon_button_back_down
 		}
 
 		topbar
@@ -111,7 +111,7 @@
 		region { name=overlay width=max align=top-center margin=16 margin-top=15 overflow=allow-both }
 
 		//Top-Left
-		place { control="CloseButton" width=26 height=26 x=30 y=16 }
+		place { control=CloseButton width=40 height=40 x=16 y=16 }
 		place { control=gamename start=CloseButton x=16 y=-6 }
 		place { control=HotkeyLabel start=CloseButton x=16 y=24 }
 
