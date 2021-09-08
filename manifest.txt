@@ -10,6 +10,7 @@
 "Win10 Notification Animation";"win10_notifications";"";"Other"
 "Default Overlay Style";"default_overlay";"";"Overlay"
 "Alternate Overlay Style";"alternate_overlay";"";"Overlay"
+"Pixel Vision 2 Overlay Style";"pixelvision2_overlay";"";"Overlay"
 "Friend Avatars";"friend_avatars";"";"Overlay"
 "Metro Blue";"metro_blue";"";"Themes"
 "Metro Midnight";"metro_midnight";"";"Themes"

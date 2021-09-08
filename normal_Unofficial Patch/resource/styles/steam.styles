@@ -256,15 +256,7 @@ steam.styles
 			textcolor="White50"
 			font-family=basefont
 			font-size=14
-
 			font-weight=400
-		}
-		CFriendPanel:hover
-		{
-			render
-			{
-				1="fill( x0-3, y0, x1-1, y1, white05 )"  // top
-			}
 		}
 
 		"ComboBox MenuItem"

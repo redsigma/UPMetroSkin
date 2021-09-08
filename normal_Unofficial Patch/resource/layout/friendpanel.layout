@@ -149,10 +149,14 @@
 		{
 			image="graphics/icon_vr_happy"
 			padding-left=4
-			padding-top=3
+			padding-top=2
 			padding-bottom=4
 		}
-		"CFriendPanel"
+		"COverlay_Details_Friends VRStatusStyleInGame"
+		{
+			padding-top=1
+		}
+		CFriendPanel
 		{
 			inset="4 1 0 0"
 			//inset-right=10
@@ -182,6 +186,8 @@
 		statusStyle
 		{
 			font-family=basefont
+			padding-top=8
+			padding-bottom=15
 		}
 		controlPanelLinkStyle
 		{
@@ -200,29 +206,60 @@
 		{
 			font-style=underline
 		}
+
+//////////////////////////////////////////////////////////////////////////////////
+//======This will remove the in-game text from overlay last 4 friends panel=====//
+		"COverlay_Details_Friends CFriendPanel"
+		{
+			inset-top=4
+		}
+		"COverlay_Details_Friends CFriendPanel:hover"
+		{
+			render
+			{
+				1="fill( x0-3, y0, x1-1, y1, white05 )"  // top
+			}
+		}
+		"COverlay_Details_Friends namestyle"
+		{
+			inset-top=-2
+			padding-bottom=4
+		}
+		"COverlay_Details_Friends statusStyle"
+		{
+			padding-bottom=18
+		}
+
+////////////////////////////////////////////////////
+//======Required to remove the "in-game" text=====//
 		friends_offline
 		{
-			padding-bottom=8
+			inset-top=0
+			inset-bottom=0
 		}
 		friends_online
 		{
-			padding-bottom=8
+			inset-top=0
+			inset-bottom=0
 		}
 		friends_ignored
 		{
-			padding-bottom=8
+			inset-top=0
+			inset-bottom=0
 		}
+
 	}
 	layout
 	{
 		region{ name=fit_image width=46 height=45 }
+		region{ name=zone x=50 height=43 margin-top=7 margin-bottom=2 }
 		place {	region=fit_image control="AvatarOverlayImage" x=1 y=2 width=46 height=46 }
 		place {	control="AvatarImage"	x=1 y=1 width=46 height=46 }
 		place {	control="Clanstatusimage" margin-left=-5 height=46 }
-		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=4 spacing=-5 dir=down }
+		place { region=zone control="NameLabel,GameLabel,StatusLabel" spacing=-9 dir=down align=left-center }
 
-		place { start=NameLabel control="MenuButton,FriendsNameInstanceLabel" }
-		place { start=StatusLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }
+		place { start=NameLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,MenuButton,FriendsNameInstanceLabel" }
+		place { start=StatusLabel control="BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }
 
 		// these controls are shown for friendship requests
 		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=22 spacing=6 }
@@ -230,7 +267,7 @@
 		// this control is shown in the invite-to-game dialog in the overlay
 		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
 
-		place { control="ControlPanelLink" x=50 align=bottom margin-bottom=6 }
+		place { control="ControlPanelLink" x=50 y=31 }
 
 		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
 		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
