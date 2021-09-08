@@ -1,0 +1,100 @@
+"resource/layout/overlay_achievementsdetails.layout"
+{
+	controls
+	{
+		AchievementsDetailPanel 
+		{ 
+			controlname="COverlay_Details_Acheivements" 
+			style=detailsbox
+		}
+		
+		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
+		
+		ViewAchievementsButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewAchievements"
+		}
+		
+		progressbackground { controlname="ImagePanel" style="progressbackground" }
+		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
+		ProgressTextEarned { controlname=label style=highlight labeltext="#Overlay_Achievement_Progress" }
+	}
+	
+	colors
+	{
+		linkidle="255 255 255 51"
+		linkover="255 255 255 128"
+	}
+	
+	styles
+	{
+		DetailsBox
+		{
+			bgcolor=black45
+			render_bg {}
+			render {}
+		}
+		
+		Button
+		{
+			inset=2
+			padding-left=24
+			font-family=semibold
+			font-style=uppercase
+			textcolor=linkidle
+			bgcolor=none
+			render_bg {}
+			render
+			{
+				1="image( x0 + 4, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_achievements )"
+			}
+		}
+		
+		Button:hover
+		{
+			textcolor=linkover
+			render
+			{
+				0="image( x0 + 4, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_achievements_over )"
+			}
+		}
+		
+		Highlight
+		{
+			textcolor=white
+		}
+		
+		progressbackground
+		{
+			bgcolor=none
+			render_bg
+			{
+				0="fill( x0    , y0    , x0 + 1, y1    , white35 )"
+				1="fill( x0 + 1, y1 - 1, x1 - 1, y1    , white35 )"
+				2="fill( x0 + 1, y0    , x1 - 1, y0 + 1, white35 )"
+				3="fill( x1 - 1, y0    , x1    , y1    , white35 )"
+			}
+		}
+		
+		progressbarimage
+		{
+			bgcolor=white45
+			render_bg {}
+		}
+	}
+	
+	layout
+	{
+		region { name=box margin-top=8 margin-left=10 margin-right=10 width=max height=max }
+		region { name=progresstext region=box y=40 width=max }
+		region { name=bottom region=box align=bottom width=max height=35 }
+		
+		place { control="TitleText" region=box align=top-center }
+		place { control=progressbackground region=box y=35 width=max height=18 }
+		place { control=progressbarimage region=box y=39 height=10 margin-left=4 margin-right=4 }
+		place { control=*achievement region=box y=84 x=0 width=155 height=70 }
+		place { controls=ProgressTextEarned region=box y=60 align=top-center }
+		place { controls=ViewAchievementsButton region=bottom align=top-center height=35 }
+	}
+}

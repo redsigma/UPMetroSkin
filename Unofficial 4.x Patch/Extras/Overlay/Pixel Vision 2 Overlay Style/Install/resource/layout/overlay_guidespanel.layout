@@ -1,0 +1,67 @@
+"resource/layout/overlay_guidespanel.layout"
+{
+	controls
+	{
+		GuidesDetailPanel { controlname="COverlay_Details_Guides_Panel" style=detailsbox }
+		
+		TitleText { controlname="label" labeltext="#Overlay_Guides_Panel_Title" style=detailsboxtitle }
+		NumGuidesText { controlname="label" labeltext="#Overlay_Guides_Panel_NumGuides" style=highlight }
+		
+		ViewGuides { controlname="Button" labeltext="#Overlay_View_Guides" command="viewguides" }
+	}
+	
+	colors
+	{
+		linkidle="255 255 255 51"
+		linkover="255 255 255 128"
+	}
+	
+	styles
+	{
+		DetailsBox
+		{
+			bgcolor=black45
+			render_bg {}
+			render {}
+		}
+		
+		Button
+		{
+			inset=2
+			padding-left=29
+			font-family=semibold
+			font-style=uppercase
+			textcolor=linkidle
+			bgcolor=none
+			render
+			{
+				1="image( x0 + 4, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_guides )"
+			}
+		}
+		
+		Button:hover
+		{
+			textcolor=linkover
+			render
+			{
+				0="image( x0 + 4, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_guides_over )"
+			}
+		}
+		
+		highlight
+		{
+			textcolor=white
+		}
+	}
+	
+	layout
+	{
+		region { name=title margin-top=8 margin-bottom=10 margin-left=10 margin-right=10 width=max height=100 }
+		region { name=bottom align=bottom margin-left=10 margin-right=10 width=max height=35 }
+		
+		place { control="TitleText" region=title align=top-center }
+		//place { control="NumGuidesText" start=ViewGuides x=8 y=10 }
+		place { control=*guideitem y=37 x=0 width=max height=35 margin-left=10 margin-right=10 dir=down spacing=5 }
+		place { control="ViewGuides,NumGuidesText" region="bottom" spacing=8 height=35 align=top-center }
+	}
+}

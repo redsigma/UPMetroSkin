@@ -1,0 +1,74 @@
+"resource/layout/overlay_screenshotspanel.layout"
+{
+	controls
+	{
+		ScreenshotsDetailPanel { controlname="COverlay_Screenshots_Panel" style=detailsbox }
+		
+		TitleText { controlname="label" labeltext="#Overlay_Screenshots_Panel_Title" style=detailsboxtitle }
+		InstructionText { controlname="label" labeltext="#Overlay_Screenshots_Press_Hotkey"  style=highlight }
+
+		ViewScreenshots { controlname="Button" labeltext="#Overlay_View_Screenshots" command="viewscreenshots" }
+		SetShortcut { controlname="Button" labeltext="#Overlay_Set_Shortcut" command="setshortcut" }
+	}
+	
+	colors
+	{
+		linkidle="255 255 255 51"
+		linkover="255 255 255 128"
+	}
+	
+	styles
+	{
+		DetailsBox
+		{
+			bgcolor="none"
+			render_bg {}
+			render {}
+		}
+		
+		DetailsBoxTitle
+		{
+			textcolor=none
+		}
+		
+		Button
+		{
+			inset=2
+			padding-left=30
+			font-family=semibold
+			font-style=uppercase
+			textcolor=linkidle
+			bgcolor=none
+			render_bg
+			{
+				0="fill( x0 - 13, y1 - 1, x1 + 13, y1, white25 )"
+			}
+			render
+			{
+				1="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_screenshots )"
+			}
+		}
+		
+		Button:hover
+		{
+			textcolor=linkover
+			render
+			{
+				0="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_screenshots_over )"
+			}
+		}
+		
+		highlight
+		{
+			textcolor=white
+		}
+	}
+	
+	layout
+	{
+		place { control="TitleText" width=1 height=1 }
+		place { control="InstructionText" align=top-center margin-top=50 }
+		place { control="ViewScreenshots" height=35 align=top-center margin-top=10 }
+		place { control="SetShortcut" width=1 height=1 x=9999 y=9999 }
+	}
+}

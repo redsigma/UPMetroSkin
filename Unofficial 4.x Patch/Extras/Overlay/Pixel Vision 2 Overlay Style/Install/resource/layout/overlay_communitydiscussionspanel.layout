@@ -1,0 +1,72 @@
+"resource/layout/overlay_communitydiscussionspanel.layout"
+{
+	controls
+	{
+		CommunityDiscussionsDetailPanel { controlname="COverlay_Details_CommunityDiscussions_Panel" style=detailsbox }
+		
+		TitleText { controlname="label" labeltext="#Overlay_CommunityDiscussions_Panel_Title" style=detailsboxtitle }
+		NumDiscussionsText { controlname="label" labeltext="#Overlay_CommunityDiscussions_Panel_NumDiscussions" style=highlight }
+
+		ViewCommunityDiscussions { controlname="Button" labeltext="#Overlay_View_CommunityDiscussions" command="viewcommunitydiscussions" }
+	}
+	
+	colors
+	{
+		linkidle="255 255 255 51"
+		linkover="255 255 255 128"
+	}
+	
+	styles
+	{
+		DetailsBox
+		{
+			bgcolor="none"
+			render_bg {}
+			render {}
+		}
+		
+		DetailsBoxTitle
+		{
+			textcolor=none
+		}
+		
+		Button
+		{
+			inset=2
+			padding-left=30
+			font-family=semibold
+			font-style=uppercase
+			textcolor=linkidle
+			bgcolor=none
+			render_bg
+			{
+				0="fill( x0 - 13, y1 - 1, x1 + 13, y1, white25 )"
+			}
+			render
+			{
+				1="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_discussions )"
+			}
+		}
+		
+		Button:hover
+		{
+			textcolor=linkover
+			render
+			{
+				0="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_discussions_over )"
+			}
+		}
+		
+		highlight
+		{
+			textcolor=white
+		}
+	}
+	
+	layout
+	{
+		place { control="TitleText" width=1 height=1 }
+		place { control="NumDiscussionsText" align=top-center margin-top=50 }
+		place { control="ViewCommunityDiscussions" height=35 align=top-center margin-top=10 }
+	}
+}

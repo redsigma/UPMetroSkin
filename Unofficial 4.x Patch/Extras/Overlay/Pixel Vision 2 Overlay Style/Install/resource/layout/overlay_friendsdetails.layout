@@ -1,0 +1,94 @@
+"resource/layout/overlay_friendsdetails.layout"
+{
+	controls
+	{
+		FriendsDetailPanel 
+		{ 
+			controlname="COverlay_Details_Friends" 
+			style=detailsbox
+		}
+		
+		AllFriendsButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewAll"
+		}
+		
+		ViewPlayersButton
+		{
+			controlname=button
+			labeltext="#Overlay_Friends_ViewPlayers"
+		}
+		
+		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
+		
+		TextThisManyFriends { controlname=label style=highlight labeltext="#Overlay_Friends_ThisManyOnline" }
+		
+		grid
+		{
+			alignment=justify		
+			interiorspacing=2
+			style=FriendsGrid
+		}
+	}
+	
+	colors
+	{
+		linkidle="255 255 255 51"
+		linkover="255 255 255 128"
+	}
+	
+	styles
+	{
+		DetailsBox
+		{
+			bgcolor=black45
+			render_bg {}
+			render {}
+		}
+		
+		Button
+		{
+			inset=2
+			padding-left=30
+			font-family=semibold
+			font-style=uppercase
+			textcolor=linkidle
+			bgcolor=none
+			render
+			{
+				1="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_players )"
+			}
+		}
+		
+		Button:hover
+		{
+			textcolor=linkover
+			render
+			{
+				0="image( x0 + 5, y0 + 5, x1, y1, graphics/pixelvision2/icon_ol_players_over )"
+			}
+		}
+		
+		highlight
+		{
+			textcolor=white
+		}
+		
+		FriendsGrid
+		{
+			render_bg {}
+		}	
+	}
+	
+	layout
+	{
+		region { name=box margin-top=8 margin-left=10 margin-right=10 width=max height=max }
+		region { name=bottom region=box align=bottom width=max height=35 }
+		
+		place { control="TitleText" region=box align=top-center }
+		place { control=TextThisManyFriends region=box align=top-center margin-top=32 }
+		place { control=grid width=330 height=110 margin-top=53 }
+		place { control=AllFriendsButton,ViewPlayersButton region=bottom height=35 align=top-center }
+	}
+}

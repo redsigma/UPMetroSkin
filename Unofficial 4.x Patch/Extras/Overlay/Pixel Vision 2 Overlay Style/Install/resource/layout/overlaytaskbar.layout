@@ -1,0 +1,102 @@
+"resource/layout/overlaytaskbar.layout"
+{
+	controls
+	{
+		TaskbarPanel
+		{
+			controlname="EditablePanel"
+		}
+		
+		SettingsButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Settings"
+			style=taskbar
+		}
+		
+		WebBrowserButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_WebBrowser"
+			style=taskbar
+		}
+		
+		MusicPlayerButton
+		{
+			controlname="URLLabel"
+			labeltext="#Overlay_Taskbar_Music"
+			style=taskbar
+		}
+		
+		SteamLogo	
+		{ 
+			controlname="ImagePanel" zpos=1 image="graphics/steam_logo_big"
+			scaleimage=1
+		}
+		
+		view_friends
+		{
+			ControlName=URLLabel
+			labelText="#Steam_ViewFriends"
+			command="OpenFriendsDialog"
+			style="view_friends"
+			textAlignment=east
+		}
+		
+	}
+	
+	styles
+	{
+		taskbar
+		{
+			inset-right=20
+			textcolor=white75
+			font-style=uppercase
+			text-align=east
+			font-size=16
+			render_bg
+			{
+				1="fill( x1 + 1  , y0 - 1, x1 + 8, y1 + 1, black )"
+				2="fill( x1 - 150, y0 - 1, x1 - 1, y1 + 1, black75 )"
+			}
+		}
+		
+		taskbar:hover
+		{
+			textcolor=url_a
+		}
+		
+		view_friends
+		{
+			inset="0 0 0 0"
+			image="graphics/pixelvision2/friends_button"
+			bgcolor=none
+			textcolor=none
+			render_bg {}
+		}
+		
+		view_friends:Hover
+		{
+			image="graphics/pixelvision2/friends_button_hover"
+		}
+		
+		online_friends
+		{
+			textcolor=url
+			font-style=regular
+			bgcolor="none"
+		}		
+	}
+	
+	layout
+	{
+		region { name=bottom align=bottom width=max height=100 }
+		
+		place { control="TaskbarPanel" region="bottom" width=max height=64 margin-bottom=37 }
+		place { control="SteamLogo" width=1 height=1 x=9999 y=9999 }
+		place { controls="MusicPlayerButton,WebBrowserButton,SettingsButton,ScreenshotsButton" align=right dir=down spacing=7 height=40 width=100 margin-right=18 }	
+		place { control="FriendPanel" region="bottom" height=48 width=48 align=right margin-right=20 margin-top=33 }
+		place { control="view_friends" region="bottom" height=34 align=right margin-right=74 margin-top=53 }
+		place { control="online_friends" region="bottom" height=12 align=right margin-right=74 margin-top=57 }
+	}	
+}
