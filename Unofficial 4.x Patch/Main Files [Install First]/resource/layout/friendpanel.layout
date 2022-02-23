@@ -2,255 +2,148 @@
 {
 	colors
 	{
-
-		focus4 = "50 64 84 255"
-
+	focus4="50 64 84 255"
 	}
 
 	styles
 	{
-
-		"WebStatusStyle"
+		WebStatusStyle
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_status_web"
+			image="graphics/icon_status_web"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"WebStatusStyleInGame"
+		WebStatusStyleInGame
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_status_web_ingame"
+			image="graphics/icon_status_web_ingame"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"BigPictureStatusStyle"
+		BigPictureStatusStyle
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_status_bigpic"
+			image="graphics/icon_status_bigpic"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"BigPictureStatusStyleInGame"
+		BigPictureStatusStyleInGame
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_status_bigpic_ingame"
+			image="graphics/icon_status_bigpic_ingame"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"MobileStatusStyle"
+		MobileStatusStyle
 		{
-			padding-left = "4"
-			padding-top = "4"
-			padding-bottom = "4"
-			image = "graphics/icon_status_mobile"
+			image="graphics/icon_status_mobile"
+			padding-left=4
+			padding-top=4
+			padding-bottom=4
 		}
-
-		"MobileStatusStyleInGame"
+		MobileStatusStyleInGame
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_status_mobile_ingame"
+			image="graphics/icon_status_mobile_ingame"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"VRStatusStyle"
+		VRStatusStyle
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_vr_online"
+			image="graphics/icon_vr_online"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
-		"VRStatusStyleInGame"
+		VRStatusStyleInGame
 		{
-			padding-left = "4"
-			padding-top = "3"
-			padding-bottom = "4"
-			image = "graphics/icon_vr_happy"
+			image="graphics/icon_vr_happy"
+			padding-left=4
+			padding-top=3
+			padding-bottom=4
 		}
-
 		"CFriendPanel"
 		{
-			inset = "4 1 0 0"
-			//inset-right = "10"
-			font-family = "basefont"
-			font-weight = "400"
-			textcolor = "White45"
+			inset="4 1 0 0"
+			//inset-right=10
+			font-family=basefont
+			font-weight=400
+			textcolor="White45"
 		}
-
-		"SelfPanel:hover"
+		SelfPanel:hover
 		{
 			render {}
 		}
-
-		"namestyle"
+		namestyle
 		{
 		}
-
-		"nameInstanceStyle"
+		nameInstanceStyle
 		{
-			textcolor = "White75"
+			textcolor=White75
 		}
-
-		"menuButtonStyle"
+		menuButtonStyle
 		{
-			minimum-width = "14"
-			padding-top = "4"
-			padding-bottom = "4"
-			padding-right = "4"
-			padding-left = "4"
+			minimum-width=14
+			padding-top=4
+			padding-bottom=4
+			padding-right=4
+			padding-left=4
 		}
-
-		"statusStyle"
+		statusStyle
 		{
-			font-family = "basefont"
+			font-family=basefont
 		}
-
-		"controlPanelLinkStyle"
+		controlPanelLinkStyle
 		{
-			font-family = "basefont"
+			font-family=basefont
 		}
-
-		"controlPanelLinkStyle:hover"
+		controlPanelLinkStyle:hover
 		{
-			font-family = "basefont"
+			font-family=basefont
 		}
-
-		"inviteLinkStyle"
+		inviteLinkStyle
 		{
-			textcolor = "White75"
-            font-style = "regular"
+			textcolor=White75
+            font-style=regular
 		}
-
-		"inviteLinkStyle:hover"
+		inviteLinkStyle:hover
 		{
-			font-style = "underline"
+			font-style=underline
 		}
-
-		"friends_offline"
+		friends_offline
 		{
-			padding-bottom = "8"
+			padding-bottom=8
 		}
-
-		"friends_online"
+		friends_online
 		{
-			padding-bottom = "8"
+			padding-bottom=8
 		}
-		
-		"friends_ignored"
+		friends_ignored
 		{
-			padding-bottom = "8"
+			padding-bottom=8
 		}
-
 	}
-
 	layout
 	{
+		region{ name=fit_image width=46 height=45 }
+		place {	region=fit_image control="AvatarOverlayImage" x=1 y=2 width=46 height=46 }
+		place {	control="AvatarImage"	x=1 y=1 width=46 height=46 }
+		place {	control="Clanstatusimage" margin-left=-5 height=46 }
+		place { control="NameLabel,StatusLabel,GameLabel" x=50 y=4 spacing=-5 dir=down }
 
-		region
-		{
-			name = "fit_image"
-			width = "46"
-			height = "45"
-		}
-		
-		place
-		{
-			region = "fit_image"
-			control = "AvatarOverlayImage"
-			x = "1"
-			y = "2"
-			width = "46"
-			height = "46"
-		}
+		place { start=NameLabel control="MenuButton,FriendsNameInstanceLabel" }
+		place { start=StatusLabel control="BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage" }
 
-		place
-		{
-			control = "AvatarImage"
-			x = "1"
-			y = "1"
-			width = "46"
-			height = "46"
-		}
-		
-		place
-		{
-			control = "Clanstatusimage"
-			margin-left = "-5"
-			height = "46"
-		}
-		
-		place
-		{
-			control = "NameLabel,StatusLabel,GameLabel"
-			x = "50"
-			y = "4"
-			spacing = "-5"
-			dir = "down"
-		}
-
-		place
-		{
-			start = "NameLabel"
-			control = "MenuButton,FriendsNameInstanceLabel"
-		}
-		
-		place
-		{
-			start = "StatusLabel"
-			control = "BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage"
-		}
-
-		
 		// these controls are shown for friendship requests
-		place
-		{
-			control = "AcceptLink,IgnoreLink,BlockLink"
-			x = "50"
-			y = "22"
-			spacing = "6"
-		}
+		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=22 spacing=6 }
 
-		
 		// this control is shown in the invite-to-game dialog in the overlay
-		place
-		{
-			control = "InviteToGameButton"
-			align = "right"
-			y = "4"
-			padding-right = "6"
-			margin-right = "20"
-		}
+		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
 
-		place
-		{
-			control = "ControlPanelLink"
-			x = "50"
-			align = "bottom"
-			margin-bottom = "6"
-		}
+		place { control="ControlPanelLink" x=50 align=bottom margin-bottom=6 }
 
-		place
-		{
-			control = "SuggestedImage,SuggestedLabel"
-			x = "50"
-			y = "19"
-			spacing = "4"
-		}
-		
-		place
-		{
-			control = "SuggestedInvite,SuggestedIgnore"
-			x = "50"
-			y = "31"
-			spacing = "8"
-		}
-
+		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
+		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
 	}
-
 }

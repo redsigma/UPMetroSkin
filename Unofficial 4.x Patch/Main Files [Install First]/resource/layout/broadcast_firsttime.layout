@@ -1,130 +1,48 @@
 "friends/broadcast_firsttime.layout"
 {
-
 	colors
 	{
-
-		headercolor = "122 155 230 255"
-		permissionheadercolor = "205 205 205 255"
-
+		headercolor="122 155 230 255"
+		permissionheadercolor="205 205 205 255"
 	}
 
 	styles
 	{
-
 		IntroHeading
 		{
-			textcolor = "White"
-			font-family = "basefont"
-			font-size = "18"
-			font-weight = "500"
-			bgcolor = "none"
-			padding-top = "0"
+			textcolor="White"
+			font-family=basefont
+			font-size="18"
+			font-weight="500"
+			bgcolor="none"
+			padding-top="0"
 		}
-
 		PermissionHeader
 		{
-			textcolor = "White45"
-			font-size = "16"
+			textcolor="White45"
+			font-size="16"
 		}
-
 		PermissionOption
 		{
-			textcolor = "White45"
+			textcolor="White45"
 		}
-
 		ViewerRequest
 		{
-			textcolor = "white"
-			font-size = "16"
+			textcolor="white"
+			font-size="16"
 		}
-
 	}
 
 	layout
 	{
+		place { control="NextButton" align=bottom-right dir=right width=92 height=25 margin-right=20 margin-bottom=14 }
 
-		place
-    {
-      control = "NextButton"
-      align = "bottom-right"
-      dir = "right"
-      width = "92"
-      height = "25"
-      margin-right = "20"
-      margin-bottom = "14"
-    }
-
-		place
-    {
-      control = "Header"
-      margin-left = "20"
-      margin-right = "20"
-      margin-top = "40"
-      margin-bottom = "0"
-      width = "max"
-    }
-		
-    place
-    {
-      start = "Header"
-      control = "ViewerAvatar"
-      width = "50"
-      height = "50"
-      dir = "down"
-      margin-left = "-4"
-      margin-right = "20"
-      margin-top = "6"
-    }
-		
-    place
-    {
-      start = "ViewerAvatar"
-      control = "ViewerRequest"
-      dir = "right"
-      width = "max"
-      margin-right = "20"
-      margin-top = "10"
-    }
-		
-    place
-    {
-      start = "ViewerAvatar"
-      control = "PermissionHeader"
-      dir = "down"
-      width = "max"
-      margin-top = "20"
-      spacing = "-4"
-    }
-		
-    place
-    {
-      start = "PermissionHeader"
-      control = "PermissionDisabled,PermissionAccept,PermissionFriends,PermissionPublic"
-      dir = "down"
-      width = "max"
-      margin-top = "2"
-      spacing = "-6"
-    }
-		
-    place
-    {
-      start = "PermissionPublic"
-      control = "DesktopOnlyLabel"
-      width = "max"
-      dir = "down"
-      margin-top = "20"
-      margin-right = "20"
-    }
-		
-    place
-    {
-      control = "FAQLink"
-      align = "bottom"
-      margin-left = "20"
-      margin-bottom = "18"
-    }
-
+		place { control="Header" margin-left=20 margin-right=20 margin-top=40 margin-bottom=0 width=max }
+		place { start="Header" control="ViewerAvatar" width=50 height=50 dir=down margin-left=-4 margin-right=20 margin-top=6 }
+		place { start="ViewerAvatar" control="ViewerRequest" dir=right width=max margin-right=20 margin-top=10 }
+		place { start="ViewerAvatar" control="PermissionHeader" dir=down width=max margin-top=20 spacing=-4 }
+		place { start="PermissionHeader" control="PermissionDisabled,PermissionAccept,PermissionFriends,PermissionPublic" dir=down width=max margin-top=2 spacing=-6 }
+		place { start="PermissionPublic" control="DesktopOnlyLabel" width=max dir=down margin-top=20 margin-right=20 }
+		place { control="FAQLink" align=bottom margin-left=20 margin-bottom=18 }
 	}
-
 }

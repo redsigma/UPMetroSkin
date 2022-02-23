@@ -1,29 +1,15 @@
 "resource/layout/downloadspage.layout"
 {
-  
 	styles
 	{
-
-		"DownloadsPageStyle"
+		DownloadsPageStyle
 		{
-			bgcolor = "none"
+			bgcolor="none"
 			render{}
 		}
-
 	}
-
 	layout
 	{
-
-		place
-    {
-      control = "downloadsummarypanel,panel_list"
-      dir = "down"
-      width = "max"
-      height = "max"
-      spacing = "0"
-    }
-
+		place { control="downloadsummarypanel,panel_list" dir=down width=max height=max spacing=0 }
 	}
-
 }

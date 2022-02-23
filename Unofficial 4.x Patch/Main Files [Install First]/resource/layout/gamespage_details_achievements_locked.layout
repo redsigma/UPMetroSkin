@@ -1,84 +1,56 @@
 "resource/layout/gamespage_details_achievements_locked.layout"
 {
-
 	colors
 	{
-
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
 		// commands below for layout to work correctly.
 
 		// ImageAreaSpacing must be the spacing between achievement images
-		"GameDetailsAchievements.ImageAreaSpacing" = "2"
+		GameDetailsAchievements.ImageAreaSpacing "2"
 
 		// ImageWidth must be the width of an achievement image in the display
-		"GameDetailsAchievements.ImageWidth" = "36"
+		GameDetailsAchievements.ImageWidth "36"
 
 		// Size of the border around locked achievement images
-		"GameDetailsAchievements.LockedImageBorder" = "5"
+		GameDetailsAchievements.LockedImageBorder "5"
 
-		"Tooltip.Anchor" = "Parent"
-
+		Tooltip.Anchor=Parent
 	}
 
 	styles
 	{
-
-		"lockedarea"
+		lockedarea
 		{
-			minimum-height = "40"
+			minimum-height="40"
 		}
-
-		"achievementimagebg"
+		achievementimagebg
 		{
-			inset = "0 0 0 0"
-			bgcolor = "none"
-			image = "graphics/achievementbg"
+			inset="0 0 0 0"
+			bgcolor="none"
+			image=graphics/achievementbg
 		}
 
 		//Hidden
-		"infolabel"
+		infolabel
 		{
-			textcolor = "none"
-			bgcolor = "none"
+			textcolor="none"
+			bgcolor="none"
 		}
-
-		"achievementlabelmore"
+		achievementlabelmore
 		{
-			inset-left = -999
-			textcolor = "none"
-			bgcolor = "none"
+			inset-left=-999
+			textcolor="none"
+			bgcolor="none"
 			render_bg{}
 		}
-
 	}
 
 	layout
 	{
-
-		place
-		{
-			control = "*achievementimage"
-			dir = "right"
-			width = "40"
-			height = "40"
-			x = "0"
-			spacing = "0"
-		}
+		place { control=*achievementimage dir=right width=40 height=40 x=0 spacing=0 }
 
 		//Hidden
-		place
-		{
-			control = "imageexplanation"
-			width = "1"
-			align = "right"
-		}
-		
-		place
-		{
-			control = "achievementlabelmore"
-			align = "right"
-		}
-
+		place { control=imageexplanation width=1 align=right }
+		place { control=achievementlabelmore align=right }
 	}
-
 }

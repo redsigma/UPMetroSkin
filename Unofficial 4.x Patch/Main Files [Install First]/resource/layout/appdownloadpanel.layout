@@ -1,322 +1,194 @@
 "resource/layout/appdownloadpanel.layout"
 {
-
 	colors
 	{
-
-		"Download_blue" = "0 114 198 255"
-    
+		Download_blue="0 114 198 255"
 	}
 
 	styles
 	{
-
-		"CAppDownloadPanel"
+		CAppDownloadPanel
 		{
 			render_bg
 			{
-				1 = "fill(x0,y0,x1,y0+1,ClientBG)"
+				1="fill(x0,y0,x1,y0+1,ClientBG)"
 			}
 		}
-
-		"panelStyle"
+		panelStyle
 		{
-			bgcolor = white05
+			bgcolor=white05
 		}
-		
-    "panelStyleHighlight"
+		panelStyleHighlight
 		{
-			bgcolor = "white05"
+			bgcolor=white05
 		}
 
-		"label2"
+		label2
 		{
 			textcolor		"white"
 			font-family		"semibold"
-			font-style = "uppercase"
+			font-style=uppercase
 			bgcolor			"black35"
-			padding-left = "4"
-			padding-right = "4"
+			padding-left=4
+			padding-right=4
 		}
-
-		"label3"
+		label3
 		{
 			textcolor		"white50"
-			font-style = "regular"
+			font-style="regular"
 			font-size		"14"
 			bgcolor			"none"
 			padding-top		"0"
 		}
 
 		//Game Title
-		"ModuleHeading"
+		ModuleHeading
 		{
-			textcolor = "appName"
+			textcolor=appName
 			font-family		"basefont"
-			font-style = "uppercase"
-			bgcolor = "bgAppName"
-			padding-left = "5"
-			padding-right = "5"
+			font-style=uppercase
+			bgcolor=bgAppName
+			padding-left=5
+			padding-right=5
 		}
-
 		//Bottom Status
-		"ModuleHeading2"
+		ModuleHeading2
 		{
-			textcolor = "statusDownload"
+			textcolor=statusDownload
 			font-family		"basefont"
-			font-style = "uppercase"
-			bgcolor = "bgStatusDownload"
-			padding-left = "10"
-			padding-right = "10"
+			font-style=uppercase
+			bgcolor=bgStatusDownload
+			padding-left=10
+			padding-right=10
 		}
 
-		"panelBgColorActive"
+		panelBgColorActive
 		{
-			bgcolor = "ClientBG"
+			bgcolor="ClientBG"
 		}
 
-		"gameImagePanel"
+		gameImagePanel
 		{
-			inset = "0 0 0 0"
+			inset="0 0 0 0"
+			render_bg {}
+			render {}
+		}
+		gameImagePanelHighlight
+		{
+			inset="0 0 0 0"
 			render_bg {}
 			render {}
 		}
 
-		"gameImagePanelHighlight"
+		DetailsLaunchButton
 		{
-			inset = "0 0 0 0"
-			render_bg {}
-			render {}
-		}
-
-		"DetailsLaunchButton"
-		{
-			inset-left = "-6"
-			bgcolor = "none"
-			image = "graphics/metro/downloads/icons/play_sm"
+			inset-left=-6
+			bgcolor="none"
+			image="graphics/metro/downloads/icons/play_sm"
 			render_bg{}
 			render{}
 		}
-
-		"DetailsLaunchButton:hover"
+		DetailsLaunchButton:hover
 		{
-			bgcolor = "none"
-			image = "graphics/metro/downloads/icons/play_sm_h"
+			bgcolor="none"
 			render_bg{}
 			render{}
+			image="graphics/metro/downloads/icons/play_sm_h"
 		}
-
-		"DetailsLaunchButton:active"
+		DetailsLaunchButton:active
 		{
-			bgcolor = "none"
-			image = "graphics/metro/downloads/icons/play_sm_p"
+			bgcolor="none"
 			render_bg{}
 			render{}
+			image="graphics/metro/downloads/icons/play_sm_p"
 		}
-
-		"DetailsLaunchButton:disabled"
+		DetailsLaunchButton:disabled
 		{
-			bgcolor = "none"
-			image = ""
+			bgcolor="none"
 			render_bg{}
 			render{}
+			image=""
 		}
 
-		"topOfQueueButton"
+		topOfQueueButton
 		{
-			bgcolor = "none"
-			padding-left = "-1"
-			padding-right = "3"
-			image = "graphics/metro/downloads/icons/promote"
+			bgcolor="none"
 			render{}
+			image="graphics/metro/downloads/icons/promote"
+			padding-left=-1
+			padding-right=3
 		}
-
-		"topOfQueueButton:hover"
+		topOfQueueButton:hover
 		{
-			image = "graphics/metro/downloads/icons/promote_h"
 			render{}
+			image="graphics/metro/downloads/icons/promote_h"
 		}
 
-		"SmRemoveButton"
+		SmRemoveButton
 		{
-			bgcolor = "none"
+			bgcolor="none"
 			render{}
-			image = "graphics/metro/downloads/icons/close_sm"
-			padding-left = "-1"
-			padding-right = "3"
+			image="graphics/metro/downloads/icons/close_sm"
+			padding-left=-1
+			padding-right=3
 		}
-
-		"SmRemoveButton:hover"
+		SmRemoveButton:hover
 		{
-			bgcolor = "none"
+			bgcolor="none"
 			render{}
-			image = "graphics/metro/downloads/icons/close_sm_h"
+			image="graphics/metro/downloads/icons/close_sm_h"
 		}
 
-		"SlimProgressBar"
+		SlimProgressBar
 		{
-			alpha = "63.75"
-			textcolor = "Focus"
+			alpha=63.75
+			textcolor=Focus
 			render_bg {}
 			render {}
 		}
 
 		//Hidden
-		"links"
+		links
 		{
-		    textcolor = "none"
-			bgcolor = "none"
+		    textcolor="none"
+			bgcolor="none"
 		}
-		"settingslink"
+		settingslink
 		{
-			textcolor = "none"
-			bgcolor = "none"
+			textcolor="none"
+			bgcolor="none"
 		}
-
 	}
 
 	layout
 	{
-
-		region
-    {
-      name = "column2"
-      x = "210"
-      width = "max"
-    }
+		region { name="column2" x=210 width=max}
 
 		//Full Width/Height Progress Bar
-		place
-    {
-      control = "downloadprogressbar"
-      width = "max"
-      height = "max"
-      margin-top = "1"
-    }
+		place { control="downloadprogressbar" width=max height=max margin-top=1 }
 
-		
-    //Game Image
-		place
-    {
-      control = "gameimage"
-      align = "left-center"
-      x = "16"
-      width = "185"
-      height = "85"
-    }
+		//Game Image
+		place { control="gameimage" align=left-center x=16 width=185 height=85 }
+		place { control="workshopbanner" align=bottom x=16 width=185 height=26 margin-bottom=16 } 
 
-		place
-    {
-      control = "workshopbanner"
-      align = "bottom"
-      x = "16"
-      width = "185"
-      height = "26"
-      margin-bottom = "16"
-    } 
+		//Stats
+		place { start=gameimage control="downloadtotallabel" region="column2" height=26 }
+		place { start=downloadtotallabel y=4 control="starttimelabel,timecompletedlabel,pausereasonlabel,timeremaininglabel" height=26 spacing=4 dir=down }
 
-		
-    //Stats
-		place
-    {
-      start = "gameimage"
-      control = "downloadtotallabel"
-      region = "column2"
-      height = "26"
-    }
-		
-    place
-    {
-      start = "downloadtotallabel"
-      y = "4"
-      control = "starttimelabel,timecompletedlabel,pausereasonlabel,timeremaininglabel"
-      height = "26"
-      spacing = "4"
-      dir = "down"
-    }
-
-		
-    place
-    {
-      start = "downloadtotallabel"
-      control = "downloadtotalfield"
-      x = "4"
-      height = "28"
-    }
-		
-    place
-    {
-      start = "starttimelabel"
-      control = "starttimefield"
-      x = "4"
-      height = "26"
-    }
-		
-    place
-    {
-      start = "timecompletedlabel"
-      control = "timecompletedfield"
-      x = "4"
-      height = "26"
-    }
-		
-    place
-    {
-      start = "pausereasonlabel"
-      control = "pausereasonfield"
-      x = "4"
-      height = "26"
-    }
-		
-    place
-    {
-      start = "timeremaininglabel"
-      control = "timeremainingfield"
-      x = "4"
-      height = "26"
-    }
-
+		place { start=downloadtotallabel control="downloadtotalfield" x=4 height=28 }
+		place { start=starttimelabel control="starttimefield" x=4 height=26 }
+		place { start=timecompletedlabel control="timecompletedfield" x=4 height=26 }
+		place { start=pausereasonlabel control="pausereasonfield" x=4 height=26 }
+		place { start=timeremaininglabel control="timeremainingfield" x=4 height=26 }
 
 		//Status
-		place
-    {
-      control = "updatetypelabel"
-      y = "93"
-      align = "right"
-      height = "20"
-    }
+		place { control="updatetypelabel" y=93 align=right height=20 }
 
-		
-    //Buttons
-		place
-    {
-      control = "namelabel,topofqueuebutton,removefromqueuebutton"
-      y = "5"
-      height = "20"
-      dir = "right"
-      spacing = "1"
-      align = "right"
-      margin-right = "6"
-    }
-		
-    place
-    {
-      control = "launchbutton"
-      y = "47"
-      height = "30"
-      width = "30"
-      align = "right"
-      margin-right = "10"
-    }
+		//Buttons
+		place { control="namelabel,topofqueuebutton,removefromqueuebutton" y=5 height=20 dir=right spacing=1 align=right margin-right=6 }
+		place { control="launchbutton" y=47 height=30 width=30 align=right margin-right=10 }
 
 		//Hidden
-		place
-    {
-      control = "dashlabel,spacer,newslink,settingslink"
-      width = "1"
-      align = "right"
-    }
-
+		place { control="dashlabel,spacer,newslink,settingslink" width=1 align=right }
 	}
-  
 }
