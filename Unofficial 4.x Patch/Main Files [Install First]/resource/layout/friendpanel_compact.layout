@@ -1,45 +1,78 @@
 "resource/layout/friendpanel_compact.layout"
 {
+
 	styles
 	{
-		CFriendPanel
+
+		"CFriendPanel"
 		{
-			inset="-20 0 0 0"
-			font-family=basefont
-			font-weight=400
-			textcolor="White45"
+			inset = "-20 0 0 0"
+			font-family = "basefont"
+			font-weight = "400"
+			textcolor = "White45"
 		}
-		SelfPanel:hover
+
+		"SelfPanel:hover"
 		{
 			render {}
 		}
-		nameInstanceStyle
+
+		"nameInstanceStyle"
 		{
-			textcolor=White
-			font-family=basefont
-			padding-top=-1
+			textcolor = "White"
+			font-family = "basefont"
+			padding-top = "-1"
 		}
-		menuButtonStyle
+
+		"menuButtonStyle"
 		{
-			minimum-width=14
-			padding-top=4
-			padding-bottom=4
+			minimum-width = "14"
+			padding-top = "4"
+			padding-bottom = "4"
 		}
-		inviteLinkStyle
+
+		"inviteLinkStyle"
 		{
-			textcolor=White75
-            font-style=regular
+			textcolor = "White75"
+      font-style = "regular"
 		}
-		inviteLinkStyle:hover
+    
+		"inviteLinkStyle:hover"
 		{
-			font-style=underline
+			font-style = "underline"
 		}
+
 	}
 
 	layout
 	{
-		region{ name=zone width=max margin-right=8 }
-		place { region=zone control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=3 y=1 spacing=2 }
-		place { region=zone start=MenuButton control="CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore" x=4 spacing=4 }
+
+    
+    region
+    {
+      name = "zone"
+      width = "max"
+      margin-right = "8"
+    }
+    
+    place
+    {
+      region = "zone"
+      control = "ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton"
+      x = "3"
+      y = "1"
+      spacing = "2"
+    }
+    
+    place
+    {
+      region = "zone"
+      start = "MenuButton"
+      control = "CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore"
+      x = "4"
+      spacing = "4"
+    }
+
 	}
+
 }

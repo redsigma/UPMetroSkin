@@ -1,56 +1,86 @@
 "resource/layout/emailreminderbar.layout"
 {
+
 	styles
 	{
-		CEmailReminderBar
+
+		"CEmailReminderBar"
 		{
-			bgcolor=green50
+			bgcolor = "green50"
 		}
 
-		URLLabel
+		"URLLabel"
 		{
-			font-style=regular
-			padding-left=6
-			padding-right=6
-		}
-		URLLabel:hover
-		{
-			bgcolor=white10
+			font-style = "regular"
+			padding-left = "6"
+			padding-right = "6"
 		}
 
-		soft
+		"URLLabel:hover"
 		{
-			textcolor=white
-		}
-		bright
-		{
-			textcolor=white
+			bgcolor = "white10"
 		}
 
-		CloseStyle
+		"soft"
 		{
-			inset-left="9 3 0 0"
-			bgcolor=none
-			image="graphics/metro/icons/caption/close"
+			textcolor = "white"
 		}
 
-		CloseStyle:hover
+		"bright"
 		{
-			bgcolor=white12
+			textcolor = "white"
 		}
 
-		CloseStyle:active
+		"CloseStyle"
 		{
-			bgcolor=white24
+			inset-left = "9 3 0 0"
+			bgcolor = "none"
+			image = "graphics/metro/icons/caption/close"
 		}
+
+		"CloseStyle:hover"
+		{
+			bgcolor = "white12"
+		}
+
+		"CloseStyle:active"
+		{
+			bgcolor = "white24"
+		}
+
 	}
 
 	layout
 	{
-		place { control="emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton,emailreminderbar_infolink" align=top-center margin-top=-1 height=40 spacing=8 }
-		place { control="emailreminderbar_close" align=right width=40 height=40 margin-top=-1 margin-right=-1 }
+
+		
+    place
+    {
+      control = "emailreminderbarlabel,emailreminderbaremail_email,emailreminderbar_yesbutton,emailreminderbar_nobutton,emailreminderbar_infolink"
+      align = "top-center"
+      margin-top = "-1"
+      height = "40"
+      spacing = "8"
+    }
+		
+    place
+    {
+      control = "emailreminderbar_close"
+      align = "right"
+      width = "40"
+      height = "40"
+      margin-top = "-1"
+      margin-right = "-1"
+    }
 
 		//Hidden
-		place { control="emailreminderbar_info" width=1 margin-left=-999 }
+		place
+    {
+      control = "emailreminderbar_info"
+      width = "1"
+      margin-left = "-999"
+    }
+
 	}
+
 }

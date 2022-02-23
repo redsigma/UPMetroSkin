@@ -1,45 +1,81 @@
 "resource/layout/announcement_web.layout"
 {
+
 	colors
 	{
-		WebBorderColor = "64 64 64 255"
+
+		"WebBorderColor" = "64 64 64 255"
+
 	}
 	
 	styles
 	{
-		announcementwebpanel
+
+		"announcementwebpanel"
 		{
-			inset="0 0 0 0"
+			inset = "0 0 0 0"
 		}
 
-		announcementweb
+		"announcementweb"
 		{
-			inset="0 0 0 0"
+			inset = "0 0 0 0"
 		}
 
-		announcementnotch
+		"announcementnotch"
 		{
-			wide=36
-			tall=18
-
+			wide = "36"
+			tall = "18"
 			render
 			{
-				1="image( x0, y0 , x1, y1, graphics/announcement_arrow )"
+				1 = "image( x0, y0 , x1, y1, graphics/announcement_arrow )"
 			}
 		}
 
-		announcementbg
+		"announcementbg"
 		{
-			bgcolor=ClientBG
+			bgcolor = "ClientBG"
 		}
+
 	}
 	
 	layout
 	{
-		region { name="bottom" x=0 y=18 width=max height=max }
 
-		place { control=announcementnotch x=0 y=0 width=36 height=18 }
-		place { control=announcementbg region="bottom" width=max height=max }
-		place { control=announcementweb region="bottom" margin=10 width=max height=max }
+		region
+    {
+      name = "bottom"
+      x = "0"
+      y = "18"
+      width = "max"
+      height = "max"
+    }
+
+		place
+    {
+      control = "announcementnotch"
+      x = "0"
+      y = "0"
+      width = "36"
+      height = "18"
+    }
+		
+    place
+    {
+      control = "announcementbg"
+      region = "bottom"
+      width = "max"
+      height = "max"
+    }
+		
+    place
+    {
+      control = "announcementweb"
+      region = "bottom"
+      margin = "10"
+      width = "max"
+      height = "max"
+    }
+
 	}
+
 }
