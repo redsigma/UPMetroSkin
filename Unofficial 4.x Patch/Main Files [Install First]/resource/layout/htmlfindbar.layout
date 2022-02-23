@@ -1,15 +1,5 @@
 "resource/layout/htmlfindbar.layout"
 {
-	controls
-	{
-		FindEntry { controlname=TextEntry default=1 unicode=1 tabposition=1 style="FindEntry" }
-		FindCount { controlname=Label labeltext="#vgui_HTMLSearchMatch" }
-		Close { controlname=Button command="Close" style="CloseButtonSm" }
-		Next { controlname=Button command="next" style="NextButtonSm" }
-		Previous { controlname=Button command="previous" style="PrevButtonSm" }
-		SearchThisPage { controlname=Label labeltext="#vgui_HTMLSearchThisPage" style="" }
-	}
-
 	styles
 	{
 		Label

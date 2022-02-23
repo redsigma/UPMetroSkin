@@ -1,51 +1,5 @@
 "resource/layout/screenshotmanager.layout"
 {
-	controls
-	{
-		ScreenshotManager { title="#steam_screenshotsupload_title" style="CScreenshotManager" }
-
-		SSDetails { controlname="ImagePanel" style=SSDetails scaling=fit}
-		SSDate { controlname="Label" labelText="%selected_ss_date%" }
-		SSSize { controlname="Label" labelText="#Overlay_Screenshots_Size_Cloud" }
-		SSSizeOriginal { controlname="Label" labelText="#Overlay_Screenshots_Size_Original" }
-
-		grid { alignment="left" interiorspacing=5 wheelpct=50 style="WrapPanel" }
-		view_screenshots { controlname="Button" labeltext="#Overlay_View_All_Screenshots" command="viewscreenshots" }
-		view_local_library_button { controlname="Button" labeltext="#Overlay_View_Local" command="viewlocallibrary" visible=0 }
-		selectorlabel { controlname="Label" labeltext="#Overlay_Screenshots_Show" }
-
-		spoiler_checkbox { controlname="CheckButton" labeltext="#Overlay_Tag_As_Potential_Spoiler" visible=0 }
-		publish_button { controlname="Button" labeltext="#Overlay_Publish" command="askpublishscreenshot" visible=0 }
-		publish_caption { controlname="CScreenshotCaptionEntry" unicode=1 }
-		delete_button { controlname="Button" labeltext="#Overlay_Delete" command="askdeletescreenshot" visible=1 }
-		publish_charsleft { controlname="Label" labeltext="#Overlay_Chars_Left" style="publishcharsleft" visible=0 }
-
-		details_button { controlname="Button" labeltext="#Overlay_Details" command="viewselectedscreenshot" visible=0 }
-		details_caption { controlname="Label" style=publishcaption wrap=1 visible=0 }
-
-		no_screenshots { controlname="ImagePanel" image="resource/screenshots_none_selected" }
-
-		game_selector { controlname="ComboBox" style="gameselector" editable=0 }
-
-		file_not_loaded_label { controlname="Label" labeltext="#steam_screenshot_not_loaded" visible=0 }
-
-		multiselect_button { controlname="Button" labeltext="#steam_screenshots_select_all" command="multiselect" visible=1 }
-
-		multi_img { controlname="ImagePanel" image="resource/multiple_screenshots" visible=0 }
-		multi_img_count { controlname="Label" labeltext="%selected_screenshot_count%" style=largeselectioncount visible=0 }
-		multi_img_selected { controlname="Label" labeltext="#steam_screenshots_selected" visible=0 }
-		multi_img_upload_size { controlname="Label" labeltext="#steam_selected_screenshot_size" visible=0 }
-		multi_img_upload_size_info { controlname="Label" labeltext="#steam_selected_screenshot_size_info" visible=0 }
-		multi_img_storage_remaining { controlname="Label" labeltext="#steam_remaining_storage" visible=0 }
-		multi_img_storage_remaining_info { controlname="Label" labeltext="#steam_remaining_storage_info" visible=0 }
-		multi_img_delete { controlname="Button" labeltext="#Overlay_Delete" command="askdeletescreenshot" visible=0 }
-		multi_img_upload { controlname="Button" labeltext="#Overlay_Publish" command="askpublishscreenshot" visible=0 }
-
-		instr_no_selection_title { controlname="Label" labeltext="#steam_screenshots_no_selection_title" style="NoSelectionTitle" wrap=1 }
-		instr_no_selection { controlname="Label" labeltext="#steam_screenshots_no_selection_instructions" style="NoSelectionInstructions" wrap=1 }
-
-		null_placer { controlname="Panel" visible=1 } // Used to bottom-right align things.
-	}
 	colors
 	{
 	}

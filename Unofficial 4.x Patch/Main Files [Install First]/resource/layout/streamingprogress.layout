@@ -1,10 +1,5 @@
 "resource/layout/streamingprogress.layout"
 {
-	controls
-	{
-		ProgressLabel { controlname="Label" labeltext="#SteamUI_StreamLaunch_RemoteStart" wrap=1 }
-		ThrobberThrobberThrobber { controlname="ThrobberImagePanel" }
-	}
 	colors
 	{
 	}

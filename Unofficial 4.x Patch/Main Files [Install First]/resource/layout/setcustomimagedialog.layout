@@ -1,20 +1,5 @@
 "resource/layout/setcustomimagedialog.layout"
 {
-	controls
-	{
-		SetCustomImageDialog { controlname="Frame" title="#SteamUI_SetCustomImage_Title" style="SetCustomImageDialog" }
-
-		ChooseAnImage { controlname="Label" labeltext="#SteamUI_SetCustomImage_ChooseImage" wrap=1 }
-		ImagePrescription { controlname="Label" labeltext="#SteamUI_SetCustomImage_ImagePrescription" wrap=1 }
-
-		ThisFile { controlname="Label" labeltext="#SteamUI_SetCustomImage_ThisFile" wrap=1 }
-		Filename { controlname="TextEntry" tabposition=1 unicode=1 }
-		Browse { controlname="Button" tabposition=2 command="Browse" labeltext="#SteamUI_SetCustomImage_Browse" }
-		TryAgain { controlname="Label" labeltext="#SteamUI_SetCustomImage_TryAgain" visible=false }
-
-		OK { controlname="Button" tabposition=3 command="DoSetCustomImage" labeltext="#SteamUI_SetCustomImage_SetImage" }
-		Cancel { controlname="Button" tabposition=4 command="Cancel" labeltext="#SteamUI_SetCustomImage_Cancel" }
-	}
 	styles
 	{
 	}

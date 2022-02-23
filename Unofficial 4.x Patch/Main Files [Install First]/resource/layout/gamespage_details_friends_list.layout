@@ -1,12 +1,5 @@
 "resource/layout/gamespage_details_friends_list.layout"
 {
-	controls
-	{
-		infolabelplural	{ controlname="Label" style="infolabel" }
-		infolabelsingular { controlname="Label" style="infolabel" }
-		friendlabelmore { controlname="Label" style="friendlabelmore" labeltext="#Steam_MoreFriends" textAlignment="center" tooltiptext="#Steam_ViewAllFriends" }
-	}
-
 	colors
 	{
 		// Note the margin/spacing/width values here must match what is used in placement below 

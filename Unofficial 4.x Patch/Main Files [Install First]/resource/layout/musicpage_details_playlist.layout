@@ -1,16 +1,5 @@
 "resource/layout/musicpage_details_playlist.layout"
 {
-	controls
-	{
-		PlaylistTitleLabel { controlname="Label" style="PlaylistTitleStyle" }
-		TracksInfoLabel { controlname="Label" style="TracksInfoLabelStyle" }
-		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
-
-		PlayPlaylistButton { controlname="Button" labeltext="#Music_Playlist_Details_Play" style="ActionButtonStyle" command="PlaylistPlayAction" }
-		AddPlaylistToQueueButton { controlname="Button" labelText="#Music_Playlist_Details_AddToQueue" style="AdditionalActionButtonStyle" command="PlaylistAddToQueueAction" }
-		AddRandomTracksToPlaylistButton { controlname="Button" labelText="#Music_Playlist_Details_AddRandomTrack" style="AdditionalActionButtonStyle" command="PlaylistAddRandomTracksAction" }
-	}
-
 	styles
 	{
 		CMusicPage_Details_Playlist

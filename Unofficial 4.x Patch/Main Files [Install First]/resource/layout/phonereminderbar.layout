@@ -1,36 +1,5 @@
 "resource/layout/phonereminderbar.layout"
 {
-	controls
-	{
-		"phonereminderbarlabel"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#steam_phoneaddress_query"
-			style=bright
-		}
-		"phonereminderbar_info"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#steam_phoneaddress_query_info"
-			style=soft
-			wrap=1
-		}
-		"phonereminderbar_yesbutton"
-		{
-			"ControlName"		"Button"
-			"labelText"		"#steam_phoneaddress_query_yes"
-			command="AddPhone"
-			style="ButtonStyle"
-		}
-		"phonereminderbar_nobutton"
-		{
-			"ControlName"		"Button"
-			"labelText"		"#steam_phoneaddress_query_no"
-			command="Close"
-			style="ButtonStyle"
-		}
-	}
-	
 	styles
 	{
 		CPhoneReminderBar

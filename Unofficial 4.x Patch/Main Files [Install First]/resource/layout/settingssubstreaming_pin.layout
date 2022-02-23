@@ -1,18 +1,5 @@
 "resource/layout/settingssubstreaming_pin.layout"
 {
-	controls
-	{
-		StreamingPINDialog { controlname="Frame" title="#Steam_Settings_Streaming_PIN_Title" style="StreamingPINDialog" }
-		Description { controlname="Label" style="Description" wrap=1 labelText="#Steam_Settings_Streaming_PIN_Text" }
-
-		PIN1 { controlname="TextEntry" style="Password" tabposition=1 }
-		PIN2 { controlname="TextEntry" style="Password" tabposition=2 }
-
-		KeyImage { controlname="Label" style="Key" zpos=-4 }
-
-		OK { controlname="Button" fieldName="OK" tabposition=3 command="Save" labeltext="#PropertyDialog_OK" default=1 }
-		Cancel { controlname="Button" tabposition=4 command="Close" labeltext="#PropertyDialog_Cancel" }
-	}
 	styles
 	{
 		Password

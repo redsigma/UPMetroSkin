@@ -1,19 +1,5 @@
 "resource/layout/overlay_playtimedetails.layout"
 {
-	controls
-	{
-		PlaytimeDetailsPanel 
-		{ 
-			controlname="COverlay_Details_Playtime" 
-			style=detailsbox
-		}
-		TitleText { controlname="label" labeltext="#Overlay_Playtime_Stats" style=detailsboxtitle }
-		
-		IntroText { controlname=label labeltext="#Overlay_Playtime_Intro" style=Intro }
-		SessionText { controlname=label style=TimeStrings labeltext="#Overlay_Playtime_Session" }
-		TwoWeeksText { controlname=label style=TimeStrings }
-		ForeverText { controlname=label style=TimeStrings }
-	}
 	colors
 	{
 	}

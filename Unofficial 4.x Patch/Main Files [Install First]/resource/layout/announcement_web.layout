@@ -1,13 +1,5 @@
 "resource/layout/announcement_web.layout"
 {
-	controls
-	{
-		announcementwebpanel { controlname="CAnnouncementWebPanel" style="announcementwebpanel" }
-		announcementweb { controlname="HTML" style="announcementweb" zpos=10011 }
-		announcementnotch { controlname="Panel" style="announcementnotch" }
-		announcementbg { controlname="Panel" style="announcementbg" zpos=-100 }
-	}
-
 	colors
 	{
 		WebBorderColor = "64 64 64 255"

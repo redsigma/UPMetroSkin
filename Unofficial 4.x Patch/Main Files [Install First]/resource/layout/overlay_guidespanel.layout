@@ -1,13 +1,5 @@
 "resource/layout/overlay_guidespanel.layout"
 {
-	controls
-	{
-		GuidesDetailPanel { controlname="COverlay_Details_Guides_Panel" style=detailsbox }
-		TitleText { controlname="label" labeltext="#Overlay_Guides_Panel_Title" style=detailsboxtitle }
-		NumGuidesText { controlname="label" labeltext="#Overlay_Guides_Panel_NumGuides"  style=highlight }
-
-		ViewGuides { controlname="Button" labeltext="#Overlay_View_Guides" command="viewguides" }
-	}
 	colors
 	{
 	}

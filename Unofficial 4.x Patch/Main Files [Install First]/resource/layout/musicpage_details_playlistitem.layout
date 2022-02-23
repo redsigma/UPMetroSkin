@@ -1,11 +1,5 @@
 "resource/layout/musicpage_details_playlistitem.layout"
 {
-	controls
-	{	
-		PositionLabel { controlname=Label style="PositionLabelStyle" labeltext="" textalignment="east" }
-		TrackLabel { controlname=Label style="TrackLabelStyle" labeltext="" }
-	}
-
 	styles
 	{
 		PositionLabelStyle

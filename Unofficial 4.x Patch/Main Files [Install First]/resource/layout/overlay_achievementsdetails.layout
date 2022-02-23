@@ -1,14 +1,5 @@
 "resource/layout/overlay_achievementsdetails.layout"
 {
-	controls
-	{
-		AchievementsDetailPanel { controlname="COverlay_Details_Acheivements" style=detailsbox }
-		TitleText { controlname="label" labeltext="#Overlay_Achievement_Title" style=detailsboxtitle }
-		ViewAchievementsButton { controlname=button labeltext="#Overlay_Friends_ViewAchievements" }
-		progressbackground { controlname="ImagePanel" style="progressbackground" }
-		progressbarimage { controlname="ImagePanel" style="progressbarimage" }
-		ProgressTextEarned { controlname=label style=Focus labeltext="#Overlay_Achievement_Progress" }
-	}
 	colors
 	{
 	}

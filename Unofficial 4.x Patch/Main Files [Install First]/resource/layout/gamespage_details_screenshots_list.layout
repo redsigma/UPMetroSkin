@@ -1,12 +1,5 @@
 "resource/layout/gamespage_details_screenshots_list.layout"
 {
-	controls
-	{
-		screenshotsarea { controlname="CScreenshotsPanel" style="screenshotsarea" }
-
-		screenshotslabelmore { controlname="Label" style="screenshotslabelmore" labeltext="#Steam_MoreScreenshots" textAlignment="center" tooltiptext="#Steam_ViewAllScreenshots"}
-	}
-
 	colors
 	{
 		// Note, the below values are used for dynamic layout in code, and must match the values from place
