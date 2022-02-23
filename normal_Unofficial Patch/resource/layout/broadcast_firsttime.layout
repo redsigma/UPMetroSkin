@@ -6,21 +6,6 @@
 		permissionheadercolor="205 205 205 255"
 	}
 
-	controls
-	{
-		"Header"			{ controlname="Label" labeltext="#Broadcast_FirstTime_Header" style="IntroHeading" wrap="1" }		
-		"ViewerRequest"		{ controlname="Label" labeltext="#Broadcast_FirstTime_ViewerRequest" group="intro" style="ViewerRequest" wrap="1" }
-		"PermissionHeader"	{ controlname="Label" labeltext="#Broadcast_FirstTime_Permissionheader" group="intro" style="PermissionHeader" }
-		"PermissionDisabled"{ controlname="RadioButton" labeltext="#Steam_Settings_Broadcast_Disabled" group="intro" style="PermissionOption" }
-		"PermissionAccept"	{ controlname="RadioButton" labeltext="#Steam_Settings_Broadcast_FriendsApprove" group="intro" style="PermissionOption" }
-		"PermissionFriends"	{ controlname="RadioButton" labeltext="#Steam_Settings_Broadcast_FriendsAllowed" group="intro" style="PermissionOption" }
-		"PermissionPublic"	{ controlname="RadioButton" labeltext="#Steam_Settings_Broadcast_FriendsPublic" group="intro" style="PermissionOption" }
-		"DesktopOnlyLabel"	{ controlname="Label" labeltext="#Broadcast_FirstTime_DesktopOnly" group="intro" wrap="1"}
-		"FAQLink"		{ controlname="URLLabel" labeltext="#Broadcast_FirstTime_FAQ" URLText="https://support.steampowered.com/kb_article.php?ref=6730-TOAK-6497"}
-
-		"NextButton"		{ controlname="Button" labeltext="#Broadcast_FirstTime_OK" }
-	}
-
 	styles
 	{
 		IntroHeading

@@ -1,11 +1,6 @@
 "resource/layout/overlay_achievement_item.layout"
 {
-	controls
-	{
-		icon { controlname="ImagePanel" scaleimage=1 }
-		caption { controlname=label labeltext="#Overlay_Achievement_Recent" }
-		name { controlname=label style=name }
-	}
+
 	colors
 	{
 	}

@@ -1,32 +1,6 @@
 "resource/layout/musiclibrarypanel.layout"
 {
-	controls
-	{	
-		MusicPage_Details_Content { controlname="CMusicPage_Details_Content" } 
-		
-		library_search	   { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
-		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=library zpos="4" }
-		library_music_menu { ControlName=MenuButton labelText="#Music_Nav_Menu_Artists" style="NavLabel2" showDownArrow=0 align=left group=music }
-		library_music_add_button {	ControlName=Button labelText=""	tooltiptext="#Music_Playlist_Details_Menu_Add" style="MusicAddButton" group=music_add_button visible=true }
-		library_music_player_icon { ControlName=Button labelText="" tooltiptext="#music_tooltip_view_player" style="MusicPlayerIcon" align=right group=music }
-		
-		frame_title
-		{
-			ControlName=Label
-	
-			style="ClientTitle"
-			"textAlignment"   "west"
-			"textAlignment"   "center" [$OSX]
-		}
-		
-		"subnavgroup_library"
-		{
-			"ControlName"		"imagepanel"
-			style="grouper"
 
-			zpos="-2"
-		}
-	}
 	colors
 	{
 		dialogbgtrans="38 38 38 100"

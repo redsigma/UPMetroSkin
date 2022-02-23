@@ -1,31 +1,6 @@
 "resource/layout/overlay_friendsdetails.layout"
 {
-	controls
-	{
-		FriendsDetailPanel 
-		{ 
-			controlname="COverlay_Details_Friends" 
-			style=detailsbox
-		}
-		AllFriendsButton
-		{
-			controlname=button
-			labeltext="#Overlay_Friends_ViewAll"
-		}
-		ViewPlayersButton
-		{
-			controlname=button
-			labeltext="#Overlay_Friends_ViewPlayers"
-		}
-		TitleText { controlname="label" labeltext="#Overlay_Taskbar_Friends" style=detailsboxtitle }
-		TextThisManyFriends { controlname=label style=highlight labeltext="#Overlay_Friends_ThisManyOnline" }
-		grid
-		{
-			alignment=justify
-			interiorspacing=2
-			style=FriendsGrid
-		}
-	}
+
 	colors
 	{
 	}

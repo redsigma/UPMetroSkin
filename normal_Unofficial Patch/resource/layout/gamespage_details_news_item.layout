@@ -1,12 +1,6 @@
 "resource/layout/gamespage_details_news_item.layout"
 {
-	controls
-	{
-		newsitem_title { controlname="Label" style="title_label" }
-		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
-		newsitem_body { controlname="RichText" style="newsitem_body" }
-		newsitem_more { controlname="URLLabel" style="more_link" labeltext="#steam_newscontinued" }
-	}
+
 	colors
 	{
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
