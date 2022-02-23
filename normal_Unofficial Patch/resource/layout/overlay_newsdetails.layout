@@ -1,11 +1,6 @@
 "resource/layout/overlay_newsdetails.layout"
 {
-	controls
-	{
-		NewsDetailPanel { controlname="COverlay_Details_News" style=detailsbox }
-		TitleText { controlname="label" labeltext="#Overlay_Taskbar_News" style=detailsboxtitle }
-		ViewNewsButton { controlname=button labeltext="#Overlay_Friends_ViewNews" }
-	}
+
 	colors
 	{
 	}

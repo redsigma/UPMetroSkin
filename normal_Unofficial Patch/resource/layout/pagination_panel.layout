@@ -1,36 +1,5 @@
 "resource/layout/pagination_panel.layout"
 {
-	controls
-	{
-		pagination { controlname="CPaginationPanel" style="pagination" }
-		pagedescription { controlname="Label" labeltext="#steam_paginationtext" style="pagedescriptionstyle" }
-		FirstLink { controlname="Button" labeltext="1" style="PageButton" }
-		PreviousLink { controlname="Button" labeltext="<" style="JumpButton" }
-		page1 { controlname="Button" visible=0 style="PageButton" }
-		page2 { controlname="Button" visible=0 style="PageButton" }
-		page3 { controlname="Button" visible=0 style="PageButton" }
-		page4 { controlname="Button" visible=0 style="PageButton" }
-		page5 { controlname="Button" visible=0 style="PageButton" }
-		page6 { controlname="Button" visible=0 style="PageButton" }
-		page7 { controlname="Button" visible=0 style="PageButton" }
-		page8 { controlname="Button" visible=0 style="PageButton" }
-		page9 { controlname="Button" visible=0 style="PageButton" }
-		page10 { controlname="Button" visible=0 style="PageButton" }
-		page11 { controlname="Button" visible=0 style="PageButton" }
-		page12 { controlname="Button" visible=0 style="PageButton" }
-		page13 { controlname="Button" visible=0 style="PageButton" }
-		page14 { controlname="Button" visible=0 style="PageButton" }
-		page15 { controlname="Button" visible=0 style="PageButton" }
-		page16 { controlname="Button" visible=0 style="PageButton" }
-		page17 { controlname="Button" visible=0 style="PageButton" }
-		page18 { controlname="Button" visible=0 style="PageButton" }
-		page19 { controlname="Button" visible=0 style="PageButton" }
-		page20 { controlname="Button" visible=0 style="PageButton" }
-		NextLink { controlname="Button" labeltext=">" style="JumpButton" }
-		LastLink { controlname="Button" labeltext="Last" style="PageButton" }
-		LeftSpacer { controlname="Label" labeltext="..." style="spacerstyle" }
-		RightSpacer { controlname="Label" labeltext="..." style="spacerstyle" }
-	}
 
 	colors
 	{

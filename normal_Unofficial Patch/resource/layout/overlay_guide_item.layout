@@ -1,13 +1,6 @@
 "resource/layout/overlay_guide_item.layout"
 {
-	controls
-	{
-		icon { controlname="ImagePanel" scaleimage=1 }
-		name { controlname=label style=name }
 
-		Background { controlname="ImagePanel" style=Background visible=1 }
-		IconBackground { controlname="ImagePanel" style=IconBackground visible=1 }
-	}
 	colors
 	{
 	}

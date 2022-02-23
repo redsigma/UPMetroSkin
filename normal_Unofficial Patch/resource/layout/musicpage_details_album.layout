@@ -1,22 +1,5 @@
 "resource/layout/musicpage_details_album.layout"
 {
-	controls
-	{
-		AlbumTitleLabel { controlname="Label" style="AlbumTitleStyle" }
-		ArtistLabel { controlname="Label" style="ArtistStyle" }
-		TracksInfoLabel { controlname="Label" style="TracksInfoStyle" }
-		CoverImage { controlname="ImagePanel" style="CoverStyle" scaling=fit}
-
-		PlayTracksButton { controlname="Button" labeltext="#Music_Album_Details_PlayTracks" style="ActionButtonStyle" command="AlbumPlayTracksAction" }
-		AddTracksToQueueButton { controlname="Button" labelText="#Music_Album_Details_AddTracksToQueue" style="AdditionalActionButtonStyle" command="AlbumAddTracksToQueueAction" }	
-		AddTracksToPlaylistButton { controlname="Button" labelText="#Music_Album_Details_AddTracksToPlaylist" style="AdditionalActionButtonStyle" command="AlbumAddTracksToPlaylistAction" }
-
-		ShowAlbumButton { controlname="Button" labeltext="#Music_Album_Details_ShowAlbum" style="AdditionalActionButtonStyle" command="AlbumShowAction" }
-		PlayAlbumButton { controlname="Button" labeltext="#Music_Album_Details_Play" style="ActionButtonStyle" command="AlbumPlayAction" }
-		AddAlbumToQueueButton { controlname="Button" labelText="#Music_Album_Details_AddToQueue" style="AdditionalActionButtonStyle" command="AlbumAddToQueueAction" }
-		AddAlbumToPlaylistButton { controlname="Button" labelText="#Music_Album_Details_AddToPlaylist" style="AdditionalActionButtonStyle" command="AlbumAddToPlaylistAction" }
-		ShowAlbumInSystemButton { controlname="Button" labelText="#Music_Album_Details_ShowAlbumInSystem" style="AdditionalActionButtonStyle" command="AlbumShowAlbumInSystemAction" }	
-	}
 
 	styles
 	{

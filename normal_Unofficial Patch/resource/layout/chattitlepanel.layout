@@ -1,13 +1,6 @@
 "resource/layout/chattitlepanel.layout"
 {
-	controls
-	{
-		"AvatarImage" { ControlName="ImagePanel" }
-		"NameLabel" { ControlName="Label" }
-		"StatusLabel" { ControlName="Label" style="statuslabel" }
-		"LockImage" { ControlName="ImagePanel" }
-		"MenuButton" { ControlName= "CChatTitlePanelAffordance" style="menuButtonStyle"}
-	}
+
 	styles
 	{
 		statuslabel

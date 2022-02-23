@@ -1,11 +1,5 @@
 "resource/layout/gamespage_details_subheader.layout"
 {
-	controls
-	{
-		subheaderlabels { controlname="CDetailsSubHeaderLabelsPanel" }
-		launchbutton { controlname="Button" labeltext="#Steam_LaunchGame" style="detailsLaunchButton" tabposition=1 command="RunGameAction" }
-		clientlist { controlname="ClientListButton" labeltext="" style="ClientListButton" tabposition=2 zpos=100 }
-	}
 
 	colors
 	{

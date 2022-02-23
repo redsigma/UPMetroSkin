@@ -1,10 +1,6 @@
 "resource/layout/friendpanel_compact.layout"
 {
-	controls
-	{
-		MenuButton { style=menuButtonStyle }
-		AvatarOverlayImage { zpos=2 }
-	}
+
 	styles
 	{
 		menuButtonStyle

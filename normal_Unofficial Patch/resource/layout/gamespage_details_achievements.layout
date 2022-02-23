@@ -1,17 +1,5 @@
 "resource/layout/gamespage_details_achievements.layout"
 {
-	controls
-	{
-		achievementsdetails { controlname="CGamesPage_Details_Achievements" style="achievementsdetails" }
-
-		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Achievements" }
-		
-		mostrecent_area { controlname="CAchievementsMostRecentPanel" }
-		everythinglabel { controlname="Label" style="everythinglabel" labeltext="#Steam_EverythingAchieved" }
-		locked_area { controlname="CAchievementsLockedPanel" }	
-
-		viewall	{ controlname="Button" labeltext="#Steam_ViewAllAchievements" command="ViewAllAchievements" }
-	}
 
 	colors
 	{
