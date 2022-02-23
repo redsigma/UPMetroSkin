@@ -1,23 +1,5 @@
 "resource/layout/joingamedialogexpanded.layout"
 {
-	controls
-	{
-		Progress { controlname=progressbar	}
-		PlayButton { controlname=button labeltext=#SteamUI_JoinDialog_PlayGame_Btn }
-		InfoLabel { controlname=label labeltext=#SteamUI_JoinDialog_ReadyToPlay wrap=1 }
-		NewsButton { controlname=button labeltext=#Steam_UpdateNewsButton command=UpdateNews }
-		OverrideThrottleCheckBox { controlname=checkbutton labeltext=#SteamUI_JoinDialog_OverrideThrottle command=ToggleThrottle }
-		AutoLaunchCheckBox { controlname=checkbutton labeltext=#SteamUI_JoinDialog_LaunchGameReady }
-		ReadyToPlayInfoLabel { controlname=label labeltext=#SteamUI_JoinDialog_ReadyToPlayTime }
-		ReadyToPlayTimeLabel { controlname=label labeltext=#SteamUI_JoinDialog_TimeLeftMinutes }
-		ThrobberThrobberThrobber { controlname=throbberimagepanel }
-		SkipUpdateLabel { controlname=label textalignment=east labeltext=#SteamUI_JoinDialog_SkipUpdateInfo visible=false }
-
-		// only shown if the user hasn't seen the SSA change yet
-		Divider { controlname=divider visible=false }
-		SSAUpdateLabel { controlname=label labeltext=#SteamUI_SSAUpdatedInfo wrap=1 visible=false }
-		SSAUpdateURL { controlname=urllabel labeltext=#Steam_SSAUpdated_Link urltext=http://www.steampowered.com/index.php?area=subscriber_agreement visible=false }
-	}	
 	colors
 	{
 	}

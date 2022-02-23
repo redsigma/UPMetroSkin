@@ -1,56 +1,5 @@
 "resource/layout/emailreminderbar.layout"
 {
-	controls
-	{
-		"emailreminderbar_nobutton"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#steam_emailaddress_query_no"
-			command="ChangeEmail"
-			style=bright
-		}
-		"emailreminderbar_yesbutton"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#steam_emailaddress_query_yes"
-			command="SendVerificationEmail"
-			style=bright
-		}
-		"emailreminderbaremail_email"
-		{
-			"ControlName"		"Label"
-			"labelText"		"%emailaddress%"
-			style=bright
-		}
-		"emailreminderbarlabel"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#steam_emailaddress_query"
-			style=soft
-		}
-		"emailreminderbar_info"
-		{
-			"ControlName"		"Label"
-			"labelText"		"#steam_emailaddress_query_info"
-			style=soft
-		}
-		"emailreminderbar_infolink"
-		{
-			"ControlName"		"URLLabel"
-			"labelText"		"#steam_emailaddress_query_info_link"
-			"urltext" "#steam_emailaddress_query_info_url"
-			style=soft
-		}
-		"emailreminderbar_close"
-		{
-			"ControlName"		"Button"
-			"labelText"		""
-			"Command" "Close"
-
-			style=CloseStyle
-		}
-	}
-
 	styles
 	{
 		CEmailReminderBar

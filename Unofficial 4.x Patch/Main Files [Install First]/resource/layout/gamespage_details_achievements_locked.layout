@@ -1,13 +1,5 @@
 "resource/layout/gamespage_details_achievements_locked.layout"
 {
-	controls
-	{
-		locked_area { controlname="CAchievementsLockedPanel" style="lockedarea" }
-
-		imageexplanation { controlname="Label" style="infolabel" labeltext="#Steam_AchievementsLocked" }
-		achievementlabelmore { controlname="Label" style="achievementlabelmore" labeltext="#Steam_MoreAchievements" textAlignment="center" tooltiptext="#Steam_ViewAllAchievements"}
-	}
-
 	colors
 	{
 		// Note, the below values are used for dynamic layout in code, and must match the values from place

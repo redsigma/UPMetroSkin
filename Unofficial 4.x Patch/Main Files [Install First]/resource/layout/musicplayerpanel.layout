@@ -1,28 +1,5 @@
 "resource/layout/musicplayerpanel.layout"
 {
-	controls
-	{	
-		CurrentAlbumImage { controlname=ImagePanel style="CurrentAlbumImageStyle" scaling=fit}
-
-		CurrentStatusLabel { controlname=Label style="StatusStyleDim" labeltext="NOW PLAYING" }
-		CurrentTrackLabel	{	controlname=Label	style="StatusStyle"	labeltext=""	}
-		CurrentArtistLabel { controlname=Label style="statusStyle" labeltext="" }
-		
-		RepeatButton { controlname=ToggleButton labeltext="" tooltiptext="#music_tooltip_repeat" command="ToggleRepeat" style="RepeatButtonStyle" }
-		ShuffleButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_shuffle" command="ToggleShuffle" style="ShuffleButtonStyle" }
-		PreviousButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_previous" command="PreviousTrack" style="PreviousButtonStyle" }
-		NextButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_next" command="NextTrack" style="NextButtonStyle" }
-		PlayPauseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_playpause" command="TogglePlayPause" style="PlayButtonStyle" }
-		VolumeButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_volume" command="Volume" style="VolumeButtonStyle" }
-		BrowseButton { controlname=Button labeltext="" tooltiptext="#music_tooltip_browse" command="BrowseMusic" style="BrowseButtonStyle" }
-		
-		TrackList { controlname=ListPanel style="MusicListPanelInterior" }
-		NoTracksLabel { controlname=Label style="NoTracksLabelStyle" labeltext="" zpos="-1" }
-		InfoLabel { controlname=Label style="InfoLabelStyle" labeltext="1 OF 10"  zpos="-1" textalignment=center }
-	
-		SeekBar { ControlName="Slider" style="SeekBarStyle" showticks="0" showbar="1"}
-	}
-
 	colors
 	{
 	}

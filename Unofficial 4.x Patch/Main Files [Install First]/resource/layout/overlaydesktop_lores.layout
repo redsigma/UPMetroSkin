@@ -1,30 +1,5 @@
 resource/layout/overlaydesktop_lores.layout 
 {
-	controls
-	{
-		BaseDesktopPanel
-		{
-			controlname="EditablePanel"
-		}
-
-		GameHubButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameHub" style=sidemenu }
-		GameGroupsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_GameGroups" style=sidemenu }	
-		ChatRoomButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_ChatRoom" style=sidemenu }	
-		DLCButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_DLC" style=sidemenu }			
-		GuideButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Guide" style=sidemenu }			
-		GuidesButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_SteamGuides" style=sidemenu }
-		LegacyCDKeyButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_legacycdkey" style=sidemenu }			
-		WebSiteButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_WebSite" style=sidemenu }	
-		ForumsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Forums" style=sidemenu }	
-		RecommendButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Recommend" style=sidemenu }	
-		WorkshopButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Workshop" style=sidemenu }	
-
-		FriendsButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Friends" style=sidemenu }
-		PlayersButton {	controlname="URLLabel" labeltext="#Overlay_Taskbar_Players" style=sidemenu }
-		AchievementsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Achievements" style=sidemenu }				
-		ScreenshotsButton { controlname="URLLabel" labeltext="#Overlay_Taskbar_Screenshots" style=sidemenu }
-	}
-
 	colors
 	{
 	}

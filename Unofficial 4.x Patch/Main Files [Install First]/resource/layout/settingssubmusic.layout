@@ -1,35 +1,5 @@
 "resource/layout/settingssubmusic.layout"
 {
-	controls
-	{
-			LibraryHeader { controlname="Label" labelText="#Music_Settings_Library_Header" style="HeaderText" }
-			LibraryList { controlname=ListPanel tabposition=1 style="LibraryListStyle" }
-
-			AddLibraryButton { controlname="Button" labeltext="#Music_Settings_Library_Add" style="ActionButtonStyle" command="AddEntryToLibraryAction" }
-			RemoveLibraryButton { controlname="Button" labeltext="#Music_Settings_Library_Remove" style="ActionButtonStyle" command="RemoveSelectedEntryFromLibraryAction" }
-
-			LibraryDivider { ControlName="divider" }
-
-			DatabaseHeader { controlname="Label" labelText="#Music_Settings_Database_Header" style="HeaderText" }
-			DatabaseCrawlAtStartup { ControlName="CheckButton" labelText="#Music_Settings_Database_CrawlAtStartup" }
-			DatabaseInfoLabel  { controlname="Label" labelText="#Music_Settings_Database_XAlbumsWithYTracks" style="DescriptionLabel" }
-			ResetDatabaseButton { controlname="Button" labeltext="#Music_Settings_Database_ResetDatabase" style="ActionButtonStyle"	command="ResetDatabaseAction" }
-			DatabaseDivider { ControlName="divider" }
-
-			VolumeHeader { ControlName="Label" labelText="#Music_Settings_Volume_Header" style="HeaderText" }
-			VolumeSlider { ControlName="Slider" style="VolumeSliderStyle" }
-			VolumeDivider { ControlName="divider" }
-
-			PauseMusicHeader { ControlName="Label" labelText="#Music_Settings_PauseMusic_Header" style="HeaderText" }
-			PauseMusicWhenStartingApplicationCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenStartingApplication" }
-			PauseMusicWhenVoiceChatCheckbox { ControlName="CheckButton" labelText="#Music_Settings_PauseMusicWhenVoiceChat" }
-
-			NotificationHeader { ControlName="Label" labelText="#Music_Settings_Notification_Header" style="HeaderText" }
-			NotificationPlaylistNowPlayingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_NotificationPlaylistNowPlaying" }
-
-			LoggingHeader { ControlName="Label" labelText="#Music_Settings_Logging_Header" style="HeaderText" }
-			LoggingCrawlingCheckbox { ControlName="CheckButton" labelText="#Music_Settings_LoggingCrawling" }
-	}
 	styles
 	{
 		LibraryListStyle

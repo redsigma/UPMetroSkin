@@ -1,39 +1,5 @@
 "resource/layout/ugcdownloadpanel.layout"
 {
-	controls
-	{
-		// this just sets the height
-		appsubscriptionsdownloadpanel {	tall="145" }
-		ugcdownloadpanel {	style="panelStyle" }
-
-		// black fill, used on the background
-		workshopminibanner { controlname="ImagePanel" zpos="2" image="resource/workshop_minibanner" }
-
-		// top row
-		namelabel	{ controlname="Label"	labelText="#steam_subscribed_files" style="ModuleHeading" }
-		dashlabel	{ controlname="Label"	labelText="" }
-		updatetypelabel	{ controlname="Label"	labelText="#steam_downloads_updating" style=ModuleHeading2 }
-		starttimelabel	{ controlname="Label"	labelText="#steam_downloads_initiated" style=Label2}
-		starttimefield	{ controlname="Label"	labelText="%time_started%" style=Label}
-		pauseresumebutton	{ controlname="Button" style="SmPauseButton" tooltiptext="#steam_downloads_pause" }
-
-		// second row
-		downloadtotallabel	{ controlname="Label"	labelText="#steam_downloads_gamesize_update" style="label2" }
-		downloadtotalfield	{ controlname="Label"	labelText="%download_totals%" style="label" }
-		downloadfileslabel { controlname="Label" labelText="#steam_subscribed_files_complete" style="Label2" }
-		downloadfilesfield { controlname="Label" labeltext="%download_files_totals%" style="label" }
-
-		timeremaininglabel	{ controlname="Label"	labelText="#steam_downloads_timeremaining" style="label2" group="HideOnCompletion" }
-		timeremainingfield	{ controlname="Label"	labelText="%time_remaining%"  style="label" group="HideOnCompletion" }
-
-		downloadprogressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 group="HideOnCompletion" }
-
-		// right pane
-		graphdownloadrate	{ controlname="Label"	labelText="#steam_downloads_currentrate" zpos="1" style="label2" group="HideOnCompletion" }
-
-		//
-		viewmodsbutton { controlname="Button" labelText="#steam_downloads_view_on_workshop" style=ViewModsButton command=ViewMods }
-	}
 
 	colors
 	{

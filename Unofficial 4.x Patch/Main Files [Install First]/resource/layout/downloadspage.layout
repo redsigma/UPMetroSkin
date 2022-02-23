@@ -1,22 +1,5 @@
 "resource/layout/downloadspage.layout"
 {
-	controls
-	{
-		"DownloadsPage"
-		{
-			"ControlName"		"CDownloadsPage"
-			Style=DownloadsPageStyle
-		}
-		"downloadsummarypanel"
-		{
-			"ControlName"	"DownloadSummaryPanel"
-		}
-		"panel_list"
-		{
-			"ControlName"	"SectionedListPanel"
-			Style=ListPanelStyle
-		}
-	}
 	styles
 	{
 		DownloadsPageStyle

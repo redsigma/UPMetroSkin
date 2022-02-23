@@ -1,22 +1,5 @@
 "resource/layout/gamespage_mini.layout"
 {
-	controls
-	{
-		GamesList { controlname=Panel style="DetailsBorderPanel" tabposition=1 }
-		CGamesPage_Mini	{ title="#Steam_Root_Title" }
-		library_filters	   { ControlName=MenuButton labelText="#steam_library_filter_allgames" style="NavLabel2" showDownArrow=1 group=filters }
-		library_search	   { ControlName=TextEntry maxchars=12 hintText="#steam_library_search" style="LibrarySearch" group=library tabposition=2 }
-		label_search_icon	{ ControlName=Label style="LibrarySearchIcon" group=filters }
-
-		"subnavgroup_library"
-		{
-			"ControlName"		"imagepanel"
-			style="grouper"
-			group="library"
-			zpos="-4"
-		}
-	}
-
 	colors
 	{
 	}

@@ -1,17 +1,5 @@
 "resource/layout/subpaneloptionscontroller.layout"
 {
-	controls
-	{
-		TitleLabel { controlname=label labeltext="#Steam_SettingsControllerTitle" style=highlight }
-		DescriptionLabel	{ ControlName=Label labeltext="#Steam_SettingsControllerDescription" wrap=1  }
-		Divider1	{ ControlName=Divider }
-		DescriptionBindingLabel	{ ControlName=Label labeltext="#Steam_SettingsControllerBindingDescription" wrap=1  }
-	
-		GeneralSettingsButton { ControlName=Button labelText="#Steam_SettingsControllerGeneralSettings" 	command=EditGeneralSettings }
-		BigPictureConfigButton { ControlName=Button labelText="#Steam_SettingsControllerBigPictureConfig" 	command=EditBPConfig }		
-		DesktopConfigButton { ControlName=Button labelText="#Steam_SettingsControllerDesktopConfig" 	command=EditDesktopConfig }
-		GuideConfigButton { ControlName=Button labelText="#Steam_SettingsControllerGuideConfig" 	command=EditGuideConfig }				
-	}
 	colors
 	{
 	}

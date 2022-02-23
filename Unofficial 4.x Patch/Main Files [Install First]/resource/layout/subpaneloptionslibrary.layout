@@ -1,22 +1,5 @@
 "resource/layout/subpaneloptionsingame.layout"
 {
-  controls
-  {
-    TitleLabel { controlname=label labeltext="#Steam_Settings_Library" style=highlight }
-
-    LibraryDisplaySizeLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Title" }
-    LibraryDisplaySizeAutomatic { ControlName="RadioButton" fieldName="LibraryDisplaySizeAutomatic" labelText="#Steam_Settings_Library_Size_Automatic" }
-    LibraryDisplaySizeAutomaticLabel { ControlName=Label labelText="#Steam_Settings_Library_Size_Automatic_Label" }
-    LibraryDisplaySizeSmall { ControlName="RadioButton" fieldName="LibraryDisplaySizeSmall" labelText="#Steam_Settings_Library_Size_Small" }
-    LibraryDisplaySizeMedium { ControlName="RadioButton" fieldName="LibraryDisplaySizeMedium" labelText="#Steam_Settings_Library_Size_Medium" }
-    LibraryDisplaySizeLarge { ControlName="RadioButton" fieldName="LibraryDisplaySizeLarge" labelText="#Steam_Settings_Library_Size_Large" }
-
-    LibraryLowBandwidthCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowBandwidth_Title" }
-    LibraryLowBandwidthLabel { ControlName=Label labelText="#Steam_Settings_Library_LowBandwidth_Desc" wrap=1 }
-
-    LibraryLowPerfCheckbox { controlname=checkbutton labeltext="#Steam_Settings_Library_LowPerf_Title" }
-    LibraryLowPerfLabel { ControlName=Label labelText="#Steam_Settings_Library_LowPerf_Desc" wrap=1 }
-  }
   colors
   {
   }	
