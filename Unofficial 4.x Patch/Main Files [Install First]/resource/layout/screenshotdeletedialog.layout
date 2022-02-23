@@ -1,14 +1,5 @@
 "resource/layout/screenshotdeletedialog.layout" 
 {
-	controls
-	{
-		ScreenshotDeleteDialog { controlname="Frame" title="#steam_screenshotdelete_title" style="ScreenshotDeleteDialog" }
-		Warning { controlname="ImagePanel" image="resource/icon_warning" }
-		WarningText { controlname="Label" labeltext="#steam_are_you_sure_delete_screenshot" wrap=1 }
-		DeleteFromCloudBox { controlname="CheckButton" labelText="#steam_also_delete_from_cloud" }
-		Delete { controlname="Button" command="DeleteScreenshot" labeltext="#steam_delete" }
-		Cancel { controlname="Button" command="Cancel" labeltext="#vgui_cancel" }
-	}
 
 	styles
 	{

@@ -1,14 +1,6 @@
 "resource/layout/settingsdialog.layout"
 {
-	controls
-	{
-		SettingsDialog { controlname="CDialogSettings" }
-		okbutton { controlname="OKButton" }	 
-		cancelbutton { controlname="CancelButton" }	 
-		settingslist { controlname="SettingsList" style="SettingsList" wide=180 }
-		sheet { controlname="Sheet" style="PropertySheet" }
 
-	}
 	styles
 	{
 		PropertySheet

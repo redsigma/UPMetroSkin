@@ -1,51 +1,5 @@
 resource/layout/overlaydashboard_lores.layout 
 {
-	controls
-	{
-		BaseDashboardPanel 
-		{ 
-			controlname="EditablePanel" 
-			style="overlaymain"	
-		}
-		TaskbarPanel
-		{ 
-			controlname="EditablePanel" 
-		}
-		TopFadePanel
-		{
-			controlname="EditablePanel"
-			style=topfade
-			zpos=-1
-		}
-		BottomFadePanel
-		{
-			controlname="EditablePanel"
-			style=bottomfade
-			zpos=-1
-		}
-
-		GameName
-		{
-			controlname="Label"
-			labeltext="%gamename%"
-			style=topbar
-			textalignment=east
-		}
-		PowerMeterDim
-		{
-			controlname=	"ImagePanel"
-			image=			"resource/battery_dim"
-		}
-		PowerMeterBright
-		{
-			controlname=	"ImagePanel"
-			image=			"resource/battery_bright"
-		}
-
-		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" }
-		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style=hotkey }	
-		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }	
-	}
 
 	styles
 	{

@@ -1,32 +1,5 @@
 "resource/layout/subpaneloptionsingame.layout"
 {
-	controls
-	{
-		TitleLabel { controlname=label labeltext="#Steam_SettingsInGameTitle" style=highlight }
-		EnableOverlayCheck { ControlName=CheckButton labelText="#Overlay_SettingsEnable" }
-		EnableSCTenfootOverlayCheck [!$OSX&&!$LINUX] { ControlName=CheckButton labelText="#Overlay_SettingsSCTenfootEnable" }
-		EnableVRDesktopGameTheaterCheck [!$OSX&&!$LINUX] {	ControlName=CheckButton labelText="#Overlay_SettingsEnableVRDesktopGameTheaterCheck" }	
-		HotKeySelector { ControlName=HotKeyEntry }
-		ScreenshotHotKeySelector { ControlName=HotKeyEntry }
-		DescriptionLabel { ControlName=Label labeltext="#Overlay_SettingsDescription" wrap=1  }
-		HotKeySelectorLabel { ControlName=Label labelText="#Overlay_SettingsHotKeyLabel" }
-		ScreenshotLabel { ControlName=Label labelText="#Overlay_SettingsScreenshotHotKeyLabel"	}
-		ScreenshotActionLabel { ControlName=Label	labelText="#Overlay_SettingsScreenshotActionLabel" }
-		ScreenshotNotifyCheck { ControlName=CheckButton labelText="#Friends_DisplayNotification" style=checkbox }
-		ScreenshotPlaySoundCheck { ControlName=CheckButton labelText="#Friends_PlayASound" }
-		ScreenshotSaveUncompressedCheck { ControlName=CheckButton labelText="#Overlay_SaveUncompressed" }
-
-		SetScreenshotFolderButton { ControlName=Button labelText="#Steam_SettingsInGameScreenshotFolder" 	command=SetScreenshotFolder }
-
-		ShowIngameFPSLabel { ControlName=Label labelText="#Steam_Settings_Ingame_ShowFPS_Title" }
-		ShowIngameFPSCornerCombo { ControlName="ComboBox" fieldName="ShowIngameFPSCombo" editable="0" }
-		ShowIngameFPSContrastCheck { ControlName=CheckButton labelText="#Steam_Settings_Ingame_ShowFPS_HightContrast" style=checkbox }
-
-		Divider1 { ControlName=Divider }
-		PingRateLabel {	controlname=label labeltext=#Steam_ServerBrowserPingRateLabel wrap=1 style=highlight }
-		PingRateInfo { controlname=label labeltext=#Steam_ServerBrowserPingRateInfo wrap=1 }
-		PingRateCombo { controlname=combobox editable="0" }
-	}
 
 	colors
 	{
