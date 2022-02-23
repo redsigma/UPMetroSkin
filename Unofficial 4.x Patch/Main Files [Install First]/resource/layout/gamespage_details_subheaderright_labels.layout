@@ -1,10 +1,6 @@
 "resource/layout/gamespage_details_subheaderright_labels.layout"
 {
-	controls
-	{
-		contributioncount { controlname="Label" style="headertext" labeltext="" zpos="2" }
-		contributionlabel { controlname="Label" style="headertext2" labeltext="#steam_details_contributioncount" zpos="2" }
-	}
+
 	colors
 	{
 		contributiontext="166 188 206 255"

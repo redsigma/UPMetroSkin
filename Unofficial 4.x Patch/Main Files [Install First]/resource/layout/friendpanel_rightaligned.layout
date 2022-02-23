@@ -1,26 +1,5 @@
 "resource/layout/friendpanel_compact.layout"
 {
-	controls
-	{
-		MenuButton { style=menuButtonStyle }
-		AvatarOverlayImage { zpos=2 }
-	}
-	styles
-	{
-		menuButtonStyle
-		{
-			bgcolor="none"
-			textcolor="none"
-		}
-		CFriendPanel:hover 
-		{
-			render {}
-		}
-		"CSteamRootDialog CAvatarOverlayImage"
-		{
-			inset-top=38
-		}
-	}
 
 	// custom layout
 	layout

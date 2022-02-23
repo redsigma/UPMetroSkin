@@ -1,10 +1,6 @@
 "resource/layout/overlay_news_item.layout"
 {
-	controls
-	{
-		newsitem_title { controlname="URLLabel" style="title_label" }
-		newsitem_dateandauthor { controlname="Label" style="date_and_author" }
-	}
+
 	colors
 	{
 	}

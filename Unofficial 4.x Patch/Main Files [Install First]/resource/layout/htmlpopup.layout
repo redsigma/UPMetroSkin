@@ -1,20 +1,6 @@
 "resource/layout/htmlpopup.layout"
 {
-	controls
-	{
-		HTMLPopup { controlname="HTMLPopup" frametitle="" }
-		htmlpopupchild	{ controlname="HTML" zpos=1 }
-		URLBar		{ controlname="TextEntry" style="TextEntryURL" enabled=false }
-		EVCert	{ controlname="Label" style="LabelEVCert" visible=false }
-		StatusText { controlname="Label" }
 
-		URLStatusImage	{ controlname="ImagePanel" style="URLStatusImage"  }
-		StopButton	{ controlname="Button"  command="WebStop" labeltext="" style="StopButton" }
-		ReloadButton	{ controlname="Button" command="WebReload" labeltext="" style="ReloadButton" }
-		ForwardButton	{ controlname="Button" command="WebForward" labeltext="" style="ForwardButtonSm" }
-		BackButton	{ controlname="Button" command="WebBack" style="BackButtonSm" }
-		PageLoadThrobber { controlname="ImagePanel" image="graphics/rampDown_4" }
-	}
 	styles
 	{
 		TextEntryURL

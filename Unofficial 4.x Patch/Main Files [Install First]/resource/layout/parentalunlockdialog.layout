@@ -1,19 +1,5 @@
 "resource/layout/parentalunlockdialog.layout"
 {
-	controls
-	{
-		ParentalUnlockDialog { controlname="Frame" title="#steam_parental_unlocktitle" style="ParentalUnlockDialog" }
-
-		Instructions { controlname="Label" style="Hey" labeltext="#steam_parental_unlockinstructions" wrap=1 }
-		Instructions2 { controlname="Label" style="Hey2" labeltext="#steam_parental_unlockinstructions2" wrap=1 }
-
-		Password { controlname="TextEntry" style="Password" command="DoParentalUnlock" tabposition=1 }
-		KeyImage { controlname="Label" style="Key" zpos=-4 }
-		Recovery { controlname="URLLabel" labeltext="#steam_parental_norecoveryemail" command="ShowRecoveryDialog" }
-
-		OK { controlname="Button" tabposition=2 command="DoParentalUnlock" labeltext="#PropertyDialog_OK" default=1 }
-		Cancel { controlname="Button" tabposition=3 command="Close" labeltext="#PropertyDialog_Cancel" }
-	}
 
 	styles
 	{
