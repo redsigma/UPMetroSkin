@@ -21,6 +21,6 @@
 
 		place { region=box start=GeneralSettingsButton controls=Divider1,DescriptionBindingLabel dir=down margin-top=15 width=max spacing=6 }
 		place { region=box start=DescriptionBindingLabel controls=BigPictureConfigButton,DesktopConfigButton,GuideConfigButton height=28 width=240 dir=down margin-top=15 spacing=6 }
-		place { region=box start=GuideConfigButton controls=Divider2,DisableNotificationsCheckbox dir=down margin-top=15 width=max spacing=6 }
+		place { region=box start=GuideConfigButton controls=Divider2,DisableNotificationsCheckbox,DisableDualSenseUpdatesCheckbox dir=down margin-top=15 width=max spacing=6 }
 	}
 }
