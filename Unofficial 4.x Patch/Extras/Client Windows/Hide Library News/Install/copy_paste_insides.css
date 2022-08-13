@@ -6,7 +6,7 @@
 /*-------------------------*/
 /* Hide What's New panel   */
 /*-------------------------*/
-[class*="libraryhome_WhatsNew"] {
+[class*="libraryhome_UpdatesContainer"] {
     display: none !important;
 }
 /*-------------------------*/
