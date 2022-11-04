@@ -201,6 +201,11 @@
 				2="fill( x0, y1-43, x1, y1, Header_Dark )"
 			}
 		}
+    CSettingsSubStreamingPair
+		{
+			minimum-width = 380
+			minimum-height = 180
+		}
 		CInstallAppWizard
 		{
 			bgcolor=ClientBG
