@@ -101,5 +101,13 @@ gameoverlay.styles
 		{
 			inset-right=-999
 		}
+    
+    // Fix Steamdeck overlay transparency
+    "OverlayWebPopup"
+    {
+      bgcolor=none
+      render_bg {}
+      render {}
+    }
 	}
 }
