@@ -95,7 +95,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALAgMA
 	height: 100% !important;
 	overflow: scroll !important;
 }
-/* At least try  RIP iframes*/
-#modalContentFrameContainer .modalContent_iFrame{
-	height: 900% !important;
+/* Fix scrollbar not showing in Activity Popups ( RIP iframes )*/
+.flat_page #modalContentFrameContainer .modalContent_iFrame {
+  height: 900% !important;
 }
