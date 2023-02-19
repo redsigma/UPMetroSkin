@@ -32,13 +32,13 @@
 		// Download Restrictions
 		place { region=box start=Divider2 control="RestrictionsLabel" y=6 dir=down spacing=6 }
 
-		place { region=box start=RestrictionsLabel control=ThrottleCheckBox,ThrottleRateEditLabel y=6 width=200 dir=down }
+		place { region=box start=RestrictionsLabel control=ThrottleCheckBox y=6 dir=down }
 		place { region=box start=ThrottleCheckBox control=ThrottleRateCurrent height=27 }
-		place { region=box start=ThrottleCheckBox control=ThrottleRateEdit height=24 dir=down width=200 }
+		place { region=box start=ThrottleCheckBox control=ThrottleRateEdit y=4 height=24 width=200 }
 		place { region=box start=ThrottleRateEdit control=ThrottleRateEditSuffix,ThrottleRateApply x=6 height=24 spacing=6 }
 
 		// Auto-Update Interval
-		place { region=box start=ThrottleRateEdit control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }
+		place { region=box start=ThrottleCheckBox control=AutoUpdateTimeRestrictCheckbox y=6 dir=down }
 		place { region=box start=AutoUpdateTimeRestrictCheckbox height=24 control="AutoUpdateTimeRestrictStart" y=2 width=78 spacing=4 }
 
 		place { region=box start=AutoUpdateTimeRestrictStart control=AutoUpdateTimeRestrictEndLabel x=6 }
@@ -51,7 +51,11 @@
 		place { region=box start=Divider3 control=FlushDownloadConfig y=6 width=360 dir=down }
 		place { region=box start=FlushDownloadConfig control="FlushDownloadConfigLabel" y=6 dir=down }
 		
+		// Game File Transfer
+		place { region=box start=FlushDownloadConfigLabel control=PeerContentLabel y=6 dir=down }
+		place { region=box start=PeerContentLabel control=PeerContentCombo width=360 height=24 y=6 dir=down }
+
 		// Hidden
-		place { control=ThrottleRateEditLabel margin-left=-999 }
+		place { control=ThrottleRateEditLabel,PeerContentInfoLabel margin-left=-999 }
 	}
 }
