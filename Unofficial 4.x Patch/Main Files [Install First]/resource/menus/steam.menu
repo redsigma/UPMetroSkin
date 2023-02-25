@@ -3,7 +3,7 @@
 	Store [$WINDOWS||$LINUX]
 	{
 		text = ""
-		SkinVersion { text="Metro for Steam 4.x"  shellcmd="steam://openurl/https://metroforsteam.com" }
+		SkinVersion { text="Metro for Steam 4.x"  shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		SkinVersionMod {	text="Unofficial Patch 9"  shellcmd="steam://openurl/https://steamcommunity.com/groups/metroskin/discussions/0/141136086931804907" }
 		Divider {}
 		Mini_Mode {	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
