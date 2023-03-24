@@ -1,0 +1,39 @@
+"resource/layout/login_dialog.layout"
+{
+	controls
+	{
+		LoginDialog { controlname="Frame" title="#Steam_Login_Title" style="LoginDialog" }
+		HTMLRoot { controlname=HTML style="HTMLRoot" }
+	}
+  
+	colors
+	{
+		UglyLoginTopBar="33 35 40 255"
+	}
+  
+	styles
+	{
+		LoginDialog
+		{
+			bgcolor="UglyLoginTopBar"
+		}
+
+		HTML
+		{
+			inset="1 1 1 1"
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, UglyLoginTopBar )"
+		  }
+		}
+	}
+
+	layout
+	{
+		region { name="root" y=0 x=0 width=max height=max }
+    place { control="frame_captiongrip" width=max height=40 margin-right=40 }
+
+		place { control=HTMLRoot region=root x=0 y=40 width=max height=max }
+	}
+}
+
