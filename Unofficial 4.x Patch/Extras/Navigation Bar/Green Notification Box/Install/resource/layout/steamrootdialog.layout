@@ -323,7 +323,7 @@
 		place { control="UINavigatorPanel" width=max height=max x=1 margin-right=1 }
 
 		//Controls
-		place { control="XPVistaAlert,SupportAlert,AccountButton,InboxButton,view_friends,startvr,exitvr,ParentalLockButton" region=top align=right end-right=UIStatusPanel spacing=1 margin-right=1 height=39 }
+		place { control="XPVistaAlert,EOLAlert,SupportAlert,AccountButton,InboxButton,view_friends,startvr,exitvr,ParentalLockButton" region=top align=right end-right=UIStatusPanel spacing=1 margin-right=1 height=39 }
 		place { control="UIStatusPanel" region=top align=right end-right=frame_minimize margin-right=1 width=27 height=40 }
 		place [$OSX] { control="UIStatusPanel" region=top align=right margin-right=1 width=27 height=40 }
 		place { control="MenuBar" region=top height=38 width=67 x=1 y=1 }
